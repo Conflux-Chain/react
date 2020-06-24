@@ -44,6 +44,19 @@
     "build": "yarn clear && yarn build:esm && yarn build:webpack && yarn build:types",
     "release": "yarn build && yarn publish --access public --non-interactive"
   },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "yarn prettier",
+      "yarn lint",
+      "git add"
+    ]
+  },
   "files": [
     "/dist",
     "/esm"
@@ -69,6 +82,7 @@
     "babel-jest": "^25.3.0",
     "babel-loader": "^8.0.6",
     "css-mediaquery": "^0.1.2",
+    "cz-conventional-changelog": "3.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
@@ -77,6 +91,7 @@
     "eslint-plugin-react": "^7.19.0",
     "extract-mdx-metadata": "^1.0.0",
     "fs-extra": "^8.1.0",
+    "husky": "^4.2.5",
     "jest": "^25.3.0",
     "next": "^9.4.0",
     "prettier": "^2.0.5",
@@ -91,5 +106,10 @@
   },
   "dependencies": {
     "styled-jsx": "^3.2.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
