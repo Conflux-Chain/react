@@ -53,8 +53,7 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "yarn prettier",
-      "yarn lint",
-      "git add"
+      "yarn lint"
     ]
   },
   "files": [
@@ -93,6 +92,7 @@
     "fs-extra": "^8.1.0",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
+    "lint-staged": "^10.2.11",
     "next": "^9.4.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
