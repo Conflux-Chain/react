@@ -39,6 +39,7 @@ const Dot: React.FC<React.PropsWithChildren<DotProps>> = ({
     <span className={`dot ${className}`} {...props}>
       <span className="icon" />
       <span className="label">{children}</span>
+
       <style jsx>{`
         .dot {
           display: inline-flex;
