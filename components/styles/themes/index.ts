@@ -41,23 +41,23 @@ export interface ZeitUIThemesPalette {
   purple: string
   magenta: string
   alert: string
-  'Ctheme-0': string
-  'Ctheme-1': string
-  'Ctheme-2': string
-  'Ctheme-3': string
-  'Ctheme-4': string
-  'Ctheme-5': string
-  'Ctheme-6': string
-  'Ctheme-7': string
-  'CBlack-0': string
-  'CGray-0': string
-  'CGray-1': string
-  'CGray-2': string
-  'CGray-3': string
-  'CGray-4': string
-  'CGray-5': string
-  'CGray-6': string
-  'CWhite-0': string
+  cThem0: string
+  cThem1: string
+  cThem2: string
+  cThem3: string
+  cThem4: string
+  cThem5: string
+  cThem6: string
+  cThem7: string
+  cBlack0: string
+  cGray0: string
+  cGray1: string
+  cGray2: string
+  cGray3: string
+  cGray4: string
+  cGray5: string
+  cGray6: string
+  cWhite0: string
 }
 
 export interface ZeitUIThemesExpressiveness {
@@ -80,6 +80,7 @@ export interface ZeitUIThemesExpressiveness {
   R5: string
 
   // drop shadows
+  D0: string
   D1: string
   D2: string
   D3: string

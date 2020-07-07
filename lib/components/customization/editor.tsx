@@ -13,23 +13,23 @@ import DefaultTheme from 'components/styles/themes/default'
 import { useConfigs } from 'lib/config-context'
 
 const confluxColors: Array<keyof ZeitUIThemesPalette> = [
-  'Ctheme-0',
-  'Ctheme-1',
-  'Ctheme-2',
-  'Ctheme-3',
-  'Ctheme-4',
-  'Ctheme-5',
-  'Ctheme-6',
-  'Ctheme-7',
-  'CBlack-0',
-  'CGray-0',
-  'CGray-1',
-  'CGray-2',
-  'CGray-3',
-  'CGray-4',
-  'CGray-5',
-  'CGray-6',
-  'CWhite-0',
+  'cThem0',
+  'cThem1',
+  'cThem2',
+  'cThem3',
+  'cThem4',
+  'cThem5',
+  'cThem6',
+  'cThem7',
+  'cBlack0',
+  'cGray0',
+  'cGray1',
+  'cGray2',
+  'cGray3',
+  'cGray4',
+  'cGray5',
+  'cGray6',
+  'cWhite0',
 ]
 const basicColors: Array<keyof ZeitUIThemesPalette> = [
   'accents_1',
@@ -83,7 +83,7 @@ const radiusExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = [
   'R5',
 ]
 
-const shadowExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = ['D1', 'D2', 'D3', 'D4']
+const shadowExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = ['D0', 'D1', 'D2', 'D3', 'D4']
 const pageLayout: Array<keyof ZeitUIThemesLayout> = [
   'pageWidth',
   'pageWidthWithMargin',

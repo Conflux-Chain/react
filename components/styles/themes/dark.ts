@@ -44,23 +44,23 @@ export const palette: ZeitUIThemesPalette = {
   link: '#3291ff',
 
   // conflux ui
-  'Ctheme-0': '#E8F4FF',
-  'Ctheme-1': '#CCE5FF',
-  'Ctheme-2': '#C0D8FC',
-  'Ctheme-3': '#A9BDE6',
-  'Ctheme-4': '#6D8BC8',
-  'Ctheme-5': '#0054FE',
-  'Ctheme-6': '#0433DC',
-  'Ctheme-7': '#0626AE',
-  'CBlack-0': '#282D30',
-  'CGray-0': '#F9FAFB',
-  'CGray-1': '#F1F3F6',
-  'CGray-2': '#EBECED',
-  'CGray-3': '#DBDDE0',
-  'CGray-4': '#AAAFBB',
-  'CGray-5': '#9B9EAC',
-  'CGray-6': '#444444',
-  'CWhite-0': '#FFFFFF',
+  cThem0: '#E8F4FF',
+  cThem1: '#CCE5FF',
+  cThem2: '#C0D8FC',
+  cThem3: '#A9BDE6',
+  cThem4: '#6D8BC8',
+  cThem5: '#0054FE',
+  cThem6: '#0433DC',
+  cThem7: '#0626AE',
+  cBlack0: '#282D30',
+  cGray0: '#F9FAFB',
+  cGray1: '#F1F3F6',
+  cGray2: '#EBECED',
+  cGray3: '#DBDDE0',
+  cGray4: '#AAAFBB',
+  cGray5: '#9B9EAC',
+  cGray6: '#444444',
+  cWhite0: '#FFFFFF',
 }
 
 export const expressiveness: ZeitUIThemesExpressiveness = {
@@ -83,6 +83,7 @@ export const expressiveness: ZeitUIThemesExpressiveness = {
   R5: '50%',
 
   // drop shadows
+  D0: 'none',
   D1: '0px 0px 2px rgba(0, 0, 0, 0.08)',
   D2: '0px 4px 8px rgba(0, 0, 0, 0.08)',
   D3: '0px 4px 8px rgba(0, 0, 0, 0.16)',
