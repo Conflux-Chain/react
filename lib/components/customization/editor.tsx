@@ -74,7 +74,6 @@ const expressiveness: Array<keyof ZeitUIThemesExpressiveness> = [
   'shadowMedium',
   'shadowLarge',
 ]
-
 const radiusExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = [
   'R0',
   'R1',
@@ -83,8 +82,8 @@ const radiusExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = [
   'R4',
   'R5',
 ]
-
 const shadowExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = ['D0', 'D1', 'D2', 'D3', 'D4']
+
 const pageLayout: Array<keyof ZeitUIThemesLayout> = [
   'pageWidth',
   'pageWidthWithMargin',
