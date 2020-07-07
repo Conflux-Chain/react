@@ -117,7 +117,6 @@ const Editor = () => {
           {isChinese ? '重置' : 'Reset'}
         </Button>
       </Text>
-      <p className="subtitle">conflux</p>
       <p className="subtitle">{isChinese ? '基础' : 'basic'}</p>
       <div className="content">
         {basicColors.map((item, index) => (
