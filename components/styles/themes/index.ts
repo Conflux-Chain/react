@@ -70,6 +70,13 @@ export interface ZeitUIThemesExpressiveness {
   shadowMedium: string
   shadowLarge: string
   portalOpacity: number
+  // radius
+  R0: string
+  R1: string
+  R2: string
+  R3: string
+  R4: string
+  R5: string
 }
 
 export interface ZeitUIThemesLayout {
