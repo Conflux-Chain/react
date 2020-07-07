@@ -70,6 +70,7 @@ export interface ZeitUIThemesExpressiveness {
   shadowMedium: string
   shadowLarge: string
   portalOpacity: number
+
   // radius
   R0: string
   R1: string
@@ -77,6 +78,12 @@ export interface ZeitUIThemesExpressiveness {
   R3: string
   R4: string
   R5: string
+
+  // drop shadows
+  D1: string
+  D2: string
+  D3: string
+  D4: string
 }
 
 export interface ZeitUIThemesLayout {

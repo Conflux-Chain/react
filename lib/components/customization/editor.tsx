@@ -82,6 +82,8 @@ const radiusExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = [
   'R4',
   'R5',
 ]
+
+const shadowExpressiveness: Array<keyof ZeitUIThemesExpressiveness> = ['D1', 'D2', 'D3', 'D4']
 const pageLayout: Array<keyof ZeitUIThemesLayout> = [
   'pageWidth',
   'pageWidthWithMargin',
@@ -152,9 +154,15 @@ const Editor = () => {
           <EditorInputItem key={`${item}-${index}`} groupName="expressiveness" keyName={item} />
         ))}
       </div>
-      <p className="subtitle">{isChinese ? ' 圆角' : 'radius'}</p>
+      <p className="subtitle">{isChinese ? '圆角' : 'radius'}</p>
       <div className="content">
         {radiusExpressiveness.map((item, index) => (
+          <EditorInputItem key={`${item}-${index}`} groupName="expressiveness" keyName={item} />
+        ))}
+      </div>
+      <p className="subtitle">box-shadow</p>
+      <div className="content">
+        {shadowExpressiveness.map((item, index) => (
           <EditorInputItem key={`${item}-${index}`} groupName="expressiveness" keyName={item} />
         ))}
       </div>

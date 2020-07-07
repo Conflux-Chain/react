@@ -42,6 +42,7 @@ export const palette: ZeitUIThemesPalette = {
   alert: '#ff0080',
   magenta: '#eb367f',
   link: '#0070f3',
+
   // conflux ui
   'Ctheme-0': '#E8F4FF',
   'Ctheme-1': '#CCE5FF',
@@ -80,6 +81,12 @@ export const expressiveness: ZeitUIThemesExpressiveness = {
   R3: '8px',
   R4: '12px',
   R5: '50%',
+
+  // drop shadows
+  D1: '0px 0px 2px rgba(0, 0, 0, 0.08)',
+  D2: '0px 4px 8px rgba(0, 0, 0, 0.08)',
+  D3: '0px 4px 8px rgba(0, 0, 0, 0.16)',
+  D4: '0px 8px 16px rgba(0, 0, 0, 0.24)',
 }
 
 export const font = defaultFont
