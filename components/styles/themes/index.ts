@@ -105,6 +105,8 @@ export interface ZeitUIThemesLayout {
 export interface ZeitUIThemesFont {
   sans: string
   mono: string
+  circular: string
+  pingfang: string
 }
 
 export interface BreakpointsItem {
