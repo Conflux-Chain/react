@@ -42,6 +42,24 @@ export const palette: ZeitUIThemesPalette = {
   alert: '#ff0080',
   magenta: '#eb367f',
   link: '#0070f3',
+  // conflux ui
+  'Ctheme-0': '#E8F4FF',
+  'Ctheme-1': '#CCE5FF',
+  'Ctheme-2': '#C0D8FC',
+  'Ctheme-3': '#A9BDE6',
+  'Ctheme-4': '#6D8BC8',
+  'Ctheme-5': '#0054FE',
+  'Ctheme-6': '#0433DC',
+  'Ctheme-7': '#0626AE',
+  'CBlack-0': '#282D30',
+  'CGray-0': '#F9FAFB',
+  'CGray-1': '#F1F3F6',
+  'CGray-2': '#EBECED',
+  'CGray-3': '#DBDDE0',
+  'CGray-4': '#AAAFBB',
+  'CGray-5': '#9B9EAC',
+  'CGray-6': '#444444',
+  'CWhite-0': '#FFFFFF',
 }
 
 export const expressiveness: ZeitUIThemesExpressiveness = {

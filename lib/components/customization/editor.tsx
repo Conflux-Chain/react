@@ -12,6 +12,25 @@ import EditorInputItem from './editor-input-item'
 import DefaultTheme from 'components/styles/themes/default'
 import { useConfigs } from 'lib/config-context'
 
+const confluxColors: Array<keyof ZeitUIThemesPalette> = [
+  'Ctheme-0',
+  'Ctheme-1',
+  'Ctheme-2',
+  'Ctheme-3',
+  'Ctheme-4',
+  'Ctheme-5',
+  'Ctheme-6',
+  'Ctheme-7',
+  'CBlack-0',
+  'CGray-0',
+  'CGray-1',
+  'CGray-2',
+  'CGray-3',
+  'CGray-4',
+  'CGray-5',
+  'CGray-6',
+  'CWhite-0',
+]
 const basicColors: Array<keyof ZeitUIThemesPalette> = [
   'accents_1',
   'accents_2',
@@ -87,6 +106,12 @@ const Editor = () => {
           {isChinese ? '重置' : 'Reset'}
         </Button>
       </Text>
+      <p className="subtitle">conflux</p>
+      <div className="content">
+        {confluxColors.map((item, index) => (
+          <EditorColorItem key={`${item}-${index}`} keyName={item} />
+        ))}
+      </div>
       <p className="subtitle">{isChinese ? '基础' : 'basic'}</p>
       <div className="content">
         {basicColors.map((item, index) => (

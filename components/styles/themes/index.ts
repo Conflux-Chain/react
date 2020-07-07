@@ -41,6 +41,23 @@ export interface ZeitUIThemesPalette {
   purple: string
   magenta: string
   alert: string
+  'Ctheme-0': string
+  'Ctheme-1': string
+  'Ctheme-2': string
+  'Ctheme-3': string
+  'Ctheme-4': string
+  'Ctheme-5': string
+  'Ctheme-6': string
+  'Ctheme-7': string
+  'CBlack-0': string
+  'CGray-0': string
+  'CGray-1': string
+  'CGray-2': string
+  'CGray-3': string
+  'CGray-4': string
+  'CGray-5': string
+  'CGray-6': string
+  'CWhite-0': string
 }
 
 export interface ZeitUIThemesExpressiveness {
