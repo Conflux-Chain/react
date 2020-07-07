@@ -59,7 +59,7 @@ exports[`Text should work with different styles 1`] = `
         }
       </style><p class=\\" \\">test-value</p><style>
         p {
-          color: #0070f3;
+          color: #58F17A;
         }
 
         .custom-size {
@@ -67,7 +67,7 @@ exports[`Text should work with different styles 1`] = `
         }
       </style><p class=\\" \\">test-value</p><style>
         p {
-          color: #f5a623;
+          color: #FFC438;
         }
 
         .custom-size {
@@ -75,7 +75,7 @@ exports[`Text should work with different styles 1`] = `
         }
       </style><p class=\\" \\">test-value</p><style>
         p {
-          color: #e00;
+          color: #E15C56;
         }
 
         .custom-size {

@@ -52,9 +52,9 @@ exports[`Note should work with different styles 1`] = `
           padding: 8pt 16pt;
           font-size: 14px;
           line-height: 1.8;
-          border: 1px solid #0070f3;
+          border: 1px solid #58F17A;
           color: white;
-          background-color: #0070f3;
+          background-color: #58F17A;
           border-radius: 5px;
         }
 
@@ -140,8 +140,8 @@ exports[`Note should work with different types 1`] = `
           padding: 8pt 16pt;
           font-size: 14px;
           line-height: 1.8;
-          border: 1px solid #0070f3;
-          color: #0070f3;
+          border: 1px solid #58F17A;
+          color: #58F17A;
           background-color: #fff;
           border-radius: 5px;
         }
@@ -161,8 +161,8 @@ exports[`Note should work with different types 1`] = `
           padding: 8pt 16pt;
           font-size: 14px;
           line-height: 1.8;
-          border: 1px solid #f5a623;
-          color: #f5a623;
+          border: 1px solid #FFC438;
+          color: #FFC438;
           background-color: #fff;
           border-radius: 5px;
         }
@@ -182,8 +182,8 @@ exports[`Note should work with different types 1`] = `
           padding: 8pt 16pt;
           font-size: 14px;
           line-height: 1.8;
-          border: 1px solid #e00;
-          color: #e00;
+          border: 1px solid #E15C56;
+          color: #E15C56;
           background-color: #fff;
           border-radius: 5px;
         }
