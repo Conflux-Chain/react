@@ -41,6 +41,8 @@ export interface ZeitUIThemesPalette {
   purple: string
   magenta: string
   alert: string
+
+  // conflux
   cThem0: string
   cThem1: string
   cThem2: string
@@ -58,6 +60,9 @@ export interface ZeitUIThemesPalette {
   cGray5: string
   cGray6: string
   cWhite0: string
+  brandLight: string
+  brand: string
+  brandDark: string
 }
 
 export interface ZeitUIThemesExpressiveness {
