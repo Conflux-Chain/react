@@ -83,12 +83,14 @@ export const meta = {
 <Attributes edit="/pages/zh-cn/components/loading.mdx">
 <Attributes.Title>Loading.Props</Attributes.Title>
 
-| 属性       | 描述               | 类型             | 推荐值                                                  | 默认      |
-| ---------- | ------------------ | ---------------- | ------------------------------------------------------- | --------- |
-| **type**   | 指示器的类型       | `NormalTypes`    | `'default', 'primary', 'secondary'` | `default` |
-| **size**   | 指示器的大小       | `NormalSizes`    | `'mini', 'small', 'medium', 'large'`                    | `medium`  |
-| **color**  | 自定义指示器的色彩 | `string`         | -                                                       | -         |
-| ...        | 原生属性           | `HTMLAttributes` | `'id', 'title', 'className', ...`                       | -         |
+| 属性      | 描述               | 类型             | 推荐值                               | 默认      |
+| --------- | ------------------ | ---------------- | ------------------------------------ | --------- |
+| **type**  | 指示器的类型       | `NormalTypes`    | `'default', 'primary', 'secondary'`  | `default` |
+| **size**  | 指示器的大小       | `NormalSizes`    | `'mini', 'small', 'medium', 'large'` | `medium`  |
+| **color** | 自定义指示器的色彩 | `string`         | -                                    | -         |
+| ...       | 原生属性           | `HTMLAttributes` | `'id', 'title', 'className', ...`    | -         |
+
+`color` 和 `type` 同时的时候，`color` 的优先级更高
 
 </Attributes>
 

@@ -5,7 +5,6 @@ import { Loading } from 'components'
 describe('Loading', () => {
   it('should render correctly', () => {
     const wrapper = mount(<Loading />)
-    expect(wrapper.html()).toMatchSnapshot()
     expect(() => wrapper.unmount()).toMatchSnapshot()
   })
 

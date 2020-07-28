@@ -30,7 +30,11 @@ const getIconSize = (size: NormalSizes) => {
   return sizes[size] || size
 }
 
-const getIconStrokeColor = (type: NormalTypes = 'default', palette: ZeitUIThemesPalette, color?: string) => {
+const getIconStrokeColor = (
+  type: NormalTypes = 'default',
+  palette: ZeitUIThemesPalette,
+  color?: string,
+) => {
   console.log('color', color, type)
   if (color) {
     return color
@@ -61,14 +65,21 @@ const Loading: React.FC<React.PropsWithChildren<LoadingProps>> = ({
     color,
   ])
 
-  // console.log('color',color)
   return (
     <div className="loading-container">
       <span className="loading">
         {children && <label>{children}</label>}
-        <svg className='svg' width={width} height={width} viewBox="0 0 16 16" fill="none">
-          <path fillRule="evenodd" clipRule="evenodd" d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z" fill={color} />
-          <path d="M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z" fill={color} />
+        <svg className="svg" width={width} height={width} viewBox="0 0 16 16" fill="none">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z"
+            fill={color}
+          />
+          <path
+            d="M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z"
+            fill={color}
+          />
         </svg>
       </span>
       <style jsx>{`
@@ -94,24 +105,22 @@ const Loading: React.FC<React.PropsWithChildren<LoadingProps>> = ({
           user-select: none;
         }
 
-        label{
-          margin-right:5px
+        label {
+          margin-right: 5px;
         }
 
-        .svg{
-          animation: loading-rotate  1.4s infinite;
+        .svg {
+          animation: loading-rotate 1.4s infinite;
         }
-
 
         @keyframes loading-rotate {
           0% {
-            transform:rotate(0)
+            transform: rotate(0);
           }
 
           100% {
-            transform:rotate(360deg)
+            transform: rotate(360deg);
           }
-
         }
       `}</style>
     </div>
