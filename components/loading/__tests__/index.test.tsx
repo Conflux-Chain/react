@@ -11,6 +11,7 @@ describe('Loading', () => {
   it('should work with different types', () => {
     const wrapper = mount(
       <div>
+        <Loading type="primary" />
         <Loading type="success" />
         <Loading type="secondary" />
         <Loading type="warning" />

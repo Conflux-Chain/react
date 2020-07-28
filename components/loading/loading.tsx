@@ -35,7 +35,6 @@ const getIconStrokeColor = (
   palette: ZeitUIThemesPalette,
   color?: string,
 ) => {
-  console.log('color', color, type)
   if (color) {
     return color
   } else {
