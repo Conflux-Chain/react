@@ -10,8 +10,8 @@ export interface SelectSize {
 export const getSizes = (theme: ZeitUIThemes, size?: NormalSizes) => {
   const sizes: { [key in NormalSizes]: SelectSize } = {
     medium: {
-      height: `calc(1.688 * ${theme.layout.gap})`,
-      fontSize: '.875rem',
+      height: `calc(1.969 * ${theme.layout.gap})`,
+      fontSize: '1rem',
       minWidth: '10rem',
     },
     small: {

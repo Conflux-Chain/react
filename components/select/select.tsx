@@ -25,6 +25,7 @@ interface Props {
   multiple?: boolean
   className?: string
   width?: string
+  variant?: string
   dropdownClassName?: string
   dropdownStyle?: object
   disableMatchWidth?: boolean
@@ -38,6 +39,7 @@ const defaultProps = {
   multiple: false,
   width: 'initial',
   className: '',
+  variant: 'line',
   disableMatchWidth: false,
 }
 
@@ -56,6 +58,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   multiple,
   placeholder,
   width,
+  variant,
   className,
   dropdownClassName,
   dropdownStyle,
@@ -75,6 +78,9 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
     return value.length === 0
   }, [value])
   const sizes = useMemo(() => getSizes(theme, size), [theme, size])
+  const isText = useMemo(() => {
+    return variant === 'text'
+  }, [variant])
 
   const updateVisible = (next: boolean) => setVisible(next)
   const updateValue = (next: string) => {
@@ -92,6 +98,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   const initialValue: SelectConfig = useMemo(
     () => ({
       value,
+      variant,
       visible,
       updateValue,
       updateVisible,
@@ -99,7 +106,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
       ref,
       disableAll: disabled,
     }),
-    [visible, size, disabled, ref, value, multiple],
+    [visible, size, disabled, ref, value, multiple, variant],
   )
 
   const clickHandler = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -168,12 +175,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             width: ${width};
             overflow: hidden;
             transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: 1px solid ${theme.palette.border};
+            border: ${isText ? 'none' : `1px solid ${theme.palette.cGray3}`};
             border-radius: ${theme.expressiveness.R2};
-            padding: 0 ${theme.layout.gapQuarter} 0 ${theme.layout.gapHalf};
+            padding: 0 calc(${theme.layout.gapHalf} * 9 / 8) 0 calc(${theme.layout.gapHalf} * 1.5);
             height: ${sizes.height};
             min-width: ${sizes.minWidth};
-            background-color: ${disabled ? theme.palette.accents_1 : theme.palette.background};
+            background-color: transparent;
           }
 
           .multiple {
@@ -184,11 +191,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .select:hover {
-            border-color: ${disabled ? theme.palette.border : theme.palette.foreground};
+            border-color: ${disabled ? theme.palette.cGray3 : theme.palette.cTheme5};
           }
 
-          .select:hover .icon {
-            color: ${disabled ? theme.palette.accents_5 : theme.palette.foreground};
+          .select:hover .icon,
+          .select:hover .value {
+            color: ${disabled ? theme.palette.cGray3 : theme.palette.cTheme5};
           }
 
           .value {
@@ -200,8 +208,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             padding: 0;
             margin-right: 1.25rem;
             font-size: ${sizes.fontSize};
-            color: ${disabled ? theme.palette.accents_4 : theme.palette.foreground};
+            color: ${disabled ? theme.palette.cGray3 : theme.palette.cGray6};
             width: calc(100% - 1.25rem);
+          }
+
+          .value :global(svg) {
+            display: none;
           }
 
           .value > :global(div),
@@ -214,12 +226,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .placeholder {
-            color: ${theme.palette.accents_3};
+            color: ${disabled ? theme.palette.cGray3 : theme.palette.cGray5};
           }
 
           .icon {
             position: absolute;
-            right: ${theme.layout.gapQuarter};
+            right: calc(${theme.layout.gapHalf} * 9 / 8);
             font-size: ${sizes.fontSize};
             top: 50%;
             bottom: 0;
@@ -228,7 +240,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             transition: transform 200ms ease;
             display: flex;
             align-items: center;
-            color: ${theme.palette.accents_5};
+            color: ${disabled ? theme.palette.cGray3 : theme.palette.cGray6};
           }
         `}</style>
       </div>

@@ -1,6 +1,8 @@
 import React, { useMemo } from 'react'
 import withDefaults from '../utils/with-defaults'
+import Check from '@zeit-ui/react-icons/check'
 import useTheme from '../styles/use-theme'
+import useRgb from '../styles/use-rgb'
 import { useSelectContext } from './select-context'
 import useWarning from '../utils/use-warning'
 import Ellipsis from '../shared/ellipsis'
@@ -36,7 +38,7 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
   ...props
 }) => {
   const theme = useTheme()
-  const { updateValue, value, disableAll } = useSelectContext()
+  const { updateValue, value, disableAll, variant } = useSelectContext()
   const isDisabled = useMemo(() => disabled || disableAll, [disabled, disableAll])
   const isLabel = useMemo(() => label || divider, [label, divider])
   if (!isLabel && identValue === undefined) {
@@ -52,19 +54,25 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
   }, [identValue, value])
 
   const bgColor = useMemo(() => {
-    if (isDisabled) return theme.palette.accents_1
-    return selected ? theme.palette.accents_2 : theme.palette.background
+    if (isDisabled) return theme.palette.cGray3
+    return selected ? theme.palette.cTheme5 : theme.palette.cWhite0
   }, [selected, isDisabled, theme.palette])
 
+  const rgb = useRgb(theme.palette.cTheme5)
   const hoverBgColor = useMemo(() => {
     if (isDisabled || isLabel || selected) return bgColor
-    return theme.palette.accents_1
+    return rgb
   }, [selected, isDisabled, theme.palette, isLabel, bgColor])
 
   const color = useMemo(() => {
-    if (isDisabled) return theme.palette.accents_4
-    return selected ? theme.palette.foreground : theme.palette.accents_5
+    if (isDisabled) return theme.palette.cGray4
+    return selected ? theme.palette.cWhite0 : theme.palette.accents_5
   }, [selected, isDisabled, theme.palette])
+
+  const hoverColor = useMemo(() => {
+    if (isDisabled || isLabel || selected) return color
+    return theme.palette.cTheme5
+  }, [selected, isDisabled, theme.palette, isLabel, color])
 
   const clickHandler = (event: React.MouseEvent<HTMLDivElement>) => {
     if (preventAllEvents) return
@@ -82,18 +90,19 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
         onClick={clickHandler}
         {...props}>
         <Ellipsis height={`calc(1.688 * ${theme.layout.gap})`}>{children}</Ellipsis>
+        {selected && <Check size={18} />}
       </div>
 
       <style jsx>{`
         .option {
           display: flex;
           max-width: 100%;
-          justify-content: flex-start;
+          justify-content: space-between;
           align-items: center;
           font-weight: normal;
           font-size: 0.75rem;
-          height: calc(1.688 * ${theme.layout.gap});
-          padding: 0 ${theme.layout.gapHalf};
+          height: calc(1.875 * ${theme.layout.gap});
+          padding: 0 calc(1.5 * ${theme.layout.gapHalf});
           background-color: ${bgColor};
           color: ${color};
           user-select: none;
@@ -103,8 +112,12 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
         }
 
         .option:hover {
-          background-color: ${hoverBgColor};
-          color: ${theme.palette.accents_7};
+          background-color: ${variant === 'line'
+            ? theme.palette.cWhite0
+            : typeof hoverBgColor === 'string'
+            ? hoverBgColor
+            : `rgba(${hoverBgColor.r}, ${hoverBgColor.g}, ${hoverBgColor.b}, 0.04)`};
+          color: ${hoverColor};
         }
 
         .divider {

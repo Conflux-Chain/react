@@ -3,6 +3,7 @@ import { NormalSizes } from '../utils/prop-types'
 
 export interface SelectConfig {
   value?: string | string[]
+  variant?: string
   updateValue?: Function
   visible?: boolean
   updateVisible?: Function
@@ -13,6 +14,7 @@ export interface SelectConfig {
 
 const defaultContext = {
   visible: false,
+  variant: 'line',
   size: 'medium' as NormalSizes,
   disableAll: false,
 }
