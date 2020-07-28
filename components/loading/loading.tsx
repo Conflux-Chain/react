@@ -27,14 +27,10 @@ const getIconSize = (size: NormalSizes) => {
     medium: '20px',
     large: '25px',
   }
-  return sizes[size] || size
+  return sizes[size]
 }
 
-const getIconStrokeColor = (
-  type: NormalTypes = 'default',
-  palette: ZeitUIThemesPalette,
-  color?: string,
-) => {
+const getIconStrokeColor = (type: NormalTypes, palette: ZeitUIThemesPalette, color?: string) => {
   if (color) {
     return color
   } else {
@@ -46,7 +42,7 @@ const getIconStrokeColor = (
       warning: palette.warning,
       error: palette.error,
     }
-    return colors[type] || 'black'
+    return colors[type]
   }
 }
 

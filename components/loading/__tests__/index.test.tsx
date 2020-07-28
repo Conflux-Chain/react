@@ -5,13 +5,12 @@ import { Loading } from 'components'
 describe('Loading', () => {
   it('should render correctly', () => {
     const wrapper = mount(<Loading />)
-    expect(() => wrapper.unmount()).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('should work with different types', () => {
     const wrapper = mount(
       <div>
-        <Loading type="primary" />
         <Loading type="success" />
         <Loading type="secondary" />
         <Loading type="warning" />
@@ -19,7 +18,6 @@ describe('Loading', () => {
       </div>,
     )
     expect(wrapper.html()).toMatchSnapshot()
-    expect(() => wrapper.unmount()).toMatchSnapshot()
   })
 
   it('should work with different sizes', () => {
@@ -32,7 +30,6 @@ describe('Loading', () => {
       </div>,
     )
     expect(wrapper.html()).toMatchSnapshot()
-    expect(() => wrapper.unmount()).toMatchSnapshot()
   })
 
   it('should work with custom styles', () => {
@@ -44,7 +41,6 @@ describe('Loading', () => {
       </div>,
     )
     expect(wrapper.html()).toMatchSnapshot()
-    expect(() => wrapper.unmount()).toMatchSnapshot()
   })
 
   it('should work with children', () => {
