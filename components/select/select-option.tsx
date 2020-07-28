@@ -54,24 +54,38 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
   }, [identValue, value])
 
   const bgColor = useMemo(() => {
-    if (isDisabled) return theme.palette.cGray3
-    return selected ? theme.palette.cTheme5 : theme.palette.cWhite0
+    if (isDisabled) return theme.palette.cNeutral3
+    return selected && variant !== 'text' ? theme.palette.cTheme5 : theme.palette.cNeutral8
   }, [selected, isDisabled, theme.palette])
 
   const rgb = useRgb(theme.palette.cTheme5)
   const hoverBgColor = useMemo(() => {
     if (isDisabled || isLabel || selected) return bgColor
-    return rgb
+    return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.04)`
   }, [selected, isDisabled, theme.palette, isLabel, bgColor])
 
   const color = useMemo(() => {
-    if (isDisabled) return theme.palette.cGray4
-    return selected ? theme.palette.cWhite0 : theme.palette.accents_5
+    if (isDisabled) return theme.palette.cNeutral4
+    return selected
+      ? variant === 'text'
+        ? theme.palette.cTheme5
+        : theme.palette.cNeutral8
+      : theme.palette.cNeutral6
   }, [selected, isDisabled, theme.palette])
 
   const hoverColor = useMemo(() => {
     if (isDisabled || isLabel || selected) return color
     return theme.palette.cTheme5
+  }, [selected, isDisabled, theme.palette, isLabel, color])
+
+  const border = useMemo(() => {
+    if (isDisabled || variant !== 'text') return '0'
+    return selected ? `1px solid ${theme.palette.cTheme5}` : `1px solid ${theme.palette.cNeutral8}`
+  }, [selected, isDisabled, theme.palette])
+
+  const hoverBorder = useMemo(() => {
+    if (isDisabled || isLabel || selected || variant !== 'text') return border
+    return `1px solid rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.12)`
   }, [selected, isDisabled, theme.palette, isLabel, color])
 
   const clickHandler = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -106,18 +120,15 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
           background-color: ${bgColor};
           color: ${color};
           user-select: none;
-          border: 0;
+          border: ${border};
           cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
           transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
         }
 
         .option:hover {
-          background-color: ${variant === 'line'
-            ? theme.palette.cWhite0
-            : typeof hoverBgColor === 'string'
-            ? hoverBgColor
-            : `rgba(${hoverBgColor.r}, ${hoverBgColor.g}, ${hoverBgColor.b}, 0.04)`};
+          background-color: ${variant === 'text' ? theme.palette.cNeutral8 : hoverBgColor};
           color: ${hoverColor};
+          border: ${hoverBorder};
         }
 
         .divider {

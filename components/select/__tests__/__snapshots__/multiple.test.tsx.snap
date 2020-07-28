@@ -138,6 +138,9 @@ exports[`Select Multiple should render correctly 1`] = `
           .value :global(svg) {
             display: none;
           }
+          .value :global(.option) {
+            border: 0;
+          }
 
           .value > :global(div),
           .value > :global(div:hover) {

@@ -175,7 +175,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             width: ${width};
             overflow: hidden;
             transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: ${isText ? 'none' : `1px solid ${theme.palette.cGray3}`};
+            border: ${isText ? 'none' : `1px solid ${theme.palette.cNeutral3}`};
             border-radius: ${theme.expressiveness.R2};
             padding: 0 calc(${theme.layout.gapHalf} * 9 / 8) 0 calc(${theme.layout.gapHalf} * 1.5);
             height: ${sizes.height};
@@ -191,12 +191,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .select:hover {
-            border-color: ${disabled ? theme.palette.cGray3 : theme.palette.cTheme5};
+            border-color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cTheme5};
           }
 
           .select:hover .icon,
           .select:hover .value {
-            color: ${disabled ? theme.palette.cGray3 : theme.palette.cTheme5};
+            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cTheme5};
           }
 
           .value {
@@ -208,12 +208,15 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             padding: 0;
             margin-right: 1.25rem;
             font-size: ${sizes.fontSize};
-            color: ${disabled ? theme.palette.cGray3 : theme.palette.cGray6};
+            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cNeutral6};
             width: calc(100% - 1.25rem);
           }
 
           .value :global(svg) {
             display: none;
+          }
+          .value :global(.option) {
+            border: 0;
           }
 
           .value > :global(div),
@@ -226,7 +229,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .placeholder {
-            color: ${disabled ? theme.palette.cGray3 : theme.palette.cGray5};
+            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cNeutral5};
           }
 
           .icon {
@@ -240,7 +243,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             transition: transform 200ms ease;
             display: flex;
             align-items: center;
-            color: ${disabled ? theme.palette.cGray3 : theme.palette.cGray6};
+            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cNeutral6};
           }
         `}</style>
       </div>
