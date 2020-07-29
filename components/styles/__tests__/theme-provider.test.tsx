@@ -78,4 +78,9 @@ describe('ThemeProvider', () => {
     const { result } = renderHook(() => useRgb('#0054fe'))
     expect(result.current).toEqual({ r: 0, g: 84, b: 254 })
   })
+
+  it('useRgb export null when input a invlid value', () => {
+    const { result } = renderHook(() => useRgb('abc'))
+    expect(result.current).toEqual(null)
+  })
 })
