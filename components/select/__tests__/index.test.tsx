@@ -129,7 +129,7 @@ describe('Select', () => {
     expect(wrapper.find('.value').text()).toContain('Option 1')
   })
 
-  it('should be change when value changed and variant=text', async () => {
+  it('should render right border with variant=text when hover', async () => {
     const wrapper = mount(
       <Select variant="text">
         <Select.Option value="1">Option 1</Select.Option>
@@ -139,8 +139,7 @@ describe('Select', () => {
     wrapper.find('.select').simulate('click', nativeEvent)
     const option = wrapper.find('.select-dropdown').find('.option').at(0)
     option.simulate('mouseover')
-    await updateWrapper(wrapper, 350)
-    expect(wrapper.html()).toMatchSnapshot()
+    expect(option.html()).toMatchSnapshot()
     expect(() => wrapper.unmount()).not.toThrow()
   })
 

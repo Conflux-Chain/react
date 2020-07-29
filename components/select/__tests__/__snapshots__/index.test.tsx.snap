@@ -1,105 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select should be change when value changed and variant=text 1`] = `
-"<div class=\\"select  \\"><span class=\\"value placeholder\\"><span><style>
-        span {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          line-height: calc(1.969 * 16pt);
-          min-width: 0;
-        }
-      </style></span></span><div class=\\"icon\\"><svg viewBox=\\"0 0 24 24\\" width=\\"1.25em\\" height=\\"1.25em\\" stroke-width=\\"1\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" fill=\\"none\\" shape-rendering=\\"geometricPrecision\\"><path d=\\"M6 9l6 6 6-6\\"></path><style>
-        svg {
-          color: inherit;
-          stroke: currentColor;
-          transition: all 200ms ease;
-        }
-      </style></svg></div><style>
-          .select {
-            display: inline-flex;
-            align-items: center;
-            user-select: none;
-            white-space: nowrap;
-            position: relative;
-            cursor: pointer;
-            max-width: 80vw;
-            width: initial;
-            overflow: hidden;
-            transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: none;
-            border-radius: 4px;
-            padding: 0 calc(8pt * 9 / 8) 0 calc(8pt * 1.5);
-            height: calc(1.969 * 16pt);
-            min-width: 10rem;
-            background-color: transparent;
-          }
-
-          .multiple {
-            height: auto;
-            min-height: calc(1.969 * 16pt);
-            padding: 4pt calc(1rem * 2)
-              4pt 8pt;
-          }
-
-          .select:hover {
-            border-color: #0054fe;
-          }
-
-          .select:hover .icon,
-          .select:hover .value {
-            color: #0054fe;
-          }
-
-          .value {
-            display: inline-flex;
-            flex: 1;
-            height: 100%;
-            align-items: center;
-            line-height: 1;
-            padding: 0;
-            margin-right: 1.25rem;
-            font-size: 1rem;
-            color: #444;
-            width: calc(100% - 1.25rem);
-          }
-
-          .value :global(svg) {
-            display: none;
-          }
-          .value :global(.option) {
-            border: 0;
-          }
-
-          .value > :global(div),
-          .value > :global(div:hover) {
-            border-radius: 0;
-            background-color: transparent;
-            padding: 0;
-            margin: 0;
-            color: inherit;
-          }
-
-          .placeholder {
-            color: #9b9eac;
-          }
-
-          .icon {
-            position: absolute;
-            right: calc(8pt * 9 / 8);
-            font-size: 1rem;
-            top: 50%;
-            bottom: 0;
-            transform: translateY(-50%) rotate(180deg);
-            pointer-events: none;
-            transition: transform 200ms ease;
-            display: flex;
-            align-items: center;
-            color: #444;
-          }
-        </style></div>"
-`;
-
 exports[`Select should render correctly 1`] = `
 "<div><div class=\\"select  \\"><span class=\\"value placeholder\\"><span><style>
         span {
@@ -627,6 +527,18 @@ exports[`Select should render correctly when variant=text 1`] = `
             color: #444;
           }
         </style></div>,</div>"
+`;
+
+exports[`Select should render right border with variant=text when hover 1`] = `
+"<div class=\\"option   \\"><span>Option 1<style>
+        span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: calc(1.688 * 16pt);
+          min-width: 0;
+        }
+      </style></span></div>"
 `;
 
 exports[`Select should work correctly with labels 1`] = `
