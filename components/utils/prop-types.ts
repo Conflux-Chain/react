@@ -13,6 +13,8 @@ const buttonTypes = tuple(
   'error-light',
 )
 
+const selectTypes = tuple('line', 'text')
+
 const normalSizes = tuple('mini', 'small', 'medium', 'large')
 
 const normalTypes = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
@@ -59,6 +61,8 @@ const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')
 export type ButtonTypes = typeof buttonTypes[number]
 
 export type NormalSizes = typeof normalSizes[number]
+
+export type SelectTypes = typeof selectTypes[number]
 
 export type NormalTypes = typeof normalTypes[number]
 

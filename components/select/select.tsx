@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
-import { NormalSizes } from '../utils/prop-types'
+import { NormalSizes, SelectTypes } from '../utils/prop-types'
 import useTheme from '../styles/use-theme'
 import useClickAway from '../utils/use-click-away'
 import useCurrentState from '../utils/use-current-state'
@@ -25,7 +25,7 @@ interface Props {
   multiple?: boolean
   className?: string
   width?: string
-  variant?: string
+  variant?: SelectTypes
   dropdownClassName?: string
   dropdownStyle?: object
   disableMatchWidth?: boolean
