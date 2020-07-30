@@ -433,7 +433,7 @@ exports[`Select should render correctly when variant=text 1`] = `
 
         .label {
           font-size: 0.875rem;
-          color: #333;
+          color: #0054fe;
           border-bottom: 1px solid #eaeaea;
           text-transform: capitalize;
           cursor: default;
