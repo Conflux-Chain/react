@@ -16,6 +16,13 @@ type optionColors = {
   hoverBorder: string
 }
 
+type selectColors = {
+  color: string
+  hoverColor: string
+  border: string
+  placeholderColor: string
+}
+
 export const getSizes = (theme: ZeitUIThemes, size?: NormalSizes) => {
   const sizes: { [key in NormalSizes]: SelectSize } = {
     medium: {
@@ -45,7 +52,7 @@ export const getSizes = (theme: ZeitUIThemes, size?: NormalSizes) => {
 
 export const getOptionColors = (
   selected: boolean,
-  isDisabled: boolean = false,
+  disabled: boolean = false,
   palette: ZeitUIThemesPalette,
   isLabel: boolean = false,
   variant: SelectTypes = 'line',
@@ -56,10 +63,10 @@ export const getOptionColors = (
     line: {
       color: selected ? palette.cNeutral8 : palette.cNeutral6,
       bgColor: selected ? palette.cTheme5 : palette.cNeutral8,
-      border: '0',
+      border: 'none',
       hoverColor: palette.cTheme5,
       hoverBgColor: selected ? palette.cTheme5 : `rgba(${r}, ${g}, ${b}, 0.04)`,
-      hoverBorder: '0',
+      hoverBorder: 'none',
     },
     text: {
       color: selected ? palette.cTheme5 : palette.cNeutral6,
@@ -72,25 +79,46 @@ export const getOptionColors = (
         : `1px solid rgba(${r}, ${g}, ${b}, 0.12)`,
     },
   }
-  if (isDisabled) {
+  if (disabled) {
     return {
       color: palette.cNeutral4,
       bgColor: palette.cNeutral3,
-      border: '0',
+      border: 'none',
       hoverColor: palette.cNeutral4,
       hoverBgColor: palette.cNeutral3,
-      hoverBorder: '0',
+      hoverBorder: 'none',
     }
   }
   if (isLabel) {
     return {
       color: palette.cNeutral7,
       bgColor: palette.cNeutral8,
-      border: '0',
+      border: 'none',
       hoverColor: palette.cNeutral7,
       hoverBgColor: palette.cNeutral8,
-      hoverBorder: '0',
+      hoverBorder: 'none',
     }
   }
   return variant ? colors[variant] : colors.line
+}
+
+export const getSelectColors = (
+  disabled: boolean = false,
+  palette: ZeitUIThemesPalette,
+  variant: SelectTypes = 'line',
+): selectColors => {
+  if (disabled) {
+    return {
+      color: palette.cNeutral3,
+      hoverColor: palette.cNeutral3,
+      placeholderColor: palette.cNeutral3,
+      border: variant === 'text' ? 'none' : `1px solid ${palette.cNeutral3}`,
+    }
+  }
+  return {
+    color: palette.cNeutral6,
+    hoverColor: palette.cTheme5,
+    placeholderColor: palette.cNeutral5,
+    border: variant === 'text' ? 'none' : `1px solid ${palette.cNeutral3}`,
+  }
 }

@@ -10,7 +10,7 @@ import SelectDropdown from './select-dropdown'
 import SelectMultipleValue from './select-multiple-value'
 import Grid from '../grid'
 import { SelectContext, SelectConfig } from './select-context'
-import { getSizes } from './styles'
+import { getSizes, getSelectColors } from './styles'
 import Ellipsis from '../shared/ellipsis'
 
 interface Props {
@@ -78,9 +78,10 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
     return value.length === 0
   }, [value])
   const sizes = useMemo(() => getSizes(theme, size), [theme, size])
-  const isText = useMemo(() => {
-    return variant === 'text'
-  }, [variant])
+
+  const colors = useMemo(() => {
+    return getSelectColors(disabled, theme.palette, variant)
+  }, [disabled, theme.palette, variant])
 
   const updateVisible = (next: boolean) => setVisible(next)
   const updateValue = (next: string) => {
@@ -175,7 +176,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             width: ${width};
             overflow: hidden;
             transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: ${isText ? 'none' : `1px solid ${theme.palette.cNeutral3}`};
+            border: ${colors.border};
             border-radius: ${theme.expressiveness.R2};
             padding: 0 calc(${theme.layout.gapHalf} * 9 / 8) 0 calc(${theme.layout.gapHalf} * 1.5);
             height: ${sizes.height};
@@ -191,12 +192,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .select:hover {
-            border-color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cTheme5};
+            border-color: ${colors.hoverColor};
           }
 
           .select:hover .icon,
           .select:hover .value {
-            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cTheme5};
+            color: ${colors.hoverColor};
           }
 
           .value {
@@ -208,7 +209,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             padding: 0;
             margin-right: 1.25rem;
             font-size: ${sizes.fontSize};
-            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cNeutral6};
+            color: ${colors.color};
             width: calc(100% - 1.25rem);
           }
 
@@ -229,7 +230,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .placeholder {
-            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cNeutral5};
+            color: ${colors.placeholderColor};
           }
 
           .icon {
@@ -243,7 +244,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             transition: transform 200ms ease;
             display: flex;
             align-items: center;
-            color: ${disabled ? theme.palette.cNeutral3 : theme.palette.cNeutral6};
+            color: ${colors.color};
           }
         `}</style>
       </div>
