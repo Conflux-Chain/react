@@ -49,9 +49,9 @@ export const getOptionColors = (
   palette: ZeitUIThemesPalette,
   isLabel: boolean = false,
   variant: SelectTypes = 'line',
-  rgb: { r: number; g: number; b: number },
+  rgb: number[],
 ) => {
-  const { r, g, b } = rgb
+  const [r, g, b] = rgb
   const colors: { [key in SelectTypes]: optionColors } = {
     line: {
       color: selected ? palette.cNeutral8 : palette.cNeutral6,

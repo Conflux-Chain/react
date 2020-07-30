@@ -5,7 +5,6 @@ import DefaultThemes from '../themes/default'
 import { ZeitProvider, ZeitUIThemes, Text } from 'components'
 import { DeepPartial } from 'components/utils/types'
 import { renderHook } from '@testing-library/react-hooks'
-import useRgb from '../use-rgb'
 
 describe('ThemeProvider', () => {
   it('should deep merge objects but not add new key', () => {
@@ -72,15 +71,5 @@ describe('ThemeProvider', () => {
     expect(errorSpy).toHaveBeenCalled()
     errorSpy.mockRestore()
     wrapper.unmount()
-  })
-
-  it('useRgb export right rgb value', () => {
-    const { result } = renderHook(() => useRgb('#0054fe'))
-    expect(result.current).toEqual({ r: 0, g: 84, b: 254 })
-  })
-
-  it('useRgb export null when input a invlid value', () => {
-    const { result } = renderHook(() => useRgb('abc'))
-    expect(result.current).toEqual(null)
   })
 })

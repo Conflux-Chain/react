@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import withDefaults from '../utils/with-defaults'
 import Check from '@zeit-ui/react-icons/check'
 import useTheme from '../styles/use-theme'
-import useRgb from '../styles/use-rgb'
+import { colorToRgbValues } from '../utils/color'
 import { useSelectContext } from './select-context'
 import { getOptionColors } from './styles'
 import useWarning from '../utils/use-warning'
@@ -54,7 +54,7 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
     return value.includes(`${identValue}`)
   }, [identValue, value])
 
-  const rgb = useRgb(theme.palette.cTheme5)
+  const rgb = colorToRgbValues(theme.palette.cTheme5)
   const colors = useMemo(() => {
     return getOptionColors(selected, isDisabled, theme.palette, isLabel, variant, rgb)
   }, [selected, isDisabled, theme.palette, isLabel])
