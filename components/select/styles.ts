@@ -1,6 +1,5 @@
 import { NormalSizes, SelectTypes } from 'components/utils/prop-types'
 import { ZeitUIThemes, ZeitUIThemesPalette } from 'components/styles/themes'
-import useRgb from '../styles/use-rgb'
 
 export interface SelectSize {
   height: string
