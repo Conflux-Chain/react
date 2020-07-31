@@ -4,7 +4,6 @@ import { deepMergeObject } from '../theme-provider/theme-provider'
 import DefaultThemes from '../themes/default'
 import { ZeitProvider, ZeitUIThemes, Text } from 'components'
 import { DeepPartial } from 'components/utils/types'
-import { renderHook } from '@testing-library/react-hooks'
 
 describe('ThemeProvider', () => {
   it('should deep merge objects but not add new key', () => {
