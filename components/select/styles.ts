@@ -63,40 +63,38 @@ export const getOptionColors = (
     line: {
       color: selected ? palette.cNeutral8 : palette.cNeutral6,
       bgColor: selected ? palette.cTheme5 : palette.cNeutral8,
-      border: 'none',
-      hoverColor: palette.cTheme5,
+      border: 'transparent',
+      hoverColor: selected ? palette.cNeutral8 : palette.cTheme5,
       hoverBgColor: selected ? palette.cTheme5 : `rgba(${r}, ${g}, ${b}, 0.04)`,
-      hoverBorder: 'none',
+      hoverBorder: 'transparent',
     },
     text: {
       color: selected ? palette.cTheme5 : palette.cNeutral6,
       bgColor: palette.cNeutral8,
-      border: selected ? `1px solid ${palette.cTheme5}` : `1px solid ${palette.cNeutral8}`,
+      border: selected ? palette.cTheme5 : 'transparent',
       hoverColor: palette.cTheme5,
       hoverBgColor: palette.cNeutral8,
-      hoverBorder: selected
-        ? `1px solid ${palette.cTheme5}`
-        : `1px solid rgba(${r}, ${g}, ${b}, 0.12)`,
+      hoverBorder: selected ? palette.cTheme5 : `rgba(${r}, ${g}, ${b}, 0.12)`,
     },
   }
   if (disabled) {
     return {
       color: palette.cNeutral4,
       bgColor: palette.cNeutral3,
-      border: 'none',
+      border: 'transparent',
       hoverColor: palette.cNeutral4,
       hoverBgColor: palette.cNeutral3,
-      hoverBorder: 'none',
+      hoverBorder: 'transparent',
     }
   }
   if (isLabel) {
     return {
       color: palette.cNeutral7,
       bgColor: palette.cNeutral8,
-      border: 'none',
+      border: 'transparent',
       hoverColor: palette.cNeutral7,
       hoverBgColor: palette.cNeutral8,
-      hoverBorder: 'none',
+      hoverBorder: 'transparent',
     }
   }
   return variant ? colors[variant] : colors.line
@@ -112,13 +110,13 @@ export const getSelectColors = (
       color: palette.cNeutral3,
       hoverColor: palette.cNeutral3,
       placeholderColor: palette.cNeutral3,
-      border: variant === 'text' ? 'none' : `1px solid ${palette.cNeutral3}`,
+      border: variant === 'text' ? 'parent' : palette.cNeutral3,
     }
   }
   return {
     color: palette.cNeutral6,
     hoverColor: palette.cTheme5,
     placeholderColor: palette.cNeutral5,
-    border: variant === 'text' ? 'none' : `1px solid ${palette.cNeutral3}`,
+    border: variant === 'text' ? 'parent' : palette.cNeutral3,
   }
 }

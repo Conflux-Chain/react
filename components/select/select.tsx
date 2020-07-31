@@ -176,7 +176,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             width: ${width};
             overflow: hidden;
             transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: ${colors.border};
+            border: 1px solid ${colors.border};
             border-radius: ${theme.expressiveness.R2};
             padding: 0 calc(${theme.layout.gapHalf} * 9 / 8) 0 calc(${theme.layout.gapHalf} * 1.5);
             height: ${sizes.height};
@@ -217,7 +217,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),

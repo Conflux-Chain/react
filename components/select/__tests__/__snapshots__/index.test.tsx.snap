@@ -68,7 +68,7 @@ exports[`Select should render correctly 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
@@ -164,7 +164,7 @@ exports[`Select should render correctly 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
@@ -260,7 +260,7 @@ exports[`Select should render correctly 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
@@ -356,7 +356,7 @@ exports[`Select should render correctly 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
@@ -406,6 +406,7 @@ exports[`Select should render correctly when variant=text 1`] = `
           font-weight: normal;
           font-size: 0.75rem;
           height: calc(1.875 * 16pt);
+          box-sizing: border-box;
           padding: 0 calc(1.5 * 8pt);
           background-color: #fdfdfe;
           color: #0054fe;
@@ -456,7 +457,7 @@ exports[`Select should render correctly when variant=text 1`] = `
             width: initial;
             overflow: hidden;
             transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: none;
+            border: 1px solid parent;
             border-radius: 4px;
             padding: 0 calc(8pt * 9 / 8) 0 calc(8pt * 1.5);
             height: calc(1.969 * 16pt);
@@ -497,7 +498,7 @@ exports[`Select should render correctly when variant=text 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
@@ -609,7 +610,7 @@ exports[`Select should work correctly with labels 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
@@ -754,7 +755,7 @@ initialize {
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value &gt; :global(div),
@@ -866,7 +867,7 @@ initialize {
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value &gt; :global(div),
@@ -1150,7 +1151,7 @@ initialize {
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value &gt; :global(div),
@@ -1300,7 +1301,7 @@ initialize {
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value &gt; :global(div),
@@ -1471,7 +1472,7 @@ initialize {
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value &gt; :global(div),

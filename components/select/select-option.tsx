@@ -87,11 +87,12 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
           font-weight: normal;
           font-size: 0.75rem;
           height: calc(1.875 * ${theme.layout.gap});
+          box-sizing: border-box;
           padding: 0 calc(1.5 * ${theme.layout.gapHalf});
           background-color: ${colors.bgColor};
           color: ${colors.color};
           user-select: none;
-          border: ${colors.border};
+          border: 1px solid ${colors.border};
           cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
           transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
         }
@@ -99,7 +100,7 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
         .option:hover {
           background-color: ${colors.hoverBgColor};
           color: ${colors.hoverColor};
-          border: ${colors.hoverBorder};
+          border: 1px solid ${colors.hoverBorder};
         }
 
         .divider {

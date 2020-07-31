@@ -139,7 +139,7 @@ exports[`Select Multiple should render correctly 1`] = `
             display: none;
           }
           .value :global(.option) {
-            border: 0;
+            border: 1px solid transparent;
           }
 
           .value > :global(div),
