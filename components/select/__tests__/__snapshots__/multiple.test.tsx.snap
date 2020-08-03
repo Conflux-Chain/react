@@ -135,7 +135,7 @@ exports[`Select Multiple should render correctly 1`] = `
             width: calc(100% - 1.25rem);
           }
 
-          .select :global(svg)  {
+          .select :global(svg) {
             display: none;
           }
           .select :global(.option) {
