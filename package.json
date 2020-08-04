@@ -92,6 +92,7 @@
     "eslint-config-ts-lambdas": "^1.2.0",
     "eslint-plugin-react": "^7.19.0",
     "extract-mdx-metadata": "^1.0.0",
+    "file-loader": "^6.0.0",
     "fs-extra": "^8.1.0",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
@@ -109,6 +110,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "raw-loader": "^4.0.1",
     "styled-jsx": "^3.2.5"
   },
   "config": {

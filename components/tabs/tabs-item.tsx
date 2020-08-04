@@ -1,38 +1,42 @@
 import React, { useEffect, useMemo } from 'react'
 import withDefaults from '../utils/with-defaults'
-import { useTabsContext } from './tabs-context'
+import { useTabsContext, TabsConfig } from './tabs-context'
 
 interface Props {
   label: string | React.ReactNode
-  value?: string
+  value: string
   disabled?: boolean
 }
 
 const defaultProps = {
   disabled: false,
+  children: null,
 }
 
 export type TabsItemProps = Props & typeof defaultProps
 
 const TabsItem: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   children,
-  value: userCustomValue,
+  value,
   label,
   disabled,
 }) => {
-  const value = useMemo(() => userCustomValue || `${label}`, [userCustomValue, label])
-  const { register, unregister, currentValue } = useTabsContext()
+  const { register, currentValue } = useTabsContext() as TabsConfig
   const isActive = useMemo(() => currentValue === value, [currentValue, value])
 
   useEffect(() => {
     register && register({ value, label, disabled })
+  }, [value, label, disabled])
+
+  //remove corresponding data model when unmount
+  useEffect(() => {
     return () => {
-      unregister && unregister({ value, label, disabled })
+      register && register({ remove: value })
     }
   }, [])
 
   /* eslint-disable react/jsx-no-useless-fragment */
-  return isActive ? <>{children}</> : null
+  return isActive ? children : null
 }
 
 export default withDefaults(TabsItem, defaultProps)

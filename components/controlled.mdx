@@ -1,0 +1,16 @@
+If you think the data flow in react carefully.
+
+uncontrolled component:
+caller do not know the internal state of the component
+
+controlled component:
+the state of called component is fully controlled by `props` passed in 
+
+The above two are identified by react offical team. However, there is also something 
+in between, which can not fit in the patterns mentioned above
+
+third patten: the called need to know the callee state sometims but not always
+think form as an example, the caller only need to know the state of callee when 'submit'
+happen rather than keep track of the component all the time
+
+forth pattern: the caller need to set the callee state forcelly on a one time, not inter
