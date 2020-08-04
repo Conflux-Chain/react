@@ -5,12 +5,13 @@ import { useTabsContext, TabsConfig } from './tabs-context'
 interface Props {
   label: string | React.ReactNode
   value: string
+  children?: string | React.ReactNode
   disabled?: boolean
 }
 
 const defaultProps = {
   disabled: false,
-  children: null,
+  // children: null,
 }
 
 export type TabsItemProps = Props & typeof defaultProps
@@ -36,7 +37,7 @@ const TabsItem: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   }, [])
 
   /* eslint-disable react/jsx-no-useless-fragment */
-  return isActive ? children : null
+  return isActive ? <>{children}</> : null
 }
 
 export default withDefaults(TabsItem, defaultProps)
