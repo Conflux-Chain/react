@@ -5,11 +5,12 @@ import TwitterIcon from '@zeit-ui/react-icons/twitter'
 import TwitchIcon from '@zeit-ui/react-icons/twitch'
 import removeDeps from '../../removeDeps.js'
 
-import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx';
-
-
-
-
+import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
+import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
+import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
+import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
+import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
+import onChange from '!!raw-loader!pages/code/tabs/onChange.jsx'
 
 export const meta = {
   title: 'tabs',
@@ -21,125 +22,65 @@ export const meta = {
 Display tab content.
 
 <Playground
+  title="default"
   scope={{ Tabs }}
   desc={`Toggle display of different tabs. without caring about the component state. 
   This should be the most common use case
   `}
-  code={`
-<Tabs initialValue="1">
-    <Tabs.Item label="evil rabbit" value="1">The Evil Rabbit Jumped over the Fence.</Tabs.Item>
-    <Tabs.Item label="jumped" value="2">The Fence Jumped over The Evil Rabbit.</Tabs.Item>
-</Tabs>`}
+  code={removeDeps(defaultTabs)}
+/>
+<Playground title="Solid" scope={{ Tabs }} desc={`Solid varient`} code={removeDeps(solidTabs)} />
+
+<Playground
+  scope={{ Tabs }}
+  title="Custom Bottom Border"
+  desc={`Users can difine their own bottom border`}
+  code={removeDeps(customBottom)}
 />
 
 <Playground
-  scope={{ Tabs, Button, Text, Spacer }}
-  desc={`Toggle display of different tabs. without caring about the component state. 
-  This should be the most common use case
-  `}
-  code={`
-function App(){
-  const ref=React.useRef(null)
-  const [value,setValue]=React.useState('Not related')
-  return <div>
-    <Text span>Tab state after click 'See current value': </Text> <Text type='success' span>{value} </Text>
-    <Spacer y={1} />
-    <Button onClick={()=>setValue(ref.current.currentTab())}>See current value</Button>
-    <Button onClick={()=>ref.current.currentTab('2')}>Set value:"2"</Button>
-    <Spacer y={1} />
-    <Tabs initialValue="1" ref={ref}>
-      <Tabs.Item label="evil rabbit" value="1">The Evil Rabbit Jumped over the Fence.</Tabs.Item>
-      <Tabs.Item label="jumped" value="2">The Fence Jumped over The Evil Rabbit.</Tabs.Item>
-    </Tabs>
-  </div>
-}
-`}
-/>
-
-<Playground
-  scope={{ Tabs, Text, Spacer }}
-  desc={`Toggle display of different tabs. without caring about the component state. 
-  This should be the most common use case
-  `}
-  code={`
-<<<<<<< HEAD
-function App(){
-  const [value,setValue]=React.useState('1')
-  return <div>
-    <Text span>Current Tab: </Text> <Text type='success' span>{value} </Text>
-    <Spacer y={1} />
-    <Tabs initialValue={value} onChange={setValue} >
-      <Tabs.Item deletable label="evil rabbit" value="1">The Evil Rabbit Jumped over the Fence.</Tabs.Item>
-      <Tabs.Item deletable label="jumped" value="2">The Fence Jumped over The Evil Rabbit.</Tabs.Item>
-    </Tabs>
-  </div>
-}
-=======
-<Tabs initialValue="1">
-  <Tabs.Item label={<><TwitchIcon /> Twitch TV</>} value="1">
-    <Text>Hello, this is our live broadcast on Twitch.</Text>
-    <Link href="https://github.com/zeit-ui/react" rel="nofollow" target="_blank">Click here to visit GitHub repo.</Link>
-  </Tabs.Item>
-  <Tabs.Item label={<><TwitterIcon/> Twitter </>} value="2">
-    <Text>The Components of React looks very cool.</Text>
-  </Tabs.Item>
-</Tabs>
->>>>>>> origin/dev
-`}
-/>
-
-<Playground
+  title="Dynamic Tab content"
   scope={{ Tabs, Text, Spacer, Button }}
-  desc={`Toggle display of different tabs. without caring about the component state. 
-  This should be the most common use case
-  `}
-  code={`
-function App(){
-  const idx=React.useRef(3)
-  const [tabs,setTabs]=React.useState([
-    {
-      label:'evil rabbit',
-      value:'1',
-      deletable:true,
-      content:'The Evil Rabbit Jumped over the Fence.'
-    },
-    {
-      label:'jumped',
-      value:'2',
-      content:'The Fence Jumped over The Evil Rabbit.'
-    }
-    ])
-  
-  return <div>
-    <Button onClick={()=>setTabs(tabs=>tabs.concat([{ 
-      label:'new staff',
-      value:(idx.current++)+'',
-      content:'The Fence Jumped over The Evil Rabbit.'
-    }]))}>Add Item</Button>
-    <Spacer y={1} />
-    <Tabs initialValue='1' >
-      {tabs.map(
-        ({label,content,value,deletable})=><Tabs.Item
-        key={value} 
-        label={deletable?<div>{label} <span onClick={()=>{
-        setTabs(tabs=>tabs.filter(x=>x.value!==value))
-        }}>x</span></div>: label} 
-      value={value}>{content}
-      </Tabs.Item>)}
-    </Tabs>
-  </div>
-}
-`}
-/>
-
-
-<Playground
-  scope={{ Tabs, Text, Spacer,Button }}
-  desc={`Toggle display of different tabs. without caring about the component state. 
-  This should be the most common use case
-  `}
+  desc={`Tab content can be controlled by user`}
   code={`${removeDeps(dynamicContent)}`}
 />
+<Playground
+  title="Get/Set Active Tab"
+  scope={{ Tabs, Button, Text, Spacer }}
+  desc={`The Tab ref expose an interface to set and get the state imperatively`}
+  code={removeDeps(imperative)}
+/>
 
+<Playground
+  title="Listen to the change from the component "
+  scope={{ Tabs, Text, Spacer }}
+  desc={`The compoent also exposed an onChange props to monitor the tab change`}
+  code={removeDeps(onChange)}
+/>
+
+<Attributes edit="/pages/en-us/components/tabs.mdx">
+<Attributes.Title>Tabs.Props</Attributes.Title>
+
+| Attribute        | Description            | Type                    | Accepted values                 | Default |
+| ---------------- | ---------------------- | ----------------------- | ------------------------------- | ------- |
+| **initialValue** | initial value          | `string`                | -                               | -       |
+| **onChange**     | change event           | `(val: string) => void` | -                               | -       |
+| ...              | native props           | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
+
+<Attributes.Title>Tabs.ref</Attributes.Title>
+
+| Attribute      | Description                                             | Accepted values                         | Default |
+| -------------- | ------------------------------------------------------- | --------------------------------------- | ------- |
+| **currentTab** | act as both a getter and setter regarding to active tab | `string`(setter) or `undefined`(getter) | -       |
+
+<Attributes.Title alias="Tabs.Tab">Tabs.Item.Props</Attributes.Title>
+
+| Attribute            | Description         | Type                          | Accepted values | Default |
+| -------------------- | ------------------- | ----------------------------- | --------------- | ------- |
+| **label**            | display tab's label | `string` or `React.ReactNode` | -               | -       |
+| **value** (required) | unique ident value  | `string`                      | -               | -       |
+| **disabled**         | disable current tab | `boolean`                     | -               | `false` |
+
+</Attributes>
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>

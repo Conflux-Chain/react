@@ -20,19 +20,18 @@ function App() {
     <div>
       <Button
         onClick={() => {
-          //   debugger
           setTabs(tabs => {
-            console.log(tabs)
             return tabs.concat([
               {
-                label: 'new staff',
+                label: `new staff ${idx.current}`,
                 value: idx.current++ + '',
-                content: 'The Fence Jumped over The Evil Rabbit.',
+                deletable: true,
+                content: `Content of new staff ${idx.current - 1}`,
               },
             ])
           })
         }}>
-        Add Item
+        Add New Staff
       </Button>
       <Spacer y={1} />
       <Tabs initialValue="1">
@@ -44,7 +43,8 @@ function App() {
                 <div>
                   {label}{' '}
                   <span
-                    onClick={() => {
+                    onClick={e => {
+                      e.stopPropagation()
                       setTabs(tabs => tabs.filter(x => x.value !== value))
                     }}>
                     x

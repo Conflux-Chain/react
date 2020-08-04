@@ -1,33 +1,110 @@
-import React, { useMemo, useState, forwardRef, useImperativeHandle, useRef, useEffect } from 'react'
+import React, { useMemo, useState, forwardRef, useImperativeHandle } from 'react'
 import TabsItem from './tabs-item'
 import useTheme from '../styles/use-theme'
 import { TabsItemConfig, TabsConfig, TabsContext } from './tabs-context'
 import Bottom from './tabs-bottom'
+import { TabVarient, TabStatus } from '../utils/prop-types'
+import { ZeitUIThemesPalette } from 'components/styles/themes'
 
 interface Props {
   initialValue?: string
-  hideDivider?: boolean
   onChange?: (val: string) => void
   className?: string
   Bottom?: React.FC
+  varient?: TabVarient
 }
 
 const defaultProps = {
   className: '',
-  hideDivider: false,
   Bottom,
+  varient: 'line' as TabVarient,
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
 export type TabsProps = Props & typeof defaultProps & NativeAttrs
+
+const getColor: any = (palette: ZeitUIThemesPalette, varient: TabVarient, status: TabStatus) => {
+  if (status === 'active' || status === 'hover') {
+    return {
+      color: palette.cTheme5,
+      textShadow: `0 0 0.8px ${palette.cTheme5}`,
+      background:
+        varient === 'line' ? '' : status === 'active' ? palette.cTheme0 : palette.cNeutral1,
+    }
+  } else if (status === 'default') {
+    return {
+      color: palette.cNeutral6,
+      background: varient === 'solid' ? palette.cNeutral1 : '',
+    }
+  } else if (status === 'disabled') {
+    return {
+      color: palette.cNeutral5,
+      background: varient === 'solid' ? palette.cNeutral0 : '',
+      cursor: 'not-allowed',
+    }
+  }
+}
+const stack: TabStatus[] = ['disabled', 'active', 'hover', 'default']
+
+type StatusMap = {
+  [key in TabStatus]?: boolean
+}
+function getStatus(props: StatusMap): TabStatus {
+  for (let i = 0; i <= stack.length; i++) {
+    const s = stack[i]
+    if (props[s]) {
+      return s
+    }
+  }
+  return 'default'
+}
+
+interface LabelProps {
+  varient: TabVarient
+  status: StatusMap
+  children: string | React.ReactNode
+  palette: ZeitUIThemesPalette
+}
+const TabLabel: React.FC<React.PropsWithChildren<LabelProps>> = ({
+  palette,
+  varient,
+  status,
+  children,
+}) => {
+  const [hover, setHover] = useState(false)
+  const computeStatus = useMemo(() => getStatus({ ...status, hover }), [status, hover])
+
+  const styles = useMemo(() => getColor(palette, varient, computeStatus), [
+    palette,
+    varient,
+    computeStatus,
+  ])
+
+  return (
+    <div
+      className="label"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{ ...styles }}>
+      {children}
+      <style jsx>{`
+      .label{
+        padding: 9px 16px;
+        border-radius: 4px 4px 0px 0px;
+      }
+    }
+    `}</style>
+    </div>
+  )
+}
 
 const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
   (
     {
       initialValue: userCustomInitialValue,
       Bottom,
-      hideDivider,
       children,
+      varient,
       onChange,
       className,
       ...props
@@ -37,6 +114,7 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
     const theme = useTheme()
     const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
     const [tabs, setTabs] = useState<TabsItemConfig[]>([])
+
     useImperativeHandle(
       ref,
       () => ({
@@ -82,7 +160,7 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
     return (
       <TabsContext.Provider value={initialValue}>
         <div className={`tabs ${className}`} {...props}>
-          <header className={hideDivider ? 'hide-divider' : ''}>
+          <header>
             {tabs.map(item => {
               const isActive = currentTab === item.value
 
@@ -94,11 +172,20 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
                   role="button"
                   key={item.value}
                   onClick={() => clickHandler(item)}>
-                  {item.label}
-
-                  <Bottom
-                    className="bottom"
-                    color={isActive ? theme.palette.foreground : 'transparent'}></Bottom>
+                  <TabLabel
+                    palette={theme.palette}
+                    varient={varient}
+                    status={{ disabled: item.disabled, active: isActive, default: true }}>
+                    <>
+                      {item.label}
+                      {varient === 'line' && (
+                        <Bottom
+                          className="bottom"
+                          color={isActive ? theme.palette.cTheme5 : 'transparent'}
+                        />
+                      )}
+                    </>
+                  </TabLabel>
                 </div>
               )
             })}
@@ -113,31 +200,23 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
               display: flex;
               flex-wrap: wrap;
               align-items: center;
-              border-bottom: 1px solid ${theme.palette.border};
             }
-
-            .hide-divider {
-              border-bottom: none;
-            }
-
             .content {
               padding-top: 0.625rem;
             }
 
             .tab {
-              padding: 10px calc(0.65 * ${theme.layout.gapQuarter});
               cursor: pointer;
               outline: 0;
-              transition: all 200ms ease;
               text-transform: capitalize;
               font-size: 1rem;
-              margin: 0 calc(0.8 * ${theme.layout.gapHalf});
-              color: ${theme.palette.accents_6};
+              margin: 0 18px;
               user-select: none;
               display: flex;
               align-items: center;
               line-height: 1.25rem;
               position: relative;
+              font-variant-numeric: tabular-nums;
             }
 
             .tab :global(.bottom) {
@@ -147,31 +226,15 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
               left: 0;
               right: 0;
               width: 100%;
-
               transform: scaleX(0.75);
-              transition: all 200ms ease;
+              transition: transform 200ms ease;
             }
 
             .tab.active :global(.bottom) {
               transform: scaleX(1);
             }
-
-            .tab :global(svg) {
-              max-height: 1em;
-              margin-right: 5px;
-            }
-
             .tab:first-of-type {
               margin-left: 0;
-            }
-
-            .tab.active {
-              color: ${theme.palette.foreground};
-            }
-
-            .tab.disabled {
-              color: ${theme.palette.accents_3};
-              cursor: not-allowed;
             }
           `}</style>
         </div>
@@ -179,6 +242,7 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
     )
   },
 )
+
 type TabsComponent<P = {}> = React.FC<P> & {
   Item: typeof TabsItem
   Tab: typeof TabsItem

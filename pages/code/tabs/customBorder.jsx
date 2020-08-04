@@ -1,11 +1,22 @@
 import { Tabs } from 'components'
-function Bottom({ color, className }) {
-  return <div className={className} 
 
-  style={{ height: 5, background: color,borderRadius:'100%' }}></div>
-}
-
-export default function App() {
+function App() {
+  const Bottom = React.useMemo(
+    () =>
+      function Bottom({ color, className }) {
+        return (
+          <div
+            className={className}
+            style={{
+              height: 10,
+              backgroundColor: color,
+              backgroundImage:
+                'url(data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7)',
+            }}></div>
+        )
+      },
+    [],
+  )
   return (
     <Tabs initialValue="1" Bottom={Bottom}>
       <Tabs.Item label="evil rabbit" value="1">
@@ -17,3 +28,5 @@ export default function App() {
     </Tabs>
   )
 }
+
+export default App

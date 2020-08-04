@@ -1,10 +1,17 @@
 export const tuple = <T extends string[]>(...args: T) => args
+//todo better syntax related to tuple?
+export const variantsTuple = <T extends ('solid' | 'line' | 'text')[]>(...args: T) => args
+export const statusTuple = <T extends ('default' | 'hover' | 'active' | 'disabled')[]>(
+  ...args: T
+) => args
 
-const buttonVariants = tuple('solid', 'line', 'text')
+const buttonVariants = variantsTuple('solid', 'line', 'text')
+const tabVariants = variantsTuple('solid', 'line')
 
 const buttonTypes = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
 const buttonStatus = tuple('default', 'hover', 'active', 'disabled')
+const tabStatus = statusTuple('default', 'hover', 'active', 'disabled')
 
 // const buttonTypes = tuple(
 //   'default',
@@ -20,6 +27,7 @@ const buttonStatus = tuple('default', 'hover', 'active', 'disabled')
 // )
 
 const selectTypes = tuple('line', 'text')
+// const tabTypes = tuple('line', 'text')
 
 const normalSizes = tuple('mini', 'small', 'medium', 'large')
 
@@ -67,8 +75,9 @@ const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')
 export type ButtonTypes = typeof buttonTypes[number]
 
 export type ButtonVariants = typeof buttonVariants[number]
-
+export type TabVarient = typeof tabVariants[number]
 export type ButtonStatus = typeof buttonStatus[number]
+export type TabStatus = typeof tabStatus[number]
 
 export type NormalSizes = typeof normalSizes[number]
 
