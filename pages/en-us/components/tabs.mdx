@@ -62,6 +62,7 @@ function App(){
   This should be the most common use case
   `}
   code={`
+<<<<<<< HEAD
 function App(){
   const [value,setValue]=React.useState('1')
   return <div>
@@ -73,6 +74,17 @@ function App(){
     </Tabs>
   </div>
 }
+=======
+<Tabs initialValue="1">
+  <Tabs.Item label={<><TwitchIcon /> Twitch TV</>} value="1">
+    <Text>Hello, this is our live broadcast on Twitch.</Text>
+    <Link href="https://github.com/zeit-ui/react" rel="nofollow" target="_blank">Click here to visit GitHub repo.</Link>
+  </Tabs.Item>
+  <Tabs.Item label={<><TwitterIcon/> Twitter </>} value="2">
+    <Text>The Components of React looks very cool.</Text>
+  </Tabs.Item>
+</Tabs>
+>>>>>>> origin/dev
 `}
 />
 

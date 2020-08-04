@@ -1,6 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs should render correctly 1`] = `
+<<<<<<< HEAD
 "<div class=\\"tabs \\"><header class=\\"\\"><div class=\\"tab  \\" role=\\"button\\">label1<svg width=\\"0\\" height=\\"6\\" viewBox=\\"0 0 0 6\\" fill=\\"none\\" class=\\"bottom\\"><path d=\\"M0 5C0 2 2 0 5 0H-5C-2 0 0 2 0 5V6H0V5Z\\" fill=\\"transparent\\"></path></svg></div><div class=\\"tab  \\" role=\\"button\\">label2<svg width=\\"0\\" height=\\"6\\" viewBox=\\"0 0 0 6\\" fill=\\"none\\" class=\\"bottom\\"><path d=\\"M0 5C0 2 2 0 5 0H-5C-2 0 0 2 0 5V6H0V5Z\\" fill=\\"transparent\\"></path></svg></div></header><div class=\\"content\\"></div><style>
             .tabs {
               width: initial;
@@ -144,4 +145,153 @@ exports[`Tabs should work correctly with different styles 1`] = `
               cursor: not-allowed;
             }
           </style></div>"
+=======
+"<div class=\\"tabs \\"><header class=\\"\\"><div class=\\"tab  \\" role=\\"button\\">label1</div><div class=\\"tab  \\" role=\\"button\\">label2</div></header><div class=\\"content\\"></div><style>
+          .tabs {
+            width: initial;
+          }
+
+          header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+          }
+
+          .hide-divider {
+            border-bottom: none;
+          }
+
+          .content {
+            padding-top: 0.625rem;
+          }
+
+          .tab {
+            padding: 4px calc(0.65 * 4px);
+            cursor: pointer;
+            outline: 0;
+            transition: all 200ms ease;
+            text-transform: capitalize;
+            font-size: 1rem;
+            margin: 0 calc(0.8 * 8px);
+            color: #444;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            line-height: 1.25rem;
+            position: relative;
+          }
+
+          .tab:after {
+            position: absolute;
+            content: '';
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0.75);
+            background-color: transparent;
+            transition: all 200ms ease;
+          }
+
+          .tab.active:after {
+            background-color: #000;
+            transform: scaleX(1);
+          }
+
+          .tab :global(svg) {
+            max-height: 1em;
+            margin-right: 5px;
+          }
+
+          .tab:first-of-type {
+            margin-left: 0;
+          }
+
+          .tab.active {
+            color: #000;
+          }
+
+          .tab.disabled {
+            color: #999;
+            cursor: not-allowed;
+          }
+        </style></div>"
+`;
+
+exports[`Tabs should work correctly with different styles 1`] = `
+"<div class=\\"tabs \\"><header class=\\"hide-divider\\"><div class=\\"tab  \\" role=\\"button\\">label1</div></header><div class=\\"content\\"></div><style>
+          .tabs {
+            width: initial;
+          }
+
+          header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+          }
+
+          .hide-divider {
+            border-bottom: none;
+          }
+
+          .content {
+            padding-top: 0.625rem;
+          }
+
+          .tab {
+            padding: 4px calc(0.65 * 4px);
+            cursor: pointer;
+            outline: 0;
+            transition: all 200ms ease;
+            text-transform: capitalize;
+            font-size: 1rem;
+            margin: 0 calc(0.8 * 8px);
+            color: #444;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            line-height: 1.25rem;
+            position: relative;
+          }
+
+          .tab:after {
+            position: absolute;
+            content: '';
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0.75);
+            background-color: transparent;
+            transition: all 200ms ease;
+          }
+
+          .tab.active:after {
+            background-color: #000;
+            transform: scaleX(1);
+          }
+
+          .tab :global(svg) {
+            max-height: 1em;
+            margin-right: 5px;
+          }
+
+          .tab:first-of-type {
+            margin-left: 0;
+          }
+
+          .tab.active {
+            color: #000;
+          }
+
+          .tab.disabled {
+            color: #999;
+            cursor: not-allowed;
+          }
+        </style></div>"
+>>>>>>> origin/dev
 `;
