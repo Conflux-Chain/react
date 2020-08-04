@@ -1,11 +1,9 @@
 import React from 'react'
 
-interface BottomProps {
+const Bottom: React.FC<React.PropsWithChildren<{
   className: string
   color: string
-}
-
-const Bottom: React.FC<React.PropsWithChildren<BottomProps>> = ({ className, color }) => {
+}>> = ({ className, color }) => {
   return (
     <div
       className={className}
