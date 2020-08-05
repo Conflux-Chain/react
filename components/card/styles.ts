@@ -8,10 +8,11 @@ export type CardStyles = {
 }
 
 export const getStyles = (
-  customColor: CardColors,
+  color: CardColors,
   palette: ZeitUIThemesPalette,
   variant: CardVariants,
 ): CardStyles => {
+  const customColor = color
   const solidColors: { [key in CardColors]: Omit<CardStyles, 'borderColor'> } = {
     default: {
       color: palette.cNeutral7,
