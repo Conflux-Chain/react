@@ -7,6 +7,7 @@ import removeDeps from 'lib/removeDeps.js'
 
 import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
 import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
+import controlledTabs from '!!raw-loader!pages/code/tabs/controlled.jsx'
 import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
 import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
 import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
@@ -29,7 +30,18 @@ Display tab content.
   `}
   code={removeDeps(defaultTabs)}
 />
-<Playground title="Solid" scope={{ Tabs }} desc={`Solid varient`} code={removeDeps(solidTabs)} />
+<Playground
+  title="Solid"
+  scope={{ Tabs }}
+  desc={`This is a solid varient`}
+  code={removeDeps(solidTabs)}
+/>
+<Playground
+  title="Controlled"
+  scope={{ Tabs }}
+  desc={`The component become controlled when value present`}
+  code={removeDeps(controlledTabs)}
+/>
 
 <Playground
   scope={{ Tabs }}
@@ -61,11 +73,12 @@ Display tab content.
 <Attributes edit="/pages/en-us/components/tabs.mdx">
 <Attributes.Title>Tabs.Props</Attributes.Title>
 
-| Attribute        | Description            | Type                    | Accepted values                 | Default |
-| ---------------- | ---------------------- | ----------------------- | ------------------------------- | ------- |
-| **initialValue** | initial value          | `string`                | -                               | -       |
-| **onChange**     | change event           | `(val: string) => void` | -                               | -       |
-| ...              | native props           | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
+| Attribute        | Description                   | Type                    | Accepted values                 | Default |
+| ---------------- | ----------------------------- | ----------------------- | ------------------------------- | ------- |
+| **initialValue** | initial value                 | `string`                | -                               | -       |
+| **value**        | controlled when value present | `string`                | -                               | -       |
+| **onChange**     | change event                  | `(val: string) => void` | -                               | -       |
+| ...              | native props                  | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
 <Attributes.Title>Tabs.ref</Attributes.Title>
 

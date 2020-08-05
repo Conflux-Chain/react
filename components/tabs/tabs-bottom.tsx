@@ -9,7 +9,7 @@ const Bottom: React.FC<React.PropsWithChildren<{
       className={className}
       style={{
         background: color,
-        height: 4,
+        height: 8,
         width: '100%',
         borderRadius: '4px 4px 0px 0px',
       }}

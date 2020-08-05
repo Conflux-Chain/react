@@ -1,4 +1,4 @@
-import React, { useMemo, useState, forwardRef, useImperativeHandle } from 'react'
+import React, { useMemo, useState, forwardRef, useImperativeHandle, useEffect } from 'react'
 import TabsItem from './tabs-item'
 import useTheme from '../styles/use-theme'
 import { TabsItemConfig, TabsConfig, TabsContext } from './tabs-context'
@@ -8,6 +8,7 @@ import { ZeitUIThemesPalette } from 'components/styles/themes'
 
 interface Props {
   initialValue?: string
+  value?: string
   onChange?: (val: string) => void
   className?: string
   Bottom?: React.FC
@@ -17,7 +18,6 @@ interface Props {
 const defaultProps = {
   className: '',
   Bottom,
-  // varient: 'line' as TabVarient,
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
@@ -105,6 +105,7 @@ export interface TabHandles {
 const Tabs: React.ForwardRefRenderFunction<TabHandles, React.PropsWithChildren<TabsProps>> = (
   {
     initialValue: userCustomInitialValue,
+    value,
     Bottom,
     children,
     varient = 'line',
@@ -156,9 +157,20 @@ const Tabs: React.ForwardRefRenderFunction<TabHandles, React.PropsWithChildren<T
 
   const clickHandler = (item: TabsItemConfig) => {
     if (item.disabled) return
-    setCurrentTab(item.value)
+    if (!value) {
+      //uncontrolled
+      setCurrentTab(item.value)
+    }
+
     onChange && onChange(item.value)
   }
+
+  useEffect(() => {
+    //controlled component
+    if (value) {
+      setCurrentTab(value)
+    }
+  }, [value])
 
   return (
     <TabsContext.Provider value={initialValue}>
@@ -184,7 +196,7 @@ const Tabs: React.ForwardRefRenderFunction<TabHandles, React.PropsWithChildren<T
                     {varient === 'line' && (
                       <Bottom
                         className="bottom"
-                        color={isActive ? theme.palette.cTheme5 : 'transparent'}
+                        color={isActive ? theme.palette.cTheme0 : 'transparent'}
                       />
                     )}
                   </>
@@ -253,4 +265,3 @@ export default ForwardTab as typeof ForwardTab & {
   Item: typeof TabsItem
   Tab: typeof TabsItem
 }
-// as TabsComponent<ComponentProps>

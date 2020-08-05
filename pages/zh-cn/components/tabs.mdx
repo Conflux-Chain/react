@@ -3,10 +3,11 @@ import { Tabs, Spacer, Link, Text, Button, Code, useTabs } from 'components'
 import { useState } from 'react'
 import TwitterIcon from '@zeit-ui/react-icons/twitter'
 import TwitchIcon from '@zeit-ui/react-icons/twitch'
-import removeDeps from 'lib/removeDeps.ts'
+import removeDeps from 'lib/removeDeps.js'
 
 import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
 import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
+import controlledTabs from '!!raw-loader!pages/code/tabs/controlled.jsx'
 import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
 import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
 import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
@@ -28,7 +29,12 @@ export const meta = {
   code={removeDeps(defaultTabs)}
 />
 <Playground title="Solid" scope={{ Tabs }} desc={`Solid 的展现形式`} code={removeDeps(solidTabs)} />
-
+<Playground
+  title="Controlled"
+  scope={{ Tabs }}
+  desc={`如果传入 value，Tab 就变成controlled component `}
+  code={removeDeps(controlledTabs)}
+/>
 <Playground
   scope={{ Tabs }}
   title="自定义底部"
@@ -62,6 +68,7 @@ export const meta = {
 | Attribute        | Description  | Type                    | Accepted values                 | Default |
 | ---------------- | ------------ | ----------------------- | ------------------------------- | ------- |
 | **initialValue** | 初始活跃标签 | `string`                | -                               | -       |
+| **value**        | 当前状态     | `string`                | -                               | -       |
 | **onChange**     | 监听变化     | `(val: string) => void` | -                               | -       |
 | ...              | 原生         | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
