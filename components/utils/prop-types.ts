@@ -33,19 +33,9 @@ const themeTypes = tuple('dark', 'light')
 
 const snippetTypes = tuple('default', 'secondary', 'success', 'warning', 'error', 'dark', 'lite')
 
-const cardTypes = tuple(
-  'default',
-  'secondary',
-  'success',
-  'warning',
-  'error',
-  'dark',
-  'lite',
-  'alert',
-  'purple',
-  'violet',
-  'cyan',
-)
+const cardVariants = tuple('solid', 'line')
+
+const cardColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error', 'dark')
 
 const copyTypes = tuple('default', 'slient', 'prevent')
 
@@ -88,7 +78,9 @@ export type ThemeTypes = typeof themeTypes[number]
 
 export type SnippetTypes = typeof snippetTypes[number]
 
-export type CardTypes = typeof cardTypes[number]
+export type CardColors = typeof cardColors[number]
+
+export type CardVariants = typeof cardVariants[number]
 
 export type CopyTypes = typeof copyTypes[number]
 

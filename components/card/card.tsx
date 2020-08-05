@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import useTheme from '../styles/use-theme'
-import { CardTypes } from '../utils/prop-types'
+import { CardColors, CardVariants } from '../utils/prop-types'
 import { getStyles } from './styles'
 import CardFooter from './card-footer'
 import CardContent from './card-content'
@@ -12,15 +12,17 @@ interface Props {
   shadow?: boolean
   className?: string
   width?: string
-  type?: CardTypes
+  color?: CardColors
+  variant?: CardVariants
 }
 
 const defaultProps = {
-  type: 'default' as CardTypes,
+  color: 'default' as CardColors,
   hoverable: false,
   shadow: false,
   width: '100%',
   className: '',
+  variant: 'solid' as CardVariants,
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
@@ -31,8 +33,9 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
   hoverable,
   className,
   shadow,
-  type,
+  color: customColor,
   width,
+  variant,
   ...props
 }) => {
   const theme = useTheme()
@@ -40,11 +43,10 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
     if (shadow) return theme.expressiveness.shadowMedium
     return hoverable ? theme.expressiveness.shadowSmall : 'none'
   }, [hoverable, shadow, theme.expressiveness])
-  const { color, bgColor, borderColor } = useMemo(() => getStyles(type, theme.palette, shadow), [
-    type,
-    theme.palette,
-    shadow,
-  ])
+  const { color, bgColor, borderColor } = useMemo(
+    () => getStyles(customColor, theme.palette, variant),
+    [customColor, theme.palette, shadow],
+  )
 
   const [withoutFooterChildren, footerChildren] = pickChild(children, CardFooter)
   const [withoutImageChildren, imageChildren] = pickChild(withoutFooterChildren, Image)

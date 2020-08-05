@@ -1,4 +1,4 @@
-import { CardTypes } from '../utils/prop-types'
+import { CardColors, CardVariants } from '../utils/prop-types'
 import { ZeitUIThemesPalette } from '../styles/themes'
 
 export type CardStyles = {
@@ -8,59 +8,82 @@ export type CardStyles = {
 }
 
 export const getStyles = (
-  type: CardTypes,
+  customColor: CardColors,
   palette: ZeitUIThemesPalette,
-  isShadow?: boolean,
+  variant: CardVariants,
 ): CardStyles => {
-  const colors: { [key in CardTypes]: Omit<CardStyles, 'borderColor'> } = {
+  const solidColors: { [key in CardColors]: Omit<CardStyles, 'borderColor'> } = {
     default: {
-      color: palette.foreground,
-      bgColor: palette.background,
+      color: palette.cNeutral7,
+      bgColor: palette.cNeutral8,
     },
-    dark: {
-      color: palette.background,
-      bgColor: palette.foreground,
+    primary: {
+      color: palette.cNeutral7,
+      bgColor: palette.cTheme0,
     },
     secondary: {
-      color: palette.background,
+      color: palette.cNeutral8,
       bgColor: palette.secondary,
     },
     success: {
-      color: palette.background,
+      color: palette.cNeutral7,
       bgColor: palette.success,
     },
     warning: {
-      color: palette.background,
+      color: palette.cNeutral7,
       bgColor: palette.warning,
     },
     error: {
-      color: palette.background,
+      color: palette.cNeutral7,
       bgColor: palette.error,
     },
-    lite: {
-      color: palette.foreground,
-      bgColor: palette.background,
-    },
-    alert: {
-      color: 'white',
-      bgColor: palette.alert,
-    },
-    purple: {
-      color: 'white',
-      bgColor: palette.purple,
-    },
-    violet: {
-      color: 'white',
-      bgColor: palette.violet,
-    },
-    cyan: {
-      color: 'black',
-      bgColor: palette.cyan,
+    dark: {
+      color: palette.cNeutral8,
+      bgColor: palette.cNeutral7,
     },
   }
-  const showBorder = type === 'default' && !isShadow
-  return {
-    ...colors[type],
-    borderColor: showBorder ? palette.border : 'transparent',
+
+  const lineColors: { [key in CardColors]: Omit<CardStyles, 'bgColor'> } = {
+    default: {
+      color: palette.cNeutral7,
+      borderColor: palette.border,
+    },
+    primary: {
+      color: palette.cNeutral7,
+      borderColor: palette.cTheme5,
+    },
+    secondary: {
+      color: palette.cNeutral7,
+      borderColor: palette.secondary,
+    },
+    success: {
+      color: palette.cNeutral7,
+      borderColor: palette.success,
+    },
+    warning: {
+      color: palette.cNeutral7,
+      borderColor: palette.warning,
+    },
+    error: {
+      color: palette.cNeutral7,
+      borderColor: palette.error,
+    },
+    dark: {
+      color: palette.cNeutral7,
+      borderColor: palette.cNeutral7,
+    },
+  }
+
+  if (variant === 'solid') {
+    const showBorder = customColor === 'default'
+    return {
+      ...solidColors[customColor],
+      borderColor: showBorder ? palette.border : 'transparent',
+    }
+  } else {
+    return {
+      ...lineColors[customColor],
+      bgColor: palette.cNeutral8,
+    }
   }
 }
