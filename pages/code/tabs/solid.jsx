@@ -1,5 +1,5 @@
 import { Tabs } from 'components'
-function App() {
+function ___App() {
   return (
     <Tabs initialValue="1" varient="solid">
       <Tabs.Item label="evil rabbit" value="1">
@@ -14,4 +14,4 @@ function App() {
     </Tabs>
   )
 }
-export default App
+export default ___App

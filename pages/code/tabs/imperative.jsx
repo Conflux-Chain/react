@@ -2,7 +2,7 @@ import { Tabs, Spacer, Text, Button } from 'components'
 
 function App() {
   const ref = React.useRef(null)
-  const [value, setValue] = React.useState('???')
+  const [value, setValue] = React.useState('Qiqi')
   return (
     <div>
       <Text span>Tab state after click See current value: </Text>{' '}

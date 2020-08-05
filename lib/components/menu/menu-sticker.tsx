@@ -1,22 +1,31 @@
-import React, { useEffect, useMemo } from 'react'
+import React, { useEffect, useMemo, useRef } from 'react'
 import { Tabs, useTheme } from 'components'
 import useCurrentState from 'components/utils/use-current-state'
 import Router from 'next/router'
 import Metadatas from 'lib/data'
 import useLocale from 'lib/use-locale'
 import { useConfigs } from 'lib/config-context'
+import { TabHandles } from 'components/tabs/tabs'
 
 const MenuSticker = () => {
   const theme = useTheme()
   const { updateTabbarFixed } = useConfigs()
   const { tabbar: currentUrlTabValue, locale } = useLocale()
+
+  console.log({ tabbar: currentUrlTabValue, locale })
   const [tabValue, setTabValue, tabValueRef] = useCurrentState<string>('')
   const [fixed, setFixed, fixedRef] = useCurrentState<boolean>(false)
 
   const tabbarData = useMemo(() => Metadatas[locale], [locale])
 
   useEffect(() => updateTabbarFixed(fixed), [fixed])
-  useEffect(() => setTabValue(currentUrlTabValue), [currentUrlTabValue])
+  const tabController = useRef<TabHandles>(null)
+  useEffect(() => {
+    if (tabController.current != null) {
+      tabController.current.currentTab(currentUrlTabValue)
+    }
+  }, [currentUrlTabValue])
+
   useEffect(() => {
     const scrollHandler = () => {
       const shouldFixed = document.documentElement.scrollTop > 60
@@ -27,12 +36,12 @@ const MenuSticker = () => {
     return () => document.removeEventListener('scroll', scrollHandler)
   }, [])
 
-  useEffect(() => {
-    const shouldRedirectDefaultPage = currentUrlTabValue !== tabValueRef.current
-    if (!shouldRedirectDefaultPage) return
-    const defaultPath = `/${locale}/${tabValueRef.current}`
-    Router.push(defaultPath)
-  }, [tabValue, currentUrlTabValue])
+  // useEffect(() => {
+  //   const shouldRedirectDefaultPage = currentUrlTabValue !== tabValueRef.current
+  //   if (!shouldRedirectDefaultPage) return
+  //   const defaultPath = `/${locale}/${tabValueRef.current}`
+  //   Router.push(defaultPath)
+  // }, [tabValue, currentUrlTabValue])
 
   return (
     <>
@@ -40,7 +49,8 @@ const MenuSticker = () => {
       <nav className={fixed ? 'fixed' : ''}>
         <div className="sticker">
           <div className="inner">
-            <Tabs value={tabValue} onChange={val => setTabValue(val)}>
+            <h4 style={{ color: 'red' }}>where are you</h4>
+            <Tabs ref={tabController}>
               {tabbarData
                 ? tabbarData.map((tab, index) => (
                     <Tabs.Item

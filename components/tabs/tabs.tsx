@@ -17,7 +17,7 @@ interface Props {
 const defaultProps = {
   className: '',
   Bottom,
-  varient: 'line' as TabVarient,
+  // varient: 'line' as TabVarient,
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
@@ -62,9 +62,10 @@ function getStatus(props: StatusMap): TabStatus {
 interface LabelProps {
   varient: TabVarient
   status: StatusMap
-  children: string | React.ReactNode
+  children?: string | React.ReactNode
   palette: ZeitUIThemesPalette
 }
+
 const TabLabel: React.FC<React.PropsWithChildren<LabelProps>> = ({
   palette,
   varient,
@@ -97,160 +98,159 @@ const TabLabel: React.FC<React.PropsWithChildren<LabelProps>> = ({
     </div>
   )
 }
+export interface TabHandles {
+  currentTab(v: string | undefined): void
+}
 
-const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = forwardRef(
-  (
-    {
-      initialValue: userCustomInitialValue,
-      Bottom,
-      children,
-      varient,
-      onChange,
-      className,
-      ...props
-    },
+const Tabs: React.ForwardRefRenderFunction<TabHandles, React.PropsWithChildren<TabsProps>> = (
+  {
+    initialValue: userCustomInitialValue,
+    Bottom,
+    children,
+    varient = 'line',
+    onChange,
+    className,
+    ...props
+  }: React.PropsWithChildren<TabsProps>,
+  ref,
+) => {
+  const theme = useTheme()
+  const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
+  const [tabs, setTabs] = useState<TabsItemConfig[]>([])
+
+  useImperativeHandle(
     ref,
-  ) => {
-    const theme = useTheme()
-    const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
-    const [tabs, setTabs] = useState<TabsItemConfig[]>([])
+    () => ({
+      currentTab: (v: string | undefined) => (v ? setCurrentTab(v) : currentTab),
+    }),
+    [currentTab],
+  )
 
-    useImperativeHandle(
-      ref,
-      () => ({
-        currentTab: (v: string | undefined) => (v ? setCurrentTab(v) : currentTab),
-      }),
-      [currentTab],
-    )
+  const register = (next: TabsItemConfig | { remove: string }) => {
+    setTabs(last => {
+      if ('remove' in next) {
+        return last.filter(({ value }) => value !== next.remove)
+      } else {
+        const hasItem = last.find(item => item.value === next.value)
+        if (!hasItem) return [...last, next]
+        return last.map(item => {
+          if (item.value !== next.value) return item
+          return {
+            ...item,
+            label: next.label,
+            disabled: next.disabled,
+          }
+        })
+      }
+    })
+  }
 
-    const register = (next: TabsItemConfig | { remove: string }) => {
-      setTabs(last => {
-        if ('remove' in next) {
-          return last.filter(({ value }) => value !== next.remove)
-        } else {
-          const hasItem = last.find(item => item.value === next.value)
-          if (!hasItem) return [...last, next]
-          return last.map(item => {
-            if (item.value !== next.value) return item
-            return {
-              ...item,
-              label: next.label,
-              disabled: next.disabled,
-            }
-          })
-        }
-      })
-    }
+  const initialValue = useMemo<TabsConfig>(
+    () => ({
+      register,
+      currentValue: currentTab,
+      inGroup: true,
+    }),
+    [currentTab],
+  )
 
-    const initialValue = useMemo<TabsConfig>(
-      () => ({
-        register,
-        currentValue: currentTab,
-        inGroup: true,
-      }),
-      [currentTab],
-    )
+  const clickHandler = (item: TabsItemConfig) => {
+    if (item.disabled) return
+    setCurrentTab(item.value)
+    onChange && onChange(item.value)
+  }
 
-    const clickHandler = (item: TabsItemConfig) => {
-      if (item.disabled) return
-      setCurrentTab(item.value)
-      onChange && onChange(item.value)
-    }
+  return (
+    <TabsContext.Provider value={initialValue}>
+      <div className={`tabs ${className}`} {...props}>
+        <header>
+          {tabs.map(item => {
+            const isActive = currentTab === item.value
 
-    return (
-      <TabsContext.Provider value={initialValue}>
-        <div className={`tabs ${className}`} {...props}>
-          <header>
-            {tabs.map(item => {
-              const isActive = currentTab === item.value
+            return (
+              <div
+                className={`tab ${currentTab === item.value ? 'active' : ''} ${
+                  item.disabled ? 'disabled' : ''
+                }`}
+                role="button"
+                key={item.value}
+                onClick={() => clickHandler(item)}>
+                <TabLabel
+                  palette={theme.palette}
+                  varient={varient}
+                  status={{ disabled: item.disabled, active: isActive, default: true }}>
+                  <>
+                    {item.label}
+                    {varient === 'line' && (
+                      <Bottom
+                        className="bottom"
+                        color={isActive ? theme.palette.cTheme5 : 'transparent'}
+                      />
+                    )}
+                  </>
+                </TabLabel>
+              </div>
+            )
+          })}
+        </header>
+        <div className="content">{children}</div>
+        <style jsx>{`
+          .tabs {
+            width: initial;
+          }
 
-              return (
-                <div
-                  className={`tab ${currentTab === item.value ? 'active' : ''} ${
-                    item.disabled ? 'disabled' : ''
-                  }`}
-                  role="button"
-                  key={item.value}
-                  onClick={() => clickHandler(item)}>
-                  <TabLabel
-                    palette={theme.palette}
-                    varient={varient}
-                    status={{ disabled: item.disabled, active: isActive, default: true }}>
-                    <>
-                      {item.label}
-                      {varient === 'line' && (
-                        <Bottom
-                          className="bottom"
-                          color={isActive ? theme.palette.cTheme5 : 'transparent'}
-                        />
-                      )}
-                    </>
-                  </TabLabel>
-                </div>
-              )
-            })}
-          </header>
-          <div className="content">{children}</div>
-          <style jsx>{`
-            .tabs {
-              width: initial;
-            }
+          header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+          }
+          .content {
+            padding-top: 0.625rem;
+          }
 
-            header {
-              display: flex;
-              flex-wrap: wrap;
-              align-items: center;
-            }
-            .content {
-              padding-top: 0.625rem;
-            }
+          .tab {
+            cursor: pointer;
+            outline: 0;
+            text-transform: capitalize;
+            font-size: 1rem;
+            margin: 0 18px;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            line-height: 1.25rem;
+            position: relative;
+            font-variant-numeric: tabular-nums;
+          }
 
-            .tab {
-              cursor: pointer;
-              outline: 0;
-              text-transform: capitalize;
-              font-size: 1rem;
-              margin: 0 18px;
-              user-select: none;
-              display: flex;
-              align-items: center;
-              line-height: 1.25rem;
-              position: relative;
-              font-variant-numeric: tabular-nums;
-            }
+          .tab :global(.bottom) {
+            position: absolute;
+            content: '';
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            transform: scaleX(0.75);
+            transition: transform 200ms ease;
+          }
 
-            .tab :global(.bottom) {
-              position: absolute;
-              content: '';
-              bottom: -1px;
-              left: 0;
-              right: 0;
-              width: 100%;
-              transform: scaleX(0.75);
-              transition: transform 200ms ease;
-            }
+          .tab.active :global(.bottom) {
+            transform: scaleX(1);
+          }
+          .tab:first-of-type {
+            margin-left: 0;
+          }
+        `}</style>
+      </div>
+    </TabsContext.Provider>
+  )
+}
 
-            .tab.active :global(.bottom) {
-              transform: scaleX(1);
-            }
-            .tab:first-of-type {
-              margin-left: 0;
-            }
-          `}</style>
-        </div>
-      </TabsContext.Provider>
-    )
-  },
-)
+const ForwardTab = forwardRef<TabHandles, React.PropsWithChildren<Props>>(Tabs)
+ForwardTab.defaultProps = defaultProps
 
-type TabsComponent<P = {}> = React.FC<P> & {
+//may be a more reliabe way add property rather than declare from scratch
+export default ForwardTab as typeof ForwardTab & {
   Item: typeof TabsItem
   Tab: typeof TabsItem
 }
-type ComponentProps = Partial<typeof defaultProps> &
-  Omit<Props, keyof typeof defaultProps> &
-  NativeAttrs
-
-Tabs.defaultProps = defaultProps
-
-export default Tabs as TabsComponent<ComponentProps>
+// as TabsComponent<ComponentProps>

@@ -43,6 +43,6 @@
     "lib/**/*.tsx",
     "components/**/*.tsx",
     "pages/**/**/**/*.jsx",
-    "pages/*.js",
+    "pages/*.js", "lib/removeDeps.js",
   ]
 }
