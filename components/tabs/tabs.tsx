@@ -13,6 +13,7 @@ interface Props {
   className?: string
   Bottom?: React.FC
   varient?: TabVarient
+  showDivider?: boolean
 }
 
 const defaultProps = {
@@ -48,15 +49,15 @@ const stack: TabStatus[] = ['disabled', 'active', 'hover', 'default']
 
 type StatusMap = {
   [key in TabStatus]?: boolean
-}
-function getStatus(props: StatusMap): TabStatus {
+} & { default: true }
+
+function getStatus(props: StatusMap): TabStatus | undefined {
   for (let i = 0; i <= stack.length; i++) {
     const s = stack[i]
     if (props[s]) {
       return s
     }
   }
-  return 'default'
 }
 
 interface LabelProps {
@@ -111,6 +112,7 @@ const Tabs: React.ForwardRefRenderFunction<TabHandles, React.PropsWithChildren<T
     varient = 'line',
     onChange,
     className,
+    showDivider,
     ...props
   }: React.PropsWithChildren<TabsProps>,
   ref,
@@ -175,7 +177,7 @@ const Tabs: React.ForwardRefRenderFunction<TabHandles, React.PropsWithChildren<T
   return (
     <TabsContext.Provider value={initialValue}>
       <div className={`tabs ${className}`} {...props}>
-        <header>
+        <header style={{ borderBottom: showDivider ? `1px solid ${theme.palette.border}` : '' }}>
           {tabs.map(item => {
             const isActive = currentTab === item.value
 

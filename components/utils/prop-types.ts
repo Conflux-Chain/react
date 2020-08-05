@@ -9,8 +9,6 @@ const buttonVariants = variantsTuple('solid', 'line', 'text')
 const tabVariants = variantsTuple('solid', 'line')
 const inputVariants = tuple('solid', 'line')
 
-
-
 const buttonTypes = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
 const buttonStatus = tuple('default', 'hover', 'active', 'disabled')

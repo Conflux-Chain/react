@@ -1,5 +1,5 @@
 import { Layout, Playground, Attributes } from 'lib/components'
-import { Tabs, Spacer, Link, Text, Button, Code, useTabs } from 'components'
+import { Tabs, Spacer, Link, Text, Button, Code } from 'components'
 import { useState } from 'react'
 import TwitterIcon from '@zeit-ui/react-icons/twitter'
 import TwitchIcon from '@zeit-ui/react-icons/twitch'
@@ -8,6 +8,7 @@ import removeDeps from 'lib/removeDeps.js'
 import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
 import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
 import controlledTabs from '!!raw-loader!pages/code/tabs/controlled.jsx'
+import deviderTabs from '!!raw-loader!pages/code/tabs/devider.jsx'
 import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
 import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
 import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
@@ -34,6 +35,12 @@ export const meta = {
   scope={{ Tabs }}
   desc={`如果传入 value，Tab 就变成controlled component `}
   code={removeDeps(controlledTabs)}
+/>
+<Playground
+  scope={{ Tabs }}
+  title="分割线"
+  desc={`是否展示分割线`}
+  code={removeDeps(deviderTabs)}
 />
 <Playground
   scope={{ Tabs }}
@@ -69,6 +76,7 @@ export const meta = {
 | ---------------- | ------------ | ----------------------- | ------------------------------- | ------- |
 | **initialValue** | 初始活跃标签 | `string`                | -                               | -       |
 | **value**        | 当前状态     | `string`                | -                               | -       |
+| **showDivider**  | 现实分割线   | `boolean`               | `true` or `false`               | -       |
 | **onChange**     | 监听变化     | `(val: string) => void` | -                               | -       |
 | ...              | 原生         | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 

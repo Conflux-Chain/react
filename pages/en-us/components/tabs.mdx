@@ -8,6 +8,7 @@ import removeDeps from 'lib/removeDeps.js'
 import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
 import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
 import controlledTabs from '!!raw-loader!pages/code/tabs/controlled.jsx'
+import deviderTabs from '!!raw-loader!pages/code/tabs/devider.jsx'
 import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
 import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
 import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
@@ -49,6 +50,12 @@ Display tab content.
   desc={`Users can difine their own bottom border`}
   code={removeDeps(customBottom)}
 />
+<Playground
+  scope={{ Tabs }}
+  title="Devider"
+  desc={`Choose to show devider`}
+  code={removeDeps(deviderTabs)}
+/>
 
 <Playground
   title="Dynamic Tab content"
@@ -78,6 +85,7 @@ Display tab content.
 | **initialValue** | initial value                 | `string`                | -                               | -       |
 | **value**        | controlled when value present | `string`                | -                               | -       |
 | **onChange**     | change event                  | `(val: string) => void` | -                               | -       |
+| **showDivider**  | if devider present            | `boolean`               | `true` or `false`               | -       |
 | ...              | native props                  | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
 <Attributes.Title>Tabs.ref</Attributes.Title>
