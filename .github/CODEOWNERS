@@ -6,4 +6,8 @@ components/textarea/* @yqrashawn
 components/auto-complete/* @yqrashawn
 components/select/* @angelia-yuqi-personal
 components/button/* @chain-txz
+<<<<<<< HEAD
 components/card/* @angelia-yuqi-personal
+=======
+components/tooltip/* @yqrashawn
+>>>>>>> origin/dev
