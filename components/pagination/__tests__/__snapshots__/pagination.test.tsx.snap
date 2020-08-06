@@ -42,7 +42,7 @@ exports[`Pagination should render correctly 1`] = `
 
         .active:hover {
           background-color: rgba(88, 241, 122, 0.8);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
 
         .disabled {
@@ -99,7 +99,7 @@ exports[`Pagination should render correctly 1`] = `
 
         .active:hover {
           background-color: rgba(88, 241, 122, 0.8);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
 
         .disabled {
@@ -156,7 +156,7 @@ exports[`Pagination should render correctly 1`] = `
 
         .active:hover {
           background-color: rgba(88, 241, 122, 0.8);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
 
         .disabled {
