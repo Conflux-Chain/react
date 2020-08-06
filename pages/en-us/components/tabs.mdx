@@ -9,7 +9,7 @@ import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
 import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
 import controlledTabs from '!!raw-loader!pages/code/tabs/controlled.jsx'
 import deviderTabs from '!!raw-loader!pages/code/tabs/devider.jsx'
-import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
+import customBottom from '!!raw-loader!pages/code/tabs/customStatus.jsx'
 import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
 import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
 import onChange from '!!raw-loader!pages/code/tabs/onChange.jsx'
@@ -45,7 +45,7 @@ Display tab content.
 />
 
 <Playground
-  scope={{ Tabs }}
+  scope={{ Tabs, Spacer }}
   title="Custom Bottom Border"
   desc={`Users can difine their own bottom border`}
   code={removeDeps(customBottom)}

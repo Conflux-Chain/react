@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import { mount } from 'enzyme'
 import { Tabs } from 'components'
 import { nativeEvent } from 'tests/utils'
-import { TabHandles } from '../tabs'
+import { Handles } from '../tabs'
 
 describe('Tabs', () => {
   it('should render correctly', () => {
@@ -64,7 +64,7 @@ describe('Tabs', () => {
 
   it('can use ref as a imperative handle', () => {
     function App() {
-      const ref = useRef<TabHandles>(null)
+      const ref = useRef<Handles>(null)
       useEffect(() => {
         if (ref.current) {
           ref.current.currentTab('2')

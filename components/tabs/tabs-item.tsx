@@ -3,7 +3,7 @@ import withDefaults from '../utils/with-defaults'
 import { useTabsContext, TabsConfig } from './tabs-context'
 
 interface Props {
-  label: string | React.ReactNode
+  label: string
   value: string
   children?: string | React.ReactNode
   disabled?: boolean
@@ -11,7 +11,6 @@ interface Props {
 
 const defaultProps = {
   disabled: false,
-  // children: null,
 }
 
 export type TabsItemProps = Props & typeof defaultProps
