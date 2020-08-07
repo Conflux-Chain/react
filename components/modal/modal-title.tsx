@@ -23,18 +23,19 @@ const ModalTitle: React.FC<ModalTitleProps> = ({ className, children, ...props }
       </h2>
       <style jsx>{`
         h2 {
-          font-size: 1.5rem;
-          line-height: 1.6;
-          font-weight: normal;
+          font-size: 1.2857rem;
+          line-height: 25px;
+          font-weight: 500;
           text-align: center;
           margin: 0;
+          margin-bottom: ${theme.layout.gapHalf};
           display: inline-flex;
           flex-shrink: 0;
           justify-content: center;
           align-items: center;
           word-break: break-word;
           text-transform: capitalize;
-          color: ${theme.palette.foreground};
+          color: ${theme.palette.cNeutral7};
         }
       `}</style>
     </>

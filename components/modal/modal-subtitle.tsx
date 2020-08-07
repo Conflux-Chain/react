@@ -23,8 +23,8 @@ const ModalSubtitle: React.FC<ModalSubtitleProps> = ({ className, children, ...p
       </p>
       <style jsx>{`
         p {
-          font-size: 0.875rem;
-          line-height: 1.6;
+          font-size: 1rem;
+          line-height: 20px;
           font-weight: normal;
           text-align: center;
           margin: 0;
@@ -33,7 +33,7 @@ const ModalSubtitle: React.FC<ModalSubtitleProps> = ({ className, children, ...p
           align-items: center;
           word-break: break-word;
           text-transform: uppercase;
-          color: ${theme.palette.accents_5};
+          color: ${theme.palette.cNeutral5};
         }
       `}</style>
     </>
