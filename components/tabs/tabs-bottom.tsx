@@ -3,16 +3,15 @@ import { TabStatus, TabVarient } from 'components/utils/prop-types'
 import useTheme from '../styles/use-theme'
 
 export type BottomCpt = React.FC<{
-  className: string
   status: TabStatus
   varient: TabVarient
 }>
 
-const Bottom: BottomCpt = ({ className, varient, status }) => {
+const Bottom: BottomCpt = ({ varient, status }) => {
   const { palette } = useTheme()
   return varient === 'line' ? (
     <div
-      className={className + ' bottom'}
+      className="bottom"
       style={{
         backgroundColor: palette.cTheme0,
         opacity: status === 'active' ? '1' : '0',

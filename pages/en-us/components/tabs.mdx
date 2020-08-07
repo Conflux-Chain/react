@@ -1,5 +1,5 @@
 import { Layout, Playground, Attributes } from 'lib/components'
-import { Tabs, Spacer, Link, Text, Button, Code } from 'components'
+import { Tabs, Spacer, Link, Text, Button, Code,useTheme } from 'components'
 import { useState } from 'react'
 import TwitterIcon from '@zeit-ui/react-icons/twitter'
 import TwitchIcon from '@zeit-ui/react-icons/twitch'
@@ -45,7 +45,7 @@ Display tab content.
 />
 
 <Playground
-  scope={{ Tabs, Spacer }}
+  scope={{ Tabs, Spacer,useTheme }}
   title="Custom Bottom Border"
   desc={`Users can difine their own bottom border`}
   code={removeDeps(customBottom)}

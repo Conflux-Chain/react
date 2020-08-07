@@ -9,9 +9,8 @@ import React, {
 import TabsItem from './tabs-item'
 import useTheme from '../styles/use-theme'
 import { TabsItemConfig, TabsConfig, TabsContext } from './tabs-context'
-import { TabVarient, TabStatus } from '../utils/prop-types'
-import { ZeitUIThemesPalette } from 'components/styles/themes'
-import DefaultLabelComponent, { LabelCptProps, nav } from './Nav'
+import { TabVarient } from '../utils/prop-types'
+import DefaultLabelComponent, { LabelCptProps, nav } from './tabs-nav'
 
 interface Props {
   initialValue?: string
@@ -22,7 +21,6 @@ interface Props {
   Bottom?: React.FC
   varient?: TabVarient
   showDivider?: boolean
-  getColor?: (palette: ZeitUIThemesPalette, varient: TabVarient, status: TabStatus) => any
 }
 
 export interface Handles {
@@ -35,6 +33,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
     value,
     children,
     varient = 'line',
+
     Label = DefaultLabelComponent,
     onChange,
     className,
