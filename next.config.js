@@ -1,3 +1,4 @@
+const path = require('path')
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)?$/,
   options: {
@@ -6,6 +7,19 @@ const withMDX = require('@next/mdx')({
 })
 
 const nextConfig = {
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.playground\.jsx/,
+      issuer: /en-us/,
+      use: [
+        options.defaultLoaders.babel,
+        {
+          loader: path.resolve(__dirname, 'playgroundLoader.js'),
+        },
+      ],
+    })
+    return config
+  },
   target: 'serverless',
 
   pageExtensions: ['jsx', 'js', 'mdx', 'md', 'ts', 'tsx'],

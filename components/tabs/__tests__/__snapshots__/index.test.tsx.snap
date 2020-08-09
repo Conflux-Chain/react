@@ -3,6 +3,7 @@
 exports[`Tabs should render correctly 1`] = `
 "<div class=\\"undefined\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1<style>
             .label{
+              transition:none;
               padding: 9px 16px;
               border-radius: 4px 4px 0px 0px;
               text-align:center
@@ -16,11 +17,13 @@ exports[`Tabs should render correctly 1`] = `
             border-radius: 4px 4px 0px 0px;
           }
         </style></div><style>
-                    .nav{
-                        display:flex;
-                        position:relative
-                    }</style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2<style>
+            .nav {
+              display: flex;
+              position: relative;
+            }
+          </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2<style>
             .label{
+              transition:none;
               padding: 9px 16px;
               border-radius: 4px 4px 0px 0px;
               text-align:center
@@ -34,10 +37,11 @@ exports[`Tabs should render correctly 1`] = `
             border-radius: 4px 4px 0px 0px;
           }
         </style></div><style>
-                    .nav{
-                        display:flex;
-                        position:relative
-                    }</style></div></div></header><div class=\\"content\\"></div><style>
+            .nav {
+              display: flex;
+              position: relative;
+            }
+          </style></div></div></header><div class=\\"content\\"></div><style>
           header {
             display: flex;
             flex-wrap: wrap;
