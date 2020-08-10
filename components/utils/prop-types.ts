@@ -1,12 +1,14 @@
 export const tuple = <T extends string[]>(...args: T) => args
 
+const inputVariants = tuple('solid', 'line')
+
 const buttonVariants = tuple('solid', 'line', 'text')
 
-const buttonTypes = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
+const buttonColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
 const buttonStatus = tuple('default', 'hover', 'active', 'disabled')
 
-// const buttonTypes = tuple(
+// const buttonColors = tuple(
 //   'default',
 //   'secondary',
 //   'success',
@@ -25,9 +27,11 @@ const normalSizes = tuple('mini', 'small', 'medium', 'large')
 
 const normalTypes = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
+const inputColors = tuple('default', 'primary', 'success', 'warning', 'error')
+
 const themeTypes = tuple('dark', 'light')
 
-const snippetTypes = tuple('default', 'secondary', 'success', 'warning', 'error', 'dark', 'lite')
+const snippetColors = tuple('default', 'secondary', 'success', 'warning', 'error', 'dark', 'lite')
 
 const cardTypes = tuple(
   'default',
@@ -64,7 +68,7 @@ const placement = tuple(
 
 const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')
 
-export type ButtonTypes = typeof buttonTypes[number]
+export type ButtonColors = typeof buttonColors[number]
 
 export type ButtonVariants = typeof buttonVariants[number]
 
@@ -76,9 +80,13 @@ export type SelectTypes = typeof selectTypes[number]
 
 export type NormalTypes = typeof normalTypes[number]
 
+export type InputColors = typeof inputColors[number]
+
+export type InputVariantTypes = typeof inputVariants[number]
+
 export type ThemeTypes = typeof themeTypes[number]
 
-export type SnippetTypes = typeof snippetTypes[number]
+export type SnippetColors = typeof snippetColors[number]
 
 export type CardTypes = typeof cardTypes[number]
 
