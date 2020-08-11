@@ -30,8 +30,8 @@ const tabStatus = statusTuple('default', 'hover', 'active', 'disabled')
 //   'error-light',
 // )
 
-const selectTypes = tuple('line', 'text')
-// const tabTypes = tuple('line', 'text')
+
+const selectVariants = tuple('line', 'text')
 
 const normalSizes = tuple('mini', 'small', 'medium', 'large')
 
@@ -87,7 +87,7 @@ export type TabStatus = typeof tabStatus[number]
 
 export type NormalSizes = typeof normalSizes[number]
 
-export type SelectTypes = typeof selectTypes[number]
+export type SelectVariants = typeof selectVariants[number]
 
 export type NormalTypes = typeof normalTypes[number]
 
