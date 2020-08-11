@@ -63,4 +63,9 @@ function App() {
   )
 }
 
+export const titleEN = `Dynamic Tab content`
+export const titleZH = `动态选显卡内容`
+export const descEN = `Tab content can be controlled by user`
+export const descZH = `选显卡内容可以由用户控制`
+
 export default App

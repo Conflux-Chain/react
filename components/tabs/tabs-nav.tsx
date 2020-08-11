@@ -6,7 +6,7 @@ import DefaultLabel, { LabelCpt } from './tabs-label'
 import { defaultGetColor } from './util'
 import useTheme from '../styles/use-theme'
 
-export interface LabelCptProps {
+export interface NavCptProps {
   varient: TabVarient
   status: StatusMap
   label: string
@@ -19,7 +19,7 @@ export const nav = ({
   Bottom?: BottomCpt
   Label?: LabelCpt
 }) => {
-  const Nav: React.FC<LabelCptProps> = ({ label, status, varient }) => {
+  const Nav: React.FC<NavCptProps> = ({ label, status, varient }) => {
     const [hover, setHover] = useState(false)
     const reducedStatus = useMemo(() => reduceStatus({ ...status, hover }), [status, hover])
     const { palette } = useTheme()
@@ -44,5 +44,3 @@ export const nav = ({
   }
   return Nav
 }
-
-export default nav({})

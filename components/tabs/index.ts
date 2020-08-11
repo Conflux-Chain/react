@@ -1,10 +1,10 @@
 import Tabs from './tabs'
 import TabsItem from './tabs-item'
-import { nav } from './tabs-nav'
+import useImperative from './useImperative'
 
 Tabs.Item = TabsItem
 Tabs.Tab = TabsItem
-Tabs.nav = nav
+Tabs.useImperative = useImperative
 
 // const Nav
 

@@ -9,14 +9,18 @@ const withMDX = require('@next/mdx')({
 const nextConfig = {
   webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.playground\.jsx/,
-      issuer: /en-us/,
-      use: [
-        options.defaultLoaders.babel,
-        {
-          loader: path.resolve(__dirname, 'playgroundLoader.js'),
-        },
-      ],
+      test: /\.playground/,
+      use: ({ issuer }) => {
+        return [
+          {
+            loader: path.resolve(
+              __dirname,
+              'loaders',
+              `playgroundLoader-${(issuer && issuer.indexOf('zh-cn')) > -1 ? 'zh' : 'en'}.js`,
+            ),
+          },
+        ]
+      },
     })
     return config
   },

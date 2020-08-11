@@ -5,26 +5,29 @@ import React, {
   useImperativeHandle,
   useEffect,
   useCallback,
+  RefObject,
 } from 'react'
+import { TabsItemConfig, TabsConfig, TabsContext, Handles } from './tabs-context'
 import TabsItem from './tabs-item'
+import DefaultLabel from './tabs-label'
+import DefaultBottom from './tabs-bottom'
 import useTheme from '../styles/use-theme'
-import { TabsItemConfig, TabsConfig, TabsContext } from './tabs-context'
+
 import { TabVarient } from '../utils/prop-types'
-import DefaultLabelComponent, { LabelCptProps, nav } from './tabs-nav'
+import { nav } from './tabs-nav'
+import useImperative from './useImperative'
 
 interface Props {
   initialValue?: string
   value?: string
-  Label: React.FC<LabelCptProps>
   onChange?: (val: string) => void
   className?: string
+  Label?: React.FC
   Bottom?: React.FC
+  before?: React.ReactNode
+  after?: React.ReactNode
   varient?: TabVarient
   showDivider?: boolean
-}
-
-export interface Handles {
-  currentTab(v: string | undefined): void
 }
 
 const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Props>> = (
@@ -33,18 +36,22 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
     value,
     children,
     varient = 'line',
-
-    Label = DefaultLabelComponent,
+    Label = DefaultLabel,
+    Bottom = DefaultBottom,
+    before = null,
+    after = null,
     onChange,
-    className,
+    className = '',
     showDivider,
     ...props
   }: React.PropsWithChildren<Props>,
-  ref,
+  ref: RefObject<Handles>,
 ) => {
   const theme = useTheme()
   const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
   const [tabs, setTabs] = useState<TabsItemConfig[]>([])
+
+  const Nav = useMemo(() => nav({ Bottom, Label }), [Label, Bottom])
 
   useImperativeHandle(
     ref,
@@ -102,6 +109,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
     <TabsContext.Provider value={ctx}>
       <div className={`${className}`} {...props}>
         <header style={{ borderBottom: showDivider ? `1px solid ${theme.palette.border}` : '' }}>
+          {before}
           {tabs.map(item => {
             return (
               <div
@@ -109,24 +117,29 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
                 role="button"
                 key={item.value}
                 onClick={() => clickHandler(item)}>
-                <Label
+                <Nav
                   varient={varient}
                   status={{
                     disabled: item.disabled,
                     active: currentTab === item.value,
                     default: true,
                   }}
-                  label={item.label}></Label>
+                  label={item.label}></Nav>
               </div>
             )
           })}
+          {after}
         </header>
         <div className="content">{children}</div>
         <style jsx>{`
           header {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow-x: auto;
             align-items: center;
+          }
+          ::-webkit-scrollbar {
+            display: none;
           }
           .content {
             padding-top: 0.625rem;
@@ -137,7 +150,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
             outline: 0;
             text-transform: capitalize;
             font-size: 1rem;
-            margin: 0 18px;
+            margin: 0 3px;
             user-select: none;
             display: flex;
             align-items: center;
@@ -153,7 +166,6 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
             right: 0;
             width: 100%;
           }
-
           .tab:first-of-type {
             margin-left: 0;
           }
@@ -165,9 +177,8 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
 
 const ForwardTab = forwardRef<Handles, React.PropsWithChildren<Props>>(Tabs)
 
-//may be a more reliabe way add property rather than declare from scratch
 export default ForwardTab as typeof ForwardTab & {
   Item: typeof TabsItem
   Tab: typeof TabsItem
-  nav: typeof nav
+  useImperative: typeof useImperative
 }

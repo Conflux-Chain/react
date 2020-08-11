@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react'
+import { nativeEvent } from 'tests/utils'
 import { mount } from 'enzyme'
 import { Tabs } from 'components'
-import { nativeEvent } from 'tests/utils'
-import { Handles } from '../tabs'
+import { Handles } from '../tabs-context'
+import { nav } from '../tabs-nav'
+import { reduceStatus } from '../util'
 
 describe('Tabs', () => {
   it('should render correctly', () => {
@@ -50,12 +52,12 @@ describe('Tabs', () => {
         </Tabs.Item>
       </Tabs>,
     )
-    wrapper.find('header').find('.label').at(1).simulate('mouseEnter', nativeEvent)
+    wrapper.find('header').find('.nav').at(1).simulate('mouseEnter', nativeEvent)
     expect(wrapper.find('header').find('.label').at(1).get(0).props.style).toHaveProperty(
       'color',
       '#0054fe',
     )
-    wrapper.find('header').find('.label').at(1).simulate('mouseLeave', nativeEvent)
+    wrapper.find('header').find('.nav').at(1).simulate('mouseLeave', nativeEvent)
     expect(wrapper.find('header').find('.label').at(1).get(0).props.style).toHaveProperty(
       'color',
       '#444',
@@ -137,5 +139,36 @@ describe('Tabs', () => {
 
     wrapper.find('header').find('.tab').at(1).simulate('click', nativeEvent)
     expect(changeHandler).not.toHaveBeenCalled()
+  })
+
+  it('should return default nav', () => {
+    nav({})
+  })
+
+  it('should work with useImperative', () => {
+    const { useImperative } = Tabs
+
+    function App() {
+      const { ref, currentTab } = useImperative()
+      useEffect(() => {
+        currentTab('2')
+      }, [])
+      return (
+        <Tabs ref={ref}>
+          <Tabs.Item label="label1" value="1">
+            1
+          </Tabs.Item>
+          <Tabs.Item label="label2" value="2" disabled>
+            2
+          </Tabs.Item>
+        </Tabs>
+      )
+    }
+
+    mount(<App />)
+  })
+
+  it('should cover a unreachable brach due to a ts bug', () => {
+    reduceStatus({})
   })
 })

@@ -6,6 +6,10 @@ export interface TabsItemConfig {
   disabled: boolean
 }
 
+export interface Handles {
+  currentTab(v: string | undefined): string | void
+}
+
 export interface TabsConfig {
   register: (item: TabsItemConfig | { remove: string }) => void
   currentValue?: string

@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs should render correctly 1`] = `
-"<div class=\\"undefined\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1<style>
+"<div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1<style>
             .label{
+              white-space:nowrap;
               transition:none;
               padding: 9px 16px;
               border-radius: 4px 4px 0px 0px;
@@ -23,6 +24,7 @@ exports[`Tabs should render correctly 1`] = `
             }
           </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2<style>
             .label{
+              white-space:nowrap;
               transition:none;
               padding: 9px 16px;
               border-radius: 4px 4px 0px 0px;
@@ -44,8 +46,12 @@ exports[`Tabs should render correctly 1`] = `
           </style></div></div></header><div class=\\"content\\"></div><style>
           header {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow-x: auto;
             align-items: center;
+          }
+          ::-webkit-scrollbar {
+            display: none;
           }
           .content {
             padding-top: 0.625rem;
@@ -56,7 +62,7 @@ exports[`Tabs should render correctly 1`] = `
             outline: 0;
             text-transform: capitalize;
             font-size: 1rem;
-            margin: 0 18px;
+            margin: 0 3px;
             user-select: none;
             display: flex;
             align-items: center;
@@ -72,7 +78,6 @@ exports[`Tabs should render correctly 1`] = `
             right: 0;
             width: 100%;
           }
-
           .tab:first-of-type {
             margin-left: 0;
           }

@@ -3,16 +3,14 @@ import { Tabs, Spacer, Link, Text, Button, Code } from 'components'
 import { useState } from 'react'
 import TwitterIcon from '@zeit-ui/react-icons/twitter'
 import TwitchIcon from '@zeit-ui/react-icons/twitch'
-import removeDeps from 'lib/removeDeps.js'
 
-import defaultTabs from '!!raw-loader!pages/code/tabs/default.jsx'
-import solidTabs from '!!raw-loader!pages/code/tabs/solid.jsx'
-import controlledTabs from '!!raw-loader!pages/code/tabs/controlled.jsx'
-import deviderTabs from '!!raw-loader!pages/code/tabs/devider.jsx'
-import customBottom from '!!raw-loader!pages/code/tabs/customBorder.jsx'
-import dynamicContent from '!!raw-loader!pages/code/tabs/dynamicContent.jsx'
-import imperative from '!!raw-loader!pages/code/tabs/imperative.jsx'
-import onChange from '!!raw-loader!pages/code/tabs/onChange.jsx'
+import Default from 'pages/code/tabs/default.playground'
+import Solid from 'pages/code/tabs/solid.playground'
+import Devider from 'pages/code/tabs/devider.playground'
+import Dynamic from 'pages/code/tabs/dynamic.playground'
+import Controlled from 'pages/code/tabs/controlled.playground'
+import Imperative from 'pages/code/tabs/imperative.playground'
+import CustomStatus from 'pages/code/tabs/customStatus.playground'
 
 export const meta = {
   title: '选项卡',
@@ -23,68 +21,53 @@ export const meta = {
 
 展示选显卡内容
 
-<Playground
-  title="默认"
-  scope={{ Tabs }}
-  desc={`切换不同选项卡，使用者无需管理状态，是最经常使用的情况`}
-  code={removeDeps(defaultTabs)}
-/>
-<Playground title="Solid" scope={{ Tabs }} desc={`Solid 的展现形式`} code={removeDeps(solidTabs)} />
-<Playground
-  title="Controlled"
-  scope={{ Tabs }}
-  desc={`如果传入 value，Tab 就变成controlled component `}
-  code={removeDeps(controlledTabs)}
-/>
-<Playground
-  scope={{ Tabs }}
-  title="分割线"
-  desc={`是否展示分割线`}
-  code={removeDeps(deviderTabs)}
-/>
-<Playground
-  scope={{ Tabs }}
-  title="自定义底部"
-  desc={`用户可以自定义底部`}
-  code={removeDeps(customBottom)}
-/>
-
-<Playground
-  title="动态选显卡内容"
-  scope={{ Tabs, Text, Spacer, Button }}
-  desc={`选显卡内容可以由用户控制`}
-  code={`${removeDeps(dynamicContent)}`}
-/>
-<Playground
-  title="Get/Set活跃标签"
-  scope={{ Tabs, Button, Text, Spacer }}
-  desc={`使用ref的imperative方式来进行交互`}
-  code={removeDeps(imperative)}
-/>
-
-<Playground
-  title="监听"
-  scope={{ Tabs, Text, Spacer }}
-  desc={`用户可以监听组件的变化`}
-  code={removeDeps(onChange)}
-/>
+<Default />
+<Solid />
+<Devider />
+<Dynamic />
+<Controlled />
+<Imperative />
+<CustomStatus />
 
 <Attributes edit="/pages/zh-en/components/tabs.mdx">
 <Attributes.Title>Tabs.Props</Attributes.Title>
 
-| Attribute        | Description  | Type                    | Accepted values                 | Default |
-| ---------------- | ------------ | ----------------------- | ------------------------------- | ------- |
-| **initialValue** | 初始活跃标签 | `string`                | -                               | -       |
-| **value**        | 当前状态     | `string`                | -                               | -       |
-| **showDivider**  | 现实分割线   | `boolean`               | `true` or `false`               | -       |
-| **onChange**     | 监听变化     | `(val: string) => void` | -                               | -       |
-| ...              | 原生         | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
+| Attribute        | Description        | Type                    | Accepted values                 | Default |
+| ---------------- | ------------------ | ----------------------- | ------------------------------- | ------- |
+| **initialValue** | 初始活跃标签       | `string`                | -                               | -       |
+| **value**        | 当前状态           | `string`                | -                               | -       |
+| **showDivider**  | 现实分割线         | `boolean`               | `true` or `false`               | -       |
+| **onChange**     | 监听变化           | `(val: string) => void` | -                               | -       |
+| **varient**      | 选下卡展现形式     | `string`                | `solid` or `line`               | `line`  |
+| **Label**        | 自定义导航标签     | `React.Component`       |                                 | -       |
+| **Bottom**       | 自定义导航底部     | `React.Component`       |                                 | -       |
+| **before**       | 在导航栏前增加内容 | `React.ReactNode`       |                                 | `null`  |
+| **before**       | 在导航栏后增加内容 | `React.ReactNode`       |                                 | `null`  |
+| ...              | 原生               | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
-<Attributes.Title>Tabs.ref</Attributes.Title>
+<br />
+<strong>注意:</strong>
+<br />
+
+
+1. 自定义 Label 和 Bottom 是 React Component,可以接收`varient`和`status`这两个 props，用户可以根据他们进行定制，
+   而 before 和 after，是已经渲染好的 element，直接放到相应的位置
+
+1. `value`用来判定该组件是否受控, 虽然我们不会报错，不过请不要在受控和非受控间切换
+   <Attributes.Title>Tabs.useImperative</Attributes.Title>
 
 | Attribute      | Description       | Accepted values                         | Default |
 | -------------- | ----------------- | --------------------------------------- | ------- |
 | **currentTab** | 改变/读取组建状态 | `string`(setter) or `undefined`(getter) | -       |
+
+<br />
+<strong>注意:</strong>
+
+1. `ref` 只在非受控组件中可以使用, 也就是 `value` 没有传入的情况.`props` 是在 react 的数据流中的推荐用法.
+   确定 `useImperative` 真的有必要再使用
+
+<br />
+
 
 <Attributes.Title alias="Tabs.Tab">Tabs.Item.Props</Attributes.Title>
 

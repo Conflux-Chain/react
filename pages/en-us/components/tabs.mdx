@@ -1,7 +1,84 @@
 import { Layout, Playground, Attributes } from 'lib/components'
-import { Tabs, Spacer, Link, Text, Button, Code, useTheme } from 'components'
+import { Tabs, Spacer, Link, Text, Button, Code } from 'components'
 import { useState } from 'react'
+import TwitterIcon from '@zeit-ui/react-icons/twitter'
+import TwitchIcon from '@zeit-ui/react-icons/twitch'
 
-import Playground1 from 'pages/code/tabs/default.playground'
+import Default from 'pages/code/tabs/default.playground'
+import Solid from 'pages/code/tabs/solid.playground'
+import Devider from 'pages/code/tabs/devider.playground'
+import Dynamic from 'pages/code/tabs/dynamic.playground'
+import Controlled from 'pages/code/tabs/controlled.playground'
+import Imperative from 'pages/code/tabs/imperative.playground'
+import CustomStatus from 'pages/code/tabs/customStatus.playground'
 
-<div>{<Playground1 />}</div>
+export const meta = {
+  title: 'tabs',
+  group: 'Navigation',
+}
+
+## Tabs
+
+Display tab content.
+
+<Default />
+<Solid />
+<Devider />
+<Dynamic />
+<Controlled />
+<Imperative />
+<CustomStatus />
+
+<Attributes edit="/pages/en-us/components/tabs.mdx">
+<Attributes.Title>Tabs.Props</Attributes.Title>
+
+| Attribute        | Description                   | Type                    | Accepted values                 | Default |
+| ---------------- | ----------------------------- | ----------------------- | ------------------------------- | ------- |
+| **initialValue** | initial value                 | `string`                | -                               | -       |
+| **value**        | controlled when value present | `string`                | -                               | -       |
+| **onChange**     | change event                  | `(val: string) => void` | -                               | -       |
+| **showDivider**  | if devider present            | `boolean`               | `true` or `false`               | `false` |
+| **varient**      | Tab varient                   | `string`                | `solid` or `line`               | `line`  |
+| **Label**        | Customize navigation label    | `React.Component`       |                                 | -       |
+| **Bottom**       | Customize navigation bottom   | `React.Component`       |                                 | -       |
+| **before**       | Add before navigatin          | `React.ReactNode`       |                                 | `null`  |
+| **before**       | Add after navigatin           | `React.ReactNode`       |                                 | `null`  |
+| ...              | native props                  | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
+
+<br />
+<strong>Note:</strong>
+
+1. Label and Bottom should be React Component which accept `varient` and `status` props to get
+   better customized while before and after can be a rendered element
+
+1. `value` is key to tell if the component is controlled or not, do not switch between the two,
+   we will not throw error like react though
+
+<br />
+
+<Attributes.Title>Tabs.useImperative</Attributes.Title>
+
+| Attribute      | Description                                             | Accepted values                         | Default |
+| -------------- | ------------------------------------------------------- | --------------------------------------- | ------- |
+| **currentTab** | act as both a getter and setter regarding to active tab | `string`(setter) or `undefined`(getter) | -       |
+
+<br />
+<strong>Note:</strong>
+
+1. `ref` make sense only in **uncontrolled** component, i.e. `value` not present.
+   `props` is the recommended way to sync UI in a typical react data flow.
+   Choose `useImperative` if you can really validate your usecase
+
+<br />
+
+<Attributes.Title alias="Tabs.Tab">Tabs.Item.Props</Attributes.Title>
+
+| Attribute            | Description         | Type                          | Accepted values | Default |
+| -------------------- | ------------------- | ----------------------------- | --------------- | ------- |
+| **label**            | display tab's label | `string` or `React.ReactNode` | -               | -       |
+| **value** (required) | unique ident value  | `string`                      | -               | -       |
+| **disabled**         | disable current tab | `boolean`                     | -               | `false` |
+
+</Attributes>
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

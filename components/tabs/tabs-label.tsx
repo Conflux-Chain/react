@@ -8,7 +8,7 @@ export type LabelCpt = React.FC<{
 }>
 
 type CSS = { [key in keyof CSSProperties]: CSSProperties[key] }
-const DefaultLabel: LabelCpt = ({ label, varient, status, colors }) => {
+const Label: LabelCpt = ({ label, varient, status, colors }) => {
   const [width, ref] = useFixedWidth<HTMLDivElement>()
   const extra = useExtraStyle(varient, status)
   return (
@@ -16,6 +16,7 @@ const DefaultLabel: LabelCpt = ({ label, varient, status, colors }) => {
       {label}
       <style jsx>{`
             .label{
+              white-space:nowrap;
               transition:none;
               padding: 9px 16px;
               border-radius: 4px 4px 0px 0px;
@@ -27,7 +28,7 @@ const DefaultLabel: LabelCpt = ({ label, varient, status, colors }) => {
   )
 }
 
-export default DefaultLabel
+export default Label
 
 function useExtraStyle(varient: TabVarient, status: TabStatus) {
   const extra = useMemo<CSS>(() => {

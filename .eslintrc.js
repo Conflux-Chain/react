@@ -9,7 +9,8 @@ module.exports = {
     },
   },
   parserOptions: {
-    project: './tsconfig.json',
+    // project: './tsconfig.json',
+    projectFolderIgnoreList: ['/node_modules/', '/loaders/'],
     ecmaFeatures: {
       jsx: true,
     },
