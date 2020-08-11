@@ -9,12 +9,15 @@ const buttonVariants = variantsTuple('solid', 'line', 'text')
 const tabVariants = variantsTuple('solid', 'line')
 const inputVariants = tuple('solid', 'line')
 
-const buttonTypes = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
+
+const buttonVariants = tuple('solid', 'line', 'text')
+
+const buttonColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
 const buttonStatus = tuple('default', 'hover', 'active', 'disabled')
 const tabStatus = statusTuple('default', 'hover', 'active', 'disabled')
 
-// const buttonTypes = tuple(
+// const buttonColors = tuple(
 //   'default',
 //   'secondary',
 //   'success',
@@ -27,8 +30,8 @@ const tabStatus = statusTuple('default', 'hover', 'active', 'disabled')
 //   'error-light',
 // )
 
-const selectTypes = tuple('line', 'text')
-// const tabTypes = tuple('line', 'text')
+
+const selectVariants = tuple('line', 'text')
 
 const normalSizes = tuple('mini', 'small', 'medium', 'large')
 
@@ -75,7 +78,7 @@ const placement = tuple(
 
 const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')
 
-export type ButtonTypes = typeof buttonTypes[number]
+export type ButtonColors = typeof buttonColors[number]
 
 export type ButtonVariants = typeof buttonVariants[number]
 export type TabVarient = typeof tabVariants[number]
@@ -84,7 +87,7 @@ export type TabStatus = typeof tabStatus[number]
 
 export type NormalSizes = typeof normalSizes[number]
 
-export type SelectTypes = typeof selectTypes[number]
+export type SelectVariants = typeof selectVariants[number]
 
 export type NormalTypes = typeof normalTypes[number]
 
