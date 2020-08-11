@@ -35,7 +35,7 @@ const snippetColors = tuple('default', 'secondary', 'success', 'warning', 'error
 
 const cardVariants = tuple('solid', 'line')
 
-const cardColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error', 'dark')
+const cardColors = tuple('default', 'primary', 'success', 'warning', 'error')
 
 const copyTypes = tuple('default', 'slient', 'prevent')
 

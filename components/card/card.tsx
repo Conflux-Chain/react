@@ -39,12 +39,15 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
   ...props
 }) => {
   const theme = useTheme()
+  const boxShadow =
+    shadow || (customColor === 'default' && variant === 'solid') ? theme.expressiveness.D4 : 'none'
   const hoverShadow = useMemo(() => {
-    if (shadow) return theme.expressiveness.shadowMedium
-    return hoverable ? theme.expressiveness.shadowSmall : 'none'
-  }, [hoverable, shadow, theme.expressiveness])
-  const { color, bgColor, borderColor } = useMemo(
-    () => getStyles(customColor, theme.palette, variant),
+    if (!hoverable) return boxShadow
+    if (shadow || (customColor === 'default' && variant === 'solid')) return theme.expressiveness.D5
+    return theme.expressiveness.D4
+  }, [hoverable, shadow, theme.expressiveness, boxShadow])
+  const { color, bgColor, borderColor, hoverBgColor, hoverBorderColor } = useMemo(
+    () => getStyles(customColor, theme.palette, variant, hoverable),
     [customColor, theme.palette, shadow],
   )
 
@@ -65,15 +68,17 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
           width: ${width};
           transition: all 0.2s ease;
           border-radius: ${theme.expressiveness.R2};
-          box-shadow: ${shadow ? theme.expressiveness.shadowSmall : 'none'};
+          box-shadow: ${boxShadow};
           box-sizing: border-box;
           color: ${color};
           background-color: ${bgColor};
-          border: 1px solid ${borderColor};
+          border: ${theme.expressiveness.L2} ${theme.expressiveness.cLineStyle1} ${borderColor};
         }
 
         .card:hover {
           box-shadow: ${hoverShadow};
+          background-color: ${hoverBgColor};
+          border: ${theme.expressiveness.L2} ${theme.expressiveness.cLineStyle1} ${hoverBorderColor};
         }
 
         .card :global(img) {

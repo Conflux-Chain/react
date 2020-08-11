@@ -4,87 +4,103 @@ import { ZeitUIThemesPalette } from '../styles/themes'
 export type CardStyles = {
   color: string
   bgColor: string
+  hoverBgColor: string
   borderColor: string
+  hoverBorderColor: string
+}
+
+export type SolidCardStyles = {
+  color: string
+  bgColor: string
+  hoverBgColor: string
+}
+
+export type LineCardStyles = {
+  color: string
+  borderColor: string
+  hoverBorderColor: string
 }
 
 export const getStyles = (
   color: CardColors,
   palette: ZeitUIThemesPalette,
   variant: CardVariants,
+  hoverable: boolean,
 ): CardStyles => {
   const customColor = color
-  const solidColors: { [key in CardColors]: Omit<CardStyles, 'borderColor'> } = {
+  const solidColors: { [key in CardColors]: SolidCardStyles } = {
     default: {
       color: palette.cNeutral7,
       bgColor: palette.cNeutral8,
+      hoverBgColor: palette.cNeutral0,
     },
     primary: {
       color: palette.cNeutral7,
       bgColor: palette.cTheme0,
-    },
-    secondary: {
-      color: palette.cNeutral8,
-      bgColor: palette.secondary,
+      hoverBgColor: palette.cTheme1,
     },
     success: {
       color: palette.cNeutral7,
-      bgColor: palette.success,
+      bgColor: palette.successLight,
+      hoverBgColor: palette.success,
     },
     warning: {
       color: palette.cNeutral7,
-      bgColor: palette.warning,
+      bgColor: palette.warningLight,
+      hoverBgColor: palette.warning,
     },
     error: {
       color: palette.cNeutral7,
-      bgColor: palette.error,
-    },
-    dark: {
-      color: palette.cNeutral8,
-      bgColor: palette.cNeutral7,
+      bgColor: palette.errorLight,
+      hoverBgColor: palette.error,
     },
   }
 
-  const lineColors: { [key in CardColors]: Omit<CardStyles, 'bgColor'> } = {
+  const lineColors: { [key in CardColors]: LineCardStyles } = {
     default: {
       color: palette.cNeutral7,
-      borderColor: palette.border,
+      borderColor: palette.cNeutral3,
+      hoverBorderColor: palette.cNeutral4,
     },
     primary: {
       color: palette.cNeutral7,
-      borderColor: palette.cTheme5,
-    },
-    secondary: {
-      color: palette.cNeutral7,
-      borderColor: palette.secondary,
+      borderColor: palette.cTheme0,
+      hoverBorderColor: palette.cTheme5,
     },
     success: {
       color: palette.cNeutral7,
-      borderColor: palette.success,
+      borderColor: palette.successLight,
+      hoverBorderColor: palette.success,
     },
     warning: {
       color: palette.cNeutral7,
-      borderColor: palette.warning,
+      borderColor: palette.warningLight,
+      hoverBorderColor: palette.warning,
     },
     error: {
       color: palette.cNeutral7,
-      borderColor: palette.error,
-    },
-    dark: {
-      color: palette.cNeutral7,
-      borderColor: palette.cNeutral7,
+      borderColor: palette.errorLight,
+      hoverBorderColor: palette.error,
     },
   }
 
   if (variant === 'solid') {
-    const showBorder = customColor === 'default'
     return {
       ...solidColors[customColor],
-      borderColor: showBorder ? palette.border : 'transparent',
+      hoverBgColor: hoverable
+        ? solidColors[customColor].hoverBgColor
+        : solidColors[customColor].bgColor,
+      borderColor: 'transparent',
+      hoverBorderColor: 'transparent',
     }
   } else {
     return {
       ...lineColors[customColor],
+      hoverBorderColor: hoverable
+        ? lineColors[customColor].hoverBorderColor
+        : lineColors[customColor].borderColor,
       bgColor: palette.cNeutral8,
+      hoverBgColor: palette.cNeutral8,
     }
   }
 }

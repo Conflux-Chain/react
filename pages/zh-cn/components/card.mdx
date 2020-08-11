@@ -20,11 +20,32 @@ export const meta = {
 />
 
 <Playground
+  title="Line"
+  scope={{ Card }}
+  code={`
+<Card variant="line">
+  <p>一个 Line 的卡片。</p>
+</Card>
+`}
+/>
+
+
+<Playground
   title="可悬停的"
   scope={{ Card }}
   code={`
 <Card hoverable>
   <p>可悬停的卡片。</p>
+</Card>
+`}
+/>
+
+<Playground
+  title="可悬停的 Line"
+  scope={{ Card }}
+  code={`
+<Card variant="line" hoverable>
+  <p>可悬停的 Line 的卡片。</p>
 </Card>
 `}
 />
@@ -41,27 +62,39 @@ export const meta = {
 />
 
 <Playground
+  title="带阴影的 Line"
+  scope={{ Card }}
+  code={`
+<Card variant="line" shadow>
+  <h4>这是一个 React 组件。</h4>
+  <p>阴影 Line 卡片组件。</p>
+</Card>
+`}
+/>
+
+
+<Playground
   title="颜色"
   desc="以各式色彩表达不同的类型或状态。"
   scope={{ Card, Row, Col }}
   code={`
 () => {
-  const colors = ['default', 'primary', 'secondary', 'success', 'warning', 'error', 'dark']
+  const colors = ['default', 'primary', 'success', 'warning', 'error']
   const locales = {
-    default:'默认的', primary:'重要的', secondary: '次要的', success: '成功', warning: '警告', error: '错误', dark: '暗黑',
+    default:'默认的', primary:'重要的', success: '成功', warning: '警告', error: '错误',
   }
   return (
     <>
       {colors.map((color, index) => (
         <Row justify="space-around" key={color} style={{ marginBottom: '18px' }}>
           <Col span="10">
-            <Card color={color}>
+            <Card color={color} hoverable>
               <h4 style={{ textTransform: 'capitalize' }}>{locales[color]}</h4>
               <span>{color}</span>
             </Card>
           </Col>
           <Col span="10">
-            <Card color={color} variant="line">
+            <Card color={color} variant="line" horizontal>
               <h4 style={{ textTransform: 'capitalize' }}>{locales[color]}</h4>
               <span>{color}</span>
             </Card>
@@ -86,7 +119,7 @@ export const meta = {
       <Link target="_blank" href="https://github.com/zeit-ui/react">在 GitHub 上查看源码</Link>
     </Card.Footer>
   </Card>
-  <Card width="330px" color="dark">
+  <Card width="330px" color="primary">
     <h4>ZEIT UI React</h4>
     <p>现代化、极简风格的 UI 库。</p>
     <Card.Footer>
@@ -162,11 +195,9 @@ export const meta = {
 type CardColors =
   | 'default'
   | 'primary'
-  | 'secondary'
   | 'success'
   | 'warning'
   | 'error'
-  | 'dark'
 ```
 
 <Attributes.Title>CardVariants</Attributes.Title>

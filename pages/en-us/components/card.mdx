@@ -21,11 +21,31 @@ A common container component.
 />
 
 <Playground
+  title="Line"
+  scope={{ Card }}
+  code={`
+<Card variant="line">
+  <p>A line card.</p>
+</Card>
+`}
+/>
+
+<Playground
   title="Hoverable"
   scope={{ Card }}
   code={`
 <Card hoverable>
   <p>hoverable card.</p>
+</Card>
+`}
+/>
+
+<Playground
+  title="Hoverable Line"
+  scope={{ Card }}
+  code={`
+<Card variant="line" hoverable>
+  <p>A line hoverable card.</p>
 </Card>
 `}
 />
@@ -42,24 +62,35 @@ A common container component.
 />
 
 <Playground
+  title="Shadow Line"
+  scope={{ Card }}
+  code={`
+<Card variant="line" shadow>
+  <h4>The Evil Rabbit</h4>
+  <p>shadow line card.</p>
+</Card>
+`}
+/>
+
+<Playground
   title="Colors"
   desc="Show different states with colors."
   scope={{ Card, Spacer, Row, Col }}
   code={`
 () => {
-  const colors = ['default', 'primary', 'secondary', 'success', 'warning', 'error', 'dark']
+  const colors = ['default', 'primary', 'success', 'warning', 'error']
   return (
     <>
       {colors.map((color, index) => (
         <Row justify="space-around" key={color} style={{ marginBottom: '18px' }}>
           <Col span="10">
-            <Card color={color}>
+            <Card color={color} hoverable>
               <h4 style={{ textTransform: 'capitalize' }}>{color}</h4>
               <span>{color}</span>
             </Card>
           </Col>
           <Col span="10">
-            <Card color={color} variant="line">
+            <Card color={color} variant="line" hoverable>
               <h4 style={{ textTransform: 'capitalize' }}>{color}</h4>
               <span>{color}</span>
             </Card>
@@ -84,7 +115,7 @@ A common container component.
       <Link target="_blank" href="https://github.com/zeit-ui/react">Visit source code on GitHub.</Link>
     </Card.Footer>
   </Card>
-  <Card width="330px" color="dark">
+  <Card width="330px" color="primary">
     <h4>ZEIT UI React</h4>
     <p>Modern and minimalist React UI library.</p>
     <Card.Footer>
@@ -159,12 +190,10 @@ A common container component.
 ```ts
 type CardColors =
   | 'default'
-  | 'primary'
   | 'secondary'
   | 'success'
   | 'warning'
   | 'error'
-  | 'dark'
 ```
 
 <Attributes.Title>CardVariants</Attributes.Title>
