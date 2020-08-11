@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, useTheme } from 'components'
 import { CardColors } from 'components/utils/prop-types'
 
-const colors = ['primary', 'secondary', 'success', 'warning', 'error', 'dark']
+const colors = ['primary', 'success', 'warning', 'error']
 
 const Colors: React.FC<React.PropsWithChildren<{}>> = () => {
   const theme = useTheme()
