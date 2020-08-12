@@ -28,6 +28,7 @@ const ModalSubtitle: React.FC<ModalSubtitleProps> = ({ className, children, ...p
           font-weight: normal;
           text-align: center;
           margin: 0;
+          margin-bottom: calc(${theme.layout.gapHalf} * 1.5);
           display: inline-flex;
           justify-content: center;
           align-items: center;
