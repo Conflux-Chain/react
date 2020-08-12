@@ -56,7 +56,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
   useImperativeHandle(
     ref,
     () => ({
-      currentTab: (v: string | undefined) => (v ? setCurrentTab(v) : currentTab),
+      currentTab: (v?: string) => (v ? setCurrentTab(v) : currentTab),
     }),
     [currentTab],
   )

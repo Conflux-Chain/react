@@ -7,7 +7,7 @@ export interface TabsItemConfig {
 }
 
 export interface Handles {
-  currentTab(v: string | undefined): string | void
+  currentTab(v?: string): string | void
 }
 
 export interface TabsConfig {

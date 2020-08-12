@@ -13,22 +13,24 @@ export const defaultGetColor: any = (
   varient: TabVarient,
   status: TabStatus,
 ) => {
-  if (status === 'active' || status === 'hover') {
-    return {
-      color: palette.cTheme5,
-      background:
-        varient === 'line' ? '' : status === 'active' ? palette.cTheme0 : palette.cNeutral1,
-    }
-  } else if (status === 'default') {
-    return {
-      color: palette.cNeutral6,
-      background: varient === 'solid' ? palette.cNeutral1 : '',
-    }
-  } else if (status === 'disabled') {
-    return {
-      color: palette.cNeutral5,
-      background: varient === 'solid' ? palette.cNeutral0 : '',
-    }
+  switch (status) {
+    case 'active':
+    case 'hover':
+      return {
+        color: palette.cTheme5,
+        background:
+          varient === 'line' ? '' : status === 'active' ? palette.cTheme0 : palette.cNeutral1,
+      }
+    case 'default':
+      return {
+        color: palette.cNeutral6,
+        background: varient === 'solid' ? palette.cNeutral1 : '',
+      }
+    case 'disabled':
+      return {
+        color: palette.cNeutral5,
+        background: varient === 'solid' ? palette.cNeutral0 : '',
+      }
   }
 }
 

@@ -10,6 +10,7 @@ export type LabelCpt = React.FC<{
 type CSS = { [key in keyof CSSProperties]: CSSProperties[key] }
 const Label: LabelCpt = ({ label, varient, status, colors }) => {
   const [width, ref] = useFixedWidth<HTMLDivElement>()
+  // console.log('width', width)
   const extra = useExtraStyle(varient, status)
   return (
     <div style={{ ...colors, ...extra, width: width ? width : '' }} ref={ref} className="label">
@@ -47,10 +48,13 @@ function useExtraStyle(varient: TabVarient, status: TabStatus) {
  * The width of a shink-to-fit element is subject to change, i.e. font-weight:bold
  * We avoid the unexpect visual effect by fixing the with
  */
-function useFixedWidth<E extends HTMLElement>(...gurads: any[]): [number, React.RefObject<E>] {
+export function useFixedWidth<E extends HTMLElement>(
+  ...gurads: any[]
+): [number, React.RefObject<E>] {
   const ref = useRef<E>(null)
   const [width, setWidth] = useState(0)
   useEffect(() => {
+    // console.log(ref.current)
     if (ref.current) {
       setWidth(ref.current.offsetWidth)
     }

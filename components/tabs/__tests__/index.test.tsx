@@ -1,10 +1,11 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { nativeEvent } from 'tests/utils'
 import { mount } from 'enzyme'
-import { Tabs } from 'components'
-import { Handles } from '../tabs-context'
 import { nav } from '../tabs-nav'
-import { reduceStatus } from '../util'
+import { useFixedWidth } from '../tabs-label'
+import { reduceStatus, defaultGetColor } from '../util'
+import { Tabs } from 'components'
+import { palette } from '../../styles/themes/default'
 
 describe('Tabs', () => {
   it('should render correctly', () => {
@@ -62,28 +63,6 @@ describe('Tabs', () => {
       'color',
       '#444',
     )
-  })
-
-  it('can use ref as a imperative handle', () => {
-    function App() {
-      const ref = useRef<Handles>(null)
-      useEffect(() => {
-        if (ref.current) {
-          ref.current.currentTab('2')
-        }
-      }, [])
-      return (
-        <Tabs ref={ref} initialValue="1">
-          <Tabs.Item label="label1" value="1">
-            1
-          </Tabs.Item>
-          <Tabs.Item label="label2" value="2">
-            2
-          </Tabs.Item>
-        </Tabs>
-      )
-    }
-    mount(<App />)
   })
 
   it('can set tabs dynamically', () => {
@@ -145,12 +124,47 @@ describe('Tabs', () => {
     nav({})
   })
 
+  it('should ingnore click in uncontroled component', () => {
+    const wrapper = mount(
+      <Tabs initialValue="1" value="2" showDivider={true} varient="solid">
+        <Tabs.Item label="label1" value="1">
+          1
+        </Tabs.Item>
+        <Tabs.Item label="label2" value="2" disabled>
+          2
+        </Tabs.Item>
+      </Tabs>,
+    )
+    wrapper.find('header').find('.tab').at(0).simulate('click', nativeEvent)
+  })
+  it('should be able to update tab-item props', () => {
+    function App() {
+      const [label1, setLabel1] = useState('label1')
+      useEffect(() => {
+        setLabel1('label11')
+      }, [])
+      return (
+        <Tabs initialValue="1" value="2" showDivider={true}>
+          <Tabs.Item label={label1} value="1">
+            1
+          </Tabs.Item>
+          <Tabs.Item label="label2" value="2" disabled>
+            2
+          </Tabs.Item>
+        </Tabs>
+      )
+    }
+    mount(<App />)
+  })
+})
+
+describe('useImperative', () => {
   it('should work with useImperative', () => {
     const { useImperative } = Tabs
-
     function App() {
       const { ref, currentTab } = useImperative()
       useEffect(() => {
+        currentTab()
         currentTab('2')
       }, [])
       return (
@@ -167,8 +181,30 @@ describe('Tabs', () => {
 
     mount(<App />)
   })
+})
 
+describe('utils', () => {
   it('should cover a unreachable brach due to a ts bug', () => {
     reduceStatus({})
+  })
+
+  it('should return corrent colors with virant and status combination', () => {
+    const status = ['disabled', 'active', 'hover', 'default']
+    const varients = ['line', 'solid']
+    status.forEach(s => {
+      varients.forEach(v => {
+        defaultGetColor(palette, v, s)
+      })
+    })
+  })
+})
+
+describe('useFixedWidth', () => {
+  it('should work on a null component', () => {
+    function App() {
+      const [width, ref] = useFixedWidth<HTMLDivElement>(null)
+      return <div>{false && <div ref={ref}></div>}</div>
+    }
+    mount(<App />)
   })
 })
