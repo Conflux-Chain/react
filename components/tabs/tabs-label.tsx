@@ -1,5 +1,6 @@
-import React, { useMemo, useEffect, useRef, useState, CSSProperties } from 'react'
+import React, { useMemo, CSSProperties } from 'react'
 import { TabStatus, TabVarient } from 'components/utils/prop-types'
+import useDOMDimension from '../utils/use-dom-dimension'
 export type LabelCpt = React.FC<{
   label: string
   status: TabStatus
@@ -9,8 +10,12 @@ export type LabelCpt = React.FC<{
 
 type CSS = { [key in keyof CSSProperties]: CSSProperties[key] }
 const Label: LabelCpt = ({ label, varient, status, colors }) => {
-  const [width, ref] = useFixedWidth<HTMLDivElement>()
-  // console.log('width', width)
+  /**
+   * The width of a shink-to-fit element is subject to change,
+   * i.e. font-weight:bold can change the width which cause an
+   * unexpect visual effect
+   */
+  const [width, ref] = useDOMDimension<HTMLDivElement>('offsetWidth')
   const extra = useExtraStyle(varient, status)
   return (
     <div style={{ ...colors, ...extra, width: width ? width : '' }} ref={ref} className="label">
@@ -42,22 +47,4 @@ function useExtraStyle(varient: TabVarient, status: TabStatus) {
     return result
   }, [varient, status])
   return extra
-}
-
-/**
- * The width of a shink-to-fit element is subject to change, i.e. font-weight:bold
- * We avoid the unexpect visual effect by fixing the with
- */
-export function useFixedWidth<E extends HTMLElement>(
-  ...gurads: any[]
-): [number, React.RefObject<E>] {
-  const ref = useRef<E>(null)
-  const [width, setWidth] = useState(0)
-  useEffect(() => {
-    // console.log(ref.current)
-    if (ref.current) {
-      setWidth(ref.current.offsetWidth)
-    }
-  }, [...gurads])
-  return [width, ref]
 }

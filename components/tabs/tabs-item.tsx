@@ -13,13 +13,13 @@ const defaultProps = {
   disabled: false,
 }
 
-export type TabsItemProps = Props & typeof defaultProps
+export type TabsItemProps = Props
 
 const TabsItem: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   children,
   value,
   label,
-  disabled,
+  disabled = false,
 }) => {
   const { register, currentValue } = useTabsContext() as TabsConfig
   const isActive = useMemo(() => currentValue === value, [currentValue, value])

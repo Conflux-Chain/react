@@ -17,7 +17,7 @@ import { TabVarient } from '../utils/prop-types'
 import { nav } from './tabs-nav'
 import useImperative from './useImperative'
 
-interface Props {
+export interface TabProps {
   initialValue?: string
   value?: string
   onChange?: (val: string) => void
@@ -30,7 +30,7 @@ interface Props {
   showDivider?: boolean
 }
 
-const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Props>> = (
+const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabProps>> = (
   {
     initialValue: userCustomInitialValue,
     value,
@@ -44,7 +44,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
     className = '',
     showDivider,
     ...props
-  }: React.PropsWithChildren<Props>,
+  }: React.PropsWithChildren<TabProps>,
   ref: RefObject<Handles>,
 ) => {
   const theme = useTheme()
@@ -175,7 +175,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<Prop
   )
 }
 
-const ForwardTab = forwardRef<Handles, React.PropsWithChildren<Props>>(Tabs)
+const ForwardTab = forwardRef<Handles, React.PropsWithChildren<TabProps>>(Tabs)
 
 export default ForwardTab as typeof ForwardTab & {
   Item: typeof TabsItem

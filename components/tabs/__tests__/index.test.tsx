@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { nativeEvent } from 'tests/utils'
 import { mount } from 'enzyme'
 import { nav } from '../tabs-nav'
-import { useFixedWidth } from '../tabs-label'
 import { reduceStatus, defaultGetColor } from '../util'
 import { Tabs } from 'components'
 import { palette } from '../../styles/themes/default'
@@ -196,15 +195,5 @@ describe('utils', () => {
         defaultGetColor(palette, v, s)
       })
     })
-  })
-})
-
-describe('useFixedWidth', () => {
-  it('should work on a null component', () => {
-    function App() {
-      const [width, ref] = useFixedWidth<HTMLDivElement>(null)
-      return <div>{false && <div ref={ref}></div>}</div>
-    }
-    mount(<App />)
   })
 })

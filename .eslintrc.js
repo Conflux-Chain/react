@@ -9,12 +9,19 @@ module.exports = {
     },
   },
   parserOptions: {
-    // project: './tsconfig.json',
-    projectFolderIgnoreList: ['/node_modules/', '/loaders/'],
+    project: './tsconfig.json',
+    projectFolderIgnoreList: ['/node_modules/'],
     ecmaFeatures: {
       jsx: true,
     },
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      parser: 'esprima',
+    },
+  ],
+
   rules: {
     indent: 0,
     '@typescript-eslint/indent': 0,

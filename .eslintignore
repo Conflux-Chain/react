@@ -6,4 +6,5 @@ esm/*
 public/*
 scripts/*
 tests/*
+loaders/*
 *.config.js
