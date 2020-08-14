@@ -7,6 +7,7 @@ interface Props {
   value: string
   children?: string | React.ReactNode
   disabled?: boolean
+  [extra: string]: any
 }
 
 const defaultProps = {
@@ -20,13 +21,14 @@ const TabsItem: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   value,
   label,
   disabled = false,
+  ...extra
 }) => {
   const { register, currentValue } = useTabsContext() as TabsConfig
   const isActive = useMemo(() => currentValue === value, [currentValue, value])
 
   useEffect(() => {
-    register && register({ value, label, disabled })
-  }, [value, label, disabled])
+    register && register({ value, label, disabled, ...extra })
+  }, [value, label, disabled, extra])
 
   //remove corresponding data model when unmount
   useEffect(() => {

@@ -19,7 +19,7 @@ export const nav = ({
   Bottom?: BottomCpt
   Label?: LabelCpt
 }) => {
-  const Nav: React.FC<NavCptProps> = ({ label, status, varient }) => {
+  const Nav: React.FC<NavCptProps> = ({ label, status, varient, ...extra }) => {
     const [hover, setHover] = useState(false)
     const reducedStatus = useMemo(() => reduceStatus({ ...status, hover }), [status, hover])
     const { palette } = useTheme()
@@ -29,7 +29,7 @@ export const nav = ({
     ])
     return (
       <div className="nav" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-        <Label status={reducedStatus} varient={varient} colors={colors} label={label} />
+        <Label {...extra} status={reducedStatus} varient={varient} colors={colors} label={label} />
         <Bottom status={reducedStatus} varient={varient} />
         <style jsx>
           {`

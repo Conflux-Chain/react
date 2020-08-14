@@ -16,7 +16,6 @@ export interface Props {
 }
 
 export const Layout: React.FC<React.PropsWithChildren<Props>> = React.memo(({ children, meta }) => {
-  // debugger
   const theme = useTheme()
   const [showAfterRender, setShowAfterRender] = useState<boolean>(false)
   const { tabbarFixed } = useConfigs()

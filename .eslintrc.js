@@ -15,12 +15,6 @@ module.exports = {
       jsx: true,
     },
   },
-  overrides: [
-    {
-      files: ['*.js', '*.jsx'],
-      parser: 'esprima',
-    },
-  ],
 
   rules: {
     indent: 0,

@@ -1,12 +1,6 @@
-import React, { useMemo, CSSProperties } from 'react'
-import { TabStatus, TabVarient } from 'components/utils/prop-types'
+import React from 'react'
 import useDOMDimension from '../utils/use-dom-dimension'
-export type LabelCpt = React.FC<{
-  label: string
-  status: TabStatus
-  varient: TabVarient
-  colors: any
-}>
+import { useExtraStyle, LabelCpt } from '../tabs/tabs-label'
 
 const Label: LabelCpt = ({ label, varient, status, colors }) => {
   /**
@@ -16,17 +10,19 @@ const Label: LabelCpt = ({ label, varient, status, colors }) => {
    */
   const [width, ref] = useDOMDimension<HTMLDivElement>('offsetWidth')
   const extra = useExtraStyle(varient, status)
-
   return (
     <div style={{ ...colors, ...extra, width: width ? width : '' }} ref={ref} className="label">
       {label}
       <style jsx>{`
             .label{
+                box-sizing:content-box;
               white-space:nowrap;
               transition:none;
               padding: 9px 16px;
-              border-radius: 4px 4px 0px 0px;
-              text-align:center
+              height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             }
           }
           `}</style>
@@ -35,16 +31,3 @@ const Label: LabelCpt = ({ label, varient, status, colors }) => {
 }
 
 export default Label
-
-export function useExtraStyle(varient: TabVarient, status: TabStatus) {
-  const extra = useMemo<CSSProperties>(() => {
-    const result: CSSProperties = {}
-    if (status === 'disabled') {
-      result.cursor = 'not-allowed'
-    } else if (['active', 'hover'].indexOf(status) > -1) {
-      result.fontWeight = 'bold'
-    }
-    return result
-  }, [varient, status])
-  return extra
-}
