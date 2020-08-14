@@ -1,4 +1,4 @@
-import { Tabs, Spacer, useTheme, Button, Input } from 'components'
+import { Tabs, Spacer, useTheme, Button } from 'components'
 
 function App() {
   const { Label, Bottom } = React.useMemo(
@@ -63,7 +63,6 @@ function App() {
             cssProps.background = palette.cTheme5
           }
         }
-        console.log(cssProps)
         return (
           <div
             style={{
@@ -95,7 +94,7 @@ function App() {
           </Button>
         }
         after={
-          <Button variant={varient} color="primary"  style={{ marginLeft: 20 }}>
+          <Button variant={varient} color="primary" style={{ marginLeft: 20 }}>
             After
           </Button>
         }

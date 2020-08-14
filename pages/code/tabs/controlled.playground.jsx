@@ -1,4 +1,4 @@
-import { Tabs,Divider,Spacer } from 'components'
+import { Tabs, Divider, Spacer } from 'components'
 function App() {
   const [value, setValue] = React.useState('1')
   return (
@@ -14,9 +14,9 @@ function App() {
           Hello disable
         </Tabs.Item>
       </Tabs>
-      <Spacer y='0.5'/>
+      <Spacer y="0.5" />
       <Divider />
-      <Spacer y='0.5'/>
+      <Spacer y="0.5" />
       <Tabs value={value} onChange={setValue}>
         <Tabs.Item label="Evil Rabbit" value="1">
           The Evil Rabbit Jumped over the Fence.

@@ -1,29 +1,51 @@
 import Tabs, { TabProps } from '../tabs/tabs'
-import { TabsItemProps } from '../tabs/tabs-item'
+import NavBottom from './navigation-bottom'
+import NavLabel from './navigation-label'
+import useTheme from '../styles/use-theme'
 
-type ItemType = Omit<TabsItemProps, 'children'>
-type NavProps = Omit<TabProps, 'onChange'> & { items: ItemType[] }
+// throw 'Do not include me'
 
-// interface NavProps {
-//     items: ItemType[],
-//     initialValue?: string
-//     value?: string
-//     onChange?: (val: string) => void
-//     className?: string
-//     Label?: React.FC
-//     Bottom?: React.FC
-//     before?: React.ReactNode
-//     after?: React.ReactNode
-//     varient?: TabVarient
-//     showDivider?: boolean
-// }
-const Nav = ({ items, ...props }: NavProps) => {
-    return <Tabs {...props}>
-        {items.map((props, i) => (
-            <Tabs.Item key={i} {...props} />
-        ))}
+type ItemType = {
+  label: string
+  to: string
+  disabled?: boolean
+}
+
+//onChange suck the data flow, control should NOT come from internal
+type NavProps = Omit<TabProps, 'onChange' | 'value' | 'initValue'> & {
+  items: ItemType[]
+  url: string
+  match: (url1: string, url2: string) => boolean
+}
+
+const Nav = ({
+  items,
+  Bottom = NavBottom,
+  Label = NavLabel,
+  varient = 'line',
+  url,
+  match,
+  style,
+  ...props
+}: NavProps) => {
+  const { palette } = useTheme()
+
+  return (
+    <Tabs
+      style={{
+        border: `solid 1px ${varient === 'line' ? palette.cNeutral2 : palette.cNeutral8}`,
+        display: 'flex',
+        ...style,
+      }}
+      varient={varient}
+      Bottom={Bottom}
+      Label={Label}
+      {...props}>
+      {items.map(({ to, ...props }, i) => (
+        <Tabs.Item key={i} value={to} to={to} {...props} />
+      ))}
     </Tabs>
+  )
 }
 
 export default Nav
-

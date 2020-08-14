@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { nativeEvent } from 'tests/utils'
-import { mount } from 'enzyme'
+import { mount, ReactWrapper } from 'enzyme'
 import { nav } from '../tabs-nav'
 import { reduceStatus, defaultGetColor } from '../util'
 import { Tabs } from 'components'
@@ -86,20 +86,44 @@ describe('Tabs', () => {
       )
     }
     const wrapper = mount(<App />)
+    const label = (wrapper.find('header').find('.label').at(0).props().children as Array<any>)[0]
+    expect(label).toBe('label11')
     wrapper.unmount()
   })
 
   it('can be controlled', () => {
-    mount(
+    const controlled = mount(
       <Tabs value="1">
         <Tabs.Item label="label1" value="1">
           1
         </Tabs.Item>
-        <Tabs.Item label="label2" value="2" disabled>
+        <Tabs.Item label="label2" value="2">
           2
         </Tabs.Item>
       </Tabs>,
     )
+    const uncontrolled = mount(
+      <Tabs initialValue="1">
+        <Tabs.Item label="label1" value="1">
+          1
+        </Tabs.Item>
+        <Tabs.Item label="label2" value="2">
+          2
+        </Tabs.Item>
+      </Tabs>,
+    )
+    // const a = wrapper.find(Tabs.Item).at(0).html()
+    uncontrolled.find('header').find('.tab').at(1).simulate('click', nativeEvent)
+    controlled.find('header').find('.tab').at(1).simulate('click', nativeEvent)
+    const getActiveLabel = (wrapper: ReactWrapper) =>
+      wrapper
+        .find('header')
+        .findWhere(n => n.hasClass('active'))
+        .find('.label')
+        .childAt(0)
+        .html()
+    expect(getActiveLabel(uncontrolled)).toBe('label2')
+    expect(getActiveLabel(controlled)).toBe('label1')
   })
 
   it('should ignore events when tab disabled', () => {
@@ -120,22 +144,9 @@ describe('Tabs', () => {
   })
 
   it('should return default nav', () => {
-    nav({})
+    expect(() => nav({})).not.toThrow()
   })
 
-  it('should ingnore click in uncontroled component', () => {
-    const wrapper = mount(
-      <Tabs initialValue="1" value="2" showDivider={true} varient="solid">
-        <Tabs.Item label="label1" value="1">
-          1
-        </Tabs.Item>
-        <Tabs.Item label="label2" value="2" disabled>
-          2
-        </Tabs.Item>
-      </Tabs>,
-    )
-    wrapper.find('header').find('.tab').at(0).simulate('click', nativeEvent)
-  })
   it('should be able to update tab-item props', () => {
     function App() {
       const [label1, setLabel1] = useState('label1')
@@ -143,7 +154,7 @@ describe('Tabs', () => {
         setLabel1('label11')
       }, [])
       return (
-        <Tabs initialValue="1" value="2" showDivider={true}>
+        <Tabs value="1" showDivider={true}>
           <Tabs.Item label={label1} value="1">
             1
           </Tabs.Item>
@@ -153,7 +164,14 @@ describe('Tabs', () => {
         </Tabs>
       )
     }
-    mount(<App />)
+    const wrapper = mount(<App />)
+    const label = wrapper
+      .find('header')
+      .findWhere(n => n.hasClass('active'))
+      .find('.label')
+      .childAt(0)
+      .html()
+    expect(label).toBe('label11')
   })
 })
 
@@ -178,7 +196,14 @@ describe('useImperative', () => {
       )
     }
 
-    mount(<App />)
+    const wrapper = mount(<App />)
+    const label = wrapper
+      .find('header')
+      .findWhere(n => n.hasClass('active'))
+      .find('.label')
+      .childAt(0)
+      .html()
+    expect(label).toBe('label2')
   })
 })
 
@@ -190,10 +215,12 @@ describe('utils', () => {
   it('should return corrent colors with virant and status combination', () => {
     const status = ['disabled', 'active', 'hover', 'default']
     const varients = ['line', 'solid']
+    const colors: string[] = []
     status.forEach(s => {
       varients.forEach(v => {
-        defaultGetColor(palette, v, s)
+        colors.push(defaultGetColor(palette, v, s))
       })
     })
+    expect(colors).toMatchSnapshot()
   })
 })

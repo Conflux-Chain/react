@@ -83,3 +83,40 @@ exports[`Tabs should render correctly 1`] = `
           }
         </style></div>"
 `;
+
+exports[`utils should return corrent colors with virant and status combination 1`] = `
+Array [
+  Object {
+    "background": "",
+    "color": "#9b9eac",
+  },
+  Object {
+    "background": "#f9fafb",
+    "color": "#9b9eac",
+  },
+  Object {
+    "background": "",
+    "color": "#0054fe",
+  },
+  Object {
+    "background": "#e8f4ff",
+    "color": "#0054fe",
+  },
+  Object {
+    "background": "",
+    "color": "#0054fe",
+  },
+  Object {
+    "background": "#f1f3f6",
+    "color": "#0054fe",
+  },
+  Object {
+    "background": "",
+    "color": "#444",
+  },
+  Object {
+    "background": "#f1f3f6",
+    "color": "#444",
+  },
+]
+`;

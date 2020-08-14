@@ -6,6 +6,7 @@ import React, {
   useEffect,
   useCallback,
   RefObject,
+  CSSProperties,
 } from 'react'
 import { TabsItemConfig, TabsConfig, TabsContext, Handles } from './tabs-context'
 import TabsItem from './tabs-item'
@@ -18,6 +19,7 @@ import { nav } from './tabs-nav'
 import useImperative from './useImperative'
 
 export interface TabProps {
+  style?: CSSProperties
   initialValue?: string
   value?: string
   onChange?: (val: string) => void
@@ -72,8 +74,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabP
           if (item.value !== next.value) return item
           return {
             ...item,
-            label: next.label,
-            disabled: next.disabled,
+            ...next,
           }
         })
       }
@@ -88,14 +89,12 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabP
     [currentTab],
   )
 
-  const clickHandler = (item: TabsItemConfig) => {
-    if (item.disabled) return
+  const clickHandler = (tabValue: string) => {
     if (!value) {
       //uncontrolled
-      setCurrentTab(item.value)
+      setCurrentTab(tabValue)
     }
-
-    onChange && onChange(item.value)
+    onChange && onChange(tabValue)
   }
 
   useEffect(() => {
@@ -110,21 +109,21 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabP
       <div className={`${className}`} {...props}>
         <header style={{ borderBottom: showDivider ? `1px solid ${theme.palette.border}` : '' }}>
           {before}
-          {tabs.map(item => {
+          {tabs.map(({ value, disabled, ...extra }) => {
             return (
               <div
-                className={`tab ${currentTab === item.value ? 'active' : ''}`}
+                className={`tab ${currentTab === value ? 'active' : ''}`}
                 role="button"
-                key={item.value}
-                onClick={() => clickHandler(item)}>
+                key={value}
+                onClick={() => !disabled && clickHandler(value)}>
                 <Nav
                   varient={varient}
                   status={{
-                    disabled: item.disabled,
-                    active: currentTab === item.value,
+                    disabled: disabled,
+                    active: currentTab === value,
                     default: true,
                   }}
-                  label={item.label}></Nav>
+                  {...extra}></Nav>
               </div>
             )
           })}
