@@ -177,9 +177,9 @@ describe('Tabs', () => {
 
 describe('useImperative', () => {
   it('should work with useImperative', () => {
-    const { useImperative } = Tabs
+    const { useTabsHandle } = Tabs
     function App() {
-      const { ref, currentTab } = useImperative()
+      const { ref, currentTab } = useTabsHandle()
       useEffect(() => {
         currentTab()
         currentTab('2')

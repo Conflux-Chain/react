@@ -16,7 +16,7 @@ import useTheme from '../styles/use-theme'
 
 import { TabVarient } from '../utils/prop-types'
 import { nav } from './tabs-nav'
-import useImperative from './useImperative'
+import useTabsHandle from './useImperative'
 
 export interface TabProps {
   style?: CSSProperties
@@ -179,5 +179,5 @@ const ForwardTab = forwardRef<Handles, React.PropsWithChildren<TabProps>>(Tabs)
 export default ForwardTab as typeof ForwardTab & {
   Item: typeof TabsItem
   Tab: typeof TabsItem
-  useImperative: typeof useImperative
+  useTabsHandle: typeof useTabsHandle
 }
