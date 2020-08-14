@@ -1,6 +1,7 @@
 import React, { useMemo, CSSProperties } from 'react'
 import { TabStatus, TabVarient } from 'components/utils/prop-types'
 import useDOMDimension from '../utils/use-dom-dimension'
+import useTheme from '../styles/use-theme'
 export type LabelCpt = React.FC<{
   label: string
   status: TabStatus
@@ -16,6 +17,7 @@ const Label: LabelCpt = ({ label, varient, status, colors }) => {
    */
   const [width, ref] = useDOMDimension<HTMLDivElement>('offsetWidth')
   const extra = useExtraStyle(varient, status)
+  const { layout, expressiveness } = useTheme()
 
   return (
     <div style={{ ...colors, ...extra, width: width ? width : '' }} ref={ref} className="label">
@@ -24,8 +26,9 @@ const Label: LabelCpt = ({ label, varient, status, colors }) => {
             .label{
               white-space:nowrap;
               transition:none;
-              padding: 9px 16px;
-              border-radius: 4px 4px 0px 0px;
+              line-height:22px;
+              padding: ${layout.gapHalf} ${layout.gap};
+              border-radius: ${expressiveness.R2} ${expressiveness.R2} 0px 0px;
               text-align:center
             }
           }

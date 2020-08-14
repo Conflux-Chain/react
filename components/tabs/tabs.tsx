@@ -149,7 +149,7 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabP
             outline: 0;
             text-transform: capitalize;
             font-size: 1rem;
-            margin: 0 3px;
+            margin: 0 1px;
             user-select: none;
             display: flex;
             align-items: center;
