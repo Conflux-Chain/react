@@ -57,7 +57,7 @@ export const palette: ZeitUIThemesPalette = {
   cNeutral5: '#9b9eac',
   cNeutral6: '#444',
   cNeutral7: '#282d30',
-  cNeutral8: '#feffff',
+  cNeutral8: '#fff',
 }
 
 export const expressiveness: ZeitUIThemesExpressiveness = {
