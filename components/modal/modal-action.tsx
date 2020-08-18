@@ -1,8 +1,7 @@
-import React, { MouseEvent, useMemo } from 'react'
+import React, { MouseEvent } from 'react'
 import withDefaults from '../utils/with-defaults'
-import useTheme from '../styles/use-theme'
 import Button from '../button'
-import { ButtonTypes, ButtonVariants, NormalSizes } from '../utils/prop-types'
+import { ButtonColors, ButtonVariants, NormalSizes } from '../utils/prop-types'
 import { useModalContext } from './modal-context'
 
 type ModalActionEvent = MouseEvent<HTMLButtonElement> & {
@@ -11,7 +10,7 @@ type ModalActionEvent = MouseEvent<HTMLButtonElement> & {
 
 interface Props {
   variant?: ButtonVariants
-  color?: ButtonTypes
+  color?: ButtonColors
   size?: NormalSizes
   ghost?: boolean
   loading?: boolean
@@ -28,7 +27,7 @@ interface Props {
 
 const defaultProps = {
   variant: 'line' as ButtonVariants,
-  color: 'primary' as ButtonTypes,
+  color: 'primary' as ButtonColors,
   size: 'medium' as NormalSizes,
   htmlType: 'button' as React.ButtonHTMLAttributes<any>['type'],
   ghost: false,
@@ -44,6 +43,7 @@ type NativeAttrs = Omit<React.ButtonHTMLAttributes<any>, keyof Props>
 export type ModalActionProps = Props & typeof defaultProps & NativeAttrs
 
 const ModalAction: React.FC<ModalActionProps> = ({ children, onClick, disabled, ...props }) => {
+  disabled !== undefined && console.log(disabled)
   const { close } = useModalContext()
   const clickHandler = (event: MouseEvent<HTMLButtonElement>) => {
     if (disabled) return
@@ -54,12 +54,9 @@ const ModalAction: React.FC<ModalActionProps> = ({ children, onClick, disabled, 
   }
 
   return (
-    <>
-      <Button onClick={clickHandler} {...props}>
-        {children}
-      </Button>
-      <style jsx></style>
-    </>
+    <Button onClick={clickHandler} disabled={disabled} {...props}>
+      {children}
+    </Button>
   )
 }
 
