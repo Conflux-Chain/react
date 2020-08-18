@@ -48,7 +48,6 @@ export interface ZeitUIThemesPalette {
   cTheme5: string
   cTheme6: string
   cTheme7: string
-  cWhite0: string
   cNeutral0: string
   cNeutral1: string
   cNeutral2: string
