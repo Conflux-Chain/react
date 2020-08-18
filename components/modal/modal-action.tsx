@@ -43,7 +43,6 @@ type NativeAttrs = Omit<React.ButtonHTMLAttributes<any>, keyof Props>
 export type ModalActionProps = Props & typeof defaultProps & NativeAttrs
 
 const ModalAction: React.FC<ModalActionProps> = ({ children, onClick, disabled, ...props }) => {
-  disabled !== undefined && console.log(disabled)
   const { close } = useModalContext()
   const clickHandler = (event: MouseEvent<HTMLButtonElement>) => {
     if (disabled) return

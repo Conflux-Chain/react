@@ -38,7 +38,7 @@ const defaultProps = {
   width: '30rem',
   wrapClassName: '',
   disableBackdropClick: false,
-  closable: true,
+  closable: false,
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
