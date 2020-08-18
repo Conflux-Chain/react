@@ -1,5 +1,5 @@
 import { Layout, Playground, Attributes } from 'lib/components'
-import { Card, Spacer, Row, Col, Link, Image, Text, Divider, Code } from 'components'
+import { Card, Text, Spacer, Row, Col, Link, Image, Divider, Code } from 'components'
 
 export const meta = {
   title: 'card',
@@ -12,70 +12,58 @@ A common container component.
 
 <Playground
   title="Basic"
-  scope={{ Card }}
+  scope={{ Card, Text, Row, Spacer }}
   code={`
-<Card>
-  <p>A basic card.</p>
-</Card>
-`}
-/>
-
-<Playground
-  title="Line"
-  scope={{ Card }}
-  code={`
-<Card variant="line">
-  <p>A line card.</p>
-</Card>
+<Row style={{ flexWrap: 'wrap' }} justify="space-around">
+  <Card>
+    <Text p>A basic card.</Text>
+  </Card>
+  <Spacer y={1.5} />
+  <Card variant="line">
+    <Text p>A line card.</Text>
+  </Card>
+</Row>
 `}
 />
 
 <Playground
   title="Hoverable"
-  scope={{ Card }}
+  scope={{ Card, Text, Row, Spacer }}
   code={`
-<Card hoverable>
-  <p>hoverable card.</p>
-</Card>
-`}
-/>
-
-<Playground
-  title="Hoverable Line"
-  scope={{ Card }}
-  code={`
-<Card variant="line" hoverable>
-  <p>A line hoverable card.</p>
-</Card>
+<Row style={{ flexWrap: 'wrap' }} justify="space-around">
+  <Card hoverable>
+    <Text p>hoverable card.</Text>
+  </Card>
+  <Spacer y={1.5} />
+  <Card variant="line" hoverable>
+    <Text p>A line hoverable card.</Text>
+  </Card>
+</Row>
 `}
 />
 
 <Playground
   title="Shadow"
-  scope={{ Card }}
+  scope={{ Card, Text, Row, Spacer }}
   code={`
-<Card shadow>
-  <h4>The Evil Rabbit</h4>
-  <p>shadow card.</p>
-</Card>
-`}
-/>
-
-<Playground
-  title="Shadow Line"
-  scope={{ Card }}
-  code={`
-<Card variant="line" shadow>
-  <h4>The Evil Rabbit</h4>
-  <p>shadow line card.</p>
-</Card>
+<Row style={{ flexWrap: 'wrap' }} justify="space-around">
+  <Card shadow>
+    <Text h4>The Evil Rabbit</Text>
+    <Text p>shadow card.</Text>
+  </Card>
+  <Spacer y={1.5} />
+  <Card variant="line" shadow>
+    <Text h4>The Evil Rabbit</Text>
+    <Text p>shadow line card.</Text>
+  </Card>
+</Row>
 `}
 />
 
 <Playground
   title="Colors"
   desc="Show different states with colors."
-  scope={{ Card, Spacer, Row, Col }}
+  scope={{ Card, Row, Col, Text }}
   code={`
 () => {
   const colors = ['default', 'primary', 'success', 'warning', 'error']
@@ -85,14 +73,14 @@ A common container component.
         <Row justify="space-around" key={color} style={{ marginBottom: '18px' }}>
           <Col span="10">
             <Card color={color} hoverable>
-              <h4 style={{ textTransform: 'capitalize' }}>{color}</h4>
-              <span>{color}</span>
+              <Text h4 style={{ textTransform: 'capitalize' }}>{color}</Text>
+              <Text span>{color}</Text>
             </Card>
           </Col>
           <Col span="10">
             <Card color={color} variant="line" hoverable>
-              <h4 style={{ textTransform: 'capitalize' }}>{color}</h4>
-              <span>{color}</span>
+              <Text h4 style={{ textTransform: 'capitalize' }}>{color}</Text>
+              <Text span>{color}</Text>
             </Card>
           </Col>
         </Row>
@@ -105,19 +93,19 @@ A common container component.
 
 <Playground
   title="With Footer"
-  scope={{ Card, Link, Spacer, Row }}
+  scope={{ Card, Link, Row, Text }}
   code={`
 <Row style={{ flexWrap: 'wrap' }} justify="space-around">
-  <Card width="330px">
-    <h4>ZEIT UI React</h4>
-    <p>Modern and minimalist React UI library.</p>
+  <Card width="280px">
+    <Text h4>ZEIT UI React</Text>
+    <Text p>Modern and minimalist React UI library.</Text>
     <Card.Footer>
       <Link target="_blank" href="https://github.com/zeit-ui/react">Visit source code on GitHub.</Link>
     </Card.Footer>
   </Card>
-  <Card width="330px" color="primary">
-    <h4>ZEIT UI React</h4>
-    <p>Modern and minimalist React UI library.</p>
+  <Card width="280px" color="primary">
+    <Text h4>ZEIT UI React</Text>
+    <Text p>Modern and minimalist React UI library.</Text>
     <Card.Footer>
       <Link target="_blank" href="https://github.com/zeit-ui/react">Visit source code on GitHub.</Link>
     </Card.Footer>
@@ -128,7 +116,7 @@ A common container component.
 
 <Playground
   title="With Image"
-  scope={{ Card, Link, Spacer, Text, Image }}
+  scope={{ Card, Link, Text, Image }}
   code={`
 <Card width="400px">
   <Image src="https://user-images.githubusercontent.com/11304944/76085431-fd036480-5fec-11ea-8412-9e581425344a.png"
