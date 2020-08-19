@@ -128,13 +128,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -187,13 +187,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -497,13 +497,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -556,13 +556,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -722,13 +722,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -781,13 +781,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -921,13 +921,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -980,13 +980,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -1290,13 +1290,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -1349,13 +1349,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -1705,13 +1705,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -1764,13 +1764,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2074,13 +2074,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2133,13 +2133,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2299,13 +2299,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2358,13 +2358,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2498,13 +2498,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2557,13 +2557,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2867,13 +2867,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -2926,13 +2926,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3128,13 +3128,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3187,13 +3187,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3337,13 +3337,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3396,13 +3396,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3706,13 +3706,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3765,13 +3765,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3931,13 +3931,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -3990,13 +3990,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -4130,13 +4130,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -4189,13 +4189,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -4499,13 +4499,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -4558,13 +4558,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -4914,13 +4914,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -4973,13 +4973,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -5283,13 +5283,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -5342,13 +5342,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -5508,13 +5508,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -5567,13 +5567,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -5707,13 +5707,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -5766,13 +5766,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -6076,13 +6076,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -6135,13 +6135,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -6487,7 +6487,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -6546,7 +6546,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -6785,13 +6785,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -6844,13 +6844,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -7083,13 +7083,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -7142,13 +7142,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -7381,7 +7381,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -7440,7 +7440,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -7720,13 +7720,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -7779,13 +7779,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -8018,13 +8018,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -8077,13 +8077,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -8316,7 +8316,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -8375,7 +8375,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -8636,7 +8636,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -8695,7 +8695,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -8953,13 +8953,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -9012,13 +9012,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -9251,7 +9251,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -9310,7 +9310,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -9561,13 +9561,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -9620,13 +9620,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -9861,7 +9861,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -9920,7 +9920,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -10186,7 +10186,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -10245,7 +10245,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -10486,13 +10486,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -10545,13 +10545,13 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -10786,13 +10786,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -10845,13 +10845,13 @@ initialize {
           box-shadow: none;
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #dbdde0;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid #aaafbb;
         }
 
@@ -11086,7 +11086,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
@@ -11145,7 +11145,7 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 

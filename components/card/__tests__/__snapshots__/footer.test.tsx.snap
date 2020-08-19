@@ -45,13 +45,13 @@ exports[`Card Footer should render correctly 1`] = `
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
           color: #282d30;
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
-          background-color: #fdfdfe;
+          background-color: #fff;
           border: 2px solid transparent;
         }
 
