@@ -11,7 +11,7 @@ exports[`Tabs should render correctly 1`] = `
               text-align:center
             }
           }
-          </style></div><div class=\\"bottom\\" style=\\"background-color: rgb(232, 244, 255); opacity: 0; transform: 0.75;\\"><style>
+          </style></div><div class=\\"bottom\\" style=\\"background-color: rgb(240, 245, 255); opacity: 0; transform: 0.75;\\"><style>
           .bottom {
             transition: all 200ms ease;
             height: 8px;
@@ -33,7 +33,7 @@ exports[`Tabs should render correctly 1`] = `
               text-align:center
             }
           }
-          </style></div><div class=\\"bottom\\" style=\\"background-color: rgb(232, 244, 255); opacity: 0; transform: 0.75;\\"><style>
+          </style></div><div class=\\"bottom\\" style=\\"background-color: rgb(240, 245, 255); opacity: 0; transform: 0.75;\\"><style>
           .bottom {
             transition: all 200ms ease;
             height: 8px;
@@ -169,7 +169,7 @@ Array [
     "color": "#0054fe",
   },
   Object {
-    "background": "#e8f4ff",
+    "background": "#f0f5ff",
     "color": "#0054fe",
   },
   Object {
