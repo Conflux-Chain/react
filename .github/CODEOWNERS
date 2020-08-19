@@ -5,5 +5,6 @@ components/input/* @yqrashawn
 components/textarea/* @yqrashawn
 components/auto-complete/* @yqrashawn
 components/select/* @angelia-yuqi-personal
+components/modal/* @angelia-yuqi-personal
 components/button/* @chain-txz
 components/tooltip/* @yqrashawn
