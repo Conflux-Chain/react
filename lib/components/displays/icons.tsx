@@ -19,7 +19,7 @@ const ImportSnippet: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
 
 const Icons: React.FC = () => {
   const { isChinese } = useConfigs()
-  const { setVisible, bindings: modalBindings } = useModal()
+  const { setVisible, ref } = Modal.useModalHandle()
   const { state: query, bindings } = useInput('')
   const [importStr, setImportStr] = useState({ title: '', single: '', normal: '' })
   const icons = Object.entries(Icon).filter(
@@ -51,7 +51,7 @@ const Icons: React.FC = () => {
             />
           ))}
         </div>
-        <Modal {...modalBindings}>
+        <Modal ref={ref}>
           <Modal.Title>{importStr.title}</Modal.Title>
           <Modal.Content>
             <p>{isChinese ? '引入:' : 'Import:'}</p>
