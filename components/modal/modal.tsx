@@ -139,4 +139,4 @@ type ComponentProps = Partial<typeof defaultProps> &
 
 Modal.defaultProps = defaultProps
 
-export default Modal as ModalComponent<ComponentProps>
+export default Modal as ModalComponent<ModalHandles, ComponentProps>

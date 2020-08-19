@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { Modal, useModal } from 'components'
+import { Modal } from 'components'
 import { updateWrapper } from 'tests/utils'
 
 export const expectModalIsOpened = (wrapper: ReactWrapper) => {
@@ -11,15 +11,15 @@ export const expectModalIsClosed = (wrapper: ReactWrapper) => {
   expect(wrapper.find('.content').length).toBe(0)
 }
 
-describe('UseModal', () => {
-  it('should follow change with use-modal', async () => {
+describe('useModalHandle', () => {
+  it('should follow change with use-imperative-modal', async () => {
     const MockModal: React.FC<{ show?: boolean }> = ({ show }) => {
-      const { setVisible, bindings } = useModal()
+      const { setVisible, ref } = Modal.useModalHandle()
       useEffect(() => {
         if (show !== undefined) setVisible(show)
       }, [show])
       return (
-        <Modal {...bindings}>
+        <Modal ref={ref}>
           <Modal.Title>Modal</Modal.Title>
         </Modal>
       )
