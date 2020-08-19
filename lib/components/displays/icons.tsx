@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card, Input, useInput, Modal, useModal, Snippet } from 'components'
+import { Card, Input, useInput, Modal, Snippet } from 'components'
 import * as Icon from '@zeit-ui/react-icons'
 import IconsCell, { getImportString } from './icons-cell'
 import { useConfigs } from 'lib/config-context'
