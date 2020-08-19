@@ -5,7 +5,6 @@ module.exports = function (lang) {
     const desc = parseStringAfterToken(source, lang === 'en' ? 'descEN' : 'descZH')
     const title = parseStringAfterToken(source, lang === 'en' ? 'titleEN' : 'titleZH')
     const s = `
-        import React from 'react'
         import { Playground } from 'lib/components'
         ${imports}
         export default function App(){

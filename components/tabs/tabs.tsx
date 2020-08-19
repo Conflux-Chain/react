@@ -10,13 +10,13 @@ import React, {
 } from 'react'
 import { TabsItemConfig, TabsConfig, TabsContext, Handles } from './tabs-context'
 import TabsItem from './tabs-item'
-import DefaultLabel from './tabs-label'
-import DefaultBottom from './tabs-bottom'
+import Label from './tabs-label'
+import Bottom from './tabs-bottom'
 import useTheme from '../styles/use-theme'
 
 import { TabVarient } from '../utils/prop-types'
 import { nav } from './tabs-nav'
-import useTabsHandle from './useImperative'
+import useTabsHandle from './use-imperative'
 
 export interface TabProps {
   style?: CSSProperties
@@ -24,8 +24,6 @@ export interface TabProps {
   value?: string
   onChange?: (val: string) => void
   className?: string
-  Label?: React.FC
-  Bottom?: React.FC
   before?: React.ReactNode
   after?: React.ReactNode
   varient?: TabVarient
@@ -38,8 +36,6 @@ const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabP
     value,
     children,
     varient = 'line',
-    Label = DefaultLabel,
-    Bottom = DefaultBottom,
     before = null,
     after = null,
     onChange,

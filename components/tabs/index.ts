@@ -1,11 +1,9 @@
 import Tabs from './tabs'
 import TabsItem from './tabs-item'
-import useImperative from './useImperative'
+import useImperative from './use-imperative'
 
 Tabs.Item = TabsItem
 Tabs.Tab = TabsItem
-Tabs.useImperative = useImperative
-
-// const Nav
+Tabs.useTabsHandle = useImperative
 
 export default Tabs

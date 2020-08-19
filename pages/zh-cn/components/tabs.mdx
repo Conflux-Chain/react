@@ -10,7 +10,6 @@ import Devider from 'pages/code/tabs/devider.playground'
 import Dynamic from 'pages/code/tabs/dynamic.playground'
 import Controlled from 'pages/code/tabs/controlled.playground'
 import Imperative from 'pages/code/tabs/imperative.playground'
-import CustomStatus from 'pages/code/tabs/customStatus.playground'
 
 export const meta = {
   title: '选项卡',
@@ -27,23 +26,18 @@ export const meta = {
 <Dynamic />
 <Controlled />
 <Imperative />
-<CustomStatus />
 
 <Attributes edit="/pages/zh-en/components/tabs.mdx">
 <Attributes.Title>Tabs.Props</Attributes.Title>
 
-| Attribute        | Description        | Type                    | Accepted values                 | Default |
-| ---------------- | ------------------ | ----------------------- | ------------------------------- | ------- |
-| **initialValue** | 初始活跃标签       | `string`                | -                               | -       |
-| **value**        | 当前状态           | `string`                | -                               | -       |
-| **showDivider**  | 现实分割线         | `boolean`               | `true` or `false`               | -       |
-| **onChange**     | 监听变化           | `(val: string) => void` | -                               | -       |
-| **varient**      | 选下卡展现形式     | `string`                | `solid` or `line`               | `line`  |
-| **Label**        | 自定义导航标签     | `React.Component`       |                                 | -       |
-| **Bottom**       | 自定义导航底部     | `React.Component`       |                                 | -       |
-| **before**       | 在导航栏前增加内容 | `React.ReactNode`       |                                 | `null`  |
-| **before**       | 在导航栏后增加内容 | `React.ReactNode`       |                                 | `null`  |
-| ...              | 原生               | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
+| Attribute        | Description    | Type                    | Accepted values                 | Default |
+| ---------------- | -------------- | ----------------------- | ------------------------------- | ------- |
+| **initialValue** | 初始活跃标签   | `string`                | -                               | -       |
+| **value**        | 当前状态       | `string`                | -                               | -       |
+| **showDivider**  | 现实分割线     | `boolean`               | `true` or `false`               | -       |
+| **onChange**     | 监听变化       | `(val: string) => void` | -                               | -       |
+| **varient**      | 选下卡展现形式 | `string`                | `solid` or `line`               | `line`  |
+| ...              | 原生           | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
 <br />
 <strong>注意:</strong>

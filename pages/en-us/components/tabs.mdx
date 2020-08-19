@@ -10,7 +10,6 @@ import Devider from 'pages/code/tabs/devider.playground'
 import Dynamic from 'pages/code/tabs/dynamic.playground'
 import Controlled from 'pages/code/tabs/controlled.playground'
 import Imperative from 'pages/code/tabs/imperative.playground'
-import CustomStatus from 'pages/code/tabs/customStatus.playground'
 
 export const meta = {
   title: 'tabs',
@@ -27,7 +26,6 @@ Display tab content.
 <Dynamic />
 <Controlled />
 <Imperative />
-<CustomStatus />
 
 <Attributes edit="/pages/en-us/components/tabs.mdx">
 <Attributes.Title>Tabs.Props</Attributes.Title>
@@ -39,10 +37,8 @@ Display tab content.
 | **onChange**     | change event                  | `(val: string) => void` | -                               | -       |
 | **showDivider**  | if devider present            | `boolean`               | `true` or `false`               | `false` |
 | **varient**      | Tab varient                   | `string`                | `solid` or `line`               | `line`  |
-| **Label**        | Customize navigation label    | `React.Component`       |                                 | -       |
-| **Bottom**       | Customize navigation bottom   | `React.Component`       |                                 | -       |
 | **before**       | Add before navigatin          | `React.ReactNode`       |                                 | `null`  |
-| **before**       | Add after navigatin           | `React.ReactNode`       |                                 | `null`  |
+| **after**        | Add after navigatin           | `React.ReactNode`       |                                 | `null`  |
 | ...              | native props                  | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
 <br />
