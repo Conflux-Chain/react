@@ -77,10 +77,10 @@ export const getOptionColors = (
   }
   if (disabled) {
     return {
-      color: palette.cNeutral4,
+      color: palette.cNeutral5,
       bgColor: palette.cNeutral3,
       border: 'transparent',
-      hoverColor: palette.cNeutral4,
+      hoverColor: palette.cNeutral5,
       hoverBgColor: palette.cNeutral3,
       hoverBorder: 'transparent',
     }
