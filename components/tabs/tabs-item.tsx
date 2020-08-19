@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo } from 'react'
-import withDefaults from '../utils/with-defaults'
 import { useTabsContext, TabsConfig } from './tabs-context'
 
 interface Props {
@@ -14,15 +13,13 @@ const defaultProps = {
   disabled: false,
 }
 
-export type TabsItemProps = Props
-
-const TabsItem: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
+const TabsItem: React.FC<React.PropsWithChildren<Props>> = ({
   children,
   value,
   label,
-  disabled = false,
+  disabled,
   ...extra
-}) => {
+}: React.PropsWithChildren<Props & typeof defaultProps>) => {
   const { register, currentValue } = useTabsContext() as TabsConfig
   const isActive = useMemo(() => currentValue === value, [currentValue, value])
 
@@ -41,5 +38,6 @@ const TabsItem: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   return isActive ? <>{children}</> : null
 }
 
-export default withDefaults(TabsItem, defaultProps)
-/* eslint-enable */
+TabsItem.defaultProps = defaultProps
+
+export default TabsItem

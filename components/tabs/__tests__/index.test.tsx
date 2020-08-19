@@ -9,14 +9,26 @@ import { palette } from '../../styles/themes/default'
 describe('Tabs', () => {
   it('should render correctly', () => {
     const wrapper = mount(
-      <Tabs>
-        <Tabs.Item label="label1" value="1">
-          1
-        </Tabs.Item>
-        <Tabs.Item label="label2" value="2">
-          2
-        </Tabs.Item>
-      </Tabs>,
+      <div>
+        <Tabs>
+          <Tabs.Item label="label1" value="1">
+            1
+          </Tabs.Item>
+          <Tabs.Item label="label2" value="2">
+            2
+          </Tabs.Item>
+        </Tabs>
+        ,
+        <Tabs varient="solid">
+          <Tabs.Item label="label1" value="1">
+            1
+          </Tabs.Item>
+          <Tabs.Item label="label2" value="2">
+            2
+          </Tabs.Item>
+        </Tabs>
+        ,
+      </div>,
     )
     expect(wrapper.html()).toMatchSnapshot()
     expect(() => wrapper.unmount()).not.toThrow()

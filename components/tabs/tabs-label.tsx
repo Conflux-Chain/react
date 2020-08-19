@@ -20,6 +20,7 @@ const Label: LabelCpt = ({ label, varient, status, colors }) => {
   const { layout, expressiveness } = useTheme()
 
   return (
+    //width is 0 forever due to jest contraint (i.e. no css dom)
     <div style={{ ...colors, ...extra, width: width ? width : '' }} ref={ref} className="label">
       {label}
       <style jsx>{`
