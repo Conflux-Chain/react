@@ -7,4 +7,5 @@ public/*
 scripts/*
 tests/*
 loaders/*
+pages/code/*
 *.config.js

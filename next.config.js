@@ -16,7 +16,7 @@ const nextConfig = {
             loader: path.resolve(
               __dirname,
               'loaders',
-              `playgroundLoader-${(issuer && issuer.indexOf('zh-cn')) > -1 ? 'zh' : 'en'}.js`,
+              `playground-loader-${(issuer && issuer.indexOf('zh-cn')) > -1 ? 'zh' : 'en'}.js`,
             ),
           },
         ]

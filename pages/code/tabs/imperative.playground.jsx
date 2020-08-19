@@ -1,11 +1,11 @@
 import { Tabs, Spacer, Button } from 'components'
 
 function App() {
-  const { currentTab, ref } = Tabs.useImperative()
+  const { setCurrentTab, getCurrentTab, ref } = Tabs.useTabsHandle()
   return (
     <div>
-      <Button onClick={() => alert('current tab:' + currentTab())}>Alert current tab</Button>
-      <Button onClick={() => currentTab('2')}>Set second tab imperatively</Button>
+      <Button onClick={() => alert('current tab:' + getCurrentTab())}>Alert current tab</Button>
+      <Button onClick={() => setCurrentTab('2')}>Set second tab imperatively</Button>
       <Spacer y={1} />
       <Tabs initialValue="1" ref={ref}>
         <Tabs.Item label="evil rabbit" value="1">

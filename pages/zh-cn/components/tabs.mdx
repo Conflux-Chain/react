@@ -34,7 +34,7 @@ export const meta = {
 | ---------------- | -------------- | ----------------------- | ------------------------------- | ------- |
 | **initialValue** | 初始活跃标签   | `string`                | -                               | -       |
 | **value**        | 当前状态       | `string`                | -                               | -       |
-| **showDivider**  | 现实分割线     | `boolean`               | `true` or `false`               | -       |
+| **showDivider**  | 显示分割线     | `boolean`               | `true` or `false`               | -       |
 | **onChange**     | 监听变化       | `(val: string) => void` | -                               | -       |
 | **varient**      | 选下卡展现形式 | `string`                | `solid` or `line`               | `line`  |
 | ...              | 原生           | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
@@ -43,21 +43,22 @@ export const meta = {
 <strong>注意:</strong>
 <br />
 
-1. 自定义 Label 和 Bottom 是 React Component,可以接收`varient`和`status`这两个 props，用户可以根据他们进行定制，
-   而 before 和 after，是已经渲染好的 element，直接放到相应的位置
-
 1. `value`用来判定该组件是否受控, 虽然我们不会报错，不过请不要在受控和非受控间切换
-   <Attributes.Title>Tabs.useImperative</Attributes.Title>
 
-| Attribute      | Description       | Accepted values                         | Default |
-| -------------- | ----------------- | --------------------------------------- | ------- |
-| **currentTab** | 改变/读取组建状态 | `string`(setter) or `undefined`(getter) | -       |
+
+<Attributes.Title>Tabs.useTabsHandle</Attributes.Title>
+
+| Attribute         | Description  | Accepted values | Default |
+| ----------------- | ------------ | --------------- | ------- |
+| **getCurrentTab** | 读取组件状态 | `void`          | -       |
+| **setCurrentTab** | 改变组件状态 | `string`        | -       |
 
 <br />
 <strong>注意:</strong>
 
 1. `ref` 只在非受控组件中可以使用, 也就是 `value` 没有传入的情况.`props` 是在 react 的数据流中的推荐用法.
-   确定 `useImperative` 真的有必要再使用
+   确定 `useTabsHandle` 真的有必要再使用
+
 
 <br />
 

@@ -24,155 +24,164 @@ export interface TabProps {
   value?: string
   onChange?: (val: string) => void
   className?: string
-  before?: React.ReactNode
-  after?: React.ReactNode
   varient?: TabVarient
   showDivider?: boolean
 }
 
-const Tabs: React.ForwardRefRenderFunction<Handles, React.PropsWithChildren<TabProps>> = (
-  {
-    initialValue: userCustomInitialValue,
-    value,
-    children,
-    varient = 'line',
-    before = null,
-    after = null,
-    onChange,
-    className = '',
-    showDivider,
-    ...props
-  }: React.PropsWithChildren<TabProps>,
-  ref: RefObject<Handles>,
-) => {
-  const theme = useTheme()
-  const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
-  const [tabs, setTabs] = useState<TabsItemConfig[]>([])
-
-  const Nav = useMemo(() => nav({ Bottom, Label }), [Label, Bottom])
-
-  useImperativeHandle(
-    ref,
-    () => ({
-      currentTab: (v?: string) => (v ? setCurrentTab(v) : currentTab),
-    }),
-    [currentTab],
-  )
-
-  const register = useCallback((next: TabsItemConfig | { remove: string }) => {
-    setTabs(last => {
-      if ('remove' in next) {
-        return last.filter(({ value }) => value !== next.remove)
-      } else {
-        const hasItem = last.find(item => item.value === next.value)
-        if (!hasItem) return [...last, next]
-        return last.map(item => {
-          if (item.value !== next.value) return item
-          return {
-            ...item,
-            ...next,
-          }
-        })
-      }
-    })
-  }, [])
-
-  const ctx = useMemo<TabsConfig>(
-    () => ({
-      register,
-      currentValue: currentTab,
-    }),
-    [currentTab],
-  )
-
-  const clickHandler = (tabValue: string) => {
-    if (!value) {
-      //uncontrolled
-      setCurrentTab(tabValue)
-    }
-    onChange && onChange(tabValue)
-  }
-
-  useEffect(() => {
-    //controlled component
-    if (value) {
-      setCurrentTab(value)
-    }
-  }, [value])
-
-  return (
-    <TabsContext.Provider value={ctx}>
-      <div className={`${className}`} {...props}>
-        <header style={{ borderBottom: showDivider ? `1px solid ${theme.palette.border}` : '' }}>
-          {before}
-          {tabs.map(({ value, disabled, ...extra }) => {
-            return (
-              <div
-                className={`tab ${currentTab === value ? 'active' : ''}`}
-                role="button"
-                key={value}
-                onClick={() => !disabled && clickHandler(value)}>
-                <Nav
-                  varient={varient}
-                  status={{
-                    disabled: disabled,
-                    active: currentTab === value,
-                    default: true,
-                  }}
-                  {...extra}></Nav>
-              </div>
-            )
-          })}
-          {after}
-        </header>
-        <div className="content">{children}</div>
-        <style jsx>{`
-          header {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            align-items: center;
-          }
-          ::-webkit-scrollbar {
-            display: none;
-          }
-          .content {
-            padding-top: 0.625rem;
-          }
-
-          .tab {
-            cursor: pointer;
-            outline: 0;
-            text-transform: capitalize;
-            font-size: 1rem;
-            margin: 0 1px;
-            user-select: none;
-            display: flex;
-            align-items: center;
-            line-height: 1.25rem;
-            position: relative;
-            font-variant-numeric: tabular-nums;
-          }
-
-          .tab :global(.bottom) {
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            right: 0;
-            width: 100%;
-          }
-          .tab:first-of-type {
-            margin-left: 0;
-          }
-        `}</style>
-      </div>
-    </TabsContext.Provider>
-  )
+const defaultProps = {
+  varient: 'line' as TabVarient,
+  className: '',
 }
 
-const ForwardTab = forwardRef<Handles, React.PropsWithChildren<TabProps>>(Tabs)
+type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>, keyof TabProps>
+type Props = React.PropsWithChildren<TabProps & typeof defaultProps & NativeAttrs>
 
-export default ForwardTab as typeof ForwardTab & {
+const Tabs = forwardRef<Handles, Props>(
+  (
+    {
+      initialValue: userCustomInitialValue,
+      value,
+      children,
+      varient,
+      onChange,
+      className,
+      showDivider,
+      ...props
+    },
+    ref: RefObject<Handles>,
+  ) => {
+    const theme = useTheme()
+    const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
+    const [tabs, setTabs] = useState<TabsItemConfig[]>([])
+
+    const Nav = useMemo(() => nav({ Bottom, Label }), [Label, Bottom])
+
+    useImperativeHandle(
+      ref,
+      () => ({
+        setCurrentTab(v) {
+          setCurrentTab(v)
+        },
+        getCurrentTab() {
+          return currentTab
+        },
+      }),
+      [currentTab],
+    )
+
+    const register = useCallback((next: TabsItemConfig | { remove: string }) => {
+      setTabs(last => {
+        if ('remove' in next) {
+          return last.filter(({ value }) => value !== next.remove)
+        } else {
+          const hasItem = last.find(item => item.value === next.value)
+          if (!hasItem) return [...last, next]
+          return last.map(item => {
+            if (item.value !== next.value) return item
+            return {
+              ...item,
+              ...next,
+            }
+          })
+        }
+      })
+    }, [])
+
+    const ctx = useMemo<TabsConfig>(
+      () => ({
+        register,
+        currentValue: currentTab,
+      }),
+      [currentTab],
+    )
+
+    const clickHandler = (tabValue: string) => {
+      if (!value) {
+        //uncontrolled
+        setCurrentTab(tabValue)
+      }
+      onChange && onChange(tabValue)
+    }
+
+    useEffect(() => {
+      //controlled component
+      if (value) {
+        setCurrentTab(value)
+      }
+    }, [value])
+
+    return (
+      <TabsContext.Provider value={ctx}>
+        <div className={`${className}`} {...props}>
+          <header style={{ borderBottom: showDivider ? `1px solid ${theme.palette.border}` : '' }}>
+            {tabs.map(({ value, disabled, ...extra }) => {
+              return (
+                <div
+                  className={`tab ${currentTab === value ? 'active' : ''}`}
+                  role="button"
+                  key={value}
+                  onClick={() => !disabled && clickHandler(value)}>
+                  <Nav
+                    varient={varient}
+                    status={{
+                      disabled: disabled,
+                      active: currentTab === value,
+                      default: true,
+                    }}
+                    {...extra}></Nav>
+                </div>
+              )
+            })}
+          </header>
+          <div className="content">{children}</div>
+          <style jsx>{`
+            header {
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              align-items: center;
+            }
+            ::-webkit-scrollbar {
+              display: none;
+            }
+            .content {
+              padding-top: 0.625rem;
+            }
+
+            .tab {
+              cursor: pointer;
+              outline: 0;
+              text-transform: capitalize;
+              font-size: 1rem;
+              margin: 0 1px;
+              user-select: none;
+              display: flex;
+              align-items: center;
+              line-height: 1.25rem;
+              position: relative;
+              font-variant-numeric: tabular-nums;
+            }
+
+            .tab :global(.bottom) {
+              position: absolute;
+              bottom: -1px;
+              left: 0;
+              right: 0;
+              width: 100%;
+            }
+            .tab:first-of-type {
+              margin-left: 0;
+            }
+          `}</style>
+        </div>
+      </TabsContext.Provider>
+    )
+  },
+)
+
+Tabs.defaultProps = defaultProps
+
+export default Tabs as typeof Tabs & {
   Item: typeof TabsItem
   Tab: typeof TabsItem
   useTabsHandle: typeof useTabsHandle
