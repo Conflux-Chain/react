@@ -59,6 +59,29 @@ describe('closeModal', () => {
   })
 })
 
+describe('setVisible', () => {
+  it('when setVisible set underfined, should close directly', async () => {
+    const MockModal: React.FC<{ show?: boolean }> = ({ show }) => {
+      const { setVisible, ref } = Modal.useModalHandle()
+      useEffect(() => {
+        if (show !== undefined) setVisible(show)
+      }, [show])
+      return (
+        <Modal ref={ref} onClose={() => setVisible()}>
+          <Modal.Title>Modal</Modal.Title>
+        </Modal>
+      )
+    }
+
+    const wrapper = mount(<MockModal />)
+    wrapper.setProps({ show: true })
+    await updateWrapper(wrapper, 500)
+    wrapper.find('.backdrop').simulate('click', nativeEvent)
+    await updateWrapper(wrapper, 500)
+    expectModalIsClosed(wrapper)
+  })
+})
+
 describe('getVisible', () => {
   it('should get current visible', async () => {
     let log = ''
