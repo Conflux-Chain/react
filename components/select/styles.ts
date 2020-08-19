@@ -56,16 +56,14 @@ export const getOptionColors = (
   palette: ZeitUIThemesPalette,
   isLabel: boolean = false,
   variant: SelectVariants = 'line',
-  rgb: number[],
 ) => {
-  const [r, g, b] = rgb
   const colors: { [key in SelectVariants]: optionColors } = {
     line: {
       color: selected ? palette.cNeutral8 : palette.cNeutral6,
       bgColor: selected ? palette.cTheme5 : palette.cNeutral8,
       border: 'transparent',
       hoverColor: selected ? palette.cNeutral8 : palette.cTheme5,
-      hoverBgColor: selected ? palette.cTheme5 : `rgba(${r}, ${g}, ${b}, 0.04)`,
+      hoverBgColor: selected ? palette.cTheme5 : palette.cTheme0,
       hoverBorder: 'transparent',
     },
     text: {
@@ -74,7 +72,7 @@ export const getOptionColors = (
       border: selected ? palette.cTheme5 : 'transparent',
       hoverColor: palette.cTheme5,
       hoverBgColor: palette.cNeutral8,
-      hoverBorder: selected ? palette.cTheme5 : `rgba(${r}, ${g}, ${b}, 0.12)`,
+      hoverBorder: selected ? palette.cTheme5 : palette.cTheme0,
     },
   }
   if (disabled) {
