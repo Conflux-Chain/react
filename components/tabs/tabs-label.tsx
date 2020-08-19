@@ -17,10 +17,7 @@ const Label: LabelCpt = ({ label, varient, status, colors }) => {
    */
   const [width, ref] = useDOMDimension<HTMLDivElement>('offsetWidth')
   const extra = useExtraStyle(varient, status)
-<<<<<<< HEAD
   const { layout, expressiveness } = useTheme()
-=======
->>>>>>> Nav
 
   return (
     <div style={{ ...colors, ...extra, width: width ? width : '' }} ref={ref} className="label">
