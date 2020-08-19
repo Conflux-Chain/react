@@ -34,9 +34,8 @@ const defaultProps = {
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>, keyof TabProps>
-type Props = React.PropsWithChildren<TabProps & typeof defaultProps & NativeAttrs>
 
-const Tabs = forwardRef<Handles, Props>(
+const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
   (
     {
       initialValue: userCustomInitialValue,
@@ -47,7 +46,7 @@ const Tabs = forwardRef<Handles, Props>(
       className,
       showDivider,
       ...props
-    },
+    }: React.PropsWithChildren<TabProps & typeof defaultProps & NativeAttrs>,
     ref: RefObject<Handles>,
   ) => {
     const theme = useTheme()

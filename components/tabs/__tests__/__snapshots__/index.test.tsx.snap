@@ -5,7 +5,8 @@ exports[`Tabs should render correctly 1`] = `
             .label{
               white-space:nowrap;
               transition:none;
-              padding: 9px 16px;
+              line-height:22px;
+              padding: 8px 16px;
               border-radius: 4px 4px 0px 0px;
               text-align:center
             }
@@ -26,7 +27,8 @@ exports[`Tabs should render correctly 1`] = `
             .label{
               white-space:nowrap;
               transition:none;
-              padding: 9px 16px;
+              line-height:22px;
+              padding: 8px 16px;
               border-radius: 4px 4px 0px 0px;
               text-align:center
             }
@@ -44,44 +46,44 @@ exports[`Tabs should render correctly 1`] = `
               position: relative;
             }
           </style></div></div></header><div class=\\"content\\"></div><style>
-          header {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            align-items: center;
-          }
-          ::-webkit-scrollbar {
-            display: none;
-          }
-          .content {
-            padding-top: 0.625rem;
-          }
+            header {
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              align-items: center;
+            }
+            ::-webkit-scrollbar {
+              display: none;
+            }
+            .content {
+              padding-top: 0.625rem;
+            }
 
-          .tab {
-            cursor: pointer;
-            outline: 0;
-            text-transform: capitalize;
-            font-size: 1rem;
-            margin: 0 3px;
-            user-select: none;
-            display: flex;
-            align-items: center;
-            line-height: 1.25rem;
-            position: relative;
-            font-variant-numeric: tabular-nums;
-          }
+            .tab {
+              cursor: pointer;
+              outline: 0;
+              text-transform: capitalize;
+              font-size: 1rem;
+              margin: 0 1px;
+              user-select: none;
+              display: flex;
+              align-items: center;
+              line-height: 1.25rem;
+              position: relative;
+              font-variant-numeric: tabular-nums;
+            }
 
-          .tab :global(.bottom) {
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            right: 0;
-            width: 100%;
-          }
-          .tab:first-of-type {
-            margin-left: 0;
-          }
-        </style></div>"
+            .tab :global(.bottom) {
+              position: absolute;
+              bottom: -1px;
+              left: 0;
+              right: 0;
+              width: 100%;
+            }
+            .tab:first-of-type {
+              margin-left: 0;
+            }
+          </style></div>"
 `;
 
 exports[`utils should return corrent colors with virant and status combination 1`] = `

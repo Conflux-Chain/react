@@ -179,10 +179,10 @@ describe('useImperative', () => {
   it('should work with useImperative', () => {
     const { useTabsHandle } = Tabs
     function App() {
-      const { ref, currentTab } = useTabsHandle()
+      const { ref, setCurrentTab, getCurrentTab } = useTabsHandle()
       useEffect(() => {
-        currentTab()
-        currentTab('2')
+        getCurrentTab()
+        setCurrentTab('2')
       }, [])
       return (
         <Tabs ref={ref}>
