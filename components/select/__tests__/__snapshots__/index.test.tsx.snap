@@ -32,7 +32,7 @@ exports[`Select should render correctly 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -44,6 +44,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -130,7 +131,7 @@ exports[`Select should render correctly 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(1.334 * 16px);
             min-width: 6.5rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -142,6 +143,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -228,7 +230,7 @@ exports[`Select should render correctly 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(1.8 * 16px);
             min-width: 8rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -240,6 +242,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -326,7 +329,7 @@ exports[`Select should render correctly 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.667 * 16px);
             min-width: 12.5rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -338,6 +341,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -470,7 +474,7 @@ exports[`Select should render correctly when variant=text 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -482,6 +486,7 @@ exports[`Select should render correctly when variant=text 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -584,7 +589,7 @@ exports[`Select should work correctly with labels 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -596,6 +601,7 @@ exports[`Select should work correctly with labels 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -731,7 +737,7 @@ initialize {
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -743,6 +749,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -845,7 +852,7 @@ initialize {
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -857,6 +864,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -1131,7 +1139,7 @@ initialize {
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -1143,6 +1151,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -1283,7 +1292,7 @@ initialize {
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -1295,6 +1304,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
@@ -1456,7 +1466,7 @@ initialize {
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -1468,6 +1478,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,

@@ -181,7 +181,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             padding: 0 calc(${theme.layout.gapHalf} * 1.5) 0 ${theme.layout.gap};
             height: ${sizes.height};
             min-width: ${sizes.minWidth};
-            background-color: transparent;
+            background-color: ${colors.bgColor};
           }
 
           .multiple {
@@ -192,7 +192,8 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           }
 
           .select:hover {
-            border-color: ${colors.hoverColor};
+            border-color: ${colors.hoverBorder};
+            background-color: ${colors.hoverBgColor};
           }
 
           .select:hover .icon,

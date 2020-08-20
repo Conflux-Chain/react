@@ -18,8 +18,11 @@ type optionColors = {
 
 type selectColors = {
   color: string
-  hoverColor: string
+  bgColor: string
   border: string
+  hoverColor: string
+  hoverBgColor: string
+  hoverBorder: string
   placeholderColor: string
 }
 
@@ -78,10 +81,10 @@ export const getOptionColors = (
   if (disabled) {
     return {
       color: palette.cNeutral4,
-      bgColor: palette.cNeutral2,
+      bgColor: palette.cNeutral8,
       border: 'transparent',
       hoverColor: palette.cNeutral4,
-      hoverBgColor: palette.cNeutral2,
+      hoverBgColor: palette.cNeutral8,
       hoverBorder: 'transparent',
     }
   }
@@ -105,16 +108,22 @@ export const getSelectColors = (
 ): selectColors => {
   if (disabled) {
     return {
-      color: palette.cNeutral3,
-      hoverColor: palette.cNeutral3,
-      placeholderColor: palette.cNeutral3,
-      border: variant === 'text' ? 'parent' : palette.cNeutral3,
+      color: palette.cNeutral4,
+      bgColor: palette.cNeutral2,
+      placeholderColor: palette.cNeutral5,
+      border: variant === 'text' ? 'transparent' : palette.cNeutral2,
+      hoverColor: palette.cNeutral4,
+      hoverBgColor: palette.cNeutral2,
+      hoverBorder: palette.cNeutral2,
     }
   }
   return {
     color: palette.cNeutral6,
-    hoverColor: palette.cTheme5,
+    bgColor: palette.cNeutral8,
     placeholderColor: palette.cNeutral5,
-    border: variant === 'text' ? 'parent' : palette.cNeutral3,
+    border: variant === 'text' ? 'transparent' : palette.cNeutral3,
+    hoverColor: palette.cTheme5,
+    hoverBgColor: palette.cNeutral8,
+    hoverBorder: palette.cTheme5,
   }
 }

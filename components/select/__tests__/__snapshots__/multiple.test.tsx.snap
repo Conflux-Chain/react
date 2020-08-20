@@ -103,7 +103,7 @@ exports[`Select Multiple should render correctly 1`] = `
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
             min-width: 10rem;
-            background-color: transparent;
+            background-color: #fff;
           }
 
           .multiple {
@@ -115,6 +115,7 @@ exports[`Select Multiple should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
+            background-color: #fff
           }
 
           .select:hover .icon,
