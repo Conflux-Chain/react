@@ -10,12 +10,10 @@ import React, {
 } from 'react'
 import { TabsItemConfig, TabsConfig, TabsContext, Handles } from './tabs-context'
 import TabsItem from './tabs-item'
-import Label from './tabs-label'
-import Bottom from './tabs-bottom'
 import useTheme from '../styles/use-theme'
 
 import { TabVarient } from '../utils/prop-types'
-import { nav } from './tabs-nav'
+import Nav from './tabs-nav'
 import useTabsHandle from './use-imperative'
 
 export interface TabProps {
@@ -53,7 +51,7 @@ const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
     const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
     const [tabs, setTabs] = useState<TabsItemConfig[]>([])
 
-    const Nav = useMemo(() => nav({ Bottom, Label }), [Label, Bottom])
+    // const Nav = useMemo(() => nav({ Bottom, Label }), [Label, Bottom])
 
     useImperativeHandle(
       ref,
