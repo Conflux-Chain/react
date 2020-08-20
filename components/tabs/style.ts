@@ -19,7 +19,7 @@ export const defaultGetColor: any = (
       return {
         color: palette.cTheme5,
         background:
-          varient === 'line' ? '' : status === 'active' ? palette.cTheme0 : palette.cNeutral1,
+          varient === 'line' ? '' : status === 'active' ? palette.cTheme2 : palette.cNeutral1,
       }
     case 'default':
       return {
@@ -29,7 +29,7 @@ export const defaultGetColor: any = (
     case 'disabled':
       return {
         color: palette.cNeutral5,
-        background: varient === 'solid' ? palette.cNeutral0 : '',
+        background: varient === 'solid' ? palette.cNeutral1 : '',
       }
   }
 }

@@ -14,7 +14,7 @@ const Bottom: BottomCpt = ({ varient, status }) => {
       <style jsx>
         {`
           .bottom {
-            background-color: ${palette.cTheme0};
+            background-color: ${palette.cTheme5};
             transition: all 200ms ease;
             opacity: ${status === 'active' ? '1' : '0'};
             transform: scale(${status === 'active' ? '1' : '0.75'});

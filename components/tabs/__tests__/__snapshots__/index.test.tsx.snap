@@ -13,7 +13,7 @@ exports[`Tabs should render correctly 1`] = `
           }
           </style></div><div class=\\"bottom\\"><style>
           .bottom {
-            background-color: #f0f5ff;
+            background-color: #0054fe;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -38,7 +38,7 @@ exports[`Tabs should render correctly 1`] = `
           }
           </style></div><div class=\\"bottom\\"><style>
           .bottom {
-            background-color: #f0f5ff;
+            background-color: #0054fe;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -167,7 +167,7 @@ Array [
     "color": "#9b9eac",
   },
   Object {
-    "background": "#f9fafb",
+    "background": "#f1f3f6",
     "color": "#9b9eac",
   },
   Object {
@@ -175,7 +175,7 @@ Array [
     "color": "#0054fe",
   },
   Object {
-    "background": "#f0f5ff",
+    "background": "#ccddff",
     "color": "#0054fe",
   },
   Object {
