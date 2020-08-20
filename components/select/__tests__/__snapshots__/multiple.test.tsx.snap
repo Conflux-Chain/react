@@ -115,7 +115,7 @@ exports[`Select Multiple should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,

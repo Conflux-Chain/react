@@ -44,7 +44,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -143,7 +143,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -242,7 +242,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -341,7 +341,7 @@ exports[`Select should render correctly 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -469,7 +469,7 @@ exports[`Select should render correctly when variant=text 1`] = `
             width: initial;
             overflow: hidden;
             transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
-            border: 1px solid parent;
+            border: 1px solid transparent;
             border-radius: 4px;
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
@@ -486,7 +486,7 @@ exports[`Select should render correctly when variant=text 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -601,7 +601,7 @@ exports[`Select should work correctly with labels 1`] = `
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -749,7 +749,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -864,7 +864,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -1151,7 +1151,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -1304,7 +1304,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
@@ -1478,7 +1478,7 @@ initialize {
 
           .select:hover {
             border-color: #0054fe;
-            background-color: #fff
+            background-color: #fff;
           }
 
           .select:hover .icon,
