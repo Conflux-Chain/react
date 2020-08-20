@@ -4,7 +4,7 @@ import { ZeitUIThemes, ZeitUIThemesPalette } from 'components/styles/themes'
 export interface SelectSize {
   height: string
   fontSize: string
-  minWidth: string
+  labelFontSize: string
 }
 
 type optionColors = {
@@ -31,22 +31,22 @@ export const getSizes = (theme: ZeitUIThemes, size?: NormalSizes) => {
     medium: {
       height: `calc(2.625 * ${theme.layout.gap})`,
       fontSize: '1rem',
-      minWidth: '10rem',
+      labelFontSize: '1.1428rem',
     },
     small: {
-      height: `calc(1.8 * ${theme.layout.gap})`,
-      fontSize: '.75rem',
-      minWidth: '8rem',
+      height: `calc(2 * ${theme.layout.gap})`,
+      fontSize: '.8571rem',
+      labelFontSize: '1rem',
     },
     mini: {
-      height: `calc(1.334 * ${theme.layout.gap})`,
-      fontSize: '.75rem',
-      minWidth: '6.5rem',
+      height: `calc(1.5 * ${theme.layout.gap})`,
+      fontSize: '.8571rem',
+      labelFontSize: '1rem',
     },
     large: {
-      height: `calc(2.667 * ${theme.layout.gap})`,
+      height: `calc(3 * ${theme.layout.gap})`,
       fontSize: '1.225rem',
-      minWidth: '12.5rem',
+      labelFontSize: '1.375rem',
     },
   }
 
@@ -110,18 +110,18 @@ export const getSelectColors = (
     return {
       color: palette.cNeutral4,
       bgColor: palette.cNeutral2,
-      placeholderColor: palette.cNeutral5,
-      border: variant === 'text' ? 'transparent' : palette.cNeutral2,
+      border: variant === 'text' ? 'transparent' : palette.cNeutral3,
+      placeholderColor: palette.cNeutral4,
       hoverColor: palette.cNeutral4,
       hoverBgColor: palette.cNeutral2,
-      hoverBorder: palette.cNeutral2,
+      hoverBorder: palette.cNeutral3,
     }
   }
   return {
     color: palette.cNeutral6,
     bgColor: palette.cNeutral8,
-    placeholderColor: palette.cNeutral5,
     border: variant === 'text' ? 'transparent' : palette.cNeutral3,
+    placeholderColor: palette.cNeutral5,
     hoverColor: palette.cTheme5,
     hoverBgColor: palette.cNeutral8,
     hoverBorder: variant === 'text' ? 'transparent' : palette.cTheme5,

@@ -102,7 +102,6 @@ exports[`Select Multiple should render correctly 1`] = `
             border-radius: 4px;
             padding: 0 calc(8px * 1.5) 0 16px;
             height: calc(2.625 * 16px);
-            min-width: 10rem;
             background-color: #fff;
           }
 
@@ -122,6 +121,9 @@ exports[`Select Multiple should render correctly 1`] = `
           .select:hover .value {
             color: #0054fe;
           }
+          .select:hover .placeholder {
+            color: #9b9eac;
+          }
 
           .value {
             display: inline-flex;
@@ -131,10 +133,10 @@ exports[`Select Multiple should render correctly 1`] = `
             line-height: 1;
             font-weight: 500;
             padding: 0;
-            margin-right: 1.25rem;
+            margin-right: calc(1rem * 1.5);
             font-size: 1rem;
             color: #444;
-            width: calc(100% - 1.25rem);
+            width: calc(100% - 1rem * 1.5);
           }
 
           .value :global(svg),

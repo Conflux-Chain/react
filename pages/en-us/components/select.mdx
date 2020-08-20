@@ -110,6 +110,34 @@ Display a dropdown list of items.
 />
 
 <Playground
+  title="Size"
+  scope={{ Select, Spacer }}
+  code={`
+<>
+  <Select size="mini" placeholder="choose mini">
+    <Select.Option value="1">Option 1</Select.Option>
+    <Select.Option value="2">Option 2</Select.Option>
+  </Select>
+  <Spacer y={.5} />
+  <Select size="small" placeholder="choose small">
+    <Select.Option value="1">Option 1</Select.Option>
+    <Select.Option value="2">Option 2</Select.Option>
+  </Select>
+  <Spacer y={.5} />
+  <Select placeholder="choose medium">
+    <Select.Option value="1">Option 1</Select.Option>
+    <Select.Option value="2">Option 2</Select.Option>
+  </Select>
+  <Spacer y={.5} />
+  <Select size="large" placeholder="choose large">
+    <Select.Option value="1">Option 1</Select.Option>
+    <Select.Option value="2">Option 2</Select.Option>
+  </Select>
+</>
+`}
+/>
+
+<Playground
   title="Multiple"
   desc="`Select` supports multiple values to be selected."
   scope={{ Select }}

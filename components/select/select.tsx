@@ -180,7 +180,6 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             border-radius: ${theme.expressiveness.R2};
             padding: 0 calc(${theme.layout.gapHalf} * 1.5) 0 ${theme.layout.gap};
             height: ${sizes.height};
-            min-width: ${sizes.minWidth};
             background-color: ${colors.bgColor};
           }
 
@@ -200,6 +199,9 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
           .select:hover .value {
             color: ${colors.hoverColor};
           }
+          .select:hover .placeholder {
+            color: ${colors.placeholderColor};
+          }
 
           .value {
             display: inline-flex;
@@ -209,10 +211,10 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             line-height: 1;
             font-weight: 500;
             padding: 0;
-            margin-right: 1.25rem;
+            margin-right: calc(${sizes.fontSize} * 1.5);
             font-size: ${sizes.fontSize};
             color: ${colors.color};
-            width: calc(100% - 1.25rem);
+            width: calc(100% - ${sizes.fontSize} * 1.5);
           }
 
           .value :global(svg),
