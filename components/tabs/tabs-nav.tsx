@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react'
 import { TabVarient } from '../utils/prop-types'
-import { StatusMap, reduceStatus } from './util'
+import { StatusMap, reduceStatus } from './style'
 import Bottom from './tabs-bottom'
 import Label from './tabs-label'
-import { defaultGetColor } from './util'
+import { defaultGetColor } from './style'
 import useTheme from '../styles/use-theme'
 
 export interface NavCptProps {

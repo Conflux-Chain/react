@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { nativeEvent } from 'tests/utils'
 import { mount, ReactWrapper } from 'enzyme'
-import { nav } from '../tabs-nav'
-import { reduceStatus, defaultGetColor } from '../util'
+import { reduceStatus, defaultGetColor } from '../style'
 import { Tabs } from 'components'
 import { palette } from '../../styles/themes/default'
 
@@ -153,10 +152,6 @@ describe('Tabs', () => {
 
     wrapper.find('header').find('.tab').at(1).simulate('click', nativeEvent)
     expect(changeHandler).not.toHaveBeenCalled()
-  })
-
-  it('should return default nav', () => {
-    expect(() => nav({})).not.toThrow()
   })
 
   it('should be able to update tab-item props', () => {

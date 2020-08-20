@@ -13,8 +13,8 @@ import TabsItem from './tabs-item'
 import useTheme from '../styles/use-theme'
 
 import { TabVarient } from '../utils/prop-types'
-import Nav from './tabs-nav'
-import useTabsHandle from './use-imperative'
+import TabsNav from './tabs-nav'
+import useTabsHandle from './use-imperative-tabs'
 
 export interface TabProps {
   style?: CSSProperties
@@ -118,14 +118,14 @@ const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
                   role="button"
                   key={value}
                   onClick={() => !disabled && clickHandler(value)}>
-                  <Nav
+                  <TabsNav
                     varient={varient}
                     status={{
                       disabled: disabled,
                       active: currentTab === value,
                       default: true,
                     }}
-                    {...extra}></Nav>
+                    {...extra}></TabsNav>
                 </div>
               )
             })}
