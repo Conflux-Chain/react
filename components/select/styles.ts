@@ -124,6 +124,6 @@ export const getSelectColors = (
     border: variant === 'text' ? 'transparent' : palette.cNeutral3,
     hoverColor: palette.cTheme5,
     hoverBgColor: palette.cNeutral8,
-    hoverBorder: palette.cTheme5,
+    hoverBorder: variant === 'text' ? 'transparent' : palette.cTheme5,
   }
 }

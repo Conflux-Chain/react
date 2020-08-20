@@ -485,7 +485,7 @@ exports[`Select should render correctly when variant=text 1`] = `
           }
 
           .select:hover {
-            border-color: #0054fe;
+            border-color: transparent;
             background-color: #fff;
           }
 
