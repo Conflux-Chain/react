@@ -443,7 +443,8 @@ exports[`Select should render correctly when variant=text 1`] = `
           height: 0;
           padding: 0;
           overflow: hidden;
-          border-top: 1px solid #eaeaea;
+          border-top: 1px solid
+            #eaeaea;
           margin: 0.5rem 0;
           width: 100%;
         }
