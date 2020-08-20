@@ -11,19 +11,22 @@ exports[`Tabs should render correctly 1`] = `
               text-align:center
             }
           }
-          </style></div><div class=\\"bottom\\" style=\\"background-color: rgb(240, 245, 255); opacity: 0; transform: 0.75;\\"><style>
+          </style></div><div class=\\"bottom\\"><style>
           .bottom {
+            background-color: #f0f5ff;
             transition: all 200ms ease;
+            opacity: 0;
+            transform: scale(0.75);
             height: 8px;
             width: 100%;
             border-radius: 4px 4px 0px 0px;
           }
         </style></div><style>
-            .nav {
-              display: flex;
-              position: relative;
-            }
-          </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2<style>
+          .nav {
+            display: flex;
+            position: relative;
+          }
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2<style>
             .label{
               white-space:nowrap;
               transition:none;
@@ -33,19 +36,22 @@ exports[`Tabs should render correctly 1`] = `
               text-align:center
             }
           }
-          </style></div><div class=\\"bottom\\" style=\\"background-color: rgb(240, 245, 255); opacity: 0; transform: 0.75;\\"><style>
+          </style></div><div class=\\"bottom\\"><style>
           .bottom {
+            background-color: #f0f5ff;
             transition: all 200ms ease;
+            opacity: 0;
+            transform: scale(0.75);
             height: 8px;
             width: 100%;
             border-radius: 4px 4px 0px 0px;
           }
         </style></div><style>
-            .nav {
-              display: flex;
-              position: relative;
-            }
-          </style></div></div></header><div class=\\"content\\"></div><style>
+          .nav {
+            display: flex;
+            position: relative;
+          }
+        </style></div></div></header><div class=\\"content\\"></div><style>
             header {
               display: flex;
               flex-wrap: nowrap;
@@ -94,11 +100,11 @@ exports[`Tabs should render correctly 1`] = `
             }
           }
           </style></div><style>
-            .nav {
-              display: flex;
-              position: relative;
-            }
-          </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2<style>
+          .nav {
+            display: flex;
+            position: relative;
+          }
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2<style>
             .label{
               white-space:nowrap;
               transition:none;
@@ -109,11 +115,11 @@ exports[`Tabs should render correctly 1`] = `
             }
           }
           </style></div><style>
-            .nav {
-              display: flex;
-              position: relative;
-            }
-          </style></div></div></header><div class=\\"content\\"></div><style>
+          .nav {
+            display: flex;
+            position: relative;
+          }
+        </style></div></div></header><div class=\\"content\\"></div><style>
             header {
               display: flex;
               flex-wrap: nowrap;
