@@ -207,6 +207,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             height: 100%;
             align-items: center;
             line-height: 1;
+            font-weight: 500;
             padding: 0;
             margin-right: 1.25rem;
             font-size: ${sizes.fontSize};

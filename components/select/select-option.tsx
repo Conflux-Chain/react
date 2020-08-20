@@ -82,8 +82,8 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
           max-width: 100%;
           justify-content: space-between;
           align-items: center;
-          font-weight: normal;
-          font-size: 0.75rem;
+          font-weight: 500;
+          font-size: 1rem;
           height: calc(2.5 * ${theme.layout.gap});
           box-sizing: border-box;
           padding: 0 ${theme.layout.gap};
@@ -106,13 +106,14 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
           height: 0;
           padding: 0;
           overflow: hidden;
-          border-top: 1px solid ${theme.palette.border};
+          border-top: ${theme.expressiveness.L1} ${theme.expressiveness.cLineStyle1}
+            ${theme.palette.border};
           margin: 0.5rem 0;
           width: 100%;
         }
 
         .label {
-          font-size: 0.875rem;
+          font-size: 1.1428rem;
           color: ${colors.color};
           border-bottom: 1px solid ${theme.palette.border};
           text-transform: capitalize;
