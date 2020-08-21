@@ -79,22 +79,6 @@ export const meta = {
 />
 
 <Playground
-  title="标签"
-  desc="用标签将选项分组。"
-  scope={{ Select }}
-  code={`
-<Select placeholder="选择框架">
-  <Select.Option label>JavaScript</Select.Option>
-  <Select.Option value="react">React</Select.Option>
-  <Select.Option value="angular">Angular</Select.Option>
-  <Select.Option label>Ruby</Select.Option>
-  <Select.Option value="rails">Rails</Select.Option>
-  <Select.Option value="sinatra">Sinatra</Select.Option>
-</Select>
-`}
-/>
-
-<Playground
   title="分割线"
   desc="在选项中加入修饰用的线条。"
   scope={{ Select }}
@@ -212,11 +196,12 @@ export const meta = {
 
 <Attributes.Title>Select.Option.Props</Attributes.Title>
 
-| 属性              | 描述         | 类型             | 推荐值                           | 默认    |
-| ----------------- | ------------ | ---------------- | -------------------------------- | ------- |
-| **value**(必须的) | 唯一鉴别值   | `string`         | -                                | -       |
-| **disabled**      | 禁用当前选项 | `boolean`        | -                                | `false` |
-| ...               | 原生属性     | `HTMLAttributes` | `'name', 'id', 'className', ...` | -       |
+| 属性               | 描述          | 类型              | 推荐值                            | 默认     |
+| ----------------- | ------------- | ---------------- | -------------------------------- | ------- |
+| **value**(必须的)  | 唯一鉴别值      | `string`         | -                                | -       |
+| **disabled**      | 禁用当前选项    | `boolean`        | -                                | `false` |
+| **divider**       | 分割线         | `boolean`        | -                                | `false` |
+| ...               | 原生属性       | `HTMLAttributes` | `'name', 'id', 'className', ...` | -       |
 
 <Attributes.Title>NormalSizes</Attributes.Title>
 
