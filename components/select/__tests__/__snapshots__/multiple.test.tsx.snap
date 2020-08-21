@@ -104,6 +104,15 @@ exports[`Select Multiple should render correctly 1`] = `
             height: calc(2.625 * 16px);
             background-color: #fff;
           }
+          .select-dropdown {
+            border-radius: 4px;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+            background-color: #fff;
+            max-height: 15rem;
+            overflow-y: auto;
+            overflow-anchor: none;
+            padding: 8px 0;
+          }
 
           .multiple {
             height: auto;

@@ -4,7 +4,6 @@ import useTheme from '../styles/use-theme'
 import { TabsLabelItem, TabsConfig, TabsContext } from './tabs-context'
 import useCurrentState from '../utils/use-current-state'
 import useWarning from '../utils/use-warning'
-import useMergedState from '../utils/useMergedState'
 
 interface Props {
   initialValue?: string
