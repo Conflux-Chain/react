@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState, useCallback } from 'react'
+import React, { useMemo, useRef, useState, useCallback } from 'react'
 import { NormalSizes, SelectVariants } from '../utils/prop-types'
 import useTheme from '../styles/use-theme'
 import useClickAway from '../utils/use-click-away'
@@ -11,6 +11,7 @@ import Grid from '../grid'
 import { SelectContext, SelectConfig } from './select-context'
 import { getSizes, getSelectColors } from './styles'
 import Ellipsis from '../shared/ellipsis'
+import useMergedState from '../utils/useMergedState'
 
 interface Props {
   disabled?: boolean
@@ -49,8 +50,8 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   children,
   size,
   disabled,
-  defaultValue: init,
-  value: customValue,
+  defaultValue,
+  value,
   icon: Icon,
   onChange,
   pure,
@@ -67,16 +68,23 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   const theme = useTheme()
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState<boolean>(false)
-  const selectedValue = (value: string | string[] = ''): string | string[] => {
-    if (!multiple) return value
-    if (Array.isArray(value)) return value
-    return typeof value === 'undefined' || value === '' ? [] : [value]
-  }
-  const [value, setValue] = useState<string | string[] | undefined>(selectedValue(init))
+
+  // const
+  const [mergedValue, setMergedValue] = useMergedState(defaultValue, {
+    value,
+    onChange,
+    postState(value: string | string[] = '') {
+      return value || (multiple ? [] : '')
+    },
+  })
+
   const isEmpty = useMemo(() => {
-    if (!Array.isArray(value)) return !value
-    return value.length === 0
-  }, [value])
+    if (!Array.isArray(mergedValue)) {
+      return !mergedValue
+    }
+    return mergedValue.length === 0
+  }, [mergedValue])
+
   const sizes = useMemo(() => getSizes(theme, size), [theme, size])
 
   const colors = useMemo(() => {
@@ -84,13 +92,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   }, [disabled, theme.palette, variant])
 
   const updateValue = (next: string) => {
-    const Fn = () => {
-      if (!Array.isArray(value)) return next
-      if (!value.includes(next)) return [...value, next]
-      return value.filter(item => item !== next)
-    }
-    const newValue = Fn()
-    onChange && onChange(newValue as string | string[])
+    const newValue = (() => {
+      if (!Array.isArray(mergedValue)) return next
+      if (!mergedValue.includes(next)) return [...mergedValue, next]
+      return mergedValue.filter(item => item !== next)
+    })()
+    setMergedValue(newValue)
     if (!multiple) {
       setVisible(false)
     }
@@ -98,15 +105,14 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
 
   const initialValue: SelectConfig = useMemo(
     () => ({
-      value,
+      value: mergedValue,
       variant,
-      visible,
       updateValue,
       size,
       ref,
       disableAll: disabled,
     }),
-    [visible, size, disabled, ref, value, multiple, variant],
+    [size, disabled, ref, multiple, variant, mergedValue],
   )
 
   const clickHandler = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -120,13 +126,8 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   const clickawayHandler = useCallback(() => setVisible(false), [])
   useClickAway(ref, clickawayHandler)
 
-  useEffect(() => {
-    if (customValue === undefined) return
-    setValue(selectedValue(customValue))
-  }, [customValue])
-
   const selectedChild = useMemo(() => {
-    const [, optionChildren] = pickChildByProps(children, 'value', value)
+    const [, optionChildren] = pickChildByProps(children, 'value', mergedValue)
     return React.Children.map(optionChildren, child => {
       if (!React.isValidElement(child)) return null
       const el = React.cloneElement(child, { preventAllEvents: true })
@@ -137,7 +138,8 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
         </SelectMultipleValue>
       )
     })
-  }, [value, children, multiple])
+  }, [mergedValue, children, multiple])
+  console.log('selectedChild', selectedChild)
 
   return (
     <SelectContext.Provider value={initialValue}>
@@ -151,8 +153,8 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             <Ellipsis height={sizes.height}>{placeholder}</Ellipsis>
           </span>
         )}
-        {value && !multiple && <span className="value">{selectedChild}</span>}
-        {value && multiple && <Grid.Container gap={0.5}>{selectedChild}</Grid.Container>}
+        {mergedValue && !multiple && <span className="value">{selectedChild}</span>}
+        {mergedValue && multiple && <Grid.Container gap={0.5}>{selectedChild}</Grid.Container>}
         <SelectDropdown
           visible={visible}
           className={dropdownClassName}
