@@ -57,7 +57,7 @@ const ButtonGroup: React.FC<React.PropsWithChildren<ButtonGroupProps>> = groupPr
     ...props
   } = groupProps
 
-  const initialValue = useMemo<ButtonGroupConfig>(
+  const defaultValue = useMemo<ButtonGroupConfig>(
     () => ({
       disabled,
       size,
@@ -74,7 +74,7 @@ const ButtonGroup: React.FC<React.PropsWithChildren<ButtonGroupProps>> = groupPr
   }, [theme, color, disabled, ghost])
 
   return (
-    <ButtonGroupContext.Provider value={initialValue}>
+    <ButtonGroupContext.Provider value={defaultValue}>
       <div className={`btn-group ${vertical ? 'vertical' : 'horizontal'} ${className}`} {...props}>
         {children}
         <style jsx>{`
