@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import { NormalSizes, SelectVariants } from '../utils/prop-types'
 import useTheme from '../styles/use-theme'
 import useClickAway from '../utils/use-click-away'
-import useCurrentState from '../utils/use-current-state'
 import { pickChildByProps } from '../utils/collections'
 import SelectIcon from './select-icon'
 import SelectOption from './select-option'
@@ -17,7 +16,7 @@ interface Props {
   disabled?: boolean
   size?: NormalSizes
   value?: string | string[]
-  initialValue?: string | string[]
+  defaultValue?: string | string[]
   placeholder?: React.ReactNode | string
   icon?: React.ComponentType
   onChange?: (value: string | string[]) => void
@@ -50,7 +49,7 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   children,
   size,
   disabled,
-  initialValue: init,
+  defaultValue: init,
   value: customValue,
   icon: Icon,
   onChange,
@@ -68,11 +67,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   const theme = useTheme()
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState<boolean>(false)
-  const [value, setValue, valueRef] = useCurrentState<string | string[] | undefined>(() => {
-    if (!multiple) return init
-    if (Array.isArray(init)) return init
-    return typeof init === 'undefined' ? [] : [init]
-  })
+  const selectedValue = (value: string | string[] = ''): string | string[] => {
+    if (!multiple) return value
+    if (Array.isArray(value)) return value
+    return typeof value === 'undefined' || value === '' ? [] : [value]
+  }
+  const [value, setValue] = useState<string | string[] | undefined>(selectedValue(init))
   const isEmpty = useMemo(() => {
     if (!Array.isArray(value)) return !value
     return value.length === 0
@@ -83,14 +83,14 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
     return getSelectColors(disabled, theme.palette, variant)
   }, [disabled, theme.palette, variant])
 
-  const updateVisible = (next: boolean) => setVisible(next)
   const updateValue = (next: string) => {
-    setValue(last => {
-      if (!Array.isArray(last)) return next
-      if (!last.includes(next)) return [...last, next]
-      return last.filter(item => item !== next)
-    })
-    onChange && onChange(valueRef.current as string | string[])
+    const Fn = () => {
+      if (!Array.isArray(value)) return next
+      if (!value.includes(next)) return [...value, next]
+      return value.filter(item => item !== next)
+    }
+    const newValue = Fn()
+    onChange && onChange(newValue as string | string[])
     if (!multiple) {
       setVisible(false)
     }
@@ -102,7 +102,6 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
       variant,
       visible,
       updateValue,
-      updateVisible,
       size,
       ref,
       disableAll: disabled,
@@ -120,9 +119,10 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
 
   const clickawayHandler = useCallback(() => setVisible(false), [])
   useClickAway(ref, clickawayHandler)
+
   useEffect(() => {
     if (customValue === undefined) return
-    setValue(customValue)
+    setValue(selectedValue(customValue))
   }, [customValue])
 
   const selectedChild = useMemo(() => {

@@ -14,9 +14,9 @@ export const meta = {
   scope={{ Select }}
   code={`
 () => {
-  const handler = val => console.log(val)
+   const [value, setValue] = React.useState("1")
   return (
-    <Select placeholder="选择工作方式" onChange={handler}>
+    <Select placeholder="选择工作方式" value={value} onChange={(val) => setValue(val)}>
       <Select.Option value="1">远程工作</Select.Option>
       <Select.Option value="2">线下工作</Select.Option>
     </Select>
@@ -144,7 +144,7 @@ export const meta = {
   desc="Select 组件支持同时选中多个值。"
   scope={{ Select }}
   code={`
-<Select placeholder="选择框架" multiple width="200px" initialValue={['1', '3', '4', '6']}>
+<Select placeholder="选择框架" multiple width="200px" defaultValue={['1', '3', '4', '6']}>
   <Select.Option value="1">React</Select.Option>
   <Select.Option value="2">Angular</Select.Option>
   <Select.Option value="3">Vue</Select.Option>
@@ -163,7 +163,7 @@ export const meta = {
   desc="与其他组件组合使用。"
   scope={{ Select, Code }}
   code={`
-<Select placeholder="选择语言" initialValue="1">
+<Select placeholder="选择语言" defaultValue="1">
   <Select.Option value="1"><Code>TypeScript</Code></Select.Option>
   <Select.Option value="2"><Code>JavaScript</Code></Select.Option>
 </Select>
@@ -195,7 +195,7 @@ export const meta = {
 | 属性                  | 描述                         | 类型                                                | 推荐值                            | 默认            |
 | --------------------- | ---------------------------- | --------------------------------------------------- | --------------------------------- | --------------- |
 | **value**             | 手动设置选择器的值              | `string`, `string[]`                                | -                                 | -               |
-| **initialValue**      | 选择器初始值                   | `string`, `string[]`                                | -                                 | -               |
+| **defaultValue**      | 选择器初始值                   | `string`, `string[]`                                | -                                 | -               |
 | **placeholder**       | 占位文本内容                   | `string`                                            | -                                 | -               |
 | **variant**           | 选择器的类型                   | `string`                                            | [SelectVariants](#selectvariants) | `line`          |
 | **width**             | 组件的 CSS 宽度值              | `string`                                            | -                                 | `initial`       |

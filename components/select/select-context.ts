@@ -6,7 +6,6 @@ export interface SelectConfig {
   variant?: SelectVariants
   updateValue?: Function
   visible?: boolean
-  updateVisible?: Function
   size?: NormalSizes
   disableAll?: boolean
   ref?: MutableRefObject<HTMLElement | null>
