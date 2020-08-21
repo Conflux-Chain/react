@@ -5,13 +5,13 @@ import useClickAway from '../utils/use-click-away'
 import { pickChildByProps } from '../utils/collections'
 import SelectIcon from './select-icon'
 import SelectOption from './select-option'
-import SelectDropdown from './select-dropdown'
 import SelectMultipleValue from './select-multiple-value'
 import Grid from '../grid'
 import { SelectContext, SelectConfig } from './select-context'
 import { getSizes, getSelectColors } from './styles'
 import Ellipsis from '../shared/ellipsis'
 import useMergedState from '../utils/useMergedState'
+import Dropdown from '../shared/dropdown'
 
 interface Props {
   disabled?: boolean
@@ -109,7 +109,6 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
       variant,
       updateValue,
       size,
-      ref,
       disableAll: disabled,
     }),
     [size, disabled, ref, multiple, variant, mergedValue],
@@ -139,7 +138,6 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
       )
     })
   }, [mergedValue, children, multiple])
-  console.log('selectedChild', selectedChild)
 
   return (
     <SelectContext.Provider value={initialValue}>
@@ -155,13 +153,12 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
         )}
         {mergedValue && !multiple && <span className="value">{selectedChild}</span>}
         {mergedValue && multiple && <Grid.Container gap={0.5}>{selectedChild}</Grid.Container>}
-        <SelectDropdown
-          visible={visible}
-          className={dropdownClassName}
-          dropdownStyle={dropdownStyle}
-          disableMatchWidth={disableMatchWidth}>
-          {children}
-        </SelectDropdown>
+        <Dropdown parent={ref} visible={visible} disableMatchWidth={disableMatchWidth}>
+          <div className={`select-dropdown ${dropdownClassName}`} style={dropdownStyle}>
+            {children}
+          </div>
+        </Dropdown>
+
         {!pure && (
           <div className="icon">
             <Icon />
@@ -184,6 +181,15 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
             padding: 0 calc(${theme.layout.gapHalf} * 1.5) 0 ${theme.layout.gap};
             height: ${sizes.height};
             background-color: ${colors.bgColor};
+          }
+          .select-dropdown {
+            border-radius: ${theme.expressiveness.R2};
+            box-shadow: ${theme.expressiveness.D2};
+            background-color: ${theme.palette.cNeutral8};
+            max-height: 15rem;
+            overflow-y: auto;
+            overflow-anchor: none;
+            padding: ${theme.layout.gapHalf} 0;
           }
 
           .multiple {
@@ -268,6 +274,6 @@ type SelectComponent<P = {}> = React.FC<P> & {
 type ComponentProps = Partial<typeof defaultProps> &
   Omit<Props, keyof typeof defaultProps> &
   NativeAttrs
-;(Select as SelectComponent<ComponentProps>).defaultProps = defaultProps
+  ; (Select as SelectComponent<ComponentProps>).defaultProps = defaultProps
 
 export default Select as SelectComponent<ComponentProps>
