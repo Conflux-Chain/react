@@ -464,12 +464,14 @@ exports[`Select should render correctly when variant=text 1`] = `
         .label {
           font-size: 1.1428rem;
           color: #0054fe;
-          border-bottom: 1px solid #eaeaea;
+          border-bottom: 1px solid
+            #eaeaea;
           text-transform: capitalize;
           cursor: default;
         }
         .label:hover {
-          border-bottom: 1px solid #eaeaea;
+          border-bottom: 1px solid
+            #eaeaea;
         }
       </style></span><div class=\\"icon\\"><svg viewBox=\\"0 0 24 24\\" width=\\"1.25em\\" height=\\"1.25em\\" stroke-width=\\"1\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" fill=\\"none\\" shape-rendering=\\"geometricPrecision\\"><path d=\\"M6 9l6 6 6-6\\"></path><style>
         svg {
