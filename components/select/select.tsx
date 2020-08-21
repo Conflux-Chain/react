@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState, useCallback } from 'react'
 import { NormalSizes, SelectVariants } from '../utils/prop-types'
 import useTheme from '../styles/use-theme'
 import useClickAway from '../utils/use-click-away'
@@ -118,7 +118,8 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
     setVisible(!visible)
   }
 
-  useClickAway(ref, () => setVisible(false))
+  const clickawayHandler = useCallback(() => setVisible(false), [])
+  useClickAway(ref, clickawayHandler)
   useEffect(() => {
     if (customValue === undefined) return
     setValue(customValue)
