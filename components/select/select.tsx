@@ -6,6 +6,8 @@ import React, {
   RefObject,
   forwardRef,
   useImperativeHandle,
+  PropsWithoutRef,
+  RefAttributes,
 } from 'react'
 import { NormalSizes, SelectVariants } from '../utils/prop-types'
 import useTheme from '../styles/use-theme'
@@ -22,7 +24,7 @@ import useMergedState from '../utils/use-merged-state'
 import useSelectHandle from './use-select-handle'
 import Dropdown from '../shared/dropdown'
 
-interface SelectProps {
+interface Props {
   disabled?: boolean
   size?: NormalSizes
   value?: string | string[]
@@ -52,7 +54,8 @@ const defaultProps = {
   disableMatchWidth: false,
 }
 
-type NativeAttrs = React.HTMLAttributes<HTMLDivElement>
+type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
+export type SelectProps = Props & typeof defaultProps & NativeAttrs
 
 const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
   (
@@ -74,7 +77,7 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
       dropdownStyle,
       disableMatchWidth,
       ...props
-    }: React.PropsWithChildren<SelectProps & typeof defaultProps & NativeAttrs>,
+    },
     ref: RefObject<SelectHandles>,
   ) => {
     const theme = useTheme()
@@ -290,9 +293,17 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
   },
 )
 
-Select.defaultProps = defaultProps
-
-export default Select as typeof Select & {
+type SelectComponent<T, P = {}> = React.ForwardRefExoticComponent<
+  PropsWithoutRef<P> & RefAttributes<T>
+> & {
   Option: typeof SelectOption
   useSelectHandle: typeof useSelectHandle
 }
+
+type ComponentProps = Partial<typeof defaultProps> &
+  Omit<Props, keyof typeof defaultProps> &
+  NativeAttrs
+
+Select.defaultProps = defaultProps
+
+export default Select as SelectComponent<SelectHandles, ComponentProps>
