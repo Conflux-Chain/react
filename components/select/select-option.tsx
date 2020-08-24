@@ -110,7 +110,7 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
           overflow: hidden;
           border-top: ${theme.expressiveness.L1} ${theme.expressiveness.cLineStyle1}
             ${theme.palette.border};
-          margin: 0.5rem 0;
+          margin: {theme.layout.gapHalf} 0;
           width: 100%;
         }
         .divider:hover {

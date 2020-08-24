@@ -2,7 +2,6 @@ import { useRef, RefObject } from 'react'
 import { SelectHandles } from './select-context'
 
 const useSelectHandle = () => {
-  // const [visible, setVisible, currentRef] = useCurrentState<boolean>(initialVisible)
   const ref: RefObject<SelectHandles> = useRef(null)
   return {
     setValue(value: string | string[] = '') {

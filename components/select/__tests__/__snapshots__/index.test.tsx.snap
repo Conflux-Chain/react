@@ -493,7 +493,7 @@ exports[`Select should render correctly when variant=text 1`] = `
           overflow: hidden;
           border-top: 1px solid
             #eaeaea;
-          margin: 0.5rem 0;
+          margin: {theme.layout.gapHalf} 0;
           width: 100%;
         }
         .divider:hover {

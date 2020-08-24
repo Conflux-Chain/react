@@ -19,7 +19,7 @@ import { SelectContext, SelectConfig, SelectHandles } from './select-context'
 import { getSizes, getSelectColors } from './styles'
 import Ellipsis from '../shared/ellipsis'
 import useMergedState from '../utils/use-merged-state'
-import useSelectHandle from './use-imperactive-select'
+import useSelectHandle from './use-select-handle'
 import Dropdown from '../shared/dropdown'
 
 interface SelectProps {
@@ -81,7 +81,6 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
     const domRef = useRef<HTMLDivElement>(null)
     const [visible, setVisible] = useState<boolean>(false)
 
-    // const
     const [mergedValue, setMergedValue] = useMergedState(defaultValue, {
       value,
       onChange,
@@ -255,7 +254,7 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
             }
             .value :global(.option),
             .multiple :global(.option) {
-              border: 1px solid transparent;
+              border: ${theme.expressiveness.L1} ${theme.expressiveness.cLineStyle1} transparent;
             }
 
             .value > :global(div),
@@ -290,21 +289,6 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
     )
   },
 )
-
-// type SelectComponent<P = {}> = React.FC<P> & {
-//   Option: typeof SelectOption
-// }
-// type SelectComponent = <T, P = {}> = React.ForwardRefExoticComponent<
-// PropsWithoutRef<P> & RefAttributes<T>
-// > & {
-//   Option: typeof SelectOption
-// }
-// type ComponentProps = Partial<typeof defaultProps> &
-//   Omit<Props, keyof typeof defaultProps> &
-//   NativeAttrs
-// ;
-
-// (Select as SelectComponent<ComponentProps>).defaultProps = defaultProps
 
 Select.defaultProps = defaultProps
 

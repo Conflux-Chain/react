@@ -15,6 +15,20 @@ describe('Select Multiple', () => {
     expect(() => wrapper.unmount()).not.toThrow()
   })
 
+  it('should ignore events when disabled', async () => {
+    const changeHandler = jest.fn()
+    const wrapper = mount(
+      <Select onChange={changeHandler} multiple>
+        <Select.Option value="1" disabled>
+          1
+        </Select.Option>
+        <Select.Option value="2">Option 2</Select.Option>
+      </Select>,
+    )
+    expect(wrapper.html()).toMatchSnapshot()
+    expect(() => wrapper.unmount()).not.toThrow()
+  })
+
   it('should render value with string default-value', () => {
     const wrapper = mount(
       <Select defaultValue="1" multiple>
