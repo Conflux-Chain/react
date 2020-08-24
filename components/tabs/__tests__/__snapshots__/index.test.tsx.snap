@@ -4,13 +4,13 @@ exports[`Tabs should render correctly 1`] = `
 "<div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
+            flex-direction:column;
             position: relative;
           }
           .label {
             cursor: ;
             font-weight: ;
             white-space: nowrap;
-            transition: none;
             line-height: 22px;
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
@@ -21,20 +21,19 @@ exports[`Tabs should render correctly 1`] = `
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
-            height: 8px;
+            height: 4px;
             width: 100%;
-            border-radius: 4px 4px 0px 0px;
           }
         </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
+            flex-direction:column;
             position: relative;
           }
           .label {
             cursor: ;
             font-weight: ;
             white-space: nowrap;
-            transition: none;
             line-height: 22px;
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
@@ -45,9 +44,8 @@ exports[`Tabs should render correctly 1`] = `
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
-            height: 8px;
+            height: 4px;
             width: 100%;
-            border-radius: 4px 4px 0px 0px;
           }
         </style></div></div></header><div class=\\"content\\"></div><style>
             header {
@@ -76,14 +74,6 @@ exports[`Tabs should render correctly 1`] = `
               line-height: 1.25rem;
               position: relative;
               font-variant-numeric: tabular-nums;
-            }
-
-            .tab :global(.bottom) {
-              position: absolute;
-              bottom: -1px;
-              left: 0;
-              right: 0;
-              width: 100%;
             }
             .tab:first-of-type {
               margin-left: 0;
@@ -91,13 +81,13 @@ exports[`Tabs should render correctly 1`] = `
           </style></div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label1</div><style>
           .nav {
             display: flex;
+            flex-direction:column;
             position: relative;
           }
           .label {
             cursor: ;
             font-weight: ;
             white-space: nowrap;
-            transition: none;
             line-height: 22px;
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
@@ -108,20 +98,19 @@ exports[`Tabs should render correctly 1`] = `
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
-            height: 8px;
+            height: 4px;
             width: 100%;
-            border-radius: 4px 4px 0px 0px;
           }
         </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2</div><style>
           .nav {
             display: flex;
+            flex-direction:column;
             position: relative;
           }
           .label {
             cursor: ;
             font-weight: ;
             white-space: nowrap;
-            transition: none;
             line-height: 22px;
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
@@ -132,9 +121,8 @@ exports[`Tabs should render correctly 1`] = `
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
-            height: 8px;
+            height: 4px;
             width: 100%;
-            border-radius: 4px 4px 0px 0px;
           }
         </style></div></div></header><div class=\\"content\\"></div><style>
             header {
@@ -163,14 +151,6 @@ exports[`Tabs should render correctly 1`] = `
               line-height: 1.25rem;
               position: relative;
               font-variant-numeric: tabular-nums;
-            }
-
-            .tab :global(.bottom) {
-              position: absolute;
-              bottom: -1px;
-              left: 0;
-              right: 0;
-              width: 100%;
             }
             .tab:first-of-type {
               margin-left: 0;

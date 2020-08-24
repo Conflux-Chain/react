@@ -29,13 +29,13 @@ const Nav: React.FC<NavCptProps> = ({ label, status, varient }) => {
         {`
           .nav {
             display: flex;
+            flex-direction: column;
             position: relative;
           }
           .label {
             cursor: ${reducedStatus === 'disabled' ? 'not-allowed' : ''};
             font-weight: ${reducedStatus === 'active' ? 'bold' : ''};
             white-space: nowrap;
-            transition: none;
             line-height: 22px;
             padding: ${layout.gapHalf} ${layout.gap};
             border-radius: ${expressiveness.R2} ${expressiveness.R2} 0px 0px;
@@ -46,9 +46,8 @@ const Nav: React.FC<NavCptProps> = ({ label, status, varient }) => {
             transition: all 200ms ease;
             opacity: ${reducedStatus === 'active' ? '1' : '0'};
             transform: scale(${reducedStatus === 'active' ? '1' : '0.75'});
-            height: 8px;
+            height: 4px;
             width: 100%;
-            border-radius: 4px 4px 0px 0px;
           }
         `}
       </style>

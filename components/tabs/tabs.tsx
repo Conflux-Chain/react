@@ -160,14 +160,6 @@ const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
               position: relative;
               font-variant-numeric: tabular-nums;
             }
-
-            .tab :global(.bottom) {
-              position: absolute;
-              bottom: -1px;
-              left: 0;
-              right: 0;
-              width: 100%;
-            }
             .tab:first-of-type {
               margin-left: 0;
             }
