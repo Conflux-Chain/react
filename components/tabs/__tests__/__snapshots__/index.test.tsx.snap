@@ -4,7 +4,7 @@ exports[`Tabs should render correctly 1`] = `
 "<div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             position: relative;
           }
           .label {
@@ -27,7 +27,7 @@ exports[`Tabs should render correctly 1`] = `
         </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             position: relative;
           }
           .label {
@@ -81,7 +81,7 @@ exports[`Tabs should render correctly 1`] = `
           </style></div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label1</div><style>
           .nav {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             position: relative;
           }
           .label {
@@ -104,7 +104,7 @@ exports[`Tabs should render correctly 1`] = `
         </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2</div><style>
           .nav {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             position: relative;
           }
           .label {
