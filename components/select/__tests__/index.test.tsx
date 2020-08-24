@@ -142,4 +142,19 @@ describe('Select', () => {
     expect(option.html()).toMatchSnapshot()
     expect(() => wrapper.unmount()).not.toThrow()
   })
+
+  it('should be wraning when ident value missing', () => {
+    let errorMessage = ''
+    const errorSpy = jest.spyOn(console, 'error').mockImplementation(msg => (errorMessage = msg))
+    const SelectOption = Select.Option as any
+    const wrapper = mount(
+      <Select>
+        <SelectOption>1</SelectOption>
+      </Select>,
+    )
+    wrapper.find('.select').simulate('click', nativeEvent)
+
+    expect(errorMessage).toContain('required')
+    errorSpy.mockRestore()
+  })
 })
