@@ -31,13 +31,14 @@ const defaultProps = {
   className: '',
 }
 
-type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>, keyof TabProps>
+type NativeAttrs = React.HTMLAttributes<HTMLDivElement>
 
 const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
   (
     {
       initialValue: userCustomInitialValue,
       value,
+
       children,
       varient,
       onChange,
@@ -110,7 +111,7 @@ const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
     return (
       <TabsContext.Provider value={ctx}>
         <div className={`${className}`} {...props}>
-          <header style={{ borderBottom: showDivider ? `1px solid ${theme.palette.border}` : '' }}>
+          <header>
             {tabs.map(({ value, disabled, ...extra }) => {
               return (
                 <div
@@ -137,6 +138,7 @@ const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
               flex-wrap: nowrap;
               overflow-x: auto;
               align-items: center;
+              border-bottom: ${showDivider ? `1px solid ${theme.palette.border}` : ''};
             }
             ::-webkit-scrollbar {
               display: none;

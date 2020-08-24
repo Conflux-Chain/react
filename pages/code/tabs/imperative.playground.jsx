@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <Button onClick={() => alert('current tab:' + getCurrentTab())}>Alert current tab</Button>
+      <Spacer x={1} inline />
       <Button onClick={() => setCurrentTab('2')}>Set second tab imperatively</Button>
       <Spacer y={1} />
       <Tabs initialValue="1" ref={ref}>

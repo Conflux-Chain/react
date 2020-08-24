@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs should render correctly 1`] = `
-"<div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1<style>
-            .label{
+"<div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+          .nav {
+            display: flex;
+            position: relative;
+          }
+          .label{
+              cursor:;
+              font-weight:;
               white-space:nowrap;
               transition:none;
               line-height:22px;
@@ -10,24 +16,23 @@ exports[`Tabs should render correctly 1`] = `
               border-radius: 4px 4px 0px 0px;
               text-align:center
             }
-          }
-          </style></div><div class=\\"bottom\\"><style>
-          .bottom {
-            background-color: #0054fe;
-            transition: all 200ms ease;
-            opacity: 0;
-            transform: scale(0.75);
-            height: 8px;
-            width: 100%;
-            border-radius: 4px 4px 0px 0px;
-          }
-        </style></div><style>
+            .bottom {
+                  background-color: #0054fe;
+                  transition: all 200ms ease;
+                  opacity: 0;
+                  transform: scale(0.75);
+                  height: 8px;
+                  width: 100%;
+                  border-radius: 4px 4px 0px 0px;
+                }
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             position: relative;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2<style>
-            .label{
+          .label{
+              cursor:;
+              font-weight:;
               white-space:nowrap;
               transition:none;
               line-height:22px;
@@ -35,28 +40,22 @@ exports[`Tabs should render correctly 1`] = `
               border-radius: 4px 4px 0px 0px;
               text-align:center
             }
-          }
-          </style></div><div class=\\"bottom\\"><style>
-          .bottom {
-            background-color: #0054fe;
-            transition: all 200ms ease;
-            opacity: 0;
-            transform: scale(0.75);
-            height: 8px;
-            width: 100%;
-            border-radius: 4px 4px 0px 0px;
-          }
-        </style></div><style>
-          .nav {
-            display: flex;
-            position: relative;
-          }
+            .bottom {
+                  background-color: #0054fe;
+                  transition: all 200ms ease;
+                  opacity: 0;
+                  transform: scale(0.75);
+                  height: 8px;
+                  width: 100%;
+                  border-radius: 4px 4px 0px 0px;
+                }
         </style></div></div></header><div class=\\"content\\"></div><style>
             header {
               display: flex;
               flex-wrap: nowrap;
               overflow-x: auto;
               align-items: center;
+              border-bottom:
             }
             ::-webkit-scrollbar {
               display: none;
@@ -89,8 +88,14 @@ exports[`Tabs should render correctly 1`] = `
             .tab:first-of-type {
               margin-left: 0;
             }
-          </style></div>,<div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label1<style>
-            .label{
+          </style></div>,<div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label1</div><style>
+          .nav {
+            display: flex;
+            position: relative;
+          }
+          .label{
+              cursor:;
+              font-weight:;
               white-space:nowrap;
               transition:none;
               line-height:22px;
@@ -98,14 +103,23 @@ exports[`Tabs should render correctly 1`] = `
               border-radius: 4px 4px 0px 0px;
               text-align:center
             }
-          }
-          </style></div><style>
+            .bottom {
+                  background-color: #0054fe;
+                  transition: all 200ms ease;
+                  opacity: 0;
+                  transform: scale(0.75);
+                  height: 8px;
+                  width: 100%;
+                  border-radius: 4px 4px 0px 0px;
+                }
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2</div><style>
           .nav {
             display: flex;
             position: relative;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2<style>
-            .label{
+          .label{
+              cursor:;
+              font-weight:;
               white-space:nowrap;
               transition:none;
               line-height:22px;
@@ -113,18 +127,22 @@ exports[`Tabs should render correctly 1`] = `
               border-radius: 4px 4px 0px 0px;
               text-align:center
             }
-          }
-          </style></div><style>
-          .nav {
-            display: flex;
-            position: relative;
-          }
+            .bottom {
+                  background-color: #0054fe;
+                  transition: all 200ms ease;
+                  opacity: 0;
+                  transform: scale(0.75);
+                  height: 8px;
+                  width: 100%;
+                  border-radius: 4px 4px 0px 0px;
+                }
         </style></div></div></header><div class=\\"content\\"></div><style>
             header {
               display: flex;
               flex-wrap: nowrap;
               overflow-x: auto;
               align-items: center;
+              border-bottom:
             }
             ::-webkit-scrollbar {
               display: none;

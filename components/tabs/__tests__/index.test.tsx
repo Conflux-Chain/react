@@ -17,7 +17,7 @@ describe('Tabs', () => {
             2
           </Tabs.Item>
         </Tabs>
-        ,
+
         <Tabs varient="solid">
           <Tabs.Item label="label1" value="1">
             1
@@ -26,7 +26,6 @@ describe('Tabs', () => {
             2
           </Tabs.Item>
         </Tabs>
-        ,
       </div>,
     )
     expect(wrapper.html()).toMatchSnapshot()
@@ -97,7 +96,7 @@ describe('Tabs', () => {
       )
     }
     const wrapper = mount(<App />)
-    const label = (wrapper.find('header').find('.label').at(0).props().children as Array<any>)[0]
+    const label = wrapper.find('header').find('.label').text()
     expect(label).toBe('label11')
     wrapper.unmount()
   })
@@ -123,7 +122,6 @@ describe('Tabs', () => {
         </Tabs.Item>
       </Tabs>,
     )
-    // const a = wrapper.find(Tabs.Item).at(0).html()
     uncontrolled.find('header').find('.tab').at(1).simulate('click', nativeEvent)
     controlled.find('header').find('.tab').at(1).simulate('click', nativeEvent)
     const getActiveLabel = (wrapper: ReactWrapper) =>
@@ -185,10 +183,11 @@ describe('Tabs', () => {
 describe('useImperative', () => {
   it('should work with useImperative', () => {
     const { useTabsHandle } = Tabs
+    let _getCurrentTab: Function = () => null
     function App() {
       const { ref, setCurrentTab, getCurrentTab } = useTabsHandle()
+      _getCurrentTab = getCurrentTab
       useEffect(() => {
-        getCurrentTab()
         setCurrentTab('2')
       }, [])
       return (
@@ -202,15 +201,8 @@ describe('useImperative', () => {
         </Tabs>
       )
     }
-
-    const wrapper = mount(<App />)
-    const label = wrapper
-      .find('header')
-      .findWhere(n => n.hasClass('active'))
-      .find('.label')
-      .childAt(0)
-      .html()
-    expect(label).toBe('label2')
+    mount(<App />)
+    expect(_getCurrentTab()).toBe('2')
   })
 })
 
