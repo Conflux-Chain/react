@@ -11,7 +11,7 @@ export const meta = {
 显示下拉列表选框。
 
 <Playground
-  scope={{ Select }}
+  desc="基本用法 受控的"
   code={`
 () => {
    const [value, setValue] = React.useState("1")
@@ -27,7 +27,7 @@ export const meta = {
 
 <Playground
   title="文本"
-  desc="文本选择器"
+  desc="文本选择器 不受控的"
   scope={{ Select }}
   code={`
 () => {
@@ -217,5 +217,14 @@ type SelectVariants = 'line' | 'text'
 ```
 
 </Attributes>
+
+<Attributes.Title>useSelectHandle</Attributes.Title>
+```ts
+type useSelectHandle = () => {
+  ref: RefObject
+  setValue: (value?: string | string[]) => void
+  getValue: () => string | string[]
+}
+
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>

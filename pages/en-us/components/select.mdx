@@ -11,7 +11,7 @@ export const meta = {
 Display a dropdown list of items.
 
 <Playground
-  desc="Basic usage."
+  desc="Basic usage.(controlled)"
   scope={{ Select }}
   code={`
 () => {
@@ -28,7 +28,7 @@ Display a dropdown list of items.
 
 <Playground
   title="Text"
-  desc="Text usage."
+  desc="Text usage.(uncontrolled)"
   scope={{ Select }}
   code={`
 () => {
@@ -214,5 +214,13 @@ type SelectVariants = 'line' | 'text'
 ```
 
 </Attributes>
+
+<Attributes.Title>useSelectHandle</Attributes.Title>
+```ts
+type useSelectHandle = () => {
+  ref: RefObject
+  setValue: (value?: string | string[]) => void
+  getValue: () => string | string[]
+}
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>

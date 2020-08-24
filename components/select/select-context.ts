@@ -10,6 +10,10 @@ export interface SelectConfig {
   disableAll?: boolean
   ref?: MutableRefObject<HTMLElement | null>
 }
+export interface SelectHandles {
+  setValue: (visible?: string | string[]) => void
+  getValue: () => string | string[] | undefined
+}
 
 const defaultContext = {
   visible: false,
