@@ -129,7 +129,7 @@ exports[`Modal should render correctly 1`] = `
             position: relative;
             overflow: hidden;
             color: #0054fe;
-            background-color: #fdfdfe;
+            background-color: #fff;
             border: 2px solid #0054fe;
             cursor: pointer;
             pointer-events: auto;
@@ -137,13 +137,13 @@ exports[`Modal should render correctly 1`] = `
             --zeit-ui-button-padding: 1.375rem;
             --zeit-ui-button-height: 2.8571rem;
             --zeit-ui-button-color: #0054fe;
-            --zeit-ui-button-bg: #fdfdfe;
+            --zeit-ui-button-bg: #fff;
           }
 
           .btn:hover {
             color: #0433dc;
             --zeit-ui-button-color: #0433dc;
-            background-color: #fdfdfe;
+            background-color: #fff;
             border-color: #0433dc;
             cursor: pointer;
             pointer-events: auto;
@@ -154,7 +154,7 @@ exports[`Modal should render correctly 1`] = `
           .btn:active {
             color: #0626ae;
             --zeit-ui-button-color: #0626ae;
-            background-color: #fdfdfe;
+            background-color: #fff;
             border-color: #0626ae;
             cursor: pointer;
             pointer-events: auto;
@@ -204,7 +204,7 @@ exports[`Modal should render correctly 1`] = `
             position: relative;
             overflow: hidden;
             color: #0054fe;
-            background-color: #fdfdfe;
+            background-color: #fff;
             border: 2px solid #0054fe;
             cursor: pointer;
             pointer-events: auto;
@@ -212,13 +212,13 @@ exports[`Modal should render correctly 1`] = `
             --zeit-ui-button-padding: 1.375rem;
             --zeit-ui-button-height: 2.8571rem;
             --zeit-ui-button-color: #0054fe;
-            --zeit-ui-button-bg: #fdfdfe;
+            --zeit-ui-button-bg: #fff;
           }
 
           .btn:hover {
             color: #0433dc;
             --zeit-ui-button-color: #0433dc;
-            background-color: #fdfdfe;
+            background-color: #fff;
             border-color: #0433dc;
             cursor: pointer;
             pointer-events: auto;
@@ -229,7 +229,7 @@ exports[`Modal should render correctly 1`] = `
           .btn:active {
             color: #0626ae;
             --zeit-ui-button-color: #0626ae;
-            background-color: #fdfdfe;
+            background-color: #fff;
             border-color: #0626ae;
             cursor: pointer;
             pointer-events: auto;

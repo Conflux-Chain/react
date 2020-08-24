@@ -20,7 +20,7 @@ import Backdrop from '../shared/backdrop'
 import { ModalConfig, ModalContext, ModalHandles } from './modal-context'
 import { pickChild } from '../utils/collections'
 import useBodyScroll from '../utils/use-body-scroll'
-import useModalHandle from './use-imperative-modal'
+import useModalHandle from './use-modal-handle'
 import ModalIcon from './modal-icon'
 import useTheme from '../styles/use-theme'
 
