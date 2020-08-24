@@ -10,7 +10,7 @@ import Grid from '../grid'
 import { SelectContext, SelectConfig } from './select-context'
 import { getSizes, getSelectColors } from './styles'
 import Ellipsis from '../shared/ellipsis'
-import useMergedState from '../utils/useMergedState'
+import useMergedState from '../utils/use-merged-state'
 import Dropdown from '../shared/dropdown'
 
 interface Props {
@@ -73,8 +73,10 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   const [mergedValue, setMergedValue] = useMergedState(defaultValue, {
     value,
     onChange,
-    postState(value: string | string[] = '') {
-      return value || (multiple ? [] : '')
+    postState: (value: string | string[] = '') => {
+      if (!multiple) return value
+      if (Array.isArray(value)) return value
+      return typeof value === 'undefined' || value === '' ? [] : [value]
     },
   })
 
@@ -92,12 +94,13 @@ const Select: React.FC<React.PropsWithChildren<SelectProps>> = ({
   }, [disabled, theme.palette, variant])
 
   const updateValue = (next: string) => {
-    const newValue = (() => {
+    const setNewValue = () => {
       if (!Array.isArray(mergedValue)) return next
       if (!mergedValue.includes(next)) return [...mergedValue, next]
       return mergedValue.filter(item => item !== next)
-    })()
-    setMergedValue(newValue)
+    }
+    const newValue = setNewValue()
+    setMergedValue(newValue as string | string[])
     if (!multiple) {
       setVisible(false)
     }
@@ -274,6 +277,6 @@ type SelectComponent<P = {}> = React.FC<P> & {
 type ComponentProps = Partial<typeof defaultProps> &
   Omit<Props, keyof typeof defaultProps> &
   NativeAttrs
-  ; (Select as SelectComponent<ComponentProps>).defaultProps = defaultProps
+;(Select as SelectComponent<ComponentProps>).defaultProps = defaultProps
 
 export default Select as SelectComponent<ComponentProps>

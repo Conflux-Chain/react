@@ -9,10 +9,10 @@ export default function useControlledState<T>(
   },
 ): [T, (value: T) => void] {
   const { value, onChange, postState } = option || {}
-  const [innerValue, setInnerValue] = useState<T>(value || defaultValue)
+  const [innerValue, setInnerValue] = useState<T>(value !== undefined ? value : defaultValue)
 
   //controlled take priority of uncontrolled
-  let calcualteValue = value || innerValue
+  let calcualteValue = value !== undefined ? value : innerValue
   if (postState) {
     calcualteValue = postState(calcualteValue)
   }
