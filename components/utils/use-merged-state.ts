@@ -1,5 +1,5 @@
 import { useRef, useState, useCallback } from 'react'
-//https://raw.githubusercontent.com/react-component/util/master/src/hooks/useMergedState.ts
+// https://github.com/react-component/util/blob/4045d568885d65a5491ab22347682f5e31da31dc/src/hooks/useMergedState.ts
 export default function useControlledState<T>(
   defaultValue: T,
   option?: {
@@ -31,8 +31,6 @@ export default function useControlledState<T>(
       onChange(newValue, mergedValue.current)
     }
   }, [])
-
-  // console.log('mergedValue.current', mergedValue.current)
 
   return [mergedValue.current, setValue]
 }
