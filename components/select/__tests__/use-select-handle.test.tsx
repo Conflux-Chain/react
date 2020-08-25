@@ -54,7 +54,7 @@ describe('useSelectHandle', () => {
 })
 
 describe('getValue', () => {
-  it('should get current visible', async () => {
+  it('should get current value', async () => {
     let log = ''
     jest.spyOn(console, 'log').mockImplementation(msg => (log = msg))
     const MockSelect: React.FC<{ value?: string | string[] }> = ({ value }) => {

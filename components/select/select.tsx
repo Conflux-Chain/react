@@ -133,7 +133,7 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<Props & NativeA
         size,
         disableAll: disabled,
       }),
-      [size, disabled, ref, multiple, variant, mergedValue],
+      [size, disabled, variant, mergedValue],
     )
 
     const clickHandler = (event: React.MouseEvent<HTMLDivElement>) => {

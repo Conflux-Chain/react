@@ -24,7 +24,6 @@ export default function useControlledState<T>(
   // do not change the identity of setValue
   const setValue = useCallback((newValue: T) => {
     if (!value) {
-      console.log('setValue', newValue)
       setInnerValue(newValue)
     }
     if (mergedValue.current !== newValue && onChange) {
