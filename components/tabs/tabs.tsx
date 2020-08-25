@@ -16,7 +16,7 @@ import { TabVarient } from '../utils/prop-types'
 import TabsNav from './tabs-nav'
 import useTabsHandle from './use-tabs-handle'
 
-export interface TabProps {
+export interface Props {
   style?: CSSProperties
   initialValue?: string
   value?: string
@@ -31,10 +31,10 @@ const defaultProps = {
   className: '',
 }
 
-type NativeAttrs = React.HTMLAttributes<HTMLDivElement>
-
-type TabsProps = React.PropsWithChildren<TabProps & NativeAttrs>
-type TabsPropsWithDefault = React.PropsWithChildren<TabProps & NativeAttrs & typeof defaultProps>
+// type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>,'onChange')
+type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>, keyof Props>
+type TabsProps = React.PropsWithChildren<Props & NativeAttrs>
+type TabsPropsWithDefault = React.PropsWithChildren<Props & typeof defaultProps & NativeAttrs>
 
 const Tabs = forwardRef<Handles, TabsProps>(
   (
