@@ -40,9 +40,9 @@ const defaultProps = {
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
-export type ModalProps = Props & typeof defaultProps & NativeAttrs
+export type ModalProps = Props & NativeAttrs
 
-const Modal = forwardRef<ModalHandles, React.PropsWithChildren<Props & NativeAttrs>>(
+const Modal = forwardRef<ModalHandles, React.PropsWithChildren<ModalProps>>(
   (
     {
       children,
@@ -53,7 +53,7 @@ const Modal = forwardRef<ModalHandles, React.PropsWithChildren<Props & NativeAtt
       width: wrapperWidth,
       wrapClassName,
       closable,
-    }: React.PropsWithChildren<ModalProps>,
+    }: React.PropsWithChildren<ModalProps & typeof defaultProps>,
     ref: RefObject<ModalHandles>,
   ) => {
     const portal = usePortal('modal')
