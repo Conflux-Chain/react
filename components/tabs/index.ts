@@ -1,9 +1,9 @@
 import Tabs from './tabs'
 import TabsItem from './tabs-item'
-import useImperative from './use-imperative-tabs'
+import useTabsHandle from './use-tabs-handle'
 
 Tabs.Item = TabsItem
 Tabs.Tab = TabsItem
-Tabs.useTabsHandle = useImperative
+Tabs.useTabsHandle = useTabsHandle
 
 export default Tabs

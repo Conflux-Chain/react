@@ -14,7 +14,7 @@ import useTheme from '../styles/use-theme'
 
 import { TabVarient } from '../utils/prop-types'
 import TabsNav from './tabs-nav'
-import useTabsHandle from './use-imperative-tabs'
+import useTabsHandle from './use-tabs-handle'
 
 export interface TabProps {
   style?: CSSProperties
