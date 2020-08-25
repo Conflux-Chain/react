@@ -11,17 +11,17 @@ export default function useControlledState<T>(
   const { value, onChange, postState } = option || {}
   const [innerValue, setInnerValue] = useState<T>(value !== undefined ? value : defaultValue)
 
-  //controlled take priority of uncontrolled
+  // controlled take priority of uncontrolled
   let calcualteValue = value !== undefined ? value : innerValue
   if (postState) {
     calcualteValue = postState(calcualteValue)
   }
 
-  //value inside setValue should be updated
+  // value inside setValue should be updated
   const mergedValue = useRef(calcualteValue)
   mergedValue.current = calcualteValue
 
-  //do not change the identity of setValue
+  // do not change the identity of setValue
   const setValue = useCallback((newValue: T) => {
     if (!value) {
       console.log('setValue', newValue)
