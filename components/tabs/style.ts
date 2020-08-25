@@ -6,20 +6,23 @@ export type StatusMap = {
   [key in TabStatus]?: boolean
 }
 
-export type ColorFN = (palette: ZeitUIThemesPalette, varient: TabVarient, status: TabStatus) => any
-
-export const defaultGetColor: any = (
+export const defaultGetColor = (
   palette: ZeitUIThemesPalette,
   varient: TabVarient,
   status: TabStatus,
-) => {
+): { color?: string; background: string } => {
   switch (status) {
     case 'active':
     case 'hover':
       return {
         color: palette.cTheme5,
-        background:
-          varient === 'line' ? '' : status === 'active' ? palette.cTheme2 : palette.cNeutral1,
+        background: (() => {
+          if (varient === 'line') {
+            return ''
+          } else {
+            return status === 'active' ? palette.cTheme2 : palette.cNeutral1
+          }
+        })(),
       }
     case 'default':
       return {

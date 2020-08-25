@@ -4,9 +4,7 @@ import { useTabsContext, TabsConfig } from './tabs-context'
 interface Props {
   label: string
   value: string
-  children?: string | React.ReactNode
   disabled?: boolean
-  [extra: string]: any
 }
 
 const defaultProps = {
@@ -18,14 +16,13 @@ const TabsItem: React.FC<React.PropsWithChildren<Props>> = ({
   value,
   label,
   disabled,
-  ...extra
 }: React.PropsWithChildren<Props & typeof defaultProps>) => {
   const { register, currentValue } = useTabsContext() as TabsConfig
   const isActive = useMemo(() => currentValue === value, [currentValue, value])
 
   useEffect(() => {
-    register && register({ value, label, disabled, ...extra })
-  }, [value, label, disabled, extra])
+    register && register({ value, label, disabled })
+  }, [value, label, disabled])
 
   //remove corresponding data model when unmount
   useEffect(() => {

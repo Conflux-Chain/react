@@ -33,26 +33,26 @@ const defaultProps = {
 
 type NativeAttrs = React.HTMLAttributes<HTMLDivElement>
 
-const Tabs = forwardRef<Handles, React.PropsWithChildren<TabProps>>(
+type TabsProps = React.PropsWithChildren<TabProps & NativeAttrs>
+type TabsPropsWithDefault = React.PropsWithChildren<TabProps & NativeAttrs & typeof defaultProps>
+
+const Tabs = forwardRef<Handles, TabsProps>(
   (
     {
       initialValue: userCustomInitialValue,
       value,
-
       children,
       varient,
       onChange,
       className,
       showDivider,
       ...props
-    }: React.PropsWithChildren<TabProps & typeof defaultProps & NativeAttrs>,
+    }: TabsPropsWithDefault,
     ref: RefObject<Handles>,
   ) => {
     const theme = useTheme()
     const [currentTab, setCurrentTab] = useState<string | undefined>(userCustomInitialValue)
     const [tabs, setTabs] = useState<TabsItemConfig[]>([])
-
-    // const Nav = useMemo(() => nav({ Bottom, Label }), [Label, Bottom])
 
     useImperativeHandle(
       ref,

@@ -27,24 +27,23 @@ export const meta = {
 <Controlled />
 <Imperative />
 
-<Attributes edit="/pages/zh-en/components/tabs.mdx">
+<Attributes edit="/pages/zh-cn/components/tabs.mdx">
 <Attributes.Title>Tabs.Props</Attributes.Title>
 
-| Attribute        | Description    | Type                    | Accepted values                 | Default |
-| ---------------- | -------------- | ----------------------- | ------------------------------- | ------- |
-| **initialValue** | 初始活跃标签   | `string`                | -                               | -       |
-| **value**        | 当前状态       | `string`                | -                               | -       |
-| **showDivider**  | 显示分割线     | `boolean`               | `true` or `false`               | -       |
-| **onChange**     | 监听变化       | `(val: string) => void` | -                               | -       |
-| **varient**      | 选下卡展现形式 | `string`                | `solid` or `line`               | `line`  |
-| ...              | 原生           | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
+| Attribute        | Description                  | Type                    | Accepted values                 | Default |
+| ---------------- | ---------------------------- | ----------------------- | ------------------------------- | ------- |
+| **initialValue** | 初始活跃标签                 | `string`                | -                               | -       |
+| **value**        | 当前状态, 决定是否是受控组件 | `string`                | -                               | -       |
+| **showDivider**  | 显示分割线                   | `boolean`               | `true` or `false`               | -       |
+| **onChange**     | 监听变化                     | `(val: string) => void` | -                               | -       |
+| **varient**      | 选下卡展现形式               | `string`                | `solid` or `line`               | `line`  |
+| ...              | 原生                         | `HTMLAttributes`        | `'alt', 'id', 'className', ...` | -       |
 
 <br />
 <strong>注意:</strong>
 <br />
 
 1. `value`用来判定该组件是否受控, 虽然我们不会报错，不过请不要在受控和非受控间切换
-
 
 <Attributes.Title>Tabs.useTabsHandle</Attributes.Title>
 
@@ -58,7 +57,6 @@ export const meta = {
 
 1. `ref` 只在非受控组件中可以使用, 也就是 `value` 没有传入的情况.`props` 是在 react 的数据流中的推荐用法.
    确定 `useTabsHandle` 真的有必要再使用
-
 
 <br />
 
