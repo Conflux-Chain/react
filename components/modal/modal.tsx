@@ -5,8 +5,6 @@ import React, {
   RefObject,
   forwardRef,
   useImperativeHandle,
-  PropsWithoutRef,
-  RefAttributes,
 } from 'react'
 import { createPortal } from 'react-dom'
 import usePortal from '../utils/use-portal'
