@@ -31,10 +31,8 @@ const defaultProps = {
   className: '',
 }
 
-// type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>,'onChange')
 type NativeAttrs = Omit<React.HTMLAttributes<HTMLDivElement>, keyof Props>
-type TabsProps = React.PropsWithChildren<Props & NativeAttrs>
-type TabsPropsWithDefault = React.PropsWithChildren<Props & typeof defaultProps & NativeAttrs>
+export type TabsProps = React.PropsWithChildren<Props & NativeAttrs>
 
 const Tabs = forwardRef<Handles, TabsProps>(
   (
@@ -47,7 +45,7 @@ const Tabs = forwardRef<Handles, TabsProps>(
       className,
       showDivider,
       ...props
-    }: TabsPropsWithDefault,
+    }: TabsProps & typeof defaultProps,
     ref: RefObject<Handles>,
   ) => {
     const theme = useTheme()
