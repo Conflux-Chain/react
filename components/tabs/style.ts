@@ -11,30 +11,28 @@ export const defaultGetColor = (
   varient: TabVarient,
   status: TabStatus,
 ): { color?: string; background: string } => {
-  switch (status) {
-    case 'active':
-    case 'hover':
-      return {
-        color: palette.cTheme5,
-        background: (() => {
-          if (varient === 'line') {
-            return ''
-          } else {
-            return status === 'active' ? palette.cTheme2 : palette.cNeutral1
-          }
-        })(),
-      }
-    case 'default':
-      return {
-        color: palette.cNeutral6,
-        background: varient === 'solid' ? palette.cNeutral1 : '',
-      }
-    case 'disabled':
-      return {
-        color: palette.cNeutral5,
-        background: varient === 'solid' ? palette.cNeutral1 : '',
-      }
+  const isLine = varient === 'line'
+
+  const colorBackgroundStyle = {
+    active: {
+      color: palette.cTheme5,
+      background: isLine ? '' : palette.cTheme2,
+    },
+    hover: {
+      color: palette.cTheme5,
+      background: isLine ? '' : palette.cNeutral1,
+    },
+    default: {
+      color: palette.cNeutral6,
+      background: isLine ? '' : palette.cNeutral1,
+    },
+    disabled: {
+      color: palette.cNeutral5,
+      background: isLine ? '' : palette.cNeutral1,
+    },
   }
+
+  return colorBackgroundStyle[status]
 }
 
 export function reduceStatus(props: StatusMap): TabStatus {
