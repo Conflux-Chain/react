@@ -64,15 +64,9 @@ describe('Tabs', () => {
       </Tabs>,
     )
     wrapper.find('header').find('.nav').at(1).simulate('mouseEnter', nativeEvent)
-    expect(wrapper.find('header').find('.label').at(1).get(0).props.style).toHaveProperty(
-      'color',
-      '#0054fe',
-    )
+    expect(wrapper.html()).toMatchSnapshot()
     wrapper.find('header').find('.nav').at(1).simulate('mouseLeave', nativeEvent)
-    expect(wrapper.find('header').find('.label').at(1).get(0).props.style).toHaveProperty(
-      'color',
-      '#444',
-    )
+    expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('can set tabs dynamically', () => {

@@ -1,5 +1,167 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Tabs should change style when hover header 1`] = `
+"<div class=\\"\\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(0, 84, 254);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+          .nav {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+          }
+          .label {
+            cursor: ;
+            font-weight: bold;
+            white-space: nowrap;
+            line-height: 22px;
+            padding: 8px 16px;
+            border-radius: 4px 4px 0px 0px;
+            text-align: center;
+          }
+          .bottom {
+            background-color: #0054fe;
+            transition: all 200ms ease;
+            opacity: 1;
+            transform: scale(1);
+            height: 4px;
+            width: 100%;
+          }
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(0, 84, 254);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+          .nav {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+          }
+          .label {
+            cursor: ;
+            font-weight: ;
+            white-space: nowrap;
+            line-height: 22px;
+            padding: 8px 16px;
+            border-radius: 4px 4px 0px 0px;
+            text-align: center;
+          }
+          .bottom {
+            background-color: #0054fe;
+            transition: all 200ms ease;
+            opacity: 0;
+            transform: scale(0.75);
+            height: 4px;
+            width: 100%;
+          }
+        </style></div></div></header><div class=\\"content\\">1</div><style>
+            header {
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              align-items: center;
+              border-bottom: ;
+            }
+            ::-webkit-scrollbar {
+              display: none;
+            }
+            .content {
+              padding-top: 0.625rem;
+            }
+
+            .tab {
+              cursor: pointer;
+              outline: 0;
+              text-transform: capitalize;
+              font-size: 1rem;
+              margin: 0 1px;
+              user-select: none;
+              display: flex;
+              align-items: center;
+              line-height: 1.25rem;
+              position: relative;
+              font-variant-numeric: tabular-nums;
+            }
+            .tab:first-of-type {
+              margin-left: 0;
+            }
+          </style></div>"
+`;
+
+exports[`Tabs should change style when hover header 2`] = `
+"<div class=\\"\\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(0, 84, 254);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+          .nav {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+          }
+          .label {
+            cursor: ;
+            font-weight: bold;
+            white-space: nowrap;
+            line-height: 22px;
+            padding: 8px 16px;
+            border-radius: 4px 4px 0px 0px;
+            text-align: center;
+          }
+          .bottom {
+            background-color: #0054fe;
+            transition: all 200ms ease;
+            opacity: 1;
+            transform: scale(1);
+            height: 4px;
+            width: 100%;
+          }
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+          .nav {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+          }
+          .label {
+            cursor: ;
+            font-weight: ;
+            white-space: nowrap;
+            line-height: 22px;
+            padding: 8px 16px;
+            border-radius: 4px 4px 0px 0px;
+            text-align: center;
+          }
+          .bottom {
+            background-color: #0054fe;
+            transition: all 200ms ease;
+            opacity: 0;
+            transform: scale(0.75);
+            height: 4px;
+            width: 100%;
+          }
+        </style></div></div></header><div class=\\"content\\">1</div><style>
+            header {
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              align-items: center;
+              border-bottom: ;
+            }
+            ::-webkit-scrollbar {
+              display: none;
+            }
+            .content {
+              padding-top: 0.625rem;
+            }
+
+            .tab {
+              cursor: pointer;
+              outline: 0;
+              text-transform: capitalize;
+              font-size: 1rem;
+              margin: 0 1px;
+              user-select: none;
+              display: flex;
+              align-items: center;
+              line-height: 1.25rem;
+              position: relative;
+              font-variant-numeric: tabular-nums;
+            }
+            .tab:first-of-type {
+              margin-left: 0;
+            }
+          </style></div>"
+`;
+
 exports[`Tabs should render correctly 1`] = `
 "<div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
