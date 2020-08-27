@@ -12,7 +12,7 @@ components/message/* @chain-txz
 components/button-group/* @chain-txz
 components/popover/* @yqrashawn
 components/tag/* @yqrashawn
-components/tabs/* @zhaoguichi
+components/tabs/* @GuichiZhao
 
 pages/*/components/input.mdx @yqrashawn
 pages/*/components/textarea.mdx @yqrashawn
@@ -22,4 +22,4 @@ pages/*/components/button.mdx @chain-txz
 pages/*/components/tooltip.mdx @yqrashawn
 pages/*/components/popover.mdx @yqrashawn
 pages/*/components/tag.mdx @yqrashawn
-pages/*/components/tabs.mdx @zhaoguichi
+pages/*/components/tabs.mdx @GuichiZhao

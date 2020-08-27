@@ -4,6 +4,7 @@ import { mount, ReactWrapper } from 'enzyme'
 import { reduceStatus, defaultGetColor } from '../style'
 import { Tabs } from 'components'
 import { palette } from '../../styles/themes/default'
+import { TabStatus, TabVarient } from 'components/utils/prop-types'
 
 describe('Tabs', () => {
   it('should render correctly', () => {
@@ -208,13 +209,13 @@ describe('useImperative', () => {
 
 describe('utils', () => {
   it('should cover a unreachable brach due to a ts bug', () => {
-    reduceStatus({})
+    expect(reduceStatus({})).toBe('default')
   })
 
   it('should return corrent colors with virant and status combination', () => {
-    const status = ['disabled', 'active', 'hover', 'default']
-    const varients = ['line', 'solid']
-    const colors: string[] = []
+    const status: TabStatus[] = ['disabled', 'active', 'hover', 'default']
+    const varients: TabVarient[] = ['line', 'solid']
+    const colors: any[] = []
     status.forEach(s => {
       varients.forEach(v => {
         colors.push(defaultGetColor(palette, v, s))
