@@ -11,9 +11,13 @@ const defaultProps = {
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<HTMLElement>, keyof Props>
-export type ModalContentProps = Props & typeof defaultProps & NativeAttrs
+export type ModalContentProps = Props & NativeAttrs
 
-const ModalContent: React.FC<ModalContentProps> = ({ className, children, ...props }) => {
+const ModalContent: React.FC<ModalContentProps & typeof defaultProps> = ({
+  className,
+  children,
+  ...props
+}) => {
   const theme = useTheme()
 
   return (

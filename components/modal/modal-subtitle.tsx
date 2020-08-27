@@ -24,7 +24,7 @@ const ModalSubtitle: React.FC<ModalSubtitleProps> = ({ className, children, ...p
       <style jsx>{`
         p {
           font-size: 1rem;
-          line-height: 20px;
+          line-height: 1.4286rem;
           font-weight: normal;
           text-align: center;
           margin: 0;

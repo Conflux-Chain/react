@@ -40,9 +40,13 @@ const defaultProps = {
 }
 
 type NativeAttrs = Omit<React.ButtonHTMLAttributes<any>, keyof Props>
-export type ModalActionProps = Props & typeof defaultProps & NativeAttrs
+export type ModalActionProps = Props & NativeAttrs
 
-const ModalAction: React.FC<ModalActionProps> = ({ children, onClick, ...props }) => {
+const ModalAction: React.FC<ModalActionProps & typeof defaultProps> = ({
+  children,
+  onClick,
+  ...props
+}) => {
   const { close } = useModalContext()
   const clickHandler = (event: MouseEvent<HTMLButtonElement>) => {
     const actionEvent = Object.assign({}, event, {

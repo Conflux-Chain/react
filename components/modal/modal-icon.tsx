@@ -13,9 +13,9 @@ const defaultProps = {
   size: 14,
 }
 
-export type ModalIconProps = Props & typeof defaultProps
+export type ModalIconProps = Props
 
-const ModalIcon: React.FC<ModalIconProps> = ({ size, color, onClick }) => {
+const ModalIcon: React.FC<ModalIconProps & typeof defaultProps> = ({ size, color, onClick }) => {
   const clickHandler = (event: React.MouseEvent) => {
     onClick && onClick(event)
   }
