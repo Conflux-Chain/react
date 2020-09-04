@@ -29,7 +29,7 @@ const Controls: React.FC<{}> = React.memo(({}) => {
   }
   const redirectGithub = () => {
     if (typeof window !== 'undefined') {
-      window.open('https://github.com/conflux-chain/react-ui')
+      window.open('https://github.com/Conflux-Chain/react-ui')
     }
   }
 

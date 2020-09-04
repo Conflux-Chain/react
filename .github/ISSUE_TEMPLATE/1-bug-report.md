@@ -11,7 +11,7 @@ about: "If something isn't working as expected 🤔."
 ## Version & Environment
 
   - Version of browser
-  - Version of `conflux-chain/react-ui`
+  - Version of `Conflux-Chain/react-ui`
 
 ## Expection
 

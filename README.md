@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-<img alt="Codecov" src="https://img.shields.io/codecov/c/github/conflux-chain/react-ui?style=for-the-badge&labelColor=000000">
-<img alt="CircleCI" src="https://img.shields.io/circleci/build/github/conflux-chain/react-ui?style=for-the-badge&labelColor=000000">
+<img alt="Codecov" src="https://img.shields.io/codecov/c/github/Conflux-Chain/react-ui?style=for-the-badge&labelColor=000000">
+<img alt="CircleCI" src="https://img.shields.io/circleci/build/github/Conflux-Chain/react-ui?style=for-the-badge&labelColor=000000">
 <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cfxjs/react-ui?style=for-the-badge&labelColor=000000">
 </p>
 
@@ -40,8 +40,8 @@ const Application = () => (
 
 ## Development
 
-- [Contributing Guide](https://github.com/conflux-chain/react-ui/blob/master/.github/CONTRIBUTING.md)
-- [Add issue here](https://github.com/conflux-chain/react-ui/issues/new)
+- [Contributing Guide](https://github.com/Conflux-Chain/react-ui/blob/master/.github/CONTRIBUTING.md)
+- [Add issue here](https://github.com/Conflux-Chain/react-ui/issues/new)
 
 <br/>
 
