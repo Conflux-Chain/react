@@ -19,7 +19,7 @@ const CssBaseline: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
         html {
           font-size: 14px;
           line-height: 1.5714rem;
-          --cfx-icons-background: ${theme.palette.background};
+          --zeit-icons-background: ${theme.palette.background};
           letter-spacing: 0.0071rem;
         }
 
