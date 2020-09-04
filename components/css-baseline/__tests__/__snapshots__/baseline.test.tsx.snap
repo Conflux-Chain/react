@@ -16,7 +16,7 @@ initialize {
         html {
           font-size: 14px;
           line-height: 1.5714rem;
-          --zeit-icons-background: #fff;
+          --cfx-icons-background: #fff;
           letter-spacing: 0.0071rem;
         }
 
@@ -357,7 +357,7 @@ initialize {
         html {
           font-size: 14px;
           line-height: 1.5714rem;
-          --zeit-icons-background: #000;
+          --cfx-icons-background: #000;
           letter-spacing: 0.0071rem;
         }
 
