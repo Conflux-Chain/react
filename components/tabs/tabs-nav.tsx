@@ -1,28 +1,25 @@
-import React, { useMemo, useState } from 'react'
-import { StatusMap, reduceStatus } from './style'
+import React, { useMemo } from 'react'
 import { TabVarient } from 'components/utils/prop-types'
 import { defaultGetColor } from './style'
 import useTheme from '../styles/use-theme'
 
 export interface NavCptProps {
   varient: TabVarient
-  status: StatusMap
+  disabled: boolean
+  active: boolean
   label: string | React.ReactNode
 }
 
-const Nav: React.FC<NavCptProps> = ({ label, status, varient }) => {
-  const [hover, setHover] = useState(false)
-  const reducedStatus = useMemo(() => reduceStatus({ ...status, hover }), [status, hover])
+const Nav: React.FC<NavCptProps> = ({ label, varient, disabled, active }) => {
   const { palette, layout, expressiveness } = useTheme()
-  const colors = useMemo(() => defaultGetColor(palette, varient, reducedStatus), [
+  const colors = useMemo(() => defaultGetColor(palette, varient, disabled, active), [
     varient,
-    reducedStatus,
+    disabled,
+    active,
   ])
   return (
-    <div className="nav" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-      <div style={{ ...colors }} className="label">
-        {label}
-      </div>
+    <div className="nav">
+      <div className="label">{label}</div>
       {varient === 'line' ? <div className="bottom"></div> : null}
 
       <style jsx>
@@ -33,19 +30,25 @@ const Nav: React.FC<NavCptProps> = ({ label, status, varient }) => {
             position: relative;
           }
           .label {
-            cursor: ${reducedStatus === 'disabled' ? 'not-allowed' : ''};
-            font-weight: ${reducedStatus === 'active' ? '500' : '400'};
+            cursor: ${disabled ? 'not-allowed' : ''};
+            font-weight: ${active ? '500' : '400'};
             white-space: nowrap;
             line-height: 22px;
             padding: ${layout.gapHalf} ${layout.gap};
             border-radius: ${expressiveness.R2} ${expressiveness.R2} 0px 0px;
             text-align: center;
+            color: ${colors.color};
+            background-color: ${colors.bgColor};
+          }
+          .label:hover {
+            color: ${colors.hoverColor};
+            background-color: ${colors.hoverBgColor};
           }
           .bottom {
             background-color: ${palette.cTheme5};
             transition: all 200ms ease;
-            opacity: ${reducedStatus === 'active' ? '1' : '0'};
-            transform: scale(${reducedStatus === 'active' ? '1' : '0.75'});
+            opacity: ${active ? '1' : '0'};
+            transform: scale(${active ? '1' : '0.75'});
             height: 4px;
             width: 100%;
           }

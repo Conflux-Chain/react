@@ -108,7 +108,7 @@ const Tabs = forwardRef<Handles, TabsProps>(
 
     return (
       <TabsContext.Provider value={ctx}>
-        <div className={`${className}`} {...props}>
+        <div className={`tabs ${className}`} {...props}>
           <header>
             {tabs.map(({ value, disabled, ...extra }) => {
               return (
@@ -119,11 +119,8 @@ const Tabs = forwardRef<Handles, TabsProps>(
                   onClick={() => !disabled && clickHandler(value)}>
                   <TabsNav
                     varient={varient}
-                    status={{
-                      disabled: disabled,
-                      active: currentTab === value,
-                      default: true,
-                    }}
+                    disabled={disabled}
+                    active={currentTab === value}
                     {...extra}></TabsNav>
                 </div>
               )

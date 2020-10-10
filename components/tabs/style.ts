@@ -1,46 +1,41 @@
-import { TabVarient, TabStatus } from '../utils/prop-types'
+import { TabVarient } from '../utils/prop-types'
 import { CfxUIThemesPalette } from 'components/styles/themes'
-const stack: TabStatus[] = ['disabled', 'active', 'hover', 'default']
 
-export type StatusMap = {
-  [key in TabStatus]?: boolean
+type tabColors = {
+  color: string
+  bgColor: string
+  hoverColor: string
+  hoverBgColor: string
 }
 
 export const defaultGetColor = (
   palette: CfxUIThemesPalette,
   varient: TabVarient,
-  status: TabStatus,
-): { color?: string; background: string } => {
+  disabled: boolean,
+  active: boolean,
+): tabColors => {
   const isLine = varient === 'line'
 
-  const colorBackgroundStyle = {
-    active: {
-      color: palette.cTheme5,
-      background: isLine ? '' : palette.cTheme2,
-    },
-    hover: {
-      color: palette.cTheme5,
-      background: isLine ? '' : palette.cNeutral1,
-    },
-    default: {
-      color: palette.cNeutral6,
-      background: isLine ? '' : palette.cNeutral1,
-    },
-    disabled: {
+  if (disabled) {
+    return {
       color: palette.cNeutral5,
-      background: isLine ? '' : palette.cNeutral1,
-    },
-  }
-
-  return colorBackgroundStyle[status]
-}
-
-export function reduceStatus(props: StatusMap): TabStatus {
-  for (let i = 0; i <= stack.length; i++) {
-    const s = stack[i]
-    if (props[s]) {
-      return s
+      hoverColor: palette.cNeutral5,
+      bgColor: isLine ? '' : palette.cNeutral1,
+      hoverBgColor: isLine ? '' : palette.cNeutral1,
     }
   }
-  return 'default'
+  if (active) {
+    return {
+      color: palette.cTheme5,
+      hoverColor: palette.cTheme5,
+      bgColor: isLine ? '' : palette.cTheme2,
+      hoverBgColor: isLine ? '' : palette.cTheme2,
+    }
+  }
+  return {
+    color: palette.cNeutral6,
+    hoverColor: palette.cTheme5,
+    bgColor: isLine ? '' : palette.cNeutral1,
+    hoverBgColor: isLine ? '' : palette.cNeutral1,
+  }
 }

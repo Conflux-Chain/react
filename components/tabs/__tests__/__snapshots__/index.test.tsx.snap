@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs should change style when hover header 1`] = `
-"<div class=\\"\\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(0, 84, 254);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+"<div class=\\"tabs \\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -15,6 +15,12 @@ exports[`Tabs should change style when hover header 1`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #0054fe;
+            background-color: ;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: ;
           }
           .bottom {
             background-color: #0054fe;
@@ -24,7 +30,7 @@ exports[`Tabs should change style when hover header 1`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(0, 84, 254);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -38,6 +44,12 @@ exports[`Tabs should change style when hover header 1`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #444;
+            background-color: ;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: ;
           }
           .bottom {
             background-color: #0054fe;
@@ -82,7 +94,7 @@ exports[`Tabs should change style when hover header 1`] = `
 `;
 
 exports[`Tabs should change style when hover header 2`] = `
-"<div class=\\"\\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(0, 84, 254);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+"<div class=\\"tabs \\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -96,6 +108,12 @@ exports[`Tabs should change style when hover header 2`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #0054fe;
+            background-color: ;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: ;
           }
           .bottom {
             background-color: #0054fe;
@@ -105,7 +123,7 @@ exports[`Tabs should change style when hover header 2`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -119,6 +137,12 @@ exports[`Tabs should change style when hover header 2`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #444;
+            background-color: ;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: ;
           }
           .bottom {
             background-color: #0054fe;
@@ -163,7 +187,7 @@ exports[`Tabs should change style when hover header 2`] = `
 `;
 
 exports[`Tabs should render correctly 1`] = `
-"<div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+"<div><div class=\\"tabs \\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -177,6 +201,12 @@ exports[`Tabs should render correctly 1`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #444;
+            background-color: ;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: ;
           }
           .bottom {
             background-color: #0054fe;
@@ -186,7 +216,7 @@ exports[`Tabs should render correctly 1`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68);\\" class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -200,6 +230,12 @@ exports[`Tabs should render correctly 1`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #444;
+            background-color: ;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: ;
           }
           .bottom {
             background-color: #0054fe;
@@ -240,7 +276,7 @@ exports[`Tabs should render correctly 1`] = `
             .tab:first-of-type {
               margin-left: 0;
             }
-          </style></div><div class=\\"\\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label1</div><style>
+          </style></div><div class=\\"tabs \\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -254,6 +290,12 @@ exports[`Tabs should render correctly 1`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #444;
+            background-color: #f1f3f6;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: #f1f3f6;
           }
           .bottom {
             background-color: #0054fe;
@@ -263,7 +305,7 @@ exports[`Tabs should render correctly 1`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div style=\\"color: rgb(68, 68, 68); background: rgb(241, 243, 246);\\" class=\\"label\\">label2</div><style>
+        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -277,6 +319,12 @@ exports[`Tabs should render correctly 1`] = `
             padding: 8px 16px;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
+            color: #444;
+            background-color: #f1f3f6;
+          }
+          .label:hover {
+            color: #0054fe;
+            background-color: #f1f3f6;
           }
           .bottom {
             background-color: #0054fe;
@@ -318,41 +366,4 @@ exports[`Tabs should render correctly 1`] = `
               margin-left: 0;
             }
           </style></div></div>"
-`;
-
-exports[`utils should return corrent colors with virant and status combination 1`] = `
-Array [
-  Object {
-    "background": "",
-    "color": "#9b9eac",
-  },
-  Object {
-    "background": "#f1f3f6",
-    "color": "#9b9eac",
-  },
-  Object {
-    "background": "",
-    "color": "#0054fe",
-  },
-  Object {
-    "background": "#ccddff",
-    "color": "#0054fe",
-  },
-  Object {
-    "background": "",
-    "color": "#0054fe",
-  },
-  Object {
-    "background": "#f1f3f6",
-    "color": "#0054fe",
-  },
-  Object {
-    "background": "",
-    "color": "#444",
-  },
-  Object {
-    "background": "#f1f3f6",
-    "color": "#444",
-  },
-]
 `;
