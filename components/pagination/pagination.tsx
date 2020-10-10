@@ -46,6 +46,7 @@ interface Props {
   showQuickJumper?: boolean
   showPageSizeChanger?: boolean
   simple?: boolean
+  className?: string
   onPageChange?: (val: number, pageSize: number) => void
   onPageSizeChange?: (current: number, pageSize: number) => void
 }
@@ -64,6 +65,7 @@ const defaultProps = {
   showQuickJumper: false,
   showPageSizeChanger: false,
   simple: false,
+  className: '',
 }
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
 export type PaginationProps = React.PropsWithChildren<Props & NativeAttrs>
@@ -87,6 +89,7 @@ const Pagination = forwardRef<PaginationHandles, React.PropsWithChildren<Paginat
       showQuickJumper,
       showPageSizeChanger,
       simple,
+      className,
       onPageSizeChange,
       onPageChange,
     }: PaginationProps & typeof defaultProps,
@@ -166,7 +169,7 @@ const Pagination = forwardRef<PaginationHandles, React.PropsWithChildren<Paginat
     )
     return (
       <PaginationContext.Provider value={values}>
-        <div className="pagination">
+        <div className={`pagination ${className}`}>
           {showPageSizeChanger && (
             <div className="left">
               <PaginationPageSize
