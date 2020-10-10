@@ -24,15 +24,14 @@ jobs:
 
       - restore_cache:
           keys:
-            - v2-dependencies-{{ checksum "package.json" }}
-            - v2-dependencies-
+            - v2-dependencies-{{ checksum "yarn.lock" }}
 
       - run: yarn --frozen-lockfile
 
       - save_cache:
           paths:
             - node_modules
-          key: v2-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies-{{ checksum "yarn.lock" }}
 
       - run: yarn run lint
       - run: yarn test -w 1 --coverage
@@ -49,15 +48,14 @@ jobs:
 
       - restore_cache:
           keys:
-            - v2-dependencies-{{ checksum "package.json" }}
-            - v2-dependencies-
+            - v2-dependencies-{{ checksum "yarn.lock" }}
 
       - run: yarn
 
       - save_cache:
           paths:
             - node_modules
-          key: v2-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies-{{ checksum "yarn.lock" }}
 
       - run: yarn run build
       - persist_to_workspace:

@@ -6,7 +6,7 @@ import {
 
 export const defaultFont: CfxUIThemesFont = {
   sans:
-    '"Circular Std Book", "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+    '"Circular Std", "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
   mono:
     'Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace',
 }
@@ -35,12 +35,12 @@ export const defaultBreakpoints: CfxUIThemesBreakpoints = {
 }
 
 export const defaultLayout: CfxUIThemesLayout = {
-  gap: '16px',
-  gapNegative: '-16px',
-  gapHalf: '8px',
-  gapHalfNegative: '-8px',
-  gapQuarter: '4px',
-  gapQuarterNegative: '-4px',
+  gap: '1.1429rem',
+  gapNegative: '-1.1429rem',
+  gapHalf: '0.5714rem',
+  gapHalfNegative: '-0.5714rem',
+  gapQuarter: '0.2857rem',
+  gapQuarterNegative: '-0.2857rem',
   pageMargin: '16px',
   pageWidth: '950px',
   pageWidthWithMargin: '982px',

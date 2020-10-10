@@ -31,7 +31,7 @@ initialize {
           min-height: 100%;
           position: relative;
           overflow-x: hidden;
-          font-family: &quot;Circular Std Book&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
+          font-family: &quot;Circular Std&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
         }
 
         #__next {
@@ -51,7 +51,7 @@ initialize {
           font-weight: 400;
           color: inherit;
           letter-spacing: 0.0143rem;
-          font-family: &quot;Circular Std Book&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
+          font-family: &quot;Circular Std&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
         }
 
         p {
@@ -99,8 +99,8 @@ initialize {
         ol {
           padding: 0;
           list-style-type: none;
-          margin: 8px 8px 8px
-            16px;
+          margin: 0.5714rem 0.5714rem 0.5714rem
+            1.1429rem;
           color: #000;
         }
 
@@ -207,8 +207,8 @@ initialize {
         pre {
           border: 1px solid #eaeaea;
           border-radius: 4px;
-          padding: calc(16px * 0.75) 16px;
-          margin: 16px 0;
+          padding: calc(1.1429rem * 0.75) 1.1429rem;
+          margin: 1.1429rem 0;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
           white-space: pre;
           overflow: auto;
@@ -280,7 +280,7 @@ initialize {
         }
 
         blockquote {
-          padding: calc(0.667 * 16px) 16px;
+          padding: calc(0.667 * 1.1429rem) 1.1429rem;
           color: #666;
           background-color: #fafafa;
           border-radius: 4px;
@@ -372,7 +372,7 @@ initialize {
           min-height: 100%;
           position: relative;
           overflow-x: hidden;
-          font-family: &quot;Circular Std Book&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
+          font-family: &quot;Circular Std&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
         }
 
         #__next {
@@ -392,7 +392,7 @@ initialize {
           font-weight: 400;
           color: inherit;
           letter-spacing: 0.0143rem;
-          font-family: &quot;Circular Std Book&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
+          font-family: &quot;Circular Std&quot;, &quot;PingFang SC&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
         }
 
         p {
@@ -440,8 +440,8 @@ initialize {
         ol {
           padding: 0;
           list-style-type: none;
-          margin: 8px 8px 8px
-            16px;
+          margin: 0.5714rem 0.5714rem 0.5714rem
+            1.1429rem;
           color: #fff;
         }
 
@@ -548,8 +548,8 @@ initialize {
         pre {
           border: 1px solid #333;
           border-radius: 4px;
-          padding: calc(16px * 0.75) 16px;
-          margin: 16px 0;
+          padding: calc(1.1429rem * 0.75) 1.1429rem;
+          margin: 1.1429rem 0;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
           white-space: pre;
           overflow: auto;
@@ -621,7 +621,7 @@ initialize {
         }
 
         blockquote {
-          padding: calc(0.667 * 16px) 16px;
+          padding: calc(0.667 * 1.1429rem) 1.1429rem;
           color: #888;
           background-color: #111;
           border-radius: 4px;
