@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { nativeEvent } from 'tests/utils'
 import { mount, ReactWrapper } from 'enzyme'
-// import { reduceStatus, defaultGetColor } from '../style'
 import { Tabs } from 'components'
-// import { palette } from '../../styles/themes/default'
-// import { TabStatus, TabVarient } from 'components/utils/prop-types'
 
 describe('Tabs', () => {
   it('should render correctly', () => {
@@ -200,21 +197,3 @@ describe('useImperative', () => {
     expect(_getCurrentTab()).toBe('2')
   })
 })
-
-// describe('utils', () => {
-//   it('should cover a unreachable brach due to a ts bug', () => {
-//     expect(reduceStatus({})).toBe('default')
-//   })
-
-//   it('should return corrent colors with virant and status combination', () => {
-//     const status: TabStatus[] = ['disabled', 'active', 'hover', 'default']
-//     const varients: TabVarient[] = ['line', 'solid']
-//     const colors: any[] = []
-//     status.forEach(s => {
-//       varients.forEach(v => {
-//         colors.push(defaultGetColor(palette, v, s))
-//       })
-//     })
-//     expect(colors).toMatchSnapshot()
-//   })
-// })
