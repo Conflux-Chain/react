@@ -73,7 +73,7 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
       <div
         className={`option ${selected ? 'selected' : ''} ${disabled ? 'disabled' : ''} ${
           divider ? 'divider' : ''
-        } ${label ? 'label' : ''}${className}`}
+        } ${label ? 'label' : ''} ${className}`}
         onClick={clickHandler}
         {...props}>
         <Ellipsis height={`calc(2.25 * ${theme.layout.gap})`}>{children}</Ellipsis>

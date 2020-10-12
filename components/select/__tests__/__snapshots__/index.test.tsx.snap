@@ -453,7 +453,7 @@ exports[`Select should render correctly 1`] = `
 `;
 
 exports[`Select should render correctly when variant=text 1`] = `
-"<div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option selected   \\"><span>Option 2<style>
+"<div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option selected    \\"><span>Option 2<style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;
@@ -620,7 +620,7 @@ exports[`Select should render correctly when variant=text 1`] = `
 `;
 
 exports[`Select should render right border with variant=text when hover 1`] = `
-"<div class=\\"option    \\"><span>Option 1<style>
+"<div class=\\"option     \\"><span>Option 1<style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;

@@ -113,7 +113,9 @@ const Tabs = forwardRef<Handles, TabsProps>(
             {tabs.map(({ value, disabled, ...extra }) => {
               return (
                 <div
-                  className={`tab ${currentTab === value ? 'active' : ''}`}
+                  className={`tab ${currentTab === value ? 'active' : ''} ${
+                    disabled ? 'disabled' : ''
+                  }`}
                   role="button"
                   key={value}
                   onClick={() => !disabled && clickHandler(value)}>
