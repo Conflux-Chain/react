@@ -99,7 +99,7 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -123,16 +123,16 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -168,7 +168,7 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -286,7 +286,7 @@ exports[`Select Multiple should render correctly 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -310,16 +310,16 @@ exports[`Select Multiple should render correctly 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -355,7 +355,7 @@ exports[`Select Multiple should render correctly 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {

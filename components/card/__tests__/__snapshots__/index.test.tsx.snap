@@ -127,7 +127,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -186,7 +186,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -496,7 +496,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -555,7 +555,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -721,7 +721,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -780,7 +780,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -920,7 +920,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -979,7 +979,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1289,7 +1289,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1348,7 +1348,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1704,7 +1704,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1763,7 +1763,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2073,7 +2073,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2132,7 +2132,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2298,7 +2298,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2357,7 +2357,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2497,7 +2497,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2556,7 +2556,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2866,7 +2866,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2925,7 +2925,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3127,7 +3127,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3186,7 +3186,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3336,7 +3336,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3395,7 +3395,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3705,7 +3705,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3764,7 +3764,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3930,7 +3930,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3989,7 +3989,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4129,7 +4129,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4188,7 +4188,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4498,7 +4498,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4557,7 +4557,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4913,7 +4913,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4972,7 +4972,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5282,7 +5282,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5341,7 +5341,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5507,7 +5507,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5566,7 +5566,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5706,7 +5706,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5765,7 +5765,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6075,7 +6075,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6134,7 +6134,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6486,7 +6486,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6545,7 +6545,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6784,15 +6784,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -6843,15 +6843,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -7082,7 +7082,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7141,7 +7141,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7380,7 +7380,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7439,7 +7439,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7719,15 +7719,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -7778,15 +7778,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -8017,7 +8017,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8076,7 +8076,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8315,7 +8315,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8374,7 +8374,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8635,7 +8635,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8694,7 +8694,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8952,7 +8952,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9011,7 +9011,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9250,7 +9250,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9309,7 +9309,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9560,15 +9560,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -9619,15 +9619,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -9860,7 +9860,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9919,7 +9919,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10185,7 +10185,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10244,7 +10244,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10485,7 +10485,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10544,7 +10544,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10785,15 +10785,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -10844,15 +10844,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
+          border: 2px solid #999;
         }
 
         .card :global(img) {
@@ -11085,7 +11085,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -11144,7 +11144,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }

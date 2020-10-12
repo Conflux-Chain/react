@@ -62,7 +62,7 @@ exports[`Input should be work with icon 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -75,7 +75,7 @@ exports[`Input should be work with icon 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -85,7 +85,7 @@ exports[`Input should be work with icon 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -98,14 +98,14 @@ exports[`Input should be work with icon 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -115,13 +115,13 @@ exports[`Input should be work with icon 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -191,7 +191,7 @@ exports[`Input should be work with icon 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -204,7 +204,7 @@ exports[`Input should be work with icon 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -214,7 +214,7 @@ exports[`Input should be work with icon 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -227,14 +227,14 @@ exports[`Input should be work with icon 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -244,13 +244,13 @@ exports[`Input should be work with icon 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -271,7 +271,7 @@ exports[`Input should be work with label 1`] = `
           align-items: center;
           margin: 0;
           padding: 0 0.5714rem;
-          color: #9b9eac;
+          color: #666;
           background-color: #f9fafb;
           border-top-left-radius: 4px;
           border-bottom-left-radius: 4px;
@@ -336,7 +336,7 @@ exports[`Input should be work with label 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -349,7 +349,7 @@ exports[`Input should be work with label 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -359,7 +359,7 @@ exports[`Input should be work with label 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -372,14 +372,14 @@ exports[`Input should be work with label 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -389,13 +389,13 @@ exports[`Input should be work with label 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -412,7 +412,7 @@ exports[`Input should be work with label 1`] = `
           align-items: center;
           margin: 0;
           padding: 0 0.5714rem;
-          color: #9b9eac;
+          color: #666;
           background-color: #f9fafb;
           border-top-left-radius: 4px;
           border-bottom-left-radius: 4px;
@@ -490,7 +490,7 @@ exports[`Input should be work with label 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -500,7 +500,7 @@ exports[`Input should be work with label 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -520,7 +520,7 @@ exports[`Input should be work with label 1`] = `
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -530,7 +530,7 @@ exports[`Input should be work with label 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -553,7 +553,7 @@ exports[`Input should be work with label 1`] = `
           align-items: center;
           margin: 0;
           padding: 0 0.5714rem;
-          color: #9b9eac;
+          color: #666;
           background-color: #f9fafb;
           border-top-left-radius: 4px;
           border-bottom-left-radius: 4px;
@@ -618,7 +618,7 @@ exports[`Input should be work with label 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -631,7 +631,7 @@ exports[`Input should be work with label 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -641,7 +641,7 @@ exports[`Input should be work with label 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -654,14 +654,14 @@ exports[`Input should be work with label 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -671,13 +671,13 @@ exports[`Input should be work with label 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -694,7 +694,7 @@ exports[`Input should be work with label 1`] = `
           align-items: center;
           margin: 0;
           padding: 0 0.5714rem;
-          color: #9b9eac;
+          color: #666;
           background-color: #f9fafb;
           border-top-left-radius: 4px;
           border-bottom-left-radius: 4px;
@@ -772,7 +772,7 @@ exports[`Input should be work with label 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -782,7 +782,7 @@ exports[`Input should be work with label 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -802,7 +802,7 @@ exports[`Input should be work with label 1`] = `
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -812,7 +812,7 @@ exports[`Input should be work with label 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -831,7 +831,7 @@ exports[`Input should be work with label 1`] = `
         label {
           display: block;
           font-weight: normal;
-          color: #282d30;
+          color: #333;
           padding: 0 0 0 1px;
           margin-bottom: 0.5714rem;
           font-size: 1rem;
@@ -891,7 +891,7 @@ exports[`Input should be work with label 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -904,7 +904,7 @@ exports[`Input should be work with label 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -914,7 +914,7 @@ exports[`Input should be work with label 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -927,14 +927,14 @@ exports[`Input should be work with label 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -944,13 +944,13 @@ exports[`Input should be work with label 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -984,7 +984,7 @@ exports[`Input should clear text 1`] = `
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -1038,7 +1038,7 @@ exports[`Input should clear text 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -1051,7 +1051,7 @@ exports[`Input should clear text 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1061,7 +1061,7 @@ exports[`Input should clear text 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1074,14 +1074,14 @@ exports[`Input should clear text 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1091,13 +1091,13 @@ exports[`Input should clear text 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1185,7 +1185,7 @@ exports[`Input should ignore event when input disabled 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -1198,7 +1198,7 @@ exports[`Input should ignore event when input disabled 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1208,7 +1208,7 @@ exports[`Input should ignore event when input disabled 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1221,14 +1221,14 @@ exports[`Input should ignore event when input disabled 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1238,13 +1238,13 @@ exports[`Input should ignore event when input disabled 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1303,7 +1303,7 @@ exports[`Input should work with different color 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -1316,7 +1316,7 @@ exports[`Input should work with different color 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1326,7 +1326,7 @@ exports[`Input should work with different color 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1339,14 +1339,14 @@ exports[`Input should work with different color 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1356,13 +1356,13 @@ exports[`Input should work with different color 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1430,7 +1430,7 @@ exports[`Input should work with different color 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1440,7 +1440,7 @@ exports[`Input should work with different color 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1460,7 +1460,7 @@ exports[`Input should work with different color 1`] = `
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1470,7 +1470,7 @@ exports[`Input should work with different color 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -1544,7 +1544,7 @@ exports[`Input should work with different color 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1554,7 +1554,7 @@ exports[`Input should work with different color 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1574,7 +1574,7 @@ exports[`Input should work with different color 1`] = `
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1584,7 +1584,7 @@ exports[`Input should work with different color 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -1649,7 +1649,7 @@ exports[`Input should work with different sizes 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -1662,7 +1662,7 @@ exports[`Input should work with different sizes 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1672,7 +1672,7 @@ exports[`Input should work with different sizes 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1685,14 +1685,14 @@ exports[`Input should work with different sizes 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1702,13 +1702,13 @@ exports[`Input should work with different sizes 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1763,7 +1763,7 @@ exports[`Input should work with different sizes 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -1776,7 +1776,7 @@ exports[`Input should work with different sizes 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1786,7 +1786,7 @@ exports[`Input should work with different sizes 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1799,14 +1799,14 @@ exports[`Input should work with different sizes 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1816,13 +1816,13 @@ exports[`Input should work with different sizes 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1877,7 +1877,7 @@ exports[`Input should work with different sizes 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -1890,7 +1890,7 @@ exports[`Input should work with different sizes 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1900,7 +1900,7 @@ exports[`Input should work with different sizes 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1913,14 +1913,14 @@ exports[`Input should work with different sizes 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1930,13 +1930,13 @@ exports[`Input should work with different sizes 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1991,7 +1991,7 @@ exports[`Input should work with different sizes 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -2004,7 +2004,7 @@ exports[`Input should work with different sizes 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -2014,7 +2014,7 @@ exports[`Input should work with different sizes 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -2027,14 +2027,14 @@ exports[`Input should work with different sizes 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -2044,13 +2044,13 @@ exports[`Input should work with different sizes 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -2118,7 +2118,7 @@ exports[`Input should work with different sizes 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -2128,7 +2128,7 @@ exports[`Input should work with different sizes 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -2148,7 +2148,7 @@ exports[`Input should work with different sizes 1`] = `
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -2158,7 +2158,7 @@ exports[`Input should work with different sizes 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,

@@ -5,7 +5,7 @@ exports[`UseMessage should render correctly 1`] = `
           .message {
             max-width: 71.4286rem;
             background-color: #fff;
-            color: #282d30;
+            color: #333;
             border: 0;
             border-radius: 4px;
             padding: 1.1429rem;
@@ -52,7 +52,7 @@ exports[`UseMessage should render correctly 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }
@@ -131,7 +131,7 @@ exports[`UseMessage should render no shadow correctly 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }
@@ -163,7 +163,7 @@ exports[`UseMessage should render with custom icon correctly 1`] = `
           .message {
             max-width: 71.4286rem;
             background-color: #fff;
-            color: #282d30;
+            color: #333;
             border: 0;
             border-radius: 4px;
             padding: 1.1429rem;
@@ -210,7 +210,7 @@ exports[`UseMessage should render with custom icon correctly 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }
@@ -242,7 +242,7 @@ exports[`UseMessage should work with different colors 1`] = `
           .message {
             max-width: 71.4286rem;
             background-color: #f0f5ff;
-            color: #0054fe;
+            color: #1e3de4;
             border: 0;
             border-radius: 4px;
             padding: 1.1429rem;
@@ -289,7 +289,7 @@ exports[`UseMessage should work with different colors 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }
@@ -348,7 +348,7 @@ exports[`UseMessage should work with different colors 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }
@@ -407,7 +407,7 @@ exports[`UseMessage should work with different colors 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }
@@ -466,7 +466,7 @@ exports[`UseMessage should work with different colors 1`] = `
             width: 1.1429rem;
             cursor: pointer;
             margin-left: 1.1429rem;
-            color: #dbdde0;
+            color: #ccc;
             flex-grow: 1;
             flex-shrink: 0;
           }

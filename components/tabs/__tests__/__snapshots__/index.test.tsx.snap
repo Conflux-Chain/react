@@ -15,15 +15,15 @@ exports[`Tabs should change style when hover header 1`] = `
             padding: 0.5714rem 1.1429rem;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 1;
             transform: scale(1);
@@ -48,11 +48,11 @@ exports[`Tabs should change style when hover header 1`] = `
             background-color: ;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -108,15 +108,15 @@ exports[`Tabs should change style when hover header 2`] = `
             padding: 0.5714rem 1.1429rem;
             border-radius: 4px 4px 0px 0px;
             text-align: center;
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 1;
             transform: scale(1);
@@ -141,11 +141,11 @@ exports[`Tabs should change style when hover header 2`] = `
             background-color: ;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -205,11 +205,11 @@ exports[`Tabs should render correctly 1`] = `
             background-color: ;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -234,11 +234,11 @@ exports[`Tabs should render correctly 1`] = `
             background-color: ;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: ;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -294,11 +294,11 @@ exports[`Tabs should render correctly 1`] = `
             background-color: #f1f3f6;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: #f1f3f6;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);
@@ -323,11 +323,11 @@ exports[`Tabs should render correctly 1`] = `
             background-color: #f1f3f6;
           }
           .label:hover {
-            color: #0054fe;
+            color: #1e3de4;
             background-color: #f1f3f6;
           }
           .bottom {
-            background-color: #0054fe;
+            background-color: #1e3de4;
             transition: all 200ms ease;
             opacity: 0;
             transform: scale(0.75);

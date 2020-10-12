@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination should render correctly 1`] = `
-"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -33,10 +33,10 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -95,9 +95,9 @@ exports[`Pagination should render correctly 1`] = `
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -105,40 +105,40 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
@@ -177,10 +177,10 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -249,10 +249,10 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -321,10 +321,10 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -393,10 +393,10 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -433,7 +433,7 @@ exports[`Pagination should render correctly 1`] = `
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -465,10 +465,10 @@ exports[`Pagination should render correctly 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -540,7 +540,7 @@ exports[`Pagination should render correctly 1`] = `
 `;
 
 exports[`Pagination should set pageSize 1`] = `
-"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -572,10 +572,10 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -634,9 +634,9 @@ exports[`Pagination should set pageSize 1`] = `
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -644,40 +644,40 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
@@ -716,10 +716,10 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -788,10 +788,10 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -860,10 +860,10 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -932,10 +932,10 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -972,7 +972,7 @@ exports[`Pagination should set pageSize 1`] = `
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -1004,10 +1004,10 @@ exports[`Pagination should set pageSize 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1098,7 +1098,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
           height: calc(2.5 * 1.1429rem);
           box-sizing: border-box;
           padding: 0 1.1429rem;
-          background-color: #0054fe;
+          background-color: #1e3de4;
           color: #fff;
           user-select: none;
           border: 1px solid transparent;
@@ -1107,7 +1107,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         .option:hover {
-          background-color: #0054fe;
+          background-color: #1e3de4;
           color: #fff;
           border: 1px solid transparent;
         }
@@ -1158,7 +1158,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -1182,16 +1182,16 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -1227,7 +1227,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -1259,7 +1259,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
           .pagination-pagesize .after {
             margin-left: 0.5714rem;
           }
-        </style></div></div><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+        </style></div></div><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -1291,10 +1291,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1353,9 +1353,9 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -1363,40 +1363,40 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
@@ -1435,10 +1435,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1507,10 +1507,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1579,10 +1579,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1651,10 +1651,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1723,10 +1723,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1806,10 +1806,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1878,10 +1878,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -1918,7 +1918,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -1950,10 +1950,10 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2044,7 +2044,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
           height: calc(2.5 * 1.1429rem);
           box-sizing: border-box;
           padding: 0 1.1429rem;
-          background-color: #0054fe;
+          background-color: #1e3de4;
           color: #fff;
           user-select: none;
           border: 1px solid transparent;
@@ -2053,7 +2053,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         .option:hover {
-          background-color: #0054fe;
+          background-color: #1e3de4;
           color: #fff;
           border: 1px solid transparent;
         }
@@ -2104,7 +2104,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -2128,16 +2128,16 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -2173,7 +2173,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -2205,7 +2205,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
           .pagination-pagesize .after {
             margin-left: 0.5714rem;
           }
-        </style></div></div><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+        </style></div></div><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -2237,10 +2237,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2299,9 +2299,9 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -2309,40 +2309,40 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
@@ -2381,10 +2381,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2453,10 +2453,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2525,10 +2525,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2597,10 +2597,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2669,10 +2669,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2752,10 +2752,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2824,10 +2824,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2864,7 +2864,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -2896,10 +2896,10 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -2990,7 +2990,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
           height: calc(2.5 * 1.1429rem);
           box-sizing: border-box;
           padding: 0 1.1429rem;
-          background-color: #0054fe;
+          background-color: #1e3de4;
           color: #fff;
           user-select: none;
           border: 1px solid transparent;
@@ -2999,7 +2999,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         .option:hover {
-          background-color: #0054fe;
+          background-color: #1e3de4;
           color: #fff;
           border: 1px solid transparent;
         }
@@ -3050,7 +3050,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -3074,16 +3074,16 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -3119,7 +3119,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -3151,7 +3151,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
           .pagination-pagesize .after {
             margin-left: 0.5714rem;
           }
-        </style></div></div><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+        </style></div></div><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -3183,10 +3183,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3245,9 +3245,9 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -3255,40 +3255,40 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
@@ -3327,10 +3327,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3399,10 +3399,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3471,10 +3471,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3543,10 +3543,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3615,10 +3615,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3698,10 +3698,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3770,10 +3770,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3810,7 +3810,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -3842,10 +3842,10 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -3917,7 +3917,7 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
 `;
 
 exports[`Pagination should work with showQuickJumper 1`] = `
-"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -3949,10 +3949,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4011,9 +4011,9 @@ exports[`Pagination should work with showQuickJumper 1`] = `
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -4021,40 +4021,40 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
@@ -4093,10 +4093,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4165,10 +4165,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4237,10 +4237,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4309,10 +4309,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4381,10 +4381,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4464,10 +4464,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4536,10 +4536,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4576,7 +4576,7 @@ exports[`Pagination should work with showQuickJumper 1`] = `
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -4608,10 +4608,10 @@ exports[`Pagination should work with showQuickJumper 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4694,7 +4694,7 @@ exports[`Pagination should work with showQuickJumper 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -4707,7 +4707,7 @@ exports[`Pagination should work with showQuickJumper 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -4717,7 +4717,7 @@ exports[`Pagination should work with showQuickJumper 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -4730,14 +4730,14 @@ exports[`Pagination should work with showQuickJumper 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -4747,13 +4747,13 @@ exports[`Pagination should work with showQuickJumper 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -4770,7 +4770,7 @@ exports[`Pagination should work with showQuickJumper 1`] = `
           }
           .pagination-quickjumper .text {
             font-size: inherit;
-            color: #282d30;
+            color: #333;
             font-weight: 500;
           }
           .pagination-quickjumper .before {
@@ -4814,7 +4814,7 @@ exports[`Pagination should work with showQuickJumper 1`] = `
 `;
 
 exports[`pagination on mobile should render correctly on mobile 1`] = `
-"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
+"<div class=\\"pagination \\"><div class=\\"right\\"><section><li><button class=\\" disabled\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M15 18l-6-6 6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -4846,10 +4846,10 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -4908,9 +4908,9 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
           min-width: var(--pagination-size);
           font-size: inherit;
           cursor: pointer;
-          color: #0054fe;
+          color: #1e3de4;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           border-radius: 2px;
           background-color: #fff;
           transition: all linear 200ms 0ms;
@@ -4918,47 +4918,47 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
           font-weight: bold;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .disabled {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
           cursor: not-allowed;
         }
 
         .disabled:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         button :global(svg) {
           width: 1.3em;
           height: 1.3em;
         }
-      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(40, 45, 48);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
+      </style></li><li><button class=\\" \\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: rgb(51, 51, 51);\\"><path d=\\"M9 18l6-6-6-6\\"></path></svg></button><style>
         li {
           margin-right: 0.5714rem;
           margin-bottom: initial;
@@ -4990,10 +4990,10 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
         }
 
         button:hover {
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px solid
-            #0054fe;
+            #1e3de4;
         }
 
         .active {
@@ -5076,7 +5076,7 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -5089,7 +5089,7 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -5099,7 +5099,7 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -5112,14 +5112,14 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -5129,13 +5129,13 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -5152,7 +5152,7 @@ exports[`pagination on mobile should render correctly on mobile 1`] = `
           }
           .pagination-quickjumper .text {
             font-size: inherit;
-            color: #282d30;
+            color: #333;
             font-weight: 500;
           }
           .pagination-quickjumper .before {

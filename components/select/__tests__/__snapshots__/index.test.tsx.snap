@@ -28,7 +28,7 @@ exports[`Select should render correctly 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -52,16 +52,16 @@ exports[`Select should render correctly 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -97,7 +97,7 @@ exports[`Select should render correctly 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -140,7 +140,7 @@ exports[`Select should render correctly 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(1.5 * 1.1429rem);
@@ -164,16 +164,16 @@ exports[`Select should render correctly 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -209,7 +209,7 @@ exports[`Select should render correctly 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -252,7 +252,7 @@ exports[`Select should render correctly 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2 * 1.1429rem);
@@ -276,16 +276,16 @@ exports[`Select should render correctly 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -321,7 +321,7 @@ exports[`Select should render correctly 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -364,7 +364,7 @@ exports[`Select should render correctly 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(3 * 1.1429rem);
@@ -388,16 +388,16 @@ exports[`Select should render correctly 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -433,7 +433,7 @@ exports[`Select should render correctly 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -473,17 +473,17 @@ exports[`Select should render correctly when variant=text 1`] = `
           box-sizing: border-box;
           padding: 0 1.1429rem;
           background-color: #fff;
-          color: #0054fe;
+          color: #1e3de4;
           user-select: none;
-          border: 1px solid #0054fe;
+          border: 1px solid #1e3de4;
           cursor: pointer;
           transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
         }
 
         .option:hover {
           background-color: #fff;
-          color: #0054fe;
-          border: 1px solid #0054fe;
+          color: #1e3de4;
+          border: 1px solid #1e3de4;
         }
 
         .divider {
@@ -503,7 +503,7 @@ exports[`Select should render correctly when variant=text 1`] = `
 
         .label {
           font-size: 1.1428rem;
-          color: #0054fe;
+          color: #1e3de4;
           border-bottom: 1px solid
             #eaeaea;
           text-transform: capitalize;
@@ -562,10 +562,10 @@ exports[`Select should render correctly when variant=text 1`] = `
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -601,7 +601,7 @@ exports[`Select should render correctly when variant=text 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -660,7 +660,7 @@ exports[`Select should work correctly with labels 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -684,16 +684,16 @@ exports[`Select should work correctly with labels 1`] = `
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -729,7 +729,7 @@ exports[`Select should work correctly with labels 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -821,7 +821,7 @@ initialize {
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -845,16 +845,16 @@ initialize {
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -890,7 +890,7 @@ initialize {
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -949,7 +949,7 @@ initialize {
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -973,16 +973,16 @@ initialize {
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -1018,7 +1018,7 @@ initialize {
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -1249,7 +1249,7 @@ initialize {
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -1273,16 +1273,16 @@ initialize {
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -1318,7 +1318,7 @@ initialize {
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -1415,7 +1415,7 @@ initialize {
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -1439,16 +1439,16 @@ initialize {
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -1484,7 +1484,7 @@ initialize {
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
@@ -1602,7 +1602,7 @@ initialize {
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
               padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
               height: calc(2.625 * 1.1429rem);
@@ -1626,16 +1626,16 @@ initialize {
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -1671,7 +1671,7 @@ initialize {
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {

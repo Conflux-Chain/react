@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loading should render correctly 1`] = `
-"<div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20px\\" height=\\"20px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#dbdde0\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#dbdde0\\"></path></svg></span><style>
+"<div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20px\\" height=\\"20px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#ccc\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#ccc\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -26,7 +26,7 @@ exports[`Loading should render correctly 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -75,7 +75,7 @@ exports[`Loading should work with custom styles 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -95,7 +95,7 @@ exports[`Loading should work with custom styles 1`] = `
             transform: rotate(360deg);
           }
         }
-      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20%\\" height=\\"20%\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#dbdde0\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#dbdde0\\"></path></svg></span><style>
+      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20%\\" height=\\"20%\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#ccc\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#ccc\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -120,7 +120,7 @@ exports[`Loading should work with custom styles 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -144,7 +144,7 @@ exports[`Loading should work with custom styles 1`] = `
 `;
 
 exports[`Loading should work with different sizes 1`] = `
-"<div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"10px\\" height=\\"10px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#dbdde0\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#dbdde0\\"></path></svg></span><style>
+"<div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"10px\\" height=\\"10px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#ccc\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#ccc\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -169,7 +169,7 @@ exports[`Loading should work with different sizes 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -189,7 +189,7 @@ exports[`Loading should work with different sizes 1`] = `
             transform: rotate(360deg);
           }
         }
-      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"15px\\" height=\\"15px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#dbdde0\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#dbdde0\\"></path></svg></span><style>
+      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"15px\\" height=\\"15px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#ccc\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#ccc\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -214,7 +214,7 @@ exports[`Loading should work with different sizes 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -234,7 +234,7 @@ exports[`Loading should work with different sizes 1`] = `
             transform: rotate(360deg);
           }
         }
-      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20px\\" height=\\"20px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#dbdde0\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#dbdde0\\"></path></svg></span><style>
+      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20px\\" height=\\"20px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#ccc\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#ccc\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -259,7 +259,7 @@ exports[`Loading should work with different sizes 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -279,7 +279,7 @@ exports[`Loading should work with different sizes 1`] = `
             transform: rotate(360deg);
           }
         }
-      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"25px\\" height=\\"25px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#dbdde0\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#dbdde0\\"></path></svg></span><style>
+      </style></div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"25px\\" height=\\"25px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#ccc\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#ccc\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -304,7 +304,7 @@ exports[`Loading should work with different sizes 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -328,7 +328,7 @@ exports[`Loading should work with different sizes 1`] = `
 `;
 
 exports[`Loading should work with different types 1`] = `
-"<div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20px\\" height=\\"20px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#0054fe\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#0054fe\\"></path></svg></span><style>
+"<div><div class=\\"loading-container\\"><span class=\\"loading\\"><svg class=\\"svg\\" width=\\"20px\\" height=\\"20px\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14V16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8H14C14 4.68629 11.3137 2 8 2Z\\" fill=\\"#1e3de4\\"></path><path d=\\"M15 12.5C15 13.3284 14.3284 14 13.5 14C12.6716 14 12 13.3284 12 12.5C12 11.6716 12.6716 11 13.5 11C14.3284 11 15 11.6716 15 12.5Z\\" fill=\\"#1e3de4\\"></path></svg></span><style>
         .loading-container {
           display: inline-flex;
           align-items: center;
@@ -353,7 +353,7 @@ exports[`Loading should work with different types 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -398,7 +398,7 @@ exports[`Loading should work with different types 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -443,7 +443,7 @@ exports[`Loading should work with different types 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -488,7 +488,7 @@ exports[`Loading should work with different types 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {
@@ -533,7 +533,7 @@ exports[`Loading should work with different types 1`] = `
 
         label {
           margin-right: 0.5714rem;
-          color: #dbdde0;
+          color: #ccc;
         }
 
         label :global(*) {

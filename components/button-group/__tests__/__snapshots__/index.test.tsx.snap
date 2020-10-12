@@ -43,7 +43,7 @@ exports[`ButtonGroup buttons should be displayed vertically 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #aaafbb;
+          border-color: #999;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -56,7 +56,7 @@ exports[`ButtonGroup buttons should be displayed vertically 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #9b9eac;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -129,7 +129,7 @@ exports[`ButtonGroup buttons should be displayed vertically 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #aaafbb;
+          border-color: #999;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -142,7 +142,7 @@ exports[`ButtonGroup buttons should be displayed vertically 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #9b9eac;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -665,7 +665,7 @@ exports[`ButtonGroup should render correctly 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #aaafbb;
+          border-color: #999;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -678,7 +678,7 @@ exports[`ButtonGroup should render correctly 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #9b9eac;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;

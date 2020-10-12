@@ -122,7 +122,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -135,7 +135,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -145,7 +145,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -158,14 +158,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -175,13 +175,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -266,7 +266,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -279,7 +279,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -289,7 +289,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -302,14 +302,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -319,13 +319,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -623,7 +623,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -636,7 +636,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -646,7 +646,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -659,14 +659,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -676,13 +676,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -767,7 +767,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -780,7 +780,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -790,7 +790,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -803,14 +803,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -820,13 +820,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -1069,7 +1069,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1079,7 +1079,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1099,7 +1099,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1109,7 +1109,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -1213,7 +1213,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1223,7 +1223,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1243,7 +1243,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1253,7 +1253,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -1570,7 +1570,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1580,7 +1580,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1600,7 +1600,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1610,7 +1610,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -1714,7 +1714,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -1724,7 +1724,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -1744,7 +1744,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -1754,7 +1754,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -1966,7 +1966,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -2031,7 +2031,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -2197,7 +2197,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -2262,7 +2262,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -2444,7 +2444,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -2457,7 +2457,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -2467,7 +2467,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -2480,14 +2480,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -2497,13 +2497,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -2588,7 +2588,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -2601,7 +2601,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -2611,7 +2611,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -2624,14 +2624,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -2641,13 +2641,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -2750,7 +2750,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -2815,7 +2815,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -2981,7 +2981,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -3046,7 +3046,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -3375,7 +3375,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -3440,7 +3440,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -3606,7 +3606,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -3671,7 +3671,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -3853,7 +3853,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -3866,7 +3866,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -3876,7 +3876,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -3889,14 +3889,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -3906,13 +3906,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -3997,7 +3997,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -4010,7 +4010,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -4020,7 +4020,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -4033,14 +4033,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -4050,13 +4050,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -4159,7 +4159,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -4224,7 +4224,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -4390,7 +4390,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -4455,7 +4455,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -4743,7 +4743,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -4756,7 +4756,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -4766,7 +4766,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -4779,14 +4779,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -4796,13 +4796,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -4887,7 +4887,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -4900,7 +4900,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -4910,7 +4910,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -4923,14 +4923,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -4940,13 +4940,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -5250,7 +5250,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -5263,7 +5263,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -5273,7 +5273,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -5286,14 +5286,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -5303,13 +5303,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -5394,7 +5394,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -5407,7 +5407,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -5417,7 +5417,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -5430,14 +5430,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -5447,13 +5447,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -5740,7 +5740,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -5750,7 +5750,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -5770,7 +5770,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -5780,7 +5780,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -5884,7 +5884,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -5894,7 +5894,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -5914,7 +5914,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -5924,7 +5924,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -6241,7 +6241,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -6251,7 +6251,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -6271,7 +6271,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -6281,7 +6281,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -6385,7 +6385,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -6395,7 +6395,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -6415,7 +6415,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -6425,7 +6425,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -6637,7 +6637,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -6702,7 +6702,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -6868,7 +6868,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -6933,7 +6933,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -7115,7 +7115,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -7128,7 +7128,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -7138,7 +7138,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -7151,14 +7151,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -7168,13 +7168,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -7259,7 +7259,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -7272,7 +7272,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -7282,7 +7282,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -7295,14 +7295,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -7312,13 +7312,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -7421,7 +7421,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -7486,7 +7486,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -7652,7 +7652,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -7717,7 +7717,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -8046,7 +8046,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -8111,7 +8111,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -8277,7 +8277,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -8342,7 +8342,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -8524,7 +8524,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -8537,7 +8537,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -8547,7 +8547,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -8560,14 +8560,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -8577,13 +8577,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -8668,7 +8668,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -8681,7 +8681,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -8691,7 +8691,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -8704,14 +8704,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -8721,13 +8721,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -8830,7 +8830,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -8895,7 +8895,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -9061,7 +9061,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -9126,7 +9126,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -9414,7 +9414,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -9427,7 +9427,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -9437,7 +9437,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -9450,14 +9450,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -9467,13 +9467,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -9558,7 +9558,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -9571,7 +9571,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -9581,7 +9581,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -9594,14 +9594,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -9611,13 +9611,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -9921,7 +9921,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -9934,7 +9934,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -9944,7 +9944,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -9957,14 +9957,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -9974,13 +9974,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -10065,7 +10065,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -10078,7 +10078,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -10088,7 +10088,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -10101,14 +10101,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -10118,13 +10118,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -10379,7 +10379,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -10392,7 +10392,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -10402,7 +10402,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -10415,14 +10415,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -10432,13 +10432,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -10523,7 +10523,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -10536,7 +10536,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -10546,7 +10546,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -10559,14 +10559,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -10576,13 +10576,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -10880,7 +10880,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -10893,7 +10893,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -10903,7 +10903,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -10916,14 +10916,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -10933,13 +10933,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -11024,7 +11024,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -11037,7 +11037,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -11047,7 +11047,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -11060,14 +11060,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -11077,13 +11077,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -11308,7 +11308,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -11373,7 +11373,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -11539,7 +11539,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -11604,7 +11604,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -11786,7 +11786,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -11799,7 +11799,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -11809,7 +11809,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -11822,14 +11822,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -11839,13 +11839,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -11930,7 +11930,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -11943,7 +11943,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -11953,7 +11953,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -11966,14 +11966,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -11983,13 +11983,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -12092,7 +12092,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -12157,7 +12157,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -12323,7 +12323,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -12388,7 +12388,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -12717,7 +12717,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -12782,7 +12782,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -12948,7 +12948,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -13013,7 +13013,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -13195,7 +13195,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -13208,7 +13208,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -13218,7 +13218,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -13231,14 +13231,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -13248,13 +13248,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -13339,7 +13339,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -13352,7 +13352,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -13362,7 +13362,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -13375,14 +13375,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -13392,13 +13392,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -13501,7 +13501,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -13566,7 +13566,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -13732,7 +13732,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -13797,7 +13797,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -14085,7 +14085,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -14098,7 +14098,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -14108,7 +14108,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -14121,14 +14121,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -14138,13 +14138,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -14229,7 +14229,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -14242,7 +14242,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -14252,7 +14252,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -14265,14 +14265,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -14282,13 +14282,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -14592,7 +14592,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -14605,7 +14605,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -14615,7 +14615,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -14628,14 +14628,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -14645,13 +14645,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -14736,7 +14736,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -14749,7 +14749,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -14759,7 +14759,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -14772,14 +14772,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -14789,13 +14789,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -15053,7 +15053,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -15063,7 +15063,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -15083,7 +15083,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -15093,7 +15093,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -15197,7 +15197,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -15207,7 +15207,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -15227,7 +15227,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -15237,7 +15237,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -15554,7 +15554,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -15564,7 +15564,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -15584,7 +15584,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -15594,7 +15594,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -15698,7 +15698,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -15708,7 +15708,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -15728,7 +15728,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -15738,7 +15738,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -15976,7 +15976,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -15989,7 +15989,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -15999,7 +15999,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -16012,14 +16012,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -16029,13 +16029,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -16120,7 +16120,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -16133,7 +16133,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -16143,7 +16143,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -16156,14 +16156,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -16173,13 +16173,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -16477,7 +16477,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -16490,7 +16490,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -16500,7 +16500,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -16513,14 +16513,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -16530,13 +16530,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -16621,7 +16621,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -16634,7 +16634,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -16644,7 +16644,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -16657,14 +16657,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -16674,13 +16674,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -16940,7 +16940,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -16953,7 +16953,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -16963,7 +16963,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -16976,14 +16976,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -16993,13 +16993,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -17084,7 +17084,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -17097,7 +17097,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -17107,7 +17107,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -17120,14 +17120,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -17137,13 +17137,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -17447,7 +17447,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -17460,7 +17460,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -17470,7 +17470,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -17483,14 +17483,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -17500,13 +17500,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -17591,7 +17591,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -17604,7 +17604,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -17614,7 +17614,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -17627,14 +17627,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -17644,13 +17644,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -17861,7 +17861,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -17926,7 +17926,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -18092,7 +18092,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -18157,7 +18157,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -18339,7 +18339,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -18352,7 +18352,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -18362,7 +18362,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -18375,14 +18375,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -18392,13 +18392,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -18483,7 +18483,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -18496,7 +18496,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -18506,7 +18506,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -18519,14 +18519,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -18536,13 +18536,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -18645,7 +18645,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -18710,7 +18710,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -18876,7 +18876,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -18941,7 +18941,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -19270,7 +19270,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -19335,7 +19335,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -19501,7 +19501,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -19566,7 +19566,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -19748,7 +19748,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -19761,7 +19761,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -19771,7 +19771,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -19784,14 +19784,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -19801,13 +19801,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -19892,7 +19892,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -19905,7 +19905,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -19915,7 +19915,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -19928,14 +19928,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -19945,13 +19945,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -20054,7 +20054,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -20119,7 +20119,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -20285,7 +20285,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -20350,7 +20350,7 @@ initialize {
         }
 
         .clear-icon:hover {
-          color: #282d30;
+          color: #333;
         }
 
         svg {
@@ -20650,7 +20650,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -20660,7 +20660,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -20680,7 +20680,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -20690,7 +20690,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -20794,7 +20794,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -20804,7 +20804,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -20824,7 +20824,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -20834,7 +20834,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -21151,7 +21151,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -21161,7 +21161,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -21181,7 +21181,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -21191,7 +21191,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -21295,7 +21295,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -21305,7 +21305,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -21325,7 +21325,7 @@ initialize {
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -21335,7 +21335,7 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
@@ -21573,7 +21573,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -21586,7 +21586,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -21596,7 +21596,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -21609,14 +21609,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -21626,13 +21626,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -21717,7 +21717,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -21730,7 +21730,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -21740,7 +21740,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -21753,14 +21753,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -21770,13 +21770,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -22074,7 +22074,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -22087,7 +22087,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -22097,7 +22097,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -22110,14 +22110,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -22127,13 +22127,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,
@@ -22218,7 +22218,7 @@ initialize {
 
           .focus.input-wrapper:not(.disabled),
           .hover.input-wrapper:not(.disabled) {
-            border-color: #0054fe;
+            border-color: #1e3de4;
             background-color: #fff;
           }
 
@@ -22231,7 +22231,7 @@ initialize {
             background-color: transparent;
             font-weight: normal;
             border: none;
-            color: #282d30;
+            color: #333;
             outline: none;
             border-radius: 0;
             width: 100%;
@@ -22241,7 +22241,7 @@ initialize {
 
           input:disabled {
             cursor: not-allowed;
-            color: #aaafbb;
+            color: #999;
           }
 
           input.left-icon {
@@ -22254,14 +22254,14 @@ initialize {
 
           .input-wrapper.focus:not(.disabled) input,
           .input-wrapper.hover:not(.disabled) input {
-            color: #0054fe;
+            color: #1e3de4;
           }
 
           ::placeholder,
           ::-moz-placeholder,
           :-ms-input-placeholder,
           ::-webkit-input-placeholder {
-            color: #9b9eac;
+            color: #666;
           }
 
           input::-moz-placeholder {
@@ -22271,13 +22271,13 @@ initialize {
           input:-webkit-autofill,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #282d30 !important;
+            -webkit-text-fill-color: #333 !important;
           }
 
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus {
             -webkit-box-shadow: 0 0 0 30px #fff inset !important;
-            -webkit-text-fill-color: #0054fe !important;
+            -webkit-text-fill-color: #1e3de4 !important;
           }
 
           input:-webkit-autofill,

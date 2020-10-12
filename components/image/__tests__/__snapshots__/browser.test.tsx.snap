@@ -319,7 +319,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -331,12 +331,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -380,7 +380,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -392,12 +392,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -540,7 +540,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -552,12 +552,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -601,7 +601,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -613,12 +613,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -932,7 +932,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -944,12 +944,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -993,7 +993,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -1005,12 +1005,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -1365,7 +1365,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -1377,12 +1377,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -1426,7 +1426,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -1438,12 +1438,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -1586,7 +1586,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -1598,12 +1598,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -1647,7 +1647,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -1659,12 +1659,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -1978,7 +1978,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -1990,12 +1990,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -2039,7 +2039,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -2051,12 +2051,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -3154,7 +3154,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -3166,12 +3166,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -3215,7 +3215,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -3227,12 +3227,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -3375,7 +3375,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -3387,12 +3387,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -3436,7 +3436,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -3448,12 +3448,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -3767,7 +3767,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -3779,12 +3779,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -3828,7 +3828,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -3840,12 +3840,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -4200,7 +4200,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -4212,12 +4212,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -4261,7 +4261,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -4273,12 +4273,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -4421,7 +4421,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -4433,12 +4433,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -4482,7 +4482,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -4494,12 +4494,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -4813,7 +4813,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -4825,12 +4825,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -4874,7 +4874,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -4886,12 +4886,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -5788,7 +5788,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -5800,12 +5800,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -5849,7 +5849,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -5861,12 +5861,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -6009,7 +6009,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -6021,12 +6021,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -6070,7 +6070,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -6082,12 +6082,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -6401,7 +6401,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -6413,12 +6413,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -6462,7 +6462,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -6474,12 +6474,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -6834,7 +6834,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -6846,12 +6846,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -6895,7 +6895,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -6907,12 +6907,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -7055,7 +7055,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -7067,12 +7067,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -7116,7 +7116,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -7128,12 +7128,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -7447,7 +7447,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -7459,12 +7459,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -7508,7 +7508,7 @@ initialize {
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -7520,12 +7520,12 @@ initialize {
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }

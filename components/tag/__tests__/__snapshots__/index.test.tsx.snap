@@ -322,26 +322,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -351,10 +351,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -438,26 +438,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -467,10 +467,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -1173,26 +1173,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -1202,10 +1202,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -1289,26 +1289,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -1318,10 +1318,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -2846,26 +2846,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -2875,10 +2875,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -2962,26 +2962,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -2991,10 +2991,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -3959,26 +3959,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -3988,10 +3988,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -4075,26 +4075,26 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -4104,10 +4104,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -4597,10 +4597,10 @@ exports[`Tag should work with toggleable 1`] = `
 
         .tag:hover,
         .btn:hover {
-          color: #0054fe;
-          --cfx-ui-button-color: #0054fe;
+          color: #1e3de4;
+          --cfx-ui-button-color: #1e3de4;
           background-color: #fff;
-          border-color: #0054fe;
+          border-color: #1e3de4;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -4610,10 +4610,10 @@ exports[`Tag should work with toggleable 1`] = `
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #0626ae;
-          --cfx-ui-button-color: #0626ae;
+          color: #030f8e;
+          --cfx-ui-button-color: #030f8e;
           background-color: #fff;
-          border-color: #0626ae;
+          border-color: #030f8e;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -4969,7 +4969,7 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #f9fafb;
           border: 2px
             solid
@@ -4979,14 +4979,14 @@ initialize {
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #f9fafb;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #ebeced;
           border-color: #ebeced;
           cursor: pointer;
@@ -4998,10 +4998,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
-          background-color: #9b9eac;
-          border-color: #9b9eac;
+          color: #333;
+          --cfx-ui-button-color: #333;
+          background-color: #666;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -5085,7 +5085,7 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #f9fafb;
           border: 2px
             solid
@@ -5095,14 +5095,14 @@ initialize {
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #f9fafb;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #ebeced;
           border-color: #ebeced;
           cursor: pointer;
@@ -5114,10 +5114,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
-          background-color: #9b9eac;
-          border-color: #9b9eac;
+          color: #333;
+          --cfx-ui-button-color: #333;
+          background-color: #666;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -5260,7 +5260,7 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #f9fafb;
           border: 2px
             solid
@@ -5270,14 +5270,14 @@ initialize {
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #f9fafb;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #ebeced;
           border-color: #ebeced;
           cursor: pointer;
@@ -5289,10 +5289,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
-          background-color: #9b9eac;
-          border-color: #9b9eac;
+          color: #333;
+          --cfx-ui-button-color: #333;
+          background-color: #666;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -5376,7 +5376,7 @@ initialize {
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #f9fafb;
           border: 2px
             solid
@@ -5386,14 +5386,14 @@ initialize {
           box-shadow: none;
           --cfx-ui-button-padding: 1.7143rem;
           --cfx-ui-button-height: 2.2857rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #f9fafb;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #ebeced;
           border-color: #ebeced;
           cursor: pointer;
@@ -5405,10 +5405,10 @@ initialize {
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
-          background-color: #9b9eac;
-          border-color: #9b9eac;
+          color: #333;
+          --cfx-ui-button-color: #333;
+          background-color: #666;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;

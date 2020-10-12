@@ -15,7 +15,7 @@ exports[`Modal customization should be supported 1`] = `
           align-items: center;
           word-break: break-word;
           text-transform: capitalize;
-          color: #282d30;
+          color: #333;
         }
       </style><style>
           .wrapper {
@@ -75,7 +75,7 @@ exports[`Modal should render correctly 1`] = `
           align-items: center;
           word-break: break-word;
           text-transform: capitalize;
-          color: #282d30;
+          color: #333;
         }
       </style><p class=\\"\\">This is a modal</p><style>
         p {
@@ -90,7 +90,7 @@ exports[`Modal should render correctly 1`] = `
           align-items: center;
           word-break: break-word;
           text-transform: uppercase;
-          color: #9b9eac;
+          color: #666;
         }
       </style><div class=\\"content \\"><p>Some content contained within the modal.</p></div><style>
         .content {
@@ -129,26 +129,26 @@ exports[`Modal should render correctly 1`] = `
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px
             solid
-            #0054fe;
+            #1e3de4;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.375rem;
           --cfx-ui-button-height: 2.8571rem;
-          --cfx-ui-button-color: #0054fe;
+          --cfx-ui-button-color: #1e3de4;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #0433dc;
-          --cfx-ui-button-color: #0433dc;
+          color: #0f23bd;
+          --cfx-ui-button-color: #0f23bd;
           background-color: #fff;
-          border-color: #0433dc;
+          border-color: #0f23bd;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -158,10 +158,10 @@ exports[`Modal should render correctly 1`] = `
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #0626ae;
-          --cfx-ui-button-color: #0626ae;
+          color: #030f8e;
+          --cfx-ui-button-color: #030f8e;
           background-color: #fff;
-          border-color: #0626ae;
+          border-color: #030f8e;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -215,26 +215,26 @@ exports[`Modal should render correctly 1`] = `
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #0054fe;
+          color: #1e3de4;
           background-color: #fff;
           border: 2px
             solid
-            #0054fe;
+            #1e3de4;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 1.375rem;
           --cfx-ui-button-height: 2.8571rem;
-          --cfx-ui-button-color: #0054fe;
+          --cfx-ui-button-color: #1e3de4;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #0433dc;
-          --cfx-ui-button-color: #0433dc;
+          color: #0f23bd;
+          --cfx-ui-button-color: #0f23bd;
           background-color: #fff;
-          border-color: #0433dc;
+          border-color: #0f23bd;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -244,10 +244,10 @@ exports[`Modal should render correctly 1`] = `
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #0626ae;
-          --cfx-ui-button-color: #0626ae;
+          color: #030f8e;
+          --cfx-ui-button-color: #030f8e;
           background-color: #fff;
-          border-color: #0626ae;
+          border-color: #030f8e;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;

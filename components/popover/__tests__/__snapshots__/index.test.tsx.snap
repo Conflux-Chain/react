@@ -19,7 +19,7 @@ exports[`Popover should render react-node 1`] = `
           line-height: 1.1429rem;
           font-weight: 500;
           font-size: 1rem;
-          color: #282d30;
+          color: #333;
         }
       </style><style>
         .tooltip {
@@ -48,7 +48,7 @@ exports[`Popover should work with different placement 1`] = `
           line-height: 1.1429rem;
           font-weight: 500;
           font-size: 1rem;
-          color: #282d30;
+          color: #333;
         }
       </style><style>
         .tooltip {
@@ -77,7 +77,7 @@ exports[`Popover should work with prop title 1`] = `
           line-height: 1.1429rem;
           font-weight: 500;
           font-size: 1rem;
-          color: #282d30;
+          color: #333;
         }
       </style><style>
         .tooltip {

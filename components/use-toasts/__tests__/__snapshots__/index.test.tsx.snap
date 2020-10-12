@@ -24,26 +24,26 @@ exports[`UseToast should render different actions 1`] = `
             border 200ms ease 0ms, color 200ms ease 0ms;
           position: relative;
           overflow: hidden;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px
             solid
-            #282d30;
+            #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
           --cfx-ui-button-padding: 0.625rem;
           --cfx-ui-button-height: 1.5rem;
-          --cfx-ui-button-color: #282d30;
+          --cfx-ui-button-color: #333;
           --cfx-ui-button-bg: #fff;
         }
 
         .tag:hover,
         .btn:hover {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -53,10 +53,10 @@ exports[`UseToast should render different actions 1`] = `
         .tag.active,
         .tag:active,
         .btn:active {
-          color: #282d30;
-          --cfx-ui-button-color: #282d30;
+          color: #333;
+          --cfx-ui-button-color: #333;
           background-color: #fff;
-          border-color: #282d30;
+          border-color: #333;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -129,7 +129,7 @@ exports[`UseToast should render different actions 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #aaafbb;
+          border-color: #999;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;
@@ -142,7 +142,7 @@ exports[`UseToast should render different actions 1`] = `
           color: #444;
           --cfx-ui-button-color: #444;
           background-color: #fff;
-          border-color: #9b9eac;
+          border-color: #666;
           cursor: pointer;
           pointer-events: auto;
           box-shadow: none;

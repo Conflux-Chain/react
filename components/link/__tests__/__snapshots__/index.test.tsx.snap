@@ -9,7 +9,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -21,12 +21,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -46,7 +46,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -58,12 +58,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -83,7 +83,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 4px;
             transition: color 200ms ease 0ms;
           }
@@ -95,12 +95,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: #f0f5ff;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -120,7 +120,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -132,12 +132,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -169,12 +169,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -202,7 +202,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -214,12 +214,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -247,7 +247,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -259,12 +259,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
@@ -300,7 +300,7 @@ exports[`Link should render correctly 1`] = `
             width: fit-content;
             line-height: inherit;
             text-decoration: none;
-            color: #0054fe;
+            color: #1e3de4;
             border-radius: 0;
             transition: color 200ms ease 0ms;
           }
@@ -312,12 +312,12 @@ exports[`Link should render correctly 1`] = `
           }
 
           .link:hover {
-            color: #0433dc;
+            color: #0f23bd;
             background-color: unset;
           }
 
           .link.disabled {
-            color: #9b9eac;
+            color: #666;
             pointer-events: none;
             cursor: default;
           }
