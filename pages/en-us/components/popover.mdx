@@ -168,21 +168,21 @@ The floating box popped by clicking or hovering.
     <div style={{ width: '80%', margin: '0 auto' }}>
       <Row justify="center">
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="topStart">topStart</Popover>
+          <Popover title='Popover title' content={content} placement="top-start">topStart</Popover>
         </Center>
         <Center span={5}>
           <Popover title='Popover title' content={content} placement="top">top</Popover>
         </Center>
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="topEnd">topEnd</Popover>
+          <Popover title='Popover title' content={content} placement="top-end">topEnd</Popover>
         </Center>
       </Row>
       <Row justify="space-between">
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="leftStart">leftStart</Popover>
+          <Popover title='Popover title' content={content} placement="left-start">leftStart</Popover>
         </Center>
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="rightStart">rightStart</Popover>
+          <Popover title='Popover title' content={content} placement="right-start">rightStart</Popover>
         </Center>
       </Row>
       <Spacer y={.5} />
@@ -197,21 +197,21 @@ The floating box popped by clicking or hovering.
       <Spacer y={.5} />
       <Row justify="space-between">
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="leftEnd">leftEnd</Popover>
+          <Popover title='Popover title' content={content} placement="left-end">leftEnd</Popover>
         </Center>
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="rightEnd">rightEnd</Popover>
+          <Popover title='Popover title' content={content} placement="right-end">rightEnd</Popover>
         </Center>
       </Row>
       <Row justify="center">
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="bottomStart">bottomStart</Popover>
+          <Popover title='Popover title' content={content} placement="bottom-start">bottomStart</Popover>
         </Center>
         <Center span={5}>
           <Popover title='Popover title' content={content} placement="bottom">bottom</Popover>
         </Center>
         <Center span={5}>
-          <Popover title='Popover title' content={content} placement="bottomEnd">bottomEnd</Popover>
+          <Popover title='Popover title' content={content} placement="bottom-end">bottomEnd</Popover>
         </Center>
       </Row>
     </div>
@@ -250,22 +250,22 @@ The floating box popped by clicking or hovering.
 <Attributes edit="/pages/en-us/components/popover.mdx">
 <Attributes.Title>Popover.Props</Attributes.Title>
 
-| Attribute            | Description                                         | Type                          | Accepted values                  | Default  |
-| -------------------- | --------------------------------------------------- | ----------------------------- | -------------------------------- | -------- |
-| **title**            | title of pop-up                                     | `ReactNode` `() => ReactNode` | -                                | -        |
-| **notSeperateTitle** | don't add a deivider line between title and content | `boolean`                     | -                                | `false`  |
-| **content**          | content of pop-up                                   | `ReactNode` `() => ReactNode` | -                                | -        |
-| **visible**          | visible or not                                      | `boolean`                     | -                                | `false`  |
-| **defaultVisible**   | visible on initial                                  | `boolean`                     | -                                | `false`  |
-| **hideArrow**        | hide arrow icon                                     | `boolean`                     | -                                | `false`  |
-| **placement**        | position of the popover relative to the target      | [Placement](#placement)       | -                                | `bottom` |
-| **trigger**          | tooltip trigger mode                                | `'click' / 'hover'`           | -                                | `click`  |
-| **enterDelay**(ms)   | delay before popover is shown                       | `number`                      | -                                | `100`    |
-| **leaveDelay**(ms)   | delay before popover is hidden                      | `number`                      | -                                | `0`      |
-| **offset**(px)       | distance between pop-up and target                  | `number`                      | -                                | `12`     |
-| **portalClassName**  | className of pop-up box                             | `string`                      | -                                | -        |
-| **onVisibleChange**  | call when visibility of the popover is changed      | `(visible: boolean) => void`  | -                                | -        |
-| ...                  | native props                                        | `HTMLAttributes`              | `'id', 'name', 'className', ...` | -        |
+| Attribute            | Description                                         | Type                                                             | Accepted values                  | Default   |
+| -------------------- | --------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------- | --------- |
+| **title**            | title of pop-up                                     | `ReactNode` `() => ReactNode`                                    | -                                | -         |
+| **notSeperateTitle** | don't add a deivider line between title and content | `boolean`                                                        | -                                | `false`   |
+| **content**          | content of pop-up                                   | `ReactNode` `() => ReactNode`                                    | -                                | -         |
+| **visible**          | visible or not                                      | `boolean`                                                        | -                                | `false`   |
+| **defaultVisible**   | visible on initial                                  | `boolean`                                                        | -                                | `false`   |
+| **hideArrow**        | hide arrow icon                                     | `boolean`                                                        | -                                | `false`   |
+| **placement**        | position of the popover relative to the target      | [Placement](#placement)                                          | -                                | `bottom`  |
+| **trigger**          | tooltip trigger mode                                | `'click' / 'hover'`                                              | -                                | `click`   |
+| **enterDelay**(ms)   | delay before popover is shown                       | `number`                                                         | -                                | `100`     |
+| **leaveDelay**(ms)   | delay before popover is hidden                      | `number`                                                         | -                                | `0`       |
+| **offset**(px)       | skidding and distance,                              | check the doc at https://popper.js.org/docs/v2/modifiers/offset/ | -                                | `[0, 10]` |
+| **contentClassName** | className of pop-up box                             | `string`                                                         | -                                | -         |
+| **onVisibleChange**  | call when visibility of the popover is changed      | `(visible: boolean) => void`                                     | -                                | -         |
+| ...                  | native props                                        | `HTMLAttributes`                                                 | `'id', 'name', 'className', ...` | -         |
 
 <Attributes.Title alias="Popover.Option">Popover.Item</Attributes.Title>
 

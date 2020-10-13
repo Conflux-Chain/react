@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text should be able to specify the size of text 1`] = `
-"<p class=\\"custom-size \\">test-value</p><style>
+"<p class=\\"custom-size text \\">test-value</p><style>
         p {
           color: inherit;
         }
@@ -13,7 +13,7 @@ exports[`Text should be able to specify the size of text 1`] = `
 `;
 
 exports[`Text should be able to specify the size of text 2`] = `
-"<p class=\\"custom-size \\">test-value</p><style>
+"<p class=\\"custom-size text \\">test-value</p><style>
         p {
           color: inherit;
         }
@@ -25,7 +25,7 @@ exports[`Text should be able to specify the size of text 2`] = `
 `;
 
 exports[`Text should render P element in the default 1`] = `
-"<p class=\\" \\">test-value</p><style>
+"<p class=\\" text \\">test-value</p><style>
         p {
           color: inherit;
         }
@@ -37,7 +37,7 @@ exports[`Text should render P element in the default 1`] = `
 `;
 
 exports[`Text should render default color when type missing 1`] = `
-"<p class=\\" \\">test-value</p><style>
+"<p class=\\" text \\">test-value</p><style>
         p {
           color: inherit;
         }
@@ -49,7 +49,7 @@ exports[`Text should render default color when type missing 1`] = `
 `;
 
 exports[`Text should work with different styles 1`] = `
-"<div><p class=\\" \\">test-value</p><style>
+"<div><p class=\\" text \\">test-value</p><style>
         p {
           color: #7cd77b;
         }
@@ -57,7 +57,7 @@ exports[`Text should work with different styles 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><p class=\\" \\">test-value</p><style>
+      </style><p class=\\" text \\">test-value</p><style>
         p {
           color: #666;
         }
@@ -65,7 +65,7 @@ exports[`Text should work with different styles 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><p class=\\" \\">test-value</p><style>
+      </style><p class=\\" text \\">test-value</p><style>
         p {
           color: #7cd77b;
         }
@@ -73,7 +73,7 @@ exports[`Text should work with different styles 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><p class=\\" \\">test-value</p><style>
+      </style><p class=\\" text \\">test-value</p><style>
         p {
           color: #ffc438;
         }
@@ -81,7 +81,7 @@ exports[`Text should work with different styles 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><p class=\\" \\">test-value</p><style>
+      </style><p class=\\" text \\">test-value</p><style>
         p {
           color: #e15c56;
         }
@@ -93,7 +93,7 @@ exports[`Text should work with different styles 1`] = `
 `;
 
 exports[`Text the combined style should be rendered 1`] = `
-"<p class=\\" \\"><b class=\\" \\"><del class=\\" \\">test-value</del><style>
+"<p class=\\" text \\"><b class=\\" \\"><del class=\\" \\">test-value</del><style>
         del {
           color: inherit;
         }
@@ -121,7 +121,7 @@ exports[`Text the combined style should be rendered 1`] = `
 `;
 
 exports[`Text the specified element should be rendered 1`] = `
-"<div><h1 class=\\" \\">test-value</h1><style>
+"<div><h1 class=\\" text \\">test-value</h1><style>
         h1 {
           color: inherit;
         }
@@ -129,7 +129,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><h2 class=\\" \\">test-value</h2><style>
+      </style><h2 class=\\" text \\">test-value</h2><style>
         h2 {
           color: inherit;
         }
@@ -137,7 +137,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><h3 class=\\" \\">test-value</h3><style>
+      </style><h3 class=\\" text \\">test-value</h3><style>
         h3 {
           color: inherit;
         }
@@ -145,7 +145,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><h4 class=\\" \\">test-value</h4><style>
+      </style><h4 class=\\" text \\">test-value</h4><style>
         h4 {
           color: inherit;
         }
@@ -153,7 +153,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><h5 class=\\" \\">test-value</h5><style>
+      </style><h5 class=\\" text \\">test-value</h5><style>
         h5 {
           color: inherit;
         }
@@ -161,7 +161,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><h6 class=\\" \\">test-value</h6><style>
+      </style><h6 class=\\" text \\">test-value</h6><style>
         h6 {
           color: inherit;
         }
@@ -169,7 +169,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><p class=\\" \\">test-value</p><style>
+      </style><p class=\\" text \\">test-value</p><style>
         p {
           color: inherit;
         }
@@ -177,7 +177,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><small class=\\" \\">test-value</small><style>
+      </style><small class=\\" text \\">test-value</small><style>
         small {
           color: inherit;
         }
@@ -185,7 +185,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><span class=\\" \\">test-value</span><style>
+      </style><span class=\\" text \\">test-value</span><style>
         span {
           color: inherit;
         }
@@ -193,7 +193,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><del class=\\" \\">test-value</del><style>
+      </style><del class=\\" text \\">test-value</del><style>
         del {
           color: inherit;
         }
@@ -201,7 +201,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><i class=\\" \\">test-value</i><style>
+      </style><i class=\\" text \\">test-value</i><style>
         i {
           color: inherit;
         }
@@ -209,7 +209,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><em class=\\" \\">test-value</em><style>
+      </style><em class=\\" text \\">test-value</em><style>
         em {
           color: inherit;
         }
@@ -217,7 +217,7 @@ exports[`Text the specified element should be rendered 1`] = `
         .custom-size {
           font-size: inherit;
         }
-      </style><b class=\\" \\">test-value</b><style>
+      </style><b class=\\" text \\">test-value</b><style>
         b {
           color: inherit;
         }

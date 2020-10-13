@@ -1,15 +1,15 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { mount, ReactWrapper } from 'enzyme'
 import { Button, Tooltip, CfxProvider } from 'components'
 import { nativeEvent, updateWrapper } from 'tests/utils'
 import { act } from 'react-dom/test-utils'
 
 const expectTooltipIsShow = (wrapper: ReactWrapper) => {
-  expect(wrapper.find('.inner').length).not.toBe(0)
+  expect(wrapper.find('.tooltip-content').length).not.toBe(0)
 }
 
 const expectTooltipIsHidden = (wrapper: ReactWrapper) => {
-  expect(wrapper.find('.inner').length).toBe(0)
+  expect(wrapper.find('.tooltip-content').length).toBe(0)
 }
 
 const simulateNativeClick = (el: Element) => {
@@ -22,6 +22,7 @@ const simulateNativeClick = (el: Element) => {
   )
 }
 
+const typeWrapper = mount(<div />)
 const clickAway = async (wrapper: typeof typeWrapper) => {
   await act(async () => {
     simulateNativeClick(document.body)
@@ -54,6 +55,7 @@ describe('Tooltip', () => {
     const onMouseEnter = jest.fn()
     const onMouseLeave = jest.fn()
     const onClickAway = jest.fn()
+    const onVisibleChange = jest.fn()
     const wrapper = mount(
       <CfxProvider theme={{ type: 'dark' }}>
         <div>
@@ -61,6 +63,7 @@ describe('Tooltip', () => {
           <Tooltip
             visible
             text={<p id="test">custom-content</p>}
+            onVisibleChange={onVisibleChange}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             onClickAway={onClickAway}>
@@ -72,6 +75,7 @@ describe('Tooltip', () => {
 
     wrapper.find('.tooltip').simulate('mouseEnter', nativeEvent)
     expect(onMouseEnter).toBeCalledTimes(1)
+    expect(onVisibleChange).toBeCalledTimes(1)
 
     wrapper.find('.tooltip').simulate('mouseLeave', nativeEvent)
     expect(onMouseLeave).toBeCalledTimes(1)
@@ -136,7 +140,7 @@ describe('Tooltip', () => {
   it('should render correctly by visible', async () => {
     const wrapper = mount(
       <div>
-        <Tooltip text={<p id="visible">custom-content</p>} visible={true} placement="rightEnd">
+        <Tooltip text={<p id="visible">custom-content</p>} visible={true} placement="right-end">
           some tips
         </Tooltip>
       </div>,

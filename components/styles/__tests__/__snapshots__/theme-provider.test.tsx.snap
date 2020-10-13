@@ -4,7 +4,7 @@ exports[`ThemeProvider should merge themes with custom function 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": " ",
+      "class": " text ",
     },
     "children": Array [
       Object {
@@ -138,7 +138,7 @@ initialize {
     "parent": null,
     "prev": Object {
       "attribs": Object {
-        "class": " ",
+        "class": " text ",
       },
       "children": Array [
         Object {
@@ -182,7 +182,7 @@ initialize {
       "children": Array [
         Object {
           "attribs": Object {
-            "class": " ",
+            "class": " text ",
           },
           "children": Array [
             Object {

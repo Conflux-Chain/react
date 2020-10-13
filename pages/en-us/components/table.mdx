@@ -118,7 +118,7 @@ Display tabular data in format.
         ...(i === 0 ? { width: 50 } : null),
         render(description) {
           return (
-            <Tooltip placement="topStart" text={description}>
+            <Tooltip placement="top-start" text={description}>
               <span>{description}</span>
             </Tooltip>
           )
@@ -136,7 +136,7 @@ Display tabular data in format.
         render: (name) => {
         console.log('name', name)
         return (
-          <Tooltip placement="topStart" text={name}>
+          <Tooltip placement="top-start" text={name}>
             <span>{name}</span>
           </Tooltip>
         ) },
@@ -150,7 +150,7 @@ Display tabular data in format.
         },
         render() {
           return (
-            <Tooltip placement="topStart" text="Operations">
+            <Tooltip placement="top-start" text="Operations">
               <Link plain href="">Operations</Link>
             </Tooltip>
           )

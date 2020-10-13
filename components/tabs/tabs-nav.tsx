@@ -21,7 +21,6 @@ const Nav: React.FC<NavCptProps> = ({ label, varient, disabled, active }) => {
     <div className="nav">
       <div className="label">{label}</div>
       {varient === 'line' ? <div className="bottom"></div> : null}
-
       <style jsx>
         {`
           .nav {

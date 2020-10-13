@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react'
-import { useTheme, CfxUIThemesPalette, Popover } from 'components'
-import { ColorResult, TwitterPicker } from 'react-color'
-import { useConfigs } from 'lib/config-context'
+import { CfxUIThemesPalette, useTheme, Popover } from 'components'
 import DefaultTheme from 'components/styles/themes/default'
+import { useConfigs } from 'lib/config-context'
+import React, { useMemo } from 'react'
+import { ColorResult, TwitterPicker } from 'react-color'
 
 interface Props {
   value?: string
@@ -47,8 +47,9 @@ const EditorColorItem: React.FC<React.PropsWithChildren<Props>> = ({ keyName }) 
       colors={randomColors}
     />
   )
+
   return (
-    <Popover content={() => popoverContent(mainColor)} portalClassName="editor-popover" offset={3}>
+    <Popover content={() => popoverContent(mainColor)} className="editor-popover">
       <div className="editor-item">
         <div className="dot-box">
           <span className="dot" />
@@ -71,11 +72,11 @@ const EditorColorItem: React.FC<React.PropsWithChildren<Props>> = ({ keyName }) 
             transition: color 200ms ease;
           }
 
-          :global(.editor-popover .inner) {
+          .popover.editor-popover .inner {
             padding: 0 !important;
           }
 
-          :global(.editor-popover .twitter-picker) {
+          .popover.editor-popover .twitter-picker {
             box-shadow: none !important;
             border: 0 !important;
             background: transparent !important;

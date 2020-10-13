@@ -1079,7 +1079,7 @@ exports[`Pagination should set pageSize 1`] = `
 `;
 
 exports[`Pagination should set pageSize value to default value of pageSizeOptions 1`] = `
-"<div class=\\"pagination \\"><div class=\\"left\\"><div class=\\"pagination-pagesize\\"><div class=\\"text before\\">SHOW</div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option   \\"><span>8 <style>
+"<div class=\\"pagination \\"><div class=\\"left\\"><div class=\\"pagination-pagesize\\"><div class=\\"text before\\">SHOW</div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option selected    \\"><span>8 <style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;
@@ -1129,7 +1129,6 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
 
         .label {
           font-size: 1.1428rem;
-          color: #fff;
           border-bottom: 1px solid
             #eaeaea;
           text-transform: capitalize;
@@ -2025,7 +2024,7 @@ exports[`Pagination should set pageSize value to default value of pageSizeOption
 `;
 
 exports[`Pagination should set string value to dropdownlist 1`] = `
-"<div class=\\"pagination \\"><div class=\\"left\\"><div class=\\"pagination-pagesize\\"><div class=\\"text before\\">SHOW</div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option   \\"><span>10 <style>
+"<div class=\\"pagination \\"><div class=\\"left\\"><div class=\\"pagination-pagesize\\"><div class=\\"text before\\">SHOW</div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option selected    \\"><span>10 <style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;
@@ -2075,7 +2074,6 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
 
         .label {
           font-size: 1.1428rem;
-          color: #fff;
           border-bottom: 1px solid
             #eaeaea;
           text-transform: capitalize;
@@ -2971,7 +2969,7 @@ exports[`Pagination should set string value to dropdownlist 1`] = `
 `;
 
 exports[`Pagination should work with pageSizeChanger 1`] = `
-"<div class=\\"pagination \\"><div class=\\"left\\"><div class=\\"pagination-pagesize\\"><div class=\\"text before\\">SHOW</div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option   \\"><span>10 <style>
+"<div class=\\"pagination \\"><div class=\\"left\\"><div class=\\"pagination-pagesize\\"><div class=\\"text before\\">SHOW</div><div class=\\"select  \\"><span class=\\"value\\"><div class=\\"option selected    \\"><span>10 <style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;
@@ -3021,7 +3019,6 @@ exports[`Pagination should work with pageSizeChanger 1`] = `
 
         .label {
           font-size: 1.1428rem;
-          color: #fff;
           border-bottom: 1px solid
             #eaeaea;
           text-transform: capitalize;

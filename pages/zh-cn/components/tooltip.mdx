@@ -23,7 +23,7 @@ export const meta = {
   title="受控组件"
   desc="基础示例。"
   scope={{ Tooltip }}
-    code={`
+  code={`
     () => {
       const [visible, setVisible] = React.useState(false)
       return (<Tooltip visible={visible} onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} text={'缓存是达到高性能的重要组成部分'}>文字提示</Tooltip>)
@@ -134,21 +134,21 @@ export const meta = {
     <div style={{ width: '80%', margin: '0 auto' }}>
       <Row justify="center">
         <Center span={5}>
-          <Tooltip text={text} placement="topStart">topStart</Tooltip>
+          <Tooltip text={text} placement="top-start">topStart</Tooltip>
         </Center>
         <Center span={5}>
           <Tooltip text={text} placement="top">top</Tooltip>
         </Center>
         <Center span={5}>
-          <Tooltip text={text} placement="topEnd">topEnd</Tooltip>
+          <Tooltip text={text} placement="top-end">topEnd</Tooltip>
         </Center>
       </Row>
       <Row justify="space-between">
         <Center span={5}>
-          <Tooltip text={text} placement="leftStart">leftStart</Tooltip>
+          <Tooltip text={text} placement="left-start">leftStart</Tooltip>
         </Center>
         <Center span={5}>
-          <Tooltip text={text} placement="rightStart">rightStart</Tooltip>
+          <Tooltip text={text} placement="right-start">rightStart</Tooltip>
         </Center>
       </Row>
       <Spacer y={.5} />
@@ -163,21 +163,21 @@ export const meta = {
       <Spacer y={.5} />
       <Row justify="space-between">
         <Center span={5}>
-          <Tooltip text={text} placement="leftEnd">leftEnd</Tooltip>
+          <Tooltip text={text} placement="left-end">leftEnd</Tooltip>
         </Center>
         <Center span={5}>
-          <Tooltip text={text} placement="rightEnd">rightEnd</Tooltip>
+          <Tooltip text={text} placement="right-end">rightEnd</Tooltip>
         </Center>
       </Row>
       <Row justify="center">
         <Center span={5}>
-          <Tooltip text={text} placement="bottomStart">bottomStart</Tooltip>
+          <Tooltip text={text} placement="bottom-start">bottomStart</Tooltip>
         </Center>
         <Center span={5}>
           <Tooltip text={text} placement="bottom">bottom</Tooltip>
         </Center>
         <Center span={5}>
-          <Tooltip text={text} placement="bottomEnd">bottomEnd</Tooltip>
+          <Tooltip text={text} placement="bottom-end">bottomEnd</Tooltip>
         </Center>
       </Row>
     </div>
@@ -189,21 +189,21 @@ export const meta = {
 <Attributes edit="/pages/zh-cn/components/tooltip.mdx">
 <Attributes.Title>Tooltip.Props</Attributes.Title>
 
-| 属性                | 描述                       | 类型                            | 推荐值                           | 默认      |
-| ------------------- | -------------------------- | ------------------------------- | -------------------------------- | --------- |
-| **text**            | 弹出框文字                 | `string` `React.ReactNode`      | -                                | -         |
-| **visible**         | 手动控制提示框的显示与隐藏 | `boolean`                       | -                                | `false`   |
-| **defaultVisible**  | 初始是否可见               | `boolean`                       | -                                | `false`   |
-| **hideArrow**       | 隐藏箭头                   | `boolean`                       | -                                | `false`   |
-| **color**           | 不同的文字提示颜色         | [TooltipColors](#tooltipcolors) | -                                | `default` |
-| **placement**       | 提示框与目标的对齐方式     | [Placement](#placement)         | -                                | `top`     |
-| **trigger**         | 触发提示框的方式           | `'click' / 'hover'`             | -                                | `hover`   |
-| **enterDelay**(ms)  | 在提示显示前的延迟         | `number`                        | -                                | `100`     |
-| **leaveDelay**(ms)  | 关闭提示前的延迟           | `number`                        | -                                | `0`       |
-| **offset**(px)      | 提示框与目标之间的偏移     | `number`                        | -                                | `12`      |
-| **portalClassName** | 弹出框的类名               | `string`                        | -                                | -         |
-| **onVisibleChange** | 当提示框状态改变时触发     | `(visible: boolean) => void`    | -                                | -         |
-| ...                 | 原生属性                   | `HTMLAttributes`                | `'id', 'name', 'className', ...` | -         |
+| 属性                 | 描述                       | 类型                                                 | 推荐值                           | 默认      |
+| -------------------- | -------------------------- | ---------------------------------------------------- | -------------------------------- | --------- |
+| **text**             | 弹出框文字                 | `string` `React.ReactNode`                           | -                                | -         |
+| **visible**          | 手动控制提示框的显示与隐藏 | `boolean`                                            | -                                | `false`   |
+| **defaultVisible**   | 初始是否可见               | `boolean`                                            | -                                | `false`   |
+| **hideArrow**        | 隐藏箭头                   | `boolean`                                            | -                                | `false`   |
+| **color**            | 不同的文字提示颜色         | [TooltipColors](#tooltipcolors)                      | -                                | `default` |
+| **placement**        | 提示框与目标的对齐方式     | [Placement](#placement)                              | -                                | `top`     |
+| **trigger**          | 触发提示框的方式           | `'click' / 'hover'`                                  | -                                | `hover`   |
+| **enterDelay**(ms)   | 在提示显示前的延迟         | `number`                                             | -                                | `100`     |
+| **leaveDelay**(ms)   | 关闭提示前的延迟           | `number`                                             | -                                | `0`       |
+| **offset**(px)       | Skidding 和 Distance       | 参考 https://popper.js.org/docs/v2/modifiers/offset/ | -                                | `[0,10]`  |
+| **contentClassName** | 弹出框的类名               | `string`                                             | -                                | -         |
+| **onVisibleChange**  | 当提示框状态改变时触发     | `(visible: boolean) => void`                         | -                                | -         |
+| ...                  | 原生属性                   | `HTMLAttributes`                                     | `'id', 'name', 'className', ...` | -         |
 
 <Attributes.Title>TooltipColors</Attributes.Title>
 

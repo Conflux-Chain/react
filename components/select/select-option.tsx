@@ -71,7 +71,9 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
   return (
     <>
       <div
-        className={`option ${divider ? 'divider' : ''} ${label ? 'label' : ''} ${className}`}
+        className={`option ${selected ? 'selected' : ''} ${disabled ? 'disabled' : ''} ${
+          divider ? 'divider' : ''
+        } ${label ? 'label' : ''} ${className}`}
         onClick={clickHandler}
         {...props}>
         <Ellipsis height={`calc(2.25 * ${theme.layout.gap})`}>{children}</Ellipsis>
@@ -120,7 +122,6 @@ const SelectOption: React.FC<React.PropsWithChildren<SelectOptionProps>> = ({
 
         .label {
           font-size: ${sizes.labelFontSize};
-          color: ${colors.color};
           border-bottom: ${theme.expressiveness.L1} ${theme.expressiveness.cLineStyle1}
             ${theme.palette.border};
           text-transform: capitalize;

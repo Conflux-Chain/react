@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs should change style when hover header 1`] = `
-"<div class=\\"tabs \\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+"<div class=\\"tabs \\"><header><div class=\\"tab active \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -30,7 +30,7 @@ exports[`Tabs should change style when hover header 1`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+        </style></div></div><div class=\\"tab  \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -94,7 +94,7 @@ exports[`Tabs should change style when hover header 1`] = `
 `;
 
 exports[`Tabs should change style when hover header 2`] = `
-"<div class=\\"tabs \\"><header><div class=\\"tab active\\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+"<div class=\\"tabs \\"><header><div class=\\"tab active \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -123,7 +123,7 @@ exports[`Tabs should change style when hover header 2`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+        </style></div></div><div class=\\"tab  \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -187,7 +187,7 @@ exports[`Tabs should change style when hover header 2`] = `
 `;
 
 exports[`Tabs should render correctly 1`] = `
-"<div><div class=\\"tabs \\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
+"<div><div class=\\"tabs \\"><header><div class=\\"tab  \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -216,7 +216,7 @@ exports[`Tabs should render correctly 1`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
+        </style></div></div><div class=\\"tab  \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><div class=\\"bottom\\"></div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -276,7 +276,7 @@ exports[`Tabs should render correctly 1`] = `
             .tab:first-of-type {
               margin-left: 0;
             }
-          </style></div><div class=\\"tabs \\"><header><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><style>
+          </style></div><div class=\\"tabs \\"><header><div class=\\"tab  \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label1</div><style>
           .nav {
             display: flex;
             flex-direction: column;
@@ -305,7 +305,7 @@ exports[`Tabs should render correctly 1`] = `
             height: 4px;
             width: 100%;
           }
-        </style></div></div><div class=\\"tab \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><style>
+        </style></div></div><div class=\\"tab  \\" role=\\"button\\"><div class=\\"nav\\"><div class=\\"label\\">label2</div><style>
           .nav {
             display: flex;
             flex-direction: column;

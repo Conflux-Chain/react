@@ -3,7 +3,7 @@ import withDefaults from '../utils/with-defaults'
 import { NormalTypes } from '../utils/prop-types'
 import TextChild from './child'
 
-interface Props {
+interface Props extends Omit<React.HTMLAttributes<any>, keyof Props> {
   h1?: boolean
   h2?: boolean
   h3?: boolean
@@ -44,8 +44,7 @@ const defaultProps = {
 
 type ElementMap = { [key in keyof JSX.IntrinsicElements]?: boolean }
 
-type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
-export type TextProps = Props & typeof defaultProps & NativeAttrs
+export type TextProps = Props
 
 type TextRenderableElements = Array<keyof JSX.IntrinsicElements>
 
@@ -82,7 +81,7 @@ const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   children,
   className,
   ...props
-}) => {
+}: TextProps & typeof defaultProps) => {
   const elements: ElementMap = { h1, h2, h3, h4, h5, h6, p, blockquote }
   const inlineElements: ElementMap = { span, small, b, em, i, del }
   const names = Object.keys(elements).filter(
@@ -118,7 +117,7 @@ const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   }, [renderableChildElements, children, size])
 
   return (
-    <TextChild className={className} tag={tag} size={size} {...props}>
+    <TextChild className={`text ${className}`} tag={tag} size={size} {...props}>
       {modifers}
     </TextChild>
   )

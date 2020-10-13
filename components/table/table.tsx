@@ -21,13 +21,13 @@ export type TableProps<RecordType> = Props<RecordType> &
   typeof defaultProps &
   NativeAttrs<RecordType>
 
-function Table<RecordType>({ variant, children, ...props }: TableProps<RecordType>) {
+function Table<RecordType>({ variant, children, className, ...props }: TableProps<RecordType>) {
   const theme = useTheme()
   const { expressiveness, palette, layout } = theme
   if (props.expandable && !props.expandable.expandIcon) {
     props.expandable.expandIcon = ExpandIcon
   }
-  const { className, styles } = css.resolve`
+  const { className: innerStyleClassName, styles } = css.resolve`
     .table {
       background-color: ${palette.cNeutral8};
       font-size: 1rem;
@@ -364,7 +364,9 @@ function Table<RecordType>({ variant, children, ...props }: TableProps<RecordTyp
     <div>
       <RcTable<RecordType>
         prefixCls="table"
-        className={`${className} ${variant === 'solid' ? 'variant-solid' : 'variant-line'}`}
+        className={`${className} ${innerStyleClassName} ${
+          variant === 'solid' ? 'variant-solid' : 'variant-line'
+        }`}
         {...props}>
         {children}
       </RcTable>

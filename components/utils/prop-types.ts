@@ -37,18 +37,21 @@ const copyTypes = tuple('default', 'slient', 'prevent')
 const triggerTypes = tuple('hover', 'click')
 
 const placement = tuple(
+  'auto',
+  'auto-start',
+  'auto-end',
   'top',
-  'topStart',
-  'topEnd',
+  'top-start',
+  'top-end',
   'left',
-  'leftStart',
-  'leftEnd',
+  'left-start',
+  'left-end',
   'bottom',
-  'bottomStart',
-  'bottomEnd',
+  'bottom-start',
+  'bottom-end',
   'right',
-  'rightStart',
-  'rightEnd',
+  'right-start',
+  'right-end',
 )
 
 const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')

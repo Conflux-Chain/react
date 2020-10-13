@@ -53,6 +53,13 @@ const PopoverItem: React.FC<React.PropsWithChildren<PopoverItemProps>> = ({
             margin: 0;
           }
 
+          .item.title {
+            line-height: 1.1429rem;
+            font-weight: 500;
+            font-size: 1rem;
+            color: ${theme.palette.cNeutral7};
+          }
+
           .item.line {
             line-height: 0;
             height: 0;
