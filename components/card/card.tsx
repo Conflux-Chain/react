@@ -80,15 +80,6 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
           background-color: ${hoverBgColor};
           border: ${theme.expressiveness.L2} ${theme.expressiveness.cLineStyle1} ${hoverBorderColor};
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       `}</style>
     </div>
   )
