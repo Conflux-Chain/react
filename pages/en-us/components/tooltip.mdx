@@ -32,6 +32,14 @@ Displays additional information on hover.
 />
 
 <Playground
+  title="Hoverable tooltip content"
+  scope={{ Tooltip }}
+  code={`
+<Tooltip hoverable text={'Try hover on me'}>Tooltip</Tooltip>
+`}
+/>
+
+<Playground
   title="Trigger"
   desc="Trigger by click."
   scope={{ Tooltip }}
@@ -189,21 +197,22 @@ Displays additional information on hover.
 <Attributes edit="/pages/en-us/components/tooltip.mdx">
 <Attributes.Title>Tooltip.Props</Attributes.Title>
 
-| Attribute            | Description                                    | Type                                                             | Accepted values                  | Default   |
-| -------------------- | ---------------------------------------------- | ---------------------------------------------------------------- | -------------------------------- | --------- |
-| **text**             | text of pop-up                                 | `string` `React.ReactNode`                                       | -                                | -         |
-| **visible**          | visible or not                                 | `boolean`                                                        | -                                | `false`   |
-| **defaultVisible**   | visible on initial                             | `boolean`                                                        | -                                | `false`   |
-| **hideArrow**        | hide arrow icon                                | `boolean`                                                        | -                                | `false`   |
-| **color**            | preset style color                             | [TooltipColors](#tooltipcolors)                                  | -                                | `default` |
-| **placement**        | position of the tooltip relative to the target | [Placement](#placement)                                          | -                                | `top`     |
-| **trigger**          | tooltip trigger mode                           | `'click' / 'hover'`                                              | -                                | `hover`   |
-| **enterDelay**(ms)   | delay before tooltip is shown                  | `number`                                                         | -                                | `100`     |
-| **leaveDelay**(ms)   | delay before tooltip is hidden                 | `number`                                                         | -                                | `0`       |
-| **offset**(px)       | skidding and distance,                         | check the doc at https://popper.js.org/docs/v2/modifiers/offset/ | -                                | `[0, 10]` |
-| **contentClassName** | className of pop-up box                        | `string`                                                         | -                                | -         |
-| **onVisibleChange**  | call when visibility of the tooltip is changed | `(visible: boolean) => void`                                     | -                                | -         |
-| ...                  | native props                                   | `HTMLAttributes`                                                 | `'id', 'name', 'className', ...` | -         |
+| Attribute                | Description                                                             | Type                                                             | Accepted values                  | Default   |
+| ------------------------ | ----------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------- | --------- |
+| **text**                 | text of pop-up                                                          | `string` `React.ReactNode`                                       | -                                | -         |
+| **visible**              | visible or not                                                          | `boolean`                                                        | -                                | `false`   |
+| **defaultVisible**       | visible on initial                                                      | `boolean`                                                        | -                                | `false`   |
+| **hideArrow**            | hide arrow icon                                                         | `boolean`                                                        | -                                | `false`   |
+| **color**                | preset style color                                                      | [TooltipColors](#tooltipcolors)                                  | -                                | `default` |
+| **placement**            | position of the tooltip relative to the target                          | [Placement](#placement)                                          | -                                | `top`     |
+| **trigger**              | tooltip trigger mode                                                    | `'click' / 'hover'`                                              | -                                | `hover`   |
+| **hoverable**            | make the tooltip content hoverable, only works when `trigger==='hover'` | `boolean`                                                        | -                                | `false`   |
+| **displayBlock**         | add `display: 'block'` to the tooltip wrapper                           | `boolean`                                                        | -                                | `false`   |
+| **hoverableTimeout**(ms) | timeout after which tooltip content get removed                         | `number`                                                         | -                                | `200`     |
+| **offset**(px)           | skidding and distance,                                                  | check the doc at https://popper.js.org/docs/v2/modifiers/offset/ | -                                | `[0, 10]` |
+| **contentClassName**     | className of pop-up box                                                 | `string`                                                         | -                                | -         |
+| **onVisibleChange**      | call when visibility of the tooltip is changed                          | `(visible: boolean) => void`                                     | -                                | -         |
+| ...                      | native props                                                            | `HTMLAttributes`                                                 | `'id', 'name', 'className', ...` | -         |
 
 <Attributes.Title>TooltipColors</Attributes.Title>
 

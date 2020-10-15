@@ -49,6 +49,7 @@ describe('Tooltip', () => {
     wrapper.find('.tooltip').simulate('mouseLeave', nativeEvent)
     await updateWrapper(wrapper, 400)
     expectTooltipIsHidden(wrapper)
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 
   it('should call custom mouse event handler when is controlled', async () => {
@@ -82,6 +83,7 @@ describe('Tooltip', () => {
 
     await clickAway(wrapper)
     expect(onClickAway).toBeCalledTimes(1)
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 
   it('should render text when hover it', async () => {
@@ -97,6 +99,7 @@ describe('Tooltip', () => {
     wrapper.find('.tooltip').simulate('mouseLeave', nativeEvent)
     await updateWrapper(wrapper, 400)
     expectTooltipIsHidden(wrapper)
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 
   it('should render react-node when click it', async () => {
@@ -124,6 +127,7 @@ describe('Tooltip', () => {
 
     await updateWrapper(wrapper, 400)
     expectTooltipIsHidden(wrapper)
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 
   it('should render inner components', async () => {
@@ -135,6 +139,7 @@ describe('Tooltip', () => {
       </Tooltip>,
     )
     expect(wrapper.find('#test').length).not.toBe(0)
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 
   it('should render correctly by visible', async () => {
@@ -148,6 +153,7 @@ describe('Tooltip', () => {
 
     await updateWrapper(wrapper, 150)
     expect(wrapper.find('#visible').length).toBe(1)
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 
   it('should render correctly by using wrong placement', async () => {
@@ -162,5 +168,103 @@ describe('Tooltip', () => {
       </div>,
     )
     expect(wrapper.find('#default-visible').length).toBe(1)
+    expect(() => wrapper.unmount()).not.toThrow()
+  })
+
+  it('should have the hoverable effect', async () => {
+    const onVisibleChange = jest.fn()
+    const onMouseLeave = jest.fn()
+
+    const wrapper = mount(
+      <Tooltip
+        placement="top"
+        text="some text"
+        hoverable
+        hoverableTimeout={200}
+        offset={[0, 0]}
+        onMouseLeave={onMouseLeave}>
+        tooltip
+      </Tooltip>,
+    )
+
+    // normal show hide
+    // on
+    await act(async () => {
+      wrapper.find('.tooltip').simulate('mouseEnter', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+
+    // off
+    await act(async () => {
+      wrapper.find('.tooltip').simulate('mouseLeave', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+    await updateWrapper(wrapper, 250)
+    expectTooltipIsHidden(wrapper)
+
+    wrapper.setProps({ onVisibleChange })
+
+    // hover tooltip -> leave t and hover content -> leave content
+    // on
+    await act(async () => {
+      wrapper.find('.tooltip').simulate('mouseEnter', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+
+    // off
+    await act(async () => {
+      wrapper.find('.tooltip').simulate('mouseLeave', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+
+    // on content
+    await act(async () => {
+      wrapper.find('.tooltip-content').simulate('mouseEnter', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+
+    // off content
+    await act(async () => {
+      wrapper.find('.tooltip-content').simulate('mouseLeave', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsHidden(wrapper)
+
+    // hover t -> hover c and leave t -> leave c
+    // on
+    await act(async () => {
+      wrapper.find('.tooltip').simulate('mouseEnter', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+
+    // on content
+    await act(async () => {
+      wrapper.find('.tooltip-content').simulate('mouseEnter', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsShow(wrapper)
+
+    // off
+    await act(async () => {
+      wrapper.find('.tooltip').simulate('mouseLeave', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    await updateWrapper(wrapper, 250)
+    expectTooltipIsShow(wrapper)
+
+    // off content
+    await act(async () => {
+      wrapper.find('.tooltip-content').simulate('mouseLeave', nativeEvent)
+      await updateWrapper(wrapper, 0)
+    })
+    expectTooltipIsHidden(wrapper)
+
+    expect(() => wrapper.unmount()).not.toThrow()
   })
 })

@@ -6,11 +6,15 @@ import { Wifi } from '@zeit-ui/react-icons'
 import { clearInput, nextMonth, nextYear, openPicker, selectCell } from './utils'
 import { act } from 'react-dom/test-utils'
 import { useDatePickerHandle } from '../index'
+import { advanceTo } from 'jest-date-mock'
 
 // ensure that the snapshots does not mismatch due to the changes of test date
 const defaultValue = dayjs('2020-08-01 12:00:00')
 
 describe('DatePicker Common', () => {
+  beforeAll(() => advanceTo(0))
+  afterAll(() => advanceTo(0))
+
   it('should render correctly', () => {
     const wrapper = mount(
       <DatePicker open placeholder="placeholder" defaultPickerValue={defaultValue} />,

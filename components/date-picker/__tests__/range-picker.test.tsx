@@ -6,6 +6,7 @@ import { Wifi } from '@zeit-ui/react-icons'
 import { clearInput, nextMonth, nextYear, openPicker, selectCell } from './utils'
 import { act } from 'react-dom/test-utils'
 import { useDatePickerHandle } from '../index'
+import { advanceTo } from 'jest-date-mock'
 
 const { RangePicker } = DatePicker
 
@@ -13,6 +14,8 @@ const { RangePicker } = DatePicker
 const defaultValue = dayjs('2020-07-01')
 
 describe('RangePicker Common', () => {
+  beforeAll(() => advanceTo(0))
+  afterAll(() => advanceTo(0))
   it('should render correctly', () => {
     const wrapper = mount(
       <RangePicker

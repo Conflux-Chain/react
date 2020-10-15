@@ -3,11 +3,14 @@ import { mount } from 'enzyme'
 import dayjs from 'dayjs'
 import { DatePicker } from 'components'
 import { openPicker, range } from './utils'
+import { advanceTo } from 'jest-date-mock'
 
 // ensure that the snapshots does not mismatch due to the changes of test date
 const defaultValue = dayjs('2020-08-01 12:00:00')
 
 describe('DatePicker[picker=`time`]', () => {
+  beforeAll(() => advanceTo(0))
+  afterAll(() => advanceTo(0))
   it('should render correctly', () => {
     const wrapper = mount(
       <DatePicker picker="time" open placeholder="placeholder" defaultPickerValue={defaultValue} />,

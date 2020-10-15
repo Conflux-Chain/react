@@ -3,11 +3,15 @@ import { mount } from 'enzyme'
 import dayjs from 'dayjs'
 import { DatePicker } from 'components'
 import { selectCell } from './utils'
+import { advanceTo } from 'jest-date-mock'
 
 // ensure that the snapshots does not mismatch due to the changes of test date
 const defaultValue = dayjs('2020-05-01')
 
 describe('DatePicker[picker=`year`]', () => {
+  beforeAll(() => advanceTo(0))
+  afterAll(() => advanceTo(0))
+
   it('should render correctly', () => {
     const wrapper = mount(
       <DatePicker picker="year" open placeholder="placeholder" defaultPickerValue={defaultValue} />,

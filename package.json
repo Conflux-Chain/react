@@ -96,6 +96,7 @@
     "fs-extra": "^8.1.0",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
+    "jest-date-mock": "^1.0.8",
     "lint-staged": "^10.2.11",
     "next": "^9.4.0",
     "prettier": "^2.0.5",

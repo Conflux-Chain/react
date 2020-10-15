@@ -3,6 +3,7 @@ import { mount } from 'enzyme'
 import dayjs from 'dayjs'
 import { DatePicker } from 'components'
 import { openPicker, selectCell } from './utils'
+import { advanceTo } from 'jest-date-mock'
 
 const { RangePicker } = DatePicker
 
@@ -10,6 +11,8 @@ const { RangePicker } = DatePicker
 const defaultValue = dayjs('2020-01-01')
 
 describe('RangePicker Spec Props', () => {
+  beforeAll(() => advanceTo(0))
+  afterAll(() => advanceTo(0))
   it('prop `allowEmpty` should works', () => {
     const wrapper = mount(
       <RangePicker

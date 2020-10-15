@@ -1,10 +1,9 @@
-import React, { useMemo, useEffect, useRef, useState, MouseEvent } from 'react'
+import React, { useMemo, useEffect, useRef, useState, MouseEvent, useCallback } from 'react'
 import withDefaults from '../utils/with-defaults'
 import { usePopper } from 'react-popper'
 import useTheme from '../styles/use-theme'
 import { getColors } from './styles'
 import { TriggerTypes, Placement, SnippetColors } from '../utils/prop-types'
-// import CSSTransition from '../shared/css-transition'
 import useClickAway from '../utils/use-click-away'
 import type { Options } from '@popperjs/core/lib/modifiers/offset'
 
@@ -21,14 +20,18 @@ export const defaultProps = {
   color: 'default' as SnippetColors,
   trigger: 'hover' as TriggerTypes,
   placement: 'auto' as Placement,
-  // enterDelay: 100,
-  // leaveDelay: 200,
   offset: [0, 10] as Options['offset'],
   className: '',
   contentClassName: '',
+  hoverable: false,
+  hoverableTimeout: 200,
+  displayBlock: false,
 }
 
 export interface Props extends Omit<React.HTMLAttributes<any>, 'onMouseEnter' | 'onMouseLeave'> {
+  displayBlock?: boolean
+  hoverable?: boolean
+  hoverableTimeout?: number
   text: string | React.ReactNode
   color?: SnippetColors
   placement?: Placement
@@ -36,8 +39,6 @@ export interface Props extends Omit<React.HTMLAttributes<any>, 'onMouseEnter' | 
   defaultVisible?: boolean
   hideArrow?: boolean
   trigger?: TriggerTypes
-  // enterDelay?: number
-  // leaveDelay?: number
   offset?: Options['offset']
   contentClassName?: string
   onVisibleChange?: TooltipOnVisibleChange
@@ -50,14 +51,15 @@ export interface Props extends Omit<React.HTMLAttributes<any>, 'onMouseEnter' | 
 export type TooltipProps = React.PropsWithChildren<Props>
 
 const Tooltip: React.FC<TooltipProps> = ({
+  displayBlock,
+  hoverable,
+  hoverableTimeout,
   children,
   defaultVisible,
   text,
   offset,
   placement,
   contentClassName,
-  // enterDelay,
-  // leaveDelay,
   trigger,
   color,
   className,
@@ -70,7 +72,8 @@ const Tooltip: React.FC<TooltipProps> = ({
   onClickAway,
   ...props
 }: TooltipProps & typeof defaultProps) => {
-  // const timer = useRef<number>()
+  const hoverableTimer = useRef<number>()
+  const contentHovering = useRef<boolean>()
   const theme = useTheme()
   const parentRef = useRef(null)
   const contentRef = useRef(null)
@@ -96,29 +99,27 @@ const Tooltip: React.FC<TooltipProps> = ({
 
   const colors = useMemo(() => getColors(color, theme.palette), [color, theme.palette])
 
-  const changeVisible = (visible: boolean) => {
-    if (typeof onVisibleChange === 'function') onVisibleChange(visible)
-    setVisible(visible)
+  const changeVisible = (newVisible: boolean) => {
+    if (typeof onVisibleChange === 'function') onVisibleChange(newVisible)
+    setVisible(newVisible)
   }
-  // const changeVisible = (nextState: boolean) => {
-  //   const clear = () => {
-  //     clearTimeout(timer.current)
-  //     timer.current = undefined
-  //   }
-  //   const handler = (nextState: boolean) => {
-  //     setVisible(nextState)
-  //     onVisibleChange(nextState)
-  //     clear()
-  //   }
-  //   clear()
-  //   if (nextState) {
-  //     timer.current = window.setTimeout(() => handler(true), enterDelay)
-  //     return
-  //   }
-  //   timer.current = window.setTimeout(() => handler(false), leaveDelay)
-  // }
 
-  const mouseEventHandler = (e: MouseEvent, next: boolean) => {
+  const realHoverMouseLeaveHandler = useCallback((e: MouseEvent) => {
+    if (contentHovering?.current) return
+    customVisible === undefined && changeVisible(false)
+    onMouseLeave && onMouseLeave(e, changeVisible)
+  }, [])
+
+  const mouseEventHandler = (e: MouseEvent, next: boolean, fromContent?: boolean) => {
+    if (hoverable && trigger === 'hover' && !next && !fromContent) {
+      if (hoverableTimer.current) clearTimeout(hoverableTimer.current)
+      hoverableTimer.current = window.setTimeout(
+        () => realHoverMouseLeaveHandler(e),
+        hoverableTimeout,
+      )
+      return
+    }
+
     if (customVisible === undefined) trigger === 'hover' && changeVisible(next)
     if (next) onMouseEnter && onMouseEnter(e, changeVisible)
     else onMouseLeave && onMouseLeave(e, changeVisible)
@@ -138,7 +139,7 @@ const Tooltip: React.FC<TooltipProps> = ({
   }, [customVisible])
 
   return (
-    <div>
+    <div className="tooltip-wrapper">
       <div
         className={`tooltip ${className}`}
         ref={parentRef}
@@ -153,6 +154,13 @@ const Tooltip: React.FC<TooltipProps> = ({
           className={`tooltip-content ${contentClassName}`}
           ref={contentRef}
           style={styles.popper}
+          onMouseEnter={() => {
+            contentHovering.current = true
+          }}
+          onMouseLeave={e => {
+            contentHovering.current = false
+            mouseEventHandler(e, false, true)
+          }}
           {...attributes.popper}>
           {/* @ts-ignore*/}
           {!hideArrow && <div className="tooltip-arrow" ref={setArrowRef} style={styles.arrow} />}
@@ -160,6 +168,10 @@ const Tooltip: React.FC<TooltipProps> = ({
         </div>
       )}
       <style jsx>{`
+        .tooltip-wrapper {
+          display: ${displayBlock ? 'block' : 'inline-block'};
+        }
+
         .tooltip {
           display: inline-block;
         }
