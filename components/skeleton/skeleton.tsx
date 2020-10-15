@@ -15,6 +15,7 @@ const defaultSkeletonProps = {
   height: '',
   variant: 'text' as SkeletonVariants,
   style: {} as React.CSSProperties,
+  className: '',
 }
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof SkeletonBaseProps>
@@ -22,15 +23,17 @@ export type SkeletonProps = React.PropsWithChildren<SkeletonBaseProps & NativeAt
 type SkeletonPropsWithDefault = SkeletonProps & typeof defaultSkeletonProps
 
 export const Skeleton: React.FC<SkeletonProps> = ({
+  className: outerClassName,
   children,
   animation,
   variant,
   width,
   height,
   style,
+  ...others
 }: SkeletonPropsWithDefault) => {
   const hasChildren = Boolean(children)
-  let className = `skeleton ${variant}`
+  let className = `skeleton ${outerClassName} ${variant}`
 
   if (animation !== 'none') {
     className += ' ' + animation
@@ -52,8 +55,9 @@ export const Skeleton: React.FC<SkeletonProps> = ({
         width,
         height,
         ...style,
-      }}>
-      {children}
+      }}
+      {...others}>
+      <div>{children}</div>
       <style jsx>
         {`
           @keyframes pulse {

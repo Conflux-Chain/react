@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Skeleton should render all variant correctly 1`] = `
-"<div class=\\"skeleton rect wave\\"><style>
+"<div class=\\"skeleton  rect wave\\"><div></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
@@ -73,7 +73,7 @@ exports[`Skeleton should render all variant correctly 1`] = `
 `;
 
 exports[`Skeleton should render all variant correctly 2`] = `
-"<div class=\\"skeleton circle wave\\"><style>
+"<div class=\\"skeleton  circle wave\\"><div></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
@@ -145,7 +145,7 @@ exports[`Skeleton should render all variant correctly 2`] = `
 `;
 
 exports[`Skeleton should render correctly 1`] = `
-"<div class=\\"skeleton text wave\\"><style>
+"<div class=\\"skeleton  text wave\\"><div></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
@@ -217,7 +217,7 @@ exports[`Skeleton should render correctly 1`] = `
 `;
 
 exports[`Skeleton should render correctly width custom with and height 1`] = `
-"<div class=\\"skeleton text wave\\" style=\\"width: 100px;\\"><style>
+"<div class=\\"skeleton  text wave\\" style=\\"width: 100px;\\"><div></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
@@ -289,7 +289,7 @@ exports[`Skeleton should render correctly width custom with and height 1`] = `
 `;
 
 exports[`Skeleton should render correctly width custom with and height 2`] = `
-"<div class=\\"skeleton text wave\\" style=\\"height: 100px;\\"><style>
+"<div class=\\"skeleton  text wave\\" style=\\"height: 100px;\\"><div></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
@@ -361,7 +361,7 @@ exports[`Skeleton should render correctly width custom with and height 2`] = `
 `;
 
 exports[`Skeleton should render correctly width custom with and height 3`] = `
-"<div class=\\"skeleton text wave\\" style=\\"width: 100px; height: 100px;\\"><style>
+"<div class=\\"skeleton  text wave\\" style=\\"width: 100px; height: 100px;\\"><div></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
@@ -433,7 +433,7 @@ exports[`Skeleton should render correctly width custom with and height 3`] = `
 `;
 
 exports[`Skeleton should render correctly with children 1`] = `
-"<div class=\\"skeleton text wave withChildren fitContent heightAuto\\"><button type=\\"button\\" class=\\"btn  \\"><div class=\\"text \\">Button</div><style>
+"<div class=\\"skeleton  text wave withChildren fitContent heightAuto\\"><div><button type=\\"button\\" class=\\"btn  \\"><div class=\\"text \\">Button</div><style>
         .tag,
         .btn {
           box-sizing: border-box;
@@ -519,7 +519,7 @@ exports[`Skeleton should render correctly with children 1`] = `
         .btn :global(.hidden) {
           visibility: hidden;
         }
-      </style></button><style>
+      </style></button></div><style>
           @keyframes pulse {
             0% {
               opacity 1;
