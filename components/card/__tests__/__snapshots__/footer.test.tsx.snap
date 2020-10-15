@@ -54,15 +54,6 @@ exports[`Card Footer should render correctly 1`] = `
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       </style></div>"
 `;
 

@@ -137,15 +137,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                               "next": null,
                               "parent": [Circular],
@@ -195,15 +186,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                             "next": null,
@@ -506,15 +488,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                 "next": null,
                                 "parent": [Circular],
@@ -564,15 +537,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -731,15 +695,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                       "next": null,
                       "parent": [Circular],
@@ -789,15 +744,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -930,15 +876,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                 "next": null,
                                 "parent": [Circular],
@@ -988,15 +925,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -1299,15 +1227,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                   "next": null,
                                   "parent": [Circular],
@@ -1357,15 +1276,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -1714,15 +1624,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                 "next": null,
                                 "parent": [Circular],
@@ -1772,15 +1673,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -2083,15 +1975,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                   "next": null,
                                   "parent": [Circular],
@@ -2141,15 +2024,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -2308,15 +2182,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                         "next": null,
                         "parent": [Circular],
@@ -2366,15 +2231,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -2507,15 +2363,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                   "next": null,
                                   "parent": [Circular],
@@ -2565,15 +2412,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -2876,15 +2714,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                     "next": null,
                                     "parent": [Circular],
@@ -2934,15 +2763,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -3137,15 +2957,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
               "next": null,
               "parent": [Circular],
@@ -3195,15 +3006,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
             "next": null,
@@ -3346,15 +3148,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                 "next": null,
                                 "parent": [Circular],
@@ -3404,15 +3197,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -3715,15 +3499,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                   "next": null,
                                   "parent": [Circular],
@@ -3773,15 +3548,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -3940,15 +3706,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                         "next": null,
                         "parent": [Circular],
@@ -3998,15 +3755,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -4139,15 +3887,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                   "next": null,
                                   "parent": [Circular],
@@ -4197,15 +3936,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -4508,15 +4238,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                     "next": null,
                                     "parent": [Circular],
@@ -4566,15 +4287,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -4923,15 +4635,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                   "next": null,
                                   "parent": [Circular],
@@ -4981,15 +4684,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -5292,15 +4986,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                     "next": null,
                                     "parent": [Circular],
@@ -5350,15 +5035,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -5517,15 +5193,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                           "next": null,
                           "parent": [Circular],
@@ -5575,15 +5242,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                         "next": null,
@@ -5716,15 +5374,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                     "next": null,
                                     "parent": [Circular],
@@ -5774,15 +5423,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -6085,15 +5725,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                                       "next": null,
                                       "parent": [Circular],
@@ -6143,15 +5774,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                     "next": null,
@@ -6496,15 +6118,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                   "next": null,
                   "parent": [Circular],
@@ -6554,15 +6167,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -6794,15 +6398,6 @@ initialize {
           background-color: #fff;
           border: 2px solid #999;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                     "next": null,
                     "parent": [Circular],
@@ -6852,15 +6447,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid #999;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -7092,15 +6678,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                       "next": null,
                       "parent": [Circular],
@@ -7150,15 +6727,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -7390,15 +6958,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                         "next": null,
                         "parent": [Circular],
@@ -7448,15 +7007,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -7729,15 +7279,6 @@ initialize {
           background-color: #fff;
           border: 2px solid #999;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                   "next": null,
                   "parent": [Circular],
@@ -7787,15 +7328,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid #999;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -8027,15 +7559,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                     "next": null,
                     "parent": [Circular],
@@ -8085,15 +7608,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -8325,15 +7839,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                       "next": null,
                       "parent": [Circular],
@@ -8383,15 +7888,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -8645,15 +8141,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                     "next": null,
                     "parent": [Circular],
@@ -8703,15 +8190,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -8962,15 +8440,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                   "next": null,
                   "parent": [Circular],
@@ -9020,15 +8489,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -9260,15 +8720,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                     "next": null,
                     "parent": [Circular],
@@ -9318,15 +8769,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -9570,15 +9012,6 @@ initialize {
           background-color: #fff;
           border: 2px solid #999;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                     "next": null,
                     "parent": [Circular],
@@ -9628,15 +9061,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid #999;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -9870,15 +9294,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                       "next": null,
                       "parent": [Circular],
@@ -9928,15 +9343,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -10195,15 +9601,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                   "next": null,
                   "parent": [Circular],
@@ -10253,15 +9650,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -10495,15 +9883,6 @@ initialize {
           background-color: #fff;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                     "next": null,
                     "parent": [Circular],
@@ -10553,15 +9932,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -10795,15 +10165,6 @@ initialize {
           background-color: #fff;
           border: 2px solid #999;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                       "next": null,
                       "parent": [Circular],
@@ -10853,15 +10214,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid #999;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -11095,15 +10447,6 @@ initialize {
           background-color: #f9fafb;
           border: 2px solid transparent;
         }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
       ",
                         "next": null,
                         "parent": [Circular],
@@ -11153,15 +10496,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
