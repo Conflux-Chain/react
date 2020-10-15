@@ -165,7 +165,7 @@ const Select = forwardRef<SelectHandles, SelectProps>(
     return (
       <SelectContext.Provider value={initialValue}>
         <div
-          className={`select ${multiple ? 'multiple' : ''} ${className}`}
+          className={`select ${multiple ? 'multiple' : ''} ${variant || 'line'} ${className}`}
           ref={domRef}
           onClick={clickHandler}
           {...props}>

@@ -4,7 +4,7 @@ exports[`Card should render correctly when nested 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "card ",
+      "class": "card  solid",
     },
     "children": Array [
       Object {
@@ -14,7 +14,7 @@ initialize {
         "children": Array [
           Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -24,7 +24,7 @@ initialize {
                 "children": Array [
                   Object {
                     "attribs": Object {
-                      "class": "card ",
+                      "class": "card  solid",
                     },
                     "children": Array [
                       Object {
@@ -375,7 +375,7 @@ initialize {
                     "parent": [Circular],
                     "prev": Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -763,7 +763,7 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -1114,7 +1114,7 @@ initialize {
                       "parent": [Circular],
                       "prev": Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -1501,7 +1501,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -1511,7 +1511,7 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -1862,7 +1862,7 @@ initialize {
                       "parent": [Circular],
                       "prev": Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -2250,7 +2250,7 @@ initialize {
                     "children": Array [
                       Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -2601,7 +2601,7 @@ initialize {
                         "parent": [Circular],
                         "prev": Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -3025,7 +3025,7 @@ initialize {
           "children": Array [
             Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -3035,7 +3035,7 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -3386,7 +3386,7 @@ initialize {
                       "parent": [Circular],
                       "prev": Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -3774,7 +3774,7 @@ initialize {
                     "children": Array [
                       Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -4125,7 +4125,7 @@ initialize {
                         "parent": [Circular],
                         "prev": Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -4512,7 +4512,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "class": "card ",
+                  "class": "card  solid",
                 },
                 "children": Array [
                   Object {
@@ -4522,7 +4522,7 @@ initialize {
                     "children": Array [
                       Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -4873,7 +4873,7 @@ initialize {
                         "parent": [Circular],
                         "prev": Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -5261,7 +5261,7 @@ initialize {
                       "children": Array [
                         Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -5612,7 +5612,7 @@ initialize {
                           "parent": [Circular],
                           "prev": Object {
                             "attribs": Object {
-                              "class": "card ",
+                              "class": "card  solid",
                             },
                             "children": Array [
                               Object {
@@ -6005,7 +6005,7 @@ initialize {
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  solid",
         },
         "children": Array [
           Object {
@@ -6285,7 +6285,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  line",
           },
           "children": Array [
             Object {
@@ -6565,7 +6565,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -6845,7 +6845,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -7166,7 +7166,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  line",
         },
         "children": Array [
           Object {
@@ -7446,7 +7446,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -7726,7 +7726,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -8028,7 +8028,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -8327,7 +8327,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  solid",
         },
         "children": Array [
           Object {
@@ -8607,7 +8607,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -8899,7 +8899,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  line",
           },
           "children": Array [
             Object {
@@ -9181,7 +9181,7 @@ initialize {
           "parent": [Circular],
           "prev": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -9488,7 +9488,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  solid",
         },
         "children": Array [
           Object {
@@ -9770,7 +9770,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -10052,7 +10052,7 @@ initialize {
           "parent": [Circular],
           "prev": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  line",
             },
             "children": Array [
               Object {
@@ -10334,7 +10334,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {

@@ -68,7 +68,7 @@ export type TagColors = typeof tagColors[number]
 
 export type ButtonVariants = typeof buttonVariants[number]
 
-export type TabVarient = typeof tabVariants[number]
+export type TabVariant = typeof tabVariants[number]
 
 export type TagVariants = ButtonVariants
 

@@ -1,26 +1,26 @@
 import React, { useMemo } from 'react'
-import { TabVarient } from 'components/utils/prop-types'
+import { TabVariant } from 'components/utils/prop-types'
 import { defaultGetColor } from './style'
 import useTheme from '../styles/use-theme'
 
 export interface NavCptProps {
-  varient: TabVarient
+  variant: TabVariant
   disabled: boolean
   active: boolean
   label: string | React.ReactNode
 }
 
-const Nav: React.FC<NavCptProps> = ({ label, varient, disabled, active }) => {
+const Nav: React.FC<NavCptProps> = ({ label, variant, disabled, active }) => {
   const { palette, layout, expressiveness } = useTheme()
-  const colors = useMemo(() => defaultGetColor(palette, varient, disabled, active), [
-    varient,
+  const colors = useMemo(() => defaultGetColor(palette, variant, disabled, active), [
+    variant,
     disabled,
     active,
   ])
   return (
     <div className="nav">
       <div className="label">{label}</div>
-      {varient === 'line' ? <div className="bottom"></div> : null}
+      {variant === 'line' ? <div className="bottom"></div> : null}
       <style jsx>
         {`
           .nav {

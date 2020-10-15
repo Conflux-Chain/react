@@ -12,7 +12,7 @@ import { TabsItemConfig, TabsConfig, TabsContext, Handles } from './tabs-context
 import TabsItem from './tabs-item'
 import useTheme from '../styles/use-theme'
 
-import { TabVarient } from '../utils/prop-types'
+import { TabVariant } from '../utils/prop-types'
 import TabsNav from './tabs-nav'
 import useTabsHandle from './use-tabs-handle'
 
@@ -22,12 +22,12 @@ export interface Props {
   value?: string
   onChange?: (val: string) => void
   className?: string
-  varient?: TabVarient
+  variant?: TabVariant
   showDivider?: boolean
 }
 
 const defaultProps = {
-  varient: 'line' as TabVarient,
+  variant: 'line' as TabVariant,
   className: '',
 }
 
@@ -40,7 +40,7 @@ const Tabs = forwardRef<Handles, TabsProps>(
       initialValue: userCustomInitialValue,
       value,
       children,
-      varient,
+      variant,
       onChange,
       className,
       showDivider,
@@ -108,7 +108,7 @@ const Tabs = forwardRef<Handles, TabsProps>(
 
     return (
       <TabsContext.Provider value={ctx}>
-        <div className={`tabs ${className}`} {...props}>
+        <div className={`tabs ${className} ${variant || 'line'}`} {...props}>
           <header>
             {tabs.map(({ value, disabled, ...extra }) => {
               return (
@@ -120,7 +120,7 @@ const Tabs = forwardRef<Handles, TabsProps>(
                   key={value}
                   onClick={() => !disabled && clickHandler(value)}>
                   <TabsNav
-                    varient={varient}
+                    variant={variant}
                     disabled={disabled}
                     active={currentTab === value}
                     {...extra}></TabsNav>

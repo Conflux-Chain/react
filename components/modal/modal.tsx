@@ -108,7 +108,7 @@ const Modal = forwardRef<ModalHandles, ModalProps>(
     return createPortal(
       <ModalContext.Provider value={modalConfig}>
         <Backdrop onClick={closeFromBackdrop} visible={visible}>
-          <ModalWrapper visible={visible} className={wrapClassName} width={wrapperWidth}>
+          <ModalWrapper visible={visible} className={`modal ${wrapClassName}`} width={wrapperWidth}>
             {closable && (
               <ModalIcon size={16} color={theme.palette.cNeutral5} onClick={closeModal} />
             )}

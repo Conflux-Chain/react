@@ -16,7 +16,7 @@ describe('Tabs', () => {
           </Tabs.Item>
         </Tabs>
 
-        <Tabs varient="solid">
+        <Tabs variant="solid">
           <Tabs.Item label="label1" value="1">
             1
           </Tabs.Item>

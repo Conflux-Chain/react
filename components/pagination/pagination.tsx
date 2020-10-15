@@ -169,7 +169,7 @@ const Pagination = forwardRef<PaginationHandles, React.PropsWithChildren<Paginat
     )
     return (
       <PaginationContext.Provider value={values}>
-        <div className={`pagination ${className}`}>
+        <div className={`pagination ${className} ${variant || 'line'}`}>
           {showPageSizeChanger && (
             <div className="left">
               <PaginationPageSize

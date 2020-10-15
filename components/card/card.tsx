@@ -56,7 +56,7 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
   const hasContent = hasChild(withoutImageChildren, CardContent)
 
   return (
-    <div className={`card ${className}`} {...props}>
+    <div className={`card ${className} ${variant || 'solid'}`} {...props}>
       {imageChildren}
       {hasContent ? withoutImageChildren : <CardContent>{withoutImageChildren}</CardContent>}
       {footerChildren}

@@ -33,7 +33,7 @@ export const Skeleton: React.FC<SkeletonProps> = ({
   ...others
 }: SkeletonPropsWithDefault) => {
   const hasChildren = Boolean(children)
-  let className = `skeleton ${outerClassName} ${variant}`
+  let className = `skeleton ${outerClassName} ${variant || 'text'}`
 
   if (animation !== 'none') {
     className += ' ' + animation

@@ -1,4 +1,4 @@
-import { TabVarient } from '../utils/prop-types'
+import { TabVariant } from '../utils/prop-types'
 import { CfxUIThemesPalette } from 'components/styles/themes'
 
 type tabColors = {
@@ -10,11 +10,11 @@ type tabColors = {
 
 export const defaultGetColor = (
   palette: CfxUIThemesPalette,
-  varient: TabVarient,
+  variant: TabVariant,
   disabled: boolean,
   active: boolean,
 ): tabColors => {
-  const isLine = varient === 'line'
+  const isLine = variant === 'line'
 
   if (disabled) {
     return {
