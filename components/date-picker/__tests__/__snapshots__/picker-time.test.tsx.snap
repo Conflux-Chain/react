@@ -1442,7 +1442,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -1453,7 +1453,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -1464,7 +1464,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -1475,7 +1475,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -1486,7 +1486,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -1533,7 +1533,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -1580,7 +1580,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -1627,7 +1627,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -1674,7 +1674,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -1721,7 +1721,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -1768,7 +1768,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -1815,7 +1815,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -1862,7 +1862,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -1909,7 +1909,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -1956,7 +1956,7 @@ exports[`DatePicker[picker=\`time\`] prop \`defaultValue\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
@@ -3357,7 +3357,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -3368,7 +3368,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -3379,7 +3379,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -3390,7 +3390,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -3401,7 +3401,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -3448,7 +3448,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -3495,7 +3495,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -3542,7 +3542,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -3589,7 +3589,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -3636,7 +3636,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -3683,7 +3683,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -3730,7 +3730,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -3777,7 +3777,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -3824,7 +3824,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -3871,7 +3871,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledHours\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] = `
@@ -5272,7 +5272,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -5283,7 +5283,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -5294,7 +5294,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -5305,7 +5305,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -5316,7 +5316,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -5363,7 +5363,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -5410,7 +5410,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -5457,7 +5457,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -5504,7 +5504,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -5551,7 +5551,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -5598,7 +5598,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -5645,7 +5645,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -5692,7 +5692,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -5739,7 +5739,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -5786,7 +5786,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledMinutes\` should works 1`] =
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] = `
@@ -7187,7 +7187,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -7198,7 +7198,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -7209,7 +7209,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -7220,7 +7220,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -7231,7 +7231,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -7278,7 +7278,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -7325,7 +7325,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -7372,7 +7372,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -7419,7 +7419,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -7466,7 +7466,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -7513,7 +7513,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -7560,7 +7560,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -7607,7 +7607,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -7654,7 +7654,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -7701,7 +7701,7 @@ exports[`DatePicker[picker=\`time\`] prop \`disabledSeconds\` should works 1`] =
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
@@ -9102,7 +9102,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -9113,7 +9113,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -9124,7 +9124,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -9135,7 +9135,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -9146,7 +9146,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -9193,7 +9193,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -9240,7 +9240,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -9287,7 +9287,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -9334,7 +9334,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -9381,7 +9381,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -9428,7 +9428,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -9475,7 +9475,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -9522,7 +9522,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -9569,7 +9569,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -9616,7 +9616,7 @@ exports[`DatePicker[picker=\`time\`] prop \`format\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1`] = `
@@ -11017,7 +11017,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -11028,7 +11028,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -11039,7 +11039,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -11050,7 +11050,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -11061,7 +11061,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -11108,7 +11108,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -11155,7 +11155,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -11202,7 +11202,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -11249,7 +11249,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -11296,7 +11296,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -11343,7 +11343,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -11390,7 +11390,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -11437,7 +11437,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -11484,7 +11484,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -11531,7 +11531,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hideDisabledOptions\` should works 1
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
@@ -12932,7 +12932,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -12943,7 +12943,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -12954,7 +12954,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -12965,7 +12965,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -12976,7 +12976,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -13023,7 +13023,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -13070,7 +13070,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -13117,7 +13117,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -13164,7 +13164,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -13211,7 +13211,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -13258,7 +13258,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -13305,7 +13305,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -13352,7 +13352,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -13399,7 +13399,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -13446,7 +13446,7 @@ exports[`DatePicker[picker=\`time\`] prop \`hourStep\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
@@ -14847,7 +14847,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -14858,7 +14858,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -14869,7 +14869,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -14880,7 +14880,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -14891,7 +14891,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -14938,7 +14938,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -14985,7 +14985,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -15032,7 +15032,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -15079,7 +15079,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -15126,7 +15126,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -15173,7 +15173,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -15220,7 +15220,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -15267,7 +15267,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -15314,7 +15314,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -15361,7 +15361,7 @@ exports[`DatePicker[picker=\`time\`] prop \`minuteStep\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`] = `
@@ -16762,7 +16762,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -16773,7 +16773,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -16784,7 +16784,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -16795,7 +16795,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -16806,7 +16806,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -16853,7 +16853,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -16900,7 +16900,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -16947,7 +16947,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -16994,7 +16994,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -17041,7 +17041,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -17088,7 +17088,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -17135,7 +17135,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -17182,7 +17182,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -17229,7 +17229,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -17276,7 +17276,7 @@ exports[`DatePicker[picker=\`time\`] prop \`renderExtraFooter\` should works 1`]
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
@@ -18677,7 +18677,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -18688,7 +18688,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -18699,7 +18699,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -18710,7 +18710,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -18721,7 +18721,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -18768,7 +18768,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -18815,7 +18815,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -18862,7 +18862,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -18909,7 +18909,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -18956,7 +18956,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -19003,7 +19003,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -19050,7 +19050,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -19097,7 +19097,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -19144,7 +19144,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -19191,7 +19191,7 @@ exports[`DatePicker[picker=\`time\`] prop \`secondStep\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
@@ -20592,7 +20592,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -20603,7 +20603,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -20614,7 +20614,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -20625,7 +20625,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -20636,7 +20636,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -20683,7 +20683,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -20730,7 +20730,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -20777,7 +20777,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -20824,7 +20824,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -20871,7 +20871,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -20918,7 +20918,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -20965,7 +20965,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -21012,7 +21012,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -21059,7 +21059,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -21106,7 +21106,7 @@ exports[`DatePicker[picker=\`time\`] prop \`use12Hours\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
 
 exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
@@ -22551,7 +22551,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
         .cfx-picker-panel-container .cfx-picker-panel-focused {
           border-color: #1e3de4;
         }
-      </style><style>
+      </style><div><style>
         .cfx-picker-size-mini .cfx-picker-input {
           height: calc(1.5 * 1.1429rem - 2px);
           line-height: calc(1.5 * 1.1429rem - 3px);
@@ -22562,7 +22562,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
           font-size: 0.5714rem;
           line-height: calc(1.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-small .cfx-picker-input {
           height: calc(2 * 1.1429rem - 2px);
           line-height: calc(2 * 1.1429rem - 3px);
@@ -22573,7 +22573,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
           font-size: 0.8571rem;
           line-height: calc(2 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-medium .cfx-picker-input {
           height: calc(2.5 * 1.1429rem - 2px);
           line-height: calc(2.5 * 1.1429rem - 3px);
@@ -22584,7 +22584,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
           font-size: 1rem;
           line-height: calc(2.5 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
         .cfx-picker-size-large .cfx-picker-input {
           height: calc(3 * 1.1429rem - 2px);
           line-height: calc(3 * 1.1429rem - 3px);
@@ -22595,7 +22595,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
           font-size: 1.1429rem;
           line-height: calc(3 * 1.1429rem - 4px);
         }
-      </style><style>
+      </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-default {
             color: #333;
             background-color: #f9fafb;
@@ -22642,7 +22642,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             background-color: #f0f5ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-default {
             color: #333;
             background-color: #fff;
@@ -22689,7 +22689,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-primary {
             color: #333;
             background-color: #f0f5ff;
@@ -22736,7 +22736,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             background-color: #dfe8ff;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-primary {
             color: #333;
             background-color: #fff;
@@ -22783,7 +22783,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-success {
             color: #333;
             background-color: #effaef;
@@ -22830,7 +22830,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             background-color: #7cd77b;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-success {
             color: #333;
             background-color: #fff;
@@ -22877,7 +22877,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-warning {
             color: #333;
             background-color: #fef1ea;
@@ -22924,7 +22924,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             background-color: #ffc438;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-warning {
             color: #333;
             background-color: #fff;
@@ -22971,7 +22971,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             ;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-solid.cfx-picker-color-error {
             color: #e15c56;
             background-color: rgba(251, 235, 235, 0.4);
@@ -23018,7 +23018,7 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             background-color: #fbebeb;
           }
 
-        </style><style>
+        </style></div><div><style>
           .cfx-picker.cfx-picker-variant-line.cfx-picker-color-error {
             color: #e15c56;
             background-color: #fff;
@@ -23065,5 +23065,5 @@ exports[`DatePicker[picker=\`time\`] prop \`value\` should works 1`] = `
             ;
           }
 
-        </style>"
+        </style></div>"
 `;
