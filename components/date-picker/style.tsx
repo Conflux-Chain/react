@@ -17,7 +17,7 @@ const animationDuration = '0.2s'
 // TODO Unify animation
 // picker animation lalala~
 export const animationStyle = (
-  <style jsx global key="date-picker-style-animation">{`
+  <style jsx global>{`
     @keyframes cfxSlideUpIn {
       0% {
         transform: scaleY(0.8);
@@ -278,7 +278,8 @@ export const generateSizeStyles = (prefix: string, theme: CfxUIThemes) => {
   normalSizes.forEach((size: NormalSizes) => {
     const { heightRatio, fontSize, margin } = getSizes(size)
     styles.push(
-      <style jsx global key={`date-picker-style-${size}`}>{`
+      <div key={`date-picker-style-${size}`}>
+        <style jsx global>{`
         .${prefix}-picker-size-${size} .${prefix}-picker-input {
           height: calc(${heightRatio} * ${theme.layout.gap} - 2px);
           line-height: calc(${heightRatio} * ${theme.layout.gap} - 3px);
@@ -289,7 +290,8 @@ export const generateSizeStyles = (prefix: string, theme: CfxUIThemes) => {
           font-size: ${fontSize};
           line-height: calc(${heightRatio} * ${theme.layout.gap} - 4px);
         }
-      `}</style>,
+      `}</style>
+      </div>,
     )
   })
   return styles
@@ -309,7 +311,8 @@ export const generateVariantStyles = (prefix: string, theme: CfxUIThemes) => {
         hoverBackgroundColor,
       } = getColors(theme, color, variant === 'solid')
       styles.push(
-        <style jsx global key={`date-picker-style-${color}-${variant}`}>{`
+        <div key={`date-picker-style-${color}-${variant}`}>
+          <style jsx global>{`
           .${prefix}-picker.${prefix}-picker-variant-${variant}.${prefix}-picker-color-${color} {
             color: ${textColor};
             background-color: ${backgroundColor};
@@ -356,7 +359,8 @@ export const generateVariantStyles = (prefix: string, theme: CfxUIThemes) => {
             ${variant === 'solid' ? `background-color: ${hoverBackgroundColor}` : ''};
           }
 
-        `}</style>,
+        `}</style>
+        </div>,
       )
     })
   })
@@ -411,7 +415,7 @@ export const generatePickerGlobalStyle = <DateType extends any>(
   return (
     <>
       {animationStyle}
-      <style jsx global key="date-picker-style-general">{`
+      <style jsx global>{`
 
         // ***************** panel *****************
 
